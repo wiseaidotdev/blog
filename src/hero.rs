@@ -89,7 +89,7 @@ pub fn Hero() -> Element {
                 }
 
                 a {
-                    href: "https://github.com/wiseaidotdev/lmm",
+                    href: "https://autogpt.wiseai.dev",
                     target: "_blank",
                     class: "flex items-center gap-2 bg-green-800 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-900 transition-all duration-300 z-50 whitespace-nowrap",
                     aria_label: "let's build",
