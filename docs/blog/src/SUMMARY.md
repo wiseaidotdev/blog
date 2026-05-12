@@ -35,3 +35,5 @@
 - [ 17 |---| Genuine Intelligence will never in trillion years emerge from neural networks. |---| tech |---| genuine-intelligence-will-never-emerge-from-neural-networks |---| Apr 23 2026 |---| Genuine Intelligence will never in trillions years emerge from neural networks |---| assets/images/banner_post_17.webp](genuine-intelligence-will-never-emerge-from-neural-networks.md)
 
 - [ 18 |---| Knowledge and Intelligence ARE Mutually Exclusive. |---| tech |---| knowledge-and-intelligence-are-mutually-exclusive |---| Apr 28 2026 |---| Knowledge and Intelligence ARE Mutually Exclusive. |---| assets/images/banner_post_18.webp ](knowledge-and-intelligence-are-mutually-exclusive.md)
+
+- [ 19 |---| Be Aware of The Current UFOs Pandemic. Remember, We Are Alone. |---| existence |---| be-aware-of-the-current-ufos-pandemic-remember-we-are-alone |---| May 12 2026 |---| The current news about UFOs is a distraction from reality. We are alone, and that is a responsibility we must embrace. |---| assets/images/banner_post_19.webp](be-aware-of-the-current-ufos-pandemic-remember-we-are-alone.md)
