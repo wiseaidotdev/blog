@@ -37,3 +37,5 @@
 - [ 18 |---| Knowledge and Intelligence ARE Mutually Exclusive. |---| tech |---| knowledge-and-intelligence-are-mutually-exclusive |---| Apr 28 2026 |---| Knowledge and Intelligence ARE Mutually Exclusive. |---| assets/images/banner_post_18.webp ](knowledge-and-intelligence-are-mutually-exclusive.md)
 
 - [ 19 |---| Be Aware of The Current UFOs Pandemic. Remember, We Are Alone. |---| existence |---| be-aware-of-the-current-ufos-pandemic-remember-we-are-alone |---| May 12 2026 |---| The current news about UFOs is a distraction from reality. We are alone, and that is a responsibility we must embrace. |---| assets/images/banner_post_19.webp](be-aware-of-the-current-ufos-pandemic-remember-we-are-alone.md)
+
+- [ 20 |---| If You Can't Build AGI, Then Why Should We Hire You? |---| tech |---| if-you-cant-build-agi-then-why-should-we-hire-you |---| May 14 2026 |---| If you can't build AGI, then why should we hire you? |---| assets/images/banner_post_20.webp](if-you-cant-build-agi-then-why-should-we-hire-you.md)
