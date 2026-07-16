@@ -39,3 +39,5 @@
 - [ 19 |---| Be Aware of The Current UFOs Pandemic. Remember, We Are Alone. |---| existence |---| be-aware-of-the-current-ufos-pandemic-remember-we-are-alone |---| May 12 2026 |---| The current news about UFOs is a distraction from reality. We are alone, and that is a responsibility we must embrace. |---| assets/images/banner_post_19.webp](be-aware-of-the-current-ufos-pandemic-remember-we-are-alone.md)
 
 - [ 20 |---| If You Can't Build AGI, Then Why Should We Hire You? |---| tech |---| if-you-cant-build-agi-then-why-should-we-hire-you |---| May 14 2026 |---| If you can't build AGI, then why should we hire you? |---| assets/images/banner_post_20.webp](if-you-cant-build-agi-then-why-should-we-hire-you.md)
+
+- [ 21 |---| I miss the pre-AI Mossad agents. |---| tech |---| i-miss-the-pre-ai-mossad-agents |---| Jul 16 2026 |---| I miss the pre-AI Mossad agents. |---| assets/images/banner_post_21.webp](i-miss-the-pre-ai-mossad-agents.md)
