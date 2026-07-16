@@ -1,43 +1,45 @@
 body {
-	background-color: black !important;
-	color: #ffffff;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black !important;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 100% center;
-	}
+  0% {
+    background-position: 100% center;
+  }
 
-	25% {
-		background-position: 50% center;
-	}
+  25% {
+    background-position: 50% center;
+  }
 
-	50% {
-		background-position: 0% center;
-	}
+  50% {
+    background-position: 0% center;
+  }
 
-	75% {
-		background-position: -50% center;
-	}
+  75% {
+    background-position: -50% center;
+  }
 
-	100% {
-		background-position: -100% center;
-	}
+  100% {
+    background-position: -100% center;
+  }
 }
 
 .animate-gradient {
-	background: linear-gradient(270deg,
-			rgb(176, 255, 86) 0%,
-			rgb(95, 255, 89) 25.52%,
-			rgb(82, 221, 246) 50%,
-			rgb(234, 223, 78) 76.04%,
-			rgb(86, 159, 255) 100%);
-	background-size: 200% auto;
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: gradient 6s linear infinite;
+  background: linear-gradient(
+    270deg,
+    rgb(176, 255, 86) 0%,
+    rgb(95, 255, 89) 25.52%,
+    rgb(82, 221, 246) 50%,
+    rgb(234, 223, 78) 76.04%,
+    rgb(86, 159, 255) 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 6s linear infinite;
 }
 
 .no-tailwind h1,
@@ -46,114 +48,114 @@ body {
 .no-tailwind h4,
 .no-tailwind h5,
 .no-tailwind h6 {
-	font-size: revert;
-	font-weight: revert;
-	margin: revert;
-	padding: revert;
-	color: revert;
-	display: revert;
+  font-size: revert;
+  font-weight: revert;
+  margin: revert;
+  padding: revert;
+  color: revert;
+  display: revert;
 }
 
 .no-tailwind p {
-	font-size: revert;
-	margin: 1em 0;
-	padding: revert;
-	color: revert;
-	display: revert;
-	line-height: revert;
+  font-size: revert;
+  margin: 1em 0;
+  padding: revert;
+  color: revert;
+  display: revert;
+  line-height: revert;
 }
 
 .no-tailwind ul,
 .no-tailwind ol {
-	margin: 1em 0;
-	padding-left: 40px;
-	list-style: revert;
-	display: revert;
+  margin: 1em 0;
+  padding-left: 40px;
+  list-style: revert;
+  display: revert;
 }
 
 .no-tailwind li {
-	margin-bottom: 0.5em;
-	padding: revert;
-	display: list-item;
+  margin-bottom: 0.5em;
+  padding: revert;
+  display: list-item;
 }
 
 .no-tailwind a {
-	color: rgb(153, 44, 255);
-	/* text-decoration: underline; */
-	cursor: revert;
-	font-size: inherit;
+  color: rgb(153, 44, 255);
+  /* text-decoration: underline; */
+  cursor: revert;
+  font-size: inherit;
 }
 
 .no-tailwind strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .no-tailwind em {
-	font-style: italic;
+  font-style: italic;
 }
 
 .no-tailwind blockquote {
-	margin: 1em 0;
-	padding-left: 20px;
-	border-left: 4px solid gray;
+  margin: 1em 0;
+  padding-left: 20px;
+  border-left: 4px solid gray;
 }
 
 .no-tailwind code {
-	font-family: monospace;
-	background-color: #000;
-	padding: 2px 4px;
-	border-radius: 4px;
+  font-family: monospace;
+  background-color: #000;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 .no-tailwind pre {
-	font-family: monospace;
-	background: #f4f4f4;
-	padding: 1em;
-	white-space: pre-wrap;
-	overflow: auto;
+  font-family: monospace;
+  background: #f4f4f4;
+  padding: 1em;
+  white-space: pre-wrap;
+  overflow: auto;
 }
 
 .no-tailwind img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .no-tailwind table {
-	border-collapse: collapse;
-	width: 100%;
-	margin: 1em 0;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
 }
 
 .no-tailwind th,
 .no-tailwind td {
-	border: 1px solid gray;
-	padding: 8px;
-	text-align: left;
+  border: 1px solid gray;
+  padding: 8px;
+  text-align: left;
 }
 
 .no-tailwind hr {
-	border: 0;
-	border-top: 1px solid gray;
-	margin: 1em 0;
+  border: 0;
+  border-top: 1px solid gray;
+  margin: 1em 0;
 }
 
 .no-tailwind input,
 .no-tailwind textarea,
 .no-tailwind button {
-	font-size: revert;
-	border: revert;
-	padding: revert;
-	margin: revert;
-	color: revert;
-	background: revert;
+  font-size: revert;
+  border: revert;
+  padding: revert;
+  margin: revert;
+  color: revert;
+  background: revert;
 }
 
 .no-tailwind a[href^="#ref-"] {
-	vertical-align: super;
-	font-size: 0.75em;
-	line-height: 0;
-	text-decoration: none;
-	margin-left: 1px;
-	font-weight: bold;
+  vertical-align: super;
+  font-size: 0.75em;
+  line-height: 0;
+  text-decoration: none;
+  margin-left: 1px;
+  font-weight: bold;
 }

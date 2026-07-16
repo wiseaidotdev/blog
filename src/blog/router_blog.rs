@@ -50,6 +50,8 @@ pub enum BookRoute {
     BeAwareOfTheCurrentUfosPandemicRememberWeAreAlone {},
     #[route("/if-you-cant-build-agi-then-why-should-we-hire-you")]
     IfYouCantBuildAgiThenWhyShouldWeHireYou {},
+    #[route("/i-miss-the-pre-ai-mossad-agents")]
+    IMissThePreAiMossadAgents {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -112,6 +114,7 @@ impl BookRoute {
             BookRoute::IfYouCantBuildAgiThenWhyShouldWeHireYou {} => {
                 use_mdbook::mdbook_shared::PageId(19usize)
             }
+            BookRoute::IMissThePreAiMossadAgents {} => use_mdbook::mdbook_shared::PageId(20usize),
         }
     }
 }
@@ -1593,6 +1596,88 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::IfYouCantBuildAgiThenWhyShouldWeHireYou {},
             ::use_mdbook::mdbook_shared::PageId(19usize),
         );
+        pages
+            .push((
+                20usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 21 |---| I miss the pre-AI Mossad agents. |---| tech |---| i-miss-the-pre-ai-mossad-agents |---| Jul 16 2026 |---| I miss the pre-AI Mossad agents. |---| assets/images/banner_post_21.webp"
+                            .to_string(),
+                        url: BookRoute::IMissThePreAiMossadAgents {
+                        },
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "There Were People On The Other Side".to_string(),
+                                id: "there-were-people-on-the-other-side".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What I Mean By Mossad Agents, And Why The Metaphor Works"
+                                    .to_string(),
+                                id: "what-i-mean-by-mossad-agents,-and-why-the-metaphor-works"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Intelligence Failure You Were Never Supposed to Notice"
+                                    .to_string(),
+                                id: "the-intelligence-failure-you-were-never-supposed-to-notice"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The ATS Machine That Ate Your Future".to_string(),
+                                id: "the-ats-machine-that-ate-your-future".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What The Mossad Understood That The Machine Never Will"
+                                    .to_string(),
+                                id: "what-the-mossad-understood-that-the-machine-never-will"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Quiet Death of the Human Middle Layer"
+                                    .to_string(),
+                                id: "the-quiet-death-of-the-human-middle-layer".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Genuine Intelligence vs Genuine Artificial Intelligence"
+                                    .to_string(),
+                                id: "genuine-intelligence-vs-genuine-artificial-intelligence"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What We Have Lost and What It Would Take to Recover It"
+                                    .to_string(),
+                                id: "what-we-have-lost-and-what-it-would-take-to-recover-it"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Closing Words".to_string(),
+                                id: "closing-words".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(20usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::IMissThePreAiMossadAgents {},
+            ::use_mdbook::mdbook_shared::PageId(20usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -1781,6 +1866,16 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         location: Some(BookRoute::IfYouCantBuildAgiThenWhyShouldWeHireYou {}),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![20u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 21 |---| I miss the pre-AI Mossad agents. |---| tech |---| i-miss-the-pre-ai-mossad-agents |---| Jul 16 2026 |---| I miss the pre-AI Mossad agents. |---| assets/images/banner_post_21.webp"
+                            .to_string(),
+                        location: Some(BookRoute::IMissThePreAiMossadAgents {
+                        }),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![21u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -8417,6 +8512,479 @@ pub fn IfYouCantBuildAgiThenWhyShouldWeHireYou() -> dioxus::prelude::Element {
             }
             ", ACM CHI '22 Extended Abstracts, April 2022. "
             a { href: "https://doi.org/10.1145/3491101.3519665", "doi.org/10.1145/3491101.3519665" }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn IMissThePreAiMossadAgents() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "I keep talking about AI and how it destroyed careers, livelihoods, and entire industries, and most of you who have been reading these posts know by now that I am not being dramatic when I say that. I wrote in "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            " about how machines came for our jobs while we were busy celebrating how clever the machines were. I wrote in "
+            a { href: "/blogs/as-engineers-llms-should-pay-us-for-tokens-usage",
+                "As Engineers, LLMs Should Pay Us for Token Usage"
+            }
+            " about how we feed these systems everything we know and then get told our skills are no longer needed. And in "
+            a { href: "/blogs/if-you-cant-build-agi-then-why-should-we-hire-you",
+                "If You Can't Build AGI, Then Why Should We Hire You?"
+            }
+            " I described the absurd new standard that the industry invented, the one where experience and craft and years of honest work become irrelevant overnight because some model can approximate your output at a fraction of the price. But there is something else I have not yet said out loud, and it has been sitting there in the back of my mind for a while, growing louder with every ignored application and every automated rejection. It is about the people who used to help us before AI arrived. The ones that I have come to call, affectionately and a little darkly, the Mossad agents of the professional world."
+        }
+        p { "I know that phrase sounds strange. That is actually the point. Bear with me." }
+        h2 { id: "there-were-people-on-the-other-side",
+            a { href: "#there-were-people-on-the-other-side", class: "header",
+                "There Were People On The Other Side"
+            }
+        }
+        p {
+            "I want you to think back, if you can, to what the inbox felt like before the current AI era. Think about what it felt like to send out a carefully written message to a recruiter, a hiring manager, or a potential collaborator, and then actually receive a reply from a human being who had clearly read what you wrote. That used to happen. Not always, not perfectly, not without friction, but it happened with enough regularity that you could build your professional life around the assumption that a person was on the other side of the conversation. That assumption shaped everything. It shaped how you wrote your messages. It shaped how you presented yourself. It shaped the kind of hope you allowed yourself to carry into the job search, because hope that is connected to a human being feels different from hope that is thrown into an algorithmic void. One you can negotiate with. One you cannot."
+        }
+        p {
+            "Back then, I used to receive messages from recruiters who had clearly done some form of research. They knew roughly what I worked on. They had some sense of whether the role might fit. They were not always right, and they were not always good at what they did, but there was a person behind the message, and that person had made a choice to reach out, which meant something. When a person chooses to reach out, there is accountability inside that choice. They can be wrong, but they can also be convinced. They can misread your profile, but they can also be corrected. They carry the social weight of the message, which means they have a reason to be genuine. That social weight is not a small thing. It is the entire infrastructure of trust that makes professional communication meaningful, and when you remove it, you do not just make communication faster. You hollow it out."
+        }
+        p {
+            "The inbox I live in now is not that inbox. It is a space that machines write to and machines filter, where your words are processed by systems that have no concept of what you actually meant, no interest in your history, and no memory of your name. As of 2025, research indicates that up to 99% of Fortune 500 companies use automated Applicant Tracking Systems (ATS) as the primary filter through which every candidate application must pass before any human being sees it. "
+            a { href: "#ref-1", "(1)" }
+            "]"
+        }
+        p {
+            "And in a strange, roundabout way, it made me realize that I miss what I used to have. I miss the invisible helpers. I miss the ones working behind the scenes in ways I barely understood. I miss, in short, the pre-AI Mossad agents."
+        }
+        h2 { id: "what-i-mean-by-mossad-agents-and-why-the-metaphor-works",
+            a {
+                href: "#what-i-mean-by-mossad-agents-and-why-the-metaphor-works",
+                class: "header",
+                "What I Mean By Mossad Agents, And Why The Metaphor Works"
+            }
+        }
+        p {
+            "Let me explain the phrase, because I genuinely mean it as a term of affection and respect, and the fact that it sounds unusual is part of why it captures the feeling so well. The Mossad is Israel's national intelligence agency, founded in 1949, and its reputation rests not on brute force or visible power but on something more unusual: precision, patience, access to information you did not know anyone had, and the ability to act on that information with quiet, confident effectiveness. The Mossad's most celebrated operations, the ones that became part of intelligence folklore, rely on people who had cultivated deep networks over years, who understood not just facts but motivations, relationships, and the invisible human architecture that determines how things actually get done. They worked with context. They worked with nuance. They did not just match patterns. They understood people."
+        }
+        p {
+            "Now, when I say Mossad agents of the professional world, I mean the recruiters, the connectors, the HR professionals who actually paid attention, who read your work, who remembered your name, who could see past an unconventional career path to the actual human capability underneath. They were just people doing their job with enough care to look at you as a person rather than a profile. I saw them as Mossad agents because they seemed to know things about the professional landscape that you did not know yourself. They reached out before you reached out. They had access to opportunities that were never posted publicly. They made introductions that opened doors you did not know existed. They were the human intelligence layer of the professional world, and they operated with the kind of quiet precision that the actual Mossad would have appreciated. And now, as I will argue in this post, they have been progressively replaced by a very different kind of agent, one made of weights and parameters and trained to optimize a score rather than understand a person."
+        }
+        p {
+            "There is something worth noting here about the real history of intelligence and AI, because it mirrors what happened in hiring in ways that are not accidental. The Israeli intelligence community, which includes the Mossad but also the military intelligence corps Unit 8200, has undergone a dramatic transformation over the last decade that is directly relevant to this conversation. Unit 8200, which produced many of Israel's most prominent technology entrepreneurs and is considered one of the elite signals intelligence organizations on Earth, shifted heavily toward algorithmic processing, AI-assisted surveillance, and what Israeli military strategists began calling \"algorithmic warfare.\" "
+            a { href: "#ref-2", "(2)" }
+            "]"
+            a { href: "#ref-3", "(3)" }
+            "]"
+        }
+        p {
+            "The tragedy is not that AI entered these spaces. The tragedy is what it displaced in the process of entering them. Because what it displaced was not inefficiency. What it displaced was judgment. And judgment is not a feature you can recover by adding more parameters to the model."
+        }
+        h2 { id: "the-intelligence-failure-you-were-never-supposed-to-notice",
+            a {
+                href: "#the-intelligence-failure-you-were-never-supposed-to-notice",
+                class: "header",
+                "The Intelligence Failure You Were Never Supposed to Notice"
+            }
+        }
+        p {
+            "There is one event in recent history that made the cost of replacing human intelligence with algorithmic intelligence impossible to deny, and that event is October 7th, 2023. I want to talk about it carefully, because it is not a political argument I am trying to make here, it is a structural one. On that day, Hamas carried out an attack that caught Israeli intelligence, widely considered among the most sophisticated surveillance and intelligence systems on Earth, almost entirely by surprise. "
+            a { href: "#ref-4", "(4)" }
+            "]"
+        }
+        p {
+            "The answer that emerged from serious analysis is relevant to everything I am talking about in this post. The failure was not primarily a failure of technology. Israel had the sensors, the satellites, the SIGINT capability, the algorithmic processing infrastructure. The failure was a failure of human interpretation. It was a failure of the kind of judgment that only comes from the kind of intelligence that no algorithm has ever been able to replicate: the understanding of human intention, social context, and the invisible signals that travel not through digital channels but through relationships, attitudes, and the thousand small behavioral tells that a trained human observer notices and a machine does not. "
+            a { href: "#ref-5", "(5)" }
+            "]"
+            em { "intent" }
+            " versus their "
+            em { "capability" }
+            ". SIGINT and algorithmic analysis are very good at measuring what an adversary can do, but genuinely poor at understanding what an adversary intends to do, especially when the adversary is disciplined enough to operate below the digital radar. "
+            a { href: "#ref-6", "(6)" }
+            "]"
+        }
+        p {
+            "This is the same gap that exists in automated hiring. AI screening systems can measure what a candidate claims to be able to do, but they cannot assess what a candidate actually intends, how they think under pressure, whether they are the kind of person who rises to a challenge or crumbles when the plan falls apart. These things are not in the resume. They are not in the keywords. They are not in the structured data fields that the algorithm can parse. They live in the conversation, in the follow-up, in the story the candidate tells when asked about a project that went wrong. They live in the human layer. And when you remove the human layer and replace it with a scoring system trained on historical patterns, you do not get a faster version of what you had. You get a fundamentally different thing, one that is efficient, yes, but also blind to the most important dimension of what you were trying to evaluate."
+        }
+        p {
+            "The intelligence community is slowly reckoning with this, at great cost. The hiring community has not yet faced a comparable reckoning, but I believe it is coming. And when it does, people will look back at this era the same way analysts look back at the pre-October 7th over-reliance on algorithmic surveillance: not as a winning technology, but as a cautionary tale about what happens when you let systems replace judgment rather than support it."
+        }
+        h2 { id: "the-ats-machine-that-ate-your-future",
+            a {
+                href: "#the-ats-machine-that-ate-your-future",
+                class: "header",
+                "The ATS Machine That Ate Your Future"
+            }
+        }
+        p {
+            "Let me stop being abstract for a moment, because the abstract argument is important but the personal one is what makes it real. I have been on the receiving end of automated rejection. I have sent applications into inboxes that were not inboxes at all but funnels, designed to filter before any human being has the chance to exercise any kind of judgment. I have watched my resume get processed by Applicant Tracking Systems, those algorithmic gatekeepers that every major employer now uses as the primary wall between a candidate and a human conversation, and I have learned exactly what it feels like to be scored by a machine that has no concept of what my actual work means. The score does not care that I built things that worked. It cares whether the words in my resume match the words in the job description with sufficient frequency and in the expected pattern. That is pattern matching dressed up as evaluation, and it is an insult to anyone who has spent years developing real capability."
+        }
+        p {
+            "The research on this is damning, and I want to cite it specifically because I am tired of people treating my frustration as personal failure. A 2021 study commissioned by Harvard Business School and Accenture, titled \"Hidden Workers: Untapped Talent,\" found that millions of highly qualified people are systematically excluded from consideration not because they lack skills but because they fail algorithmic screening criteria that are poorly designed, overly rigid, or trained on historically biased hiring data. "
+            a { href: "#ref-7", "(7)" }
+            "]"
+        }
+        p {
+            "The World Economic Forum's Future of Jobs Report 2025 documents that AI is now directly involved in screening, ranking, and filtering candidates at an industrial scale, and that the adoption rate has accelerated dramatically since 2022. "
+            a { href: "#ref-8", "(8)" }
+            "]"
+            a { href: "#ref-9", "(9)" }
+            "]"
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            ", where I described what it feels like to have your capabilities be invisible to the very systems that are supposed to connect capability with opportunity. What I did not have at the time was the language to name what had changed. Now I do. What changed was the disappearance of the human middle layer. What disappeared were the Mossad agents."
+        }
+        p {
+            "Let me be precise about what the ATS machine actually does, because most people who have not applied for jobs recently do not understand the technical reality. A modern Applicant Tracking System does not read your application. It parses your application. It extracts tokens from your resume, matches them against a database of required keywords derived from the job description, weights them according to recency and frequency and position in the document, and produces a score. If your score falls below a threshold, your application is archived. No human being sees it. No human being makes that decision. The decision is made by a trained model that has never spoken to you, does not know what you meant by what you wrote, and cannot distinguish between someone who listed \"machine learning\" because they read a tutorial last week and someone who has spent three years building production systems. The score is a rank, not a judgment, and a rank without context is just noise pretending to be information."
+        }
+        h2 { id: "what-the-mossad-understood-that-the-machine-never-will",
+            a {
+                href: "#what-the-mossad-understood-that-the-machine-never-will",
+                class: "header",
+                "What The Mossad Understood That The Machine Never Will"
+            }
+        }
+        p {
+            "There is a concept in intelligence tradecraft called HUMINT, Human Intelligence, and it refers specifically to the kind of information that can only be gathered through direct human contact, through relationships, through conversations that go off the record, and through the observation of behavior in unstructured situations. "
+            a { href: "#ref-10", "(10)" }
+            "]"
+        }
+        p {
+            "What the intelligence world learned over decades, at great cost, is that HUMINT and SIGINT, Signals Intelligence, the technical intercept of communications and data, are not substitutes for each other. They serve different functions. SIGINT tells you what is happening in the observable digital world. HUMINT tells you what is happening in the human world beneath the digital one. "
+            a { href: "#ref-11", "(11)" }
+            "]"
+            a { href: "#ref-6", "(6)" }
+            "]"
+        }
+        p {
+            "The parallel to the hiring world is exact. A recruiting process that is purely algorithmic, that depends entirely on ATS scoring and automated screening, sees keywords but misses capability. It sees listed experience but misses demonstrated judgment. It sees pattern matches but misses potential. The research supports this. Studies on AI bias in hiring, including work published by the AI Now Institute, MIT Media Lab, and the EEOC, have documented that automated systems systematically undervalue candidates from underrepresented groups, candidates with non-linear career paths, and candidates whose language usage does not match the dominant patterns of the training data. "
+            a { href: "#ref-12", "(12)" }
+            "]"
+        }
+        p {
+            "What the pre-AI Mossad agent understood, what that human recruiter understood who used to look at your whole story and make a judgment call, was that the most interesting candidates are often the least legible ones. The ones who do not fit the template are frequently the ones who learned to think outside of it, and thinking outside of the template is exactly the skill that most hard problems require. The machine cannot see this, because the machine was trained to reward the template. And so the person who spent three years building something unusual and important, and cannot describe it in five standard keywords, gets filtered out before any human being ever has the chance to ask them to explain their work. That is not efficiency. That is waste dressed up as efficiency, and the difference between the two is a human judgment that a machine cannot make."
+        }
+        h2 { id: "the-quiet-death-of-the-human-middle-layer",
+            a {
+                href: "#the-quiet-death-of-the-human-middle-layer",
+                class: "header",
+                "The Quiet Death of the Human Middle Layer"
+            }
+        }
+        p {
+            "I do not want to romanticize the past. The pre-AI era had its own serious problems. Hiring was unfair. Networking was exclusionary. Doors that should have been open were often locked, and the keys were held by people who distributed them based on familiarity rather than merit. The old system had corruption, nepotism, and structural inequality embedded in it, and the people who lived that reality would be right to remind me that the Mossad agents I am mourning were not always the heroes of everyone's story. Some of them were gatekeepers who kept the wrong gates locked for the wrong reasons. I acknowledge that, and I do not want to pretend otherwise."
+        }
+        p {
+            "But acknowledging the flaws of the old system does not require pretending that the new system is an improvement. It is possible to have had a flawed human layer and to still recognize that the removal of the human layer made things worse, not better, for most people. The flawed human layer could at least be argued with. It could be reasoned with. It could be moved by a compelling story, a strong reference, an unexpected recommendation. It contained within it the possibility of exception, of the judgment call that goes against the statistical mean. The algorithmic layer contains no such possibility. It does not argue. It does not listen. It does not make exceptions. It computes a score, and the score is the answer, and the answer is final in a way that no human judgment has ever been final, because human judgment always carries within it the seed of revision."
+        }
+        p {
+            "The ILO has published research noting that the introduction of AI into hiring does not just affect job quantity but job quality and the qualitative experience of job seeking itself. "
+            a { href: "#ref-13", "(13)" }
+            "]"
+        }
+        p {
+            "I described what this feels like in "
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            ": that specific grief of doing everything right and still having nothing to show for it, of sending your best effort into a void and hearing only static. That grief is partly the grief of an unfair system. But it is also, I now realize, the grief of a system that removed the people who were supposed to translate between what you have and what the world needs. The Mossad agents are gone. And in their place is a score."
+        }
+        h2 { id: "genuine-intelligence-vs-genuine-artificial-intelligence",
+            a {
+                href: "#genuine-intelligence-vs-genuine-artificial-intelligence",
+                class: "header",
+                "Genuine Intelligence vs Genuine Artificial Intelligence"
+            }
+        }
+        p {
+            "I want to connect this to something broader, because everything I write is connected to everything else, and the thread that runs through all of these posts is the same thread. I have argued in "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            " that language models are useful tools trapped inside a symbolic cage, that they can describe the world without understanding it, and that the difference between describing and understanding is not a technical detail but the fundamental distinction between a system that processes patterns and a system that grasps meaning. I have argued in "
+            a { href: "/blogs/genuine-intelligence-will-never-emerge-from-neural-networks",
+                "Genuine Intelligence will Never Emerge from Neural Networks"
+            }
+            " that the architecture of current AI systems is structurally incapable of producing the kind of grounded, embodied, contextual understanding that characterizes real intelligence. I have argued in "
+            a { href: "/blogs/knowledge-and-intelligence-are-mutually-exclusive",
+                "Knowledge and Intelligence Are Mutually Exclusive"
+            }
+            " that storing knowledge is not the same as being able to use it wisely, that wisdom requires something that no training dataset can provide."
+        }
+        p {
+            "The Mossad agents understood all of this intuitively, without needing to articulate it. They understood that a candidate is not their resume. They understood that a profile is not a person. They understood that the most important things about someone's professional capability often cannot be extracted from structured data, because they live in the way the person thinks, the way they respond under pressure, the way they handle being wrong. This is genuine intelligence: the ability to model another human being as a complex, contextual, unpredictable entity rather than as a set of features to be scored. And it is precisely this kind of genuine intelligence that artificial intelligence, despite all its impressive capabilities, has never come close to achieving and cannot achieve within its current architectural paradigm."
+        }
+        p {
+            "What we replaced those Mossad agents with is not even a good imitation of what they could do. We replaced them with a much more rudimentary process, a keyword matching engine that has been dressed up in machine learning language to sound sophisticated. The sophistication is real at the technical level: the models behind modern ATS systems involve genuine deep learning, genuine NLP, genuine optimization over large datasets. But sophistication at the technical level does not translate into capability at the human level. A very sophisticated tool for the wrong job is still the wrong tool. And pattern matching at scale, no matter how technically impressive, is not a substitute for judgment, because the things that matter most in a human being cannot be pattern-matched from the surface."
+        }
+        p {
+            "The research on hallucination in large language models is relevant here, because it exposes a structural truth that applies just as forcefully to the algorithmic filtering of candidates. LLMs hallucinate because they have no access to ground truth. They only have access to statistical patterns in their training data, and those patterns do not contain reality, they contain shadows of reality that humans have already cast into text. "
+            a { href: "#ref-14", "(14)" }
+            "]"
+        }
+        h2 { id: "what-we-have-lost-and-what-it-would-take-to-recover-it",
+            a {
+                href: "#what-we-have-lost-and-what-it-would-take-to-recover-it",
+                class: "header",
+                "What We Have Lost and What It Would Take to Recover It"
+            }
+        }
+        p {
+            "I want to be honest about the difficulty of what I am suggesting here. I am not saying that we should abolish AI in hiring, that we should go back to purely manual processes, that we should pretend that the volume problem does not exist. When a single job posting receives 5000 applications, no team of human recruiters can read 5000 resumes with genuine attention. The volume is real, and some form of filtering is necessary. I understand that. I am not arguing against filtering. I am arguing against the specific way we are doing it now, which is to replace the human judgment layer entirely rather than augment it, and to do so in ways that are systematically unfair to the people who are already most vulnerable."
+        }
+        p {
+            "What would a better system look like? I think it would look like something closer to the original Mossad agent model, where technology handles the genuinely mechanical parts of the process, the scheduling, the logistics, the initial data aggregation, and human judgment handles the qualitatively demanding parts, the ones that require understanding context, interpreting stories, and making the kind of exception that no statistical model can make by definition. The World Economic Forum's research on the future of work emphasizes the importance of what they call \"human-centered AI,\" systems designed to support human decision-making rather than replace it, and that distinction is not a semantic one. "
+            a { href: "#ref-8", "(8)" }
+            "]"
+        }
+        p {
+            "The EEOC in the United States has begun to issue guidance making clear that employers are legally responsible for discrimination caused by their AI screening tools, regardless of whether the discrimination was intentional. "
+            a { href: "#ref-15", "(15)" }
+            "]"
+            a { href: "#ref-16", "(16)" }
+            "]"
+        }
+        p {
+            "The Mossad agents did not give us their talent for free, and neither should we expect the algorithmic descendants to give us discernment for free. Discernment costs something. It costs time, attention, relationship, and the willingness to be surprised by a human being who does not fit the expected pattern. We have decided, as an economy, that those costs are too high. And we are paying for that decision in the currency of invisible people, hidden workers, and an inbox that no longer feels like a place where opportunities live."
+        }
+        h2 { id: "closing-words",
+            a { href: "#closing-words", class: "header", "Closing Words" }
+        }
+        p {
+            "I know how this post sounds to people who have never been on the wrong side of an ATS filter. I know it sounds like sour grapes, like a person who cannot accept that the world has changed, like someone who is simply nostalgic for a world that was imperfect in its own ways. I want to answer that directly. I am not opposed to the world changing. I have written extensively about change, about technology, about the deep transformations that are coming for every industry and every profession, and I have not run away from any of those arguments. I can simultaneously believe that AI will fundamentally reshape the structure of intelligence, as I argued in "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            ", and believe that the way we are currently deploying AI in hiring is causing real harm to real people, and that both of those things are true at the same time."
+        }
+        p {
+            "The Mossad agents of my professional past were not perfect. But they were present. They were in the conversation. They could see me, and when they could not see me clearly, I could speak and they could adjust. That capacity for adjustment, for being reached by a human voice, is what I am mourning. Not the whole system. Not the old inefficiencies. Not the gatekeeping. Just the presence of a person who had enough skin in the game to actually look. The world felt different when I believed that someone was looking. It felt like participation in a shared enterprise rather than submission to a sorting mechanism. And the loss of that feeling is not trivial, no matter how many efficiency metrics say otherwise."
+        }
+        p {
+            "Until then, I will keep thinking about those invisible agents who used to operate in the shadows of the professional world, who knew things you did not know, who made moves you did not expect, who connected the right person to the right opportunity without a training dataset and without a loss function. I miss their precision. I miss their access. I miss their judgment. And I miss, above all, the idea that a person had looked at my work and decided that it mattered. That is not a rejection of progress. That is a defense of the human middle layer. And the human middle layer, I am increasingly convinced, was the most important layer we had."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-1\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "1." }
+            " Industry research on ATS adoption (2024-2025) indicates up to 99% of Fortune 500 companies use automated screening; see also: Joseph B. Fuller, Manjari Raman et al., "
+            em { "Hidden Workers: Untapped Talent" }
+            ", Harvard Business School & Accenture, 2021. "
+            a { href: "https://web.archive.org/web/20230531232840/https://www.hbs.edu/managing-the-future-of-work/Documents/research/hiddenworkers09032021.pdf",
+                "hbs.edu via Internet Archive (PDF)"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-2\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "2." }
+            " IISS (International Institute for Strategic Studies), "
+            em { "The Proliferation of AI-Enabled Military Technology in the Middle East" }
+            ", April 2026. "
+            a { href: "https://www.iiss.org/online-analysis/charting-middle-east/2026/04/the-proliferation-of-ai-enabled-military-technology-in-the-middle-east/",
+                "iiss.org (Online Analysis)"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-3\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "3." }
+            " Calcalist Tech, reporting on Unit 8200 veterans in Israel's AI ecosystem, 2026. "
+            a { href: "https://www.calcalistech.com/ctechnews/article/7ui00iuvr",
+                "calcalistech.com (Article)"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-4\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "4." }
+            " CSIS, Emily Harding et al., "
+            em { "Experts React: Assessing the Israeli Intelligence and Potential Policy Failure" }
+            ", October 25, 2023. "
+            a { href: "https://www.csis.org/analysis/experts-react-assessing-israeli-intelligence-and-potential-policy-failure",
+                "csis.org"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-5\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "5." }
+            " RAND Corporation, "
+            em { "Why Human Intelligence Matters More in an AI World" }
+            ", 2026. "
+            a { href: "https://www.rand.org/pubs/commentary/2026/06/why-human-intelligence-matters-more-in-an-ai-world.html",
+                "rand.org (Commentary)"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-6\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "6." }
+            " Ehud Eiran, "
+            em { "Techno-Digital Vulnerability and Intelligence Failures" }
+            ", "
+            em { "Social Sciences" }
+            " 15(1):37, MDPI, January 2026. "
+            a { href: "https://www.mdpi.com/2076-0760/15/1/37", "mdpi.com (Article)" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-7\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "7." }
+            " Joseph B. Fuller, Manjari Raman et al., "
+            em { "Hidden Workers: Untapped Talent" }
+            ", Harvard Business School & Accenture, 2021. "
+            a { href: "https://web.archive.org/web/20230531232840/https://www.hbs.edu/managing-the-future-of-work/Documents/research/hiddenworkers09032021.pdf",
+                "hbs.edu via Internet Archive (PDF)"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-8\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "8." }
+            " World Economic Forum, "
+            em { "Future of Jobs Report 2025" }
+            ". "
+            a { href: "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+                "weforum.org"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-9\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "9." }
+            " Mauro Cazzaniga, Florence Jaumotte et al., "
+            em { "Gen-AI: Artificial Intelligence and the Future of Work" }
+            ", IMF Staff Discussion Note SDN/2024/001, January 2024. "
+            a { href: "https://www.imf.org/en/publications/staff-discussion-notes/issues/2024/01/14/gen-ai-artificial-intelligence-and-the-future-of-work-542379",
+                "imf.org (Staff Discussion Note)"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-10\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "10." }
+            " Perseus Intelligence, "
+            em { "The Evolution of HUMINT since World War Two" }
+            ", 2024. "
+            a { href: "https://www.perseusintelligence.co.uk/the-evolution-of-humint-since-world-war-two",
+                "perseusintelligence.co.uk (Report)"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-11\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "11." }
+            " Gregory F. Treverton and C. Bryan Gabbard, "
+            em { "Assessing the Tradecraft of Intelligence Analysis" }
+            ", RAND Technical Report TR-293, 2008. "
+            a { href: "https://www.rand.org/content/dam/rand/pubs/technical_reports/2008/RAND_TR293.pdf",
+                "rand.org (PDF)"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-12\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "12." }
+            " Sarah Myers West, Meredith Whittaker & Kate Crawford, "
+            em { "Discriminating Systems: Gender, Race and Power in AI" }
+            ", AI Now Institute, April 2019. "
+            a { href: "https://ainowinstitute.org/wp-content/uploads/2023/04/discriminatingsystems.pdf",
+                "ainowinstitute.org (PDF)"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-13\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "13." }
+            " International Labour Organization, "
+            em {
+                "Generative AI and Jobs: A Global Analysis of Potential Effects on Job Quantity and Quality"
+            }
+            ", Working Paper 96, 2023. "
+            a { href: "https://www.ilo.org/global/publications/working-papers/WCMS_890761/lang--en/index.htm",
+                "ilo.org"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-14\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "14." }
+            " Yue Zhang, Yafu Li, Leyang Cui et al., "
+            em { "Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models" }
+            ", 2023. "
+            a { href: "https://arxiv.org/abs/2309.01219", "arXiv:2309.01219" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-15\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "15." }
+            " U.S. Equal Employment Opportunity Commission (EEOC), "
+            em { "Artificial Intelligence and Algorithmic Fairness Initiative" }
+            ", launched 2021, updated 2023. "
+            a { href: "https://www.eeoc.gov/newsroom/eeoc-launches-initiative-artificial-intelligence-and-algorithmic-fairness",
+                "eeoc.gov (Initiative Launch)"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-16\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "16." }
+            " New York City Local Law 144 on Automated Employment Decision Tools (AEDT), enacted 2021, enforcement began July 5, 2023. "
+            a { href: "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+                "nyc.gov"
+            }
         }
     }
 }
