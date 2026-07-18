@@ -41,3 +41,5 @@
 - [ 20 |---| If You Can't Build AGI, Then Why Should We Hire You? |---| tech |---| if-you-cant-build-agi-then-why-should-we-hire-you |---| May 14 2026 |---| If you can't build AGI, then why should we hire you? |---| assets/images/banner_post_20.webp](if-you-cant-build-agi-then-why-should-we-hire-you.md)
 
 - [ 21 |---| I miss the pre-AI Mossad agents. |---| tech |---| i-miss-the-pre-ai-mossad-agents |---| Jul 16 2026 |---| I miss the pre-AI Mossad agents. |---| assets/images/banner_post_21.webp](i-miss-the-pre-ai-mossad-agents.md)
+
+- [ 22 |---| Intelligence at Rest |---| tech |---| intelligence-at-rest |---| Jul 18 2026 |---| Intelligence at Rest |---| assets/images/banner_post_22.webp](intelligence-at-rest.md)
