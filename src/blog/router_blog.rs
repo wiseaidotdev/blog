@@ -52,6 +52,8 @@ pub enum BookRoute {
     IfYouCantBuildAgiThenWhyShouldWeHireYou {},
     #[route("/i-miss-the-pre-ai-mossad-agents")]
     IMissThePreAiMossadAgents {},
+    #[route("/intelligence-at-rest")]
+    IntelligenceAtRest {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -115,6 +117,7 @@ impl BookRoute {
                 use_mdbook::mdbook_shared::PageId(19usize)
             }
             BookRoute::IMissThePreAiMossadAgents {} => use_mdbook::mdbook_shared::PageId(20usize),
+            BookRoute::IntelligenceAtRest {} => use_mdbook::mdbook_shared::PageId(21usize),
         }
     }
 }
@@ -1678,6 +1681,76 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::IMissThePreAiMossadAgents {},
             ::use_mdbook::mdbook_shared::PageId(20usize),
         );
+        pages
+            .push((
+                21usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 22 |---| Intelligence at Rest |---| tech |---| intelligence-at-rest |---| Jul 18 2026 |---| Intelligence at Rest |---| assets/images/banner_post_22.webp"
+                            .to_string(),
+                        url: BookRoute::IntelligenceAtRest {},
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Motion Is Not Where Intelligence Lives".to_string(),
+                                id: "motion-is-not-where-intelligence-lives".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Rest Actually Means for an Intelligent System"
+                                    .to_string(),
+                                id: "what-rest-actually-means-for-an-intelligent-system"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Deep Parallel Between Data at Rest and Intelligence at Rest"
+                                    .to_string(),
+                                id: "the-deep-parallel-between-data-at-rest-and-intelligence-at-rest"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Compression Is the True Measure of Intelligence"
+                                    .to_string(),
+                                id: "compression-is-the-true-measure-of-intelligence"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why Compact Intelligence Compounds".to_string(),
+                                id: "why-compact-intelligence-compounds".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Memory, Memorization, and the Ethics of What Is Stored"
+                                    .to_string(),
+                                id: "memory,-memorization,-and-the-ethics-of-what-is-stored"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Toward a Civilization That Learns to Rest Well"
+                                    .to_string(),
+                                id: "toward-a-civilization-that-learns-to-rest-well"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(21usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::IntelligenceAtRest {},
+            ::use_mdbook::mdbook_shared::PageId(21usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -1876,6 +1949,15 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         }),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![21u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 22 |---| Intelligence at Rest |---| tech |---| intelligence-at-rest |---| Jul 18 2026 |---| Intelligence at Rest |---| assets/images/banner_post_22.webp"
+                            .to_string(),
+                        location: Some(BookRoute::IntelligenceAtRest {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![22u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -8548,9 +8630,9 @@ pub fn IMissThePreAiMossadAgents() -> dioxus::prelude::Element {
             "Back then, I used to receive messages from recruiters who had clearly done some form of research. They knew roughly what I worked on. They had some sense of whether the role might fit. They were not always right, and they were not always good at what they did, but there was a person behind the message, and that person had made a choice to reach out, which meant something. When a person chooses to reach out, there is accountability inside that choice. They can be wrong, but they can also be convinced. They can misread your profile, but they can also be corrected. They carry the social weight of the message, which means they have a reason to be genuine. That social weight is not a small thing. It is the entire infrastructure of trust that makes professional communication meaningful, and when you remove it, you do not just make communication faster. You hollow it out."
         }
         p {
-            "The inbox I live in now is not that inbox. It is a space that machines write to and machines filter, where your words are processed by systems that have no concept of what you actually meant, no interest in your history, and no memory of your name. As of 2025, research indicates that up to 99% of Fortune 500 companies use automated Applicant Tracking Systems (ATS) as the primary filter through which every candidate application must pass before any human being sees it. "
+            "The inbox I live in now is not that inbox. It is a space that machines write to and machines filter, where your words are processed by systems that have no concept of what you actually meant, no interest in your history, and no memory of your name. As of 2025, research indicates that up to 99% of Fortune 500 companies use automated Applicant Tracking Systems (ATS) as the primary filter through which every candidate application must pass before any human being sees it "
             a { href: "#ref-1", "(1)" }
-            " That is the complete replacement of the first human layer of professional judgment with a system that was trained on historical patterns and cannot, by its own fundamental design, understand context, exception, or nuance."
+            ". That is the complete replacement of the first human layer of professional judgment with a system that was trained on historical patterns and cannot, by its own fundamental design, understand context, exception, or nuance."
         }
         p {
             "And in a strange, roundabout way, it made me realize that I miss what I used to have. I miss the invisible helpers. I miss the ones working behind the scenes in ways I barely understood. I miss, in short, the pre-AI Mossad agents."
@@ -8569,11 +8651,11 @@ pub fn IMissThePreAiMossadAgents() -> dioxus::prelude::Element {
             "Now, when I say Mossad agents of the professional world, I mean the recruiters, the connectors, the HR professionals who actually paid attention, who read your work, who remembered your name, who could see past an unconventional career path to the actual human capability underneath. They were just people doing their job with enough care to look at you as a person rather than a profile. I saw them as Mossad agents because they seemed to know things about the professional landscape that you did not know yourself. They reached out before you reached out. They had access to opportunities that were never posted publicly. They made introductions that opened doors you did not know existed. They were the human intelligence layer of the professional world, and they operated with the kind of quiet precision that the actual Mossad would have appreciated. And now, as I will argue in this post, they have been progressively replaced by a very different kind of agent, one made of weights and parameters and trained to optimize a score rather than understand a person."
         }
         p {
-            "There is something worth noting here about the real history of intelligence and AI, because it mirrors what happened in hiring in ways that are not accidental. The Israeli intelligence community, which includes the Mossad but also the military intelligence corps Unit 8200, has undergone a dramatic transformation over the last decade that is directly relevant to this conversation. Unit 8200, which produced many of Israel's most prominent technology entrepreneurs and is considered one of the elite signals intelligence organizations on Earth, shifted heavily toward algorithmic processing, AI-assisted surveillance, and what Israeli military strategists began calling \"algorithmic warfare.\" "
+            "There is something worth noting here about the real history of intelligence and AI, because it mirrors what happened in hiring in ways that are not accidental. The Israeli intelligence community, which includes the Mossad but also the military intelligence corps Unit 8200, has undergone a dramatic transformation over the last decade that is directly relevant to this conversation. Unit 8200, which produced many of Israel's most prominent technology entrepreneurs and is considered one of the elite signals intelligence organizations on Earth, shifted heavily toward algorithmic processing, AI-assisted surveillance, and what Israeli military strategists began calling \"algorithmic warfare\" "
             a { href: "#ref-2", "(2)" }
-            " The Mossad itself, despite its legendary reputation for human intelligence, or HUMINT in the tradecraft vocabulary, increasingly integrated AI-driven pattern recognition and data fusion into its operations. "
+            ". The Mossad itself, despite its legendary reputation for human intelligence, or HUMINT in the tradecraft vocabulary, increasingly integrated AI-driven pattern recognition and data fusion into its operations "
             a { href: "#ref-3", "(3)" }
-            " In the world of intelligence, this shift was sold as efficiency, capability multiplication, and scale. In the world of hiring, it was sold as the same things. The language is identical. The structural change is identical. And the loss, I will argue, is also identical."
+            ". In the world of intelligence, this shift was sold as efficiency, capability multiplication, and scale. In the world of hiring, it was sold as the same things. The language is identical. The structural change is identical. And the loss, I will argue, is also identical."
         }
         p {
             "The tragedy is not that AI entered these spaces. The tragedy is what it displaced in the process of entering them. Because what it displaced was not inefficiency. What it displaced was judgment. And judgment is not a feature you can recover by adding more parameters to the model."
@@ -8586,19 +8668,20 @@ pub fn IMissThePreAiMossadAgents() -> dioxus::prelude::Element {
             }
         }
         p {
-            "There is one event in recent history that made the cost of replacing human intelligence with algorithmic intelligence impossible to deny, and that event is October 7th, 2023. I want to talk about it carefully, because it is not a political argument I am trying to make here, it is a structural one. On that day, Hamas carried out an attack that caught Israeli intelligence, widely considered among the most sophisticated surveillance and intelligence systems on Earth, almost entirely by surprise. "
+            "There is one event in recent history that made the cost of replacing human intelligence with algorithmic intelligence impossible to deny, and that event is October 7th, 2023. I want to talk about it carefully, because it is not a political argument I am trying to make here, it is a structural one. On that day, Hamas carried out an attack that caught Israeli intelligence, widely considered among the most sophisticated surveillance and intelligence systems on Earth, almost entirely by surprise "
             a { href: "#ref-4", "(4)" }
-            " The question that followed, asked by analysts, intelligence professionals, and researchers across the world, was: how does one of the most technically advanced intelligence operations in the world fail to detect an attack that had been planned openly, physically rehearsed, and communicated through channels that, in retrospect, were not particularly hidden?"
+            ". The question that followed, asked by analysts, intelligence professionals, and researchers across the world, was: how does one of the most technically advanced intelligence operations in the world fail to detect an attack that had been planned openly, physically rehearsed, and communicated through channels that, in retrospect, were not particularly hidden?"
         }
         p {
-            "The answer that emerged from serious analysis is relevant to everything I am talking about in this post. The failure was not primarily a failure of technology. Israel had the sensors, the satellites, the SIGINT capability, the algorithmic processing infrastructure. The failure was a failure of human interpretation. It was a failure of the kind of judgment that only comes from the kind of intelligence that no algorithm has ever been able to replicate: the understanding of human intention, social context, and the invisible signals that travel not through digital channels but through relationships, attitudes, and the thousand small behavioral tells that a trained human observer notices and a machine does not. "
+            "The answer that emerged from serious analysis is relevant to everything I am talking about in this post. The failure was not primarily a failure of technology. Israel had the sensors, the satellites, the SIGINT capability, the algorithmic processing infrastructure. The failure was a failure of human interpretation. It was a failure of the kind of judgment that only comes from the kind of intelligence that no algorithm has ever been able to replicate: the understanding of human intention, social context, and the invisible signals that travel not through digital channels but through relationships, attitudes, and the thousand small behavioral tells that a trained human observer notices and a machine does not "
             a { href: "#ref-5", "(5)" }
-            " Intelligence analysts frequently assess threats by evaluating an adversary's "
+            ". Intelligence analysts frequently assess threats by evaluating an adversary's "
             em { "intent" }
             " versus their "
             em { "capability" }
-            ". SIGINT and algorithmic analysis are very good at measuring what an adversary can do, but genuinely poor at understanding what an adversary intends to do, especially when the adversary is disciplined enough to operate below the digital radar. "
+            ". SIGINT and algorithmic analysis are very good at measuring what an adversary can do, but genuinely poor at understanding what an adversary intends to do, especially when the adversary is disciplined enough to operate below the digital radar "
             a { href: "#ref-6", "(6)" }
+            "."
         }
         p {
             "This is the same gap that exists in automated hiring. AI screening systems can measure what a candidate claims to be able to do, but they cannot assess what a candidate actually intends, how they think under pressure, whether they are the kind of person who rises to a challenge or crumbles when the plan falls apart. These things are not in the resume. They are not in the keywords. They are not in the structured data fields that the algorithm can parse. They live in the conversation, in the follow-up, in the story the candidate tells when asked about a project that went wrong. They live in the human layer. And when you remove the human layer and replace it with a scoring system trained on historical patterns, you do not get a faster version of what you had. You get a fundamentally different thing, one that is efficient, yes, but also blind to the most important dimension of what you were trying to evaluate."
@@ -8617,16 +8700,16 @@ pub fn IMissThePreAiMossadAgents() -> dioxus::prelude::Element {
             "Let me stop being abstract for a moment, because the abstract argument is important but the personal one is what makes it real. I have been on the receiving end of automated rejection. I have sent applications into inboxes that were not inboxes at all but funnels, designed to filter before any human being has the chance to exercise any kind of judgment. I have watched my resume get processed by Applicant Tracking Systems, those algorithmic gatekeepers that every major employer now uses as the primary wall between a candidate and a human conversation, and I have learned exactly what it feels like to be scored by a machine that has no concept of what my actual work means. The score does not care that I built things that worked. It cares whether the words in my resume match the words in the job description with sufficient frequency and in the expected pattern. That is pattern matching dressed up as evaluation, and it is an insult to anyone who has spent years developing real capability."
         }
         p {
-            "The research on this is damning, and I want to cite it specifically because I am tired of people treating my frustration as personal failure. A 2021 study commissioned by Harvard Business School and Accenture, titled \"Hidden Workers: Untapped Talent,\" found that millions of highly qualified people are systematically excluded from consideration not because they lack skills but because they fail algorithmic screening criteria that are poorly designed, overly rigid, or trained on historically biased hiring data. "
+            "The research on this is damning, and I want to cite it specifically because I am tired of people treating my frustration as personal failure. A 2021 study commissioned by Harvard Business School and Accenture, titled \"Hidden Workers: Untapped Talent,\" found that millions of highly qualified people are systematically excluded from consideration not because they lack skills but because they fail algorithmic screening criteria that are poorly designed, overly rigid, or trained on historically biased hiring data "
             a { href: "#ref-7", "(7)" }
-            " The study coined the phrase \"hidden workers\" to describe this large, invisible population of skilled people who exist in the labor market but are algorithmically invisible because their profiles do not fit the expected template. Former Army veterans who cannot translate their experience into civilian resume language. Caregivers who have employment gaps. People who changed fields. People with non-standard educational backgrounds. People, and I want to be very specific here, like me."
+            ". The study coined the phrase \"hidden workers\" to describe this large, invisible population of skilled people who exist in the labor market but are algorithmically invisible because their profiles do not fit the expected template. Former Army veterans who cannot translate their experience into civilian resume language. Caregivers who have employment gaps. People who changed fields. People with non-standard educational backgrounds. People, and I want to be very specific here, like me."
         }
         p {
-            "The World Economic Forum's Future of Jobs Report 2025 documents that AI is now directly involved in screening, ranking, and filtering candidates at an industrial scale, and that the adoption rate has accelerated dramatically since 2022. "
+            "The World Economic Forum's Future of Jobs Report 2025 documents that AI is now directly involved in screening, ranking, and filtering candidates at an industrial scale, and that the adoption rate has accelerated dramatically since 2022 "
             a { href: "#ref-8", "(8)" }
-            " The IMF has noted that roughly forty percent of global employment is exposed to AI displacement or transformation, and that the most vulnerable are often those in skilled but non-credentialed roles, those who built their expertise through practice rather than formal pathways. "
+            ". The IMF has noted that roughly forty percent of global employment is exposed to AI displacement or transformation, and that the most vulnerable are often those in skilled but non-credentialed roles, those who built their expertise through practice rather than formal pathways "
             a { href: "#ref-9", "(9)" }
-            " I wrote about this vulnerability in "
+            ". I wrote about this vulnerability in "
             a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
                 "An Empty Life Filled With Constant Suffering"
             }
@@ -8643,20 +8726,21 @@ pub fn IMissThePreAiMossadAgents() -> dioxus::prelude::Element {
             }
         }
         p {
-            "There is a concept in intelligence tradecraft called HUMINT, Human Intelligence, and it refers specifically to the kind of information that can only be gathered through direct human contact, through relationships, through conversations that go off the record, and through the observation of behavior in unstructured situations. "
+            "There is a concept in intelligence tradecraft called HUMINT, Human Intelligence, and it refers specifically to the kind of information that can only be gathered through direct human contact, through relationships, through conversations that go off the record, and through the observation of behavior in unstructured situations "
             a { href: "#ref-10", "(10)" }
-            " The Mossad's historical effectiveness as an intelligence organization was built on an exceptionally well-developed HUMINT capability, on the ability to cultivate sources across different cultures and contexts, to assess human motivation with precision, and to make judgment calls in real time that no algorithm, then or now, could replicate. The legendary operations that made Mossad famous, from tracking down Nazi war criminals to dismantling weapons programs in hostile states, were achieved not by processing more data but by understanding more people."
+            ". The Mossad's historical effectiveness as an intelligence organization was built on an exceptionally well-developed HUMINT capability, on the ability to cultivate sources across different cultures and contexts, to assess human motivation with precision, and to make judgment calls in real time that no algorithm, then or now, could replicate. The legendary operations that made Mossad famous, from tracking down Nazi war criminals to dismantling weapons programs in hostile states, were achieved not by processing more data but by understanding more people."
         }
         p {
-            "What the intelligence world learned over decades, at great cost, is that HUMINT and SIGINT, Signals Intelligence, the technical intercept of communications and data, are not substitutes for each other. They serve different functions. SIGINT tells you what is happening in the observable digital world. HUMINT tells you what is happening in the human world beneath the digital one. "
+            "What the intelligence world learned over decades, at great cost, is that HUMINT and SIGINT, Signals Intelligence, the technical intercept of communications and data, are not substitutes for each other. They serve different functions. SIGINT tells you what is happening in the observable digital world. HUMINT tells you what is happening in the human world beneath the digital one "
             a { href: "#ref-11", "(11)" }
-            " A purely SIGINT-dependent operation sees patterns but misses motivation. It sees movement but misses intent. It sees capability but misses will. The research on this published in academic intelligence journals consistently shows that the most serious intelligence failures, including the one on October 7th, are failures of HUMINT capacity, not of technological capability. Organizations that invested heavily in algorithmic surveillance while deprioritizing the cultivation of human sources found themselves with vast amounts of data and a poverty of understanding. "
+            ". A purely SIGINT-dependent operation sees patterns but misses motivation. It sees movement but misses intent. It sees capability but misses will. The research on this published in academic intelligence journals consistently shows that the most serious intelligence failures, including the one on October 7th, are failures of HUMINT capacity, not of technological capability. Organizations that invested heavily in algorithmic surveillance while deprioritizing the cultivation of human sources found themselves with vast amounts of data and a poverty of understanding "
             a { href: "#ref-6", "(6)" }
+            "."
         }
         p {
-            "The parallel to the hiring world is exact. A recruiting process that is purely algorithmic, that depends entirely on ATS scoring and automated screening, sees keywords but misses capability. It sees listed experience but misses demonstrated judgment. It sees pattern matches but misses potential. The research supports this. Studies on AI bias in hiring, including work published by the AI Now Institute, MIT Media Lab, and the EEOC, have documented that automated systems systematically undervalue candidates from underrepresented groups, candidates with non-linear career paths, and candidates whose language usage does not match the dominant patterns of the training data. "
+            "The parallel to the hiring world is exact. A recruiting process that is purely algorithmic, that depends entirely on ATS scoring and automated screening, sees keywords but misses capability. It sees listed experience but misses demonstrated judgment. It sees pattern matches but misses potential. The research supports this. Studies on AI bias in hiring, including work published by the AI Now Institute, MIT Media Lab, and the EEOC, have documented that automated systems systematically undervalue candidates from underrepresented groups, candidates with non-linear career paths, and candidates whose language usage does not match the dominant patterns of the training data "
             a { href: "#ref-12", "(12)" }
-            " The system is not finding the best candidates. It is finding the most algorithmically legible candidates, and those are not the same group."
+            ". The system is not finding the best candidates. It is finding the most algorithmically legible candidates, and those are not the same group."
         }
         p {
             "What the pre-AI Mossad agent understood, what that human recruiter understood who used to look at your whole story and make a judgment call, was that the most interesting candidates are often the least legible ones. The ones who do not fit the template are frequently the ones who learned to think outside of it, and thinking outside of the template is exactly the skill that most hard problems require. The machine cannot see this, because the machine was trained to reward the template. And so the person who spent three years building something unusual and important, and cannot describe it in five standard keywords, gets filtered out before any human being ever has the chance to ask them to explain their work. That is not efficiency. That is waste dressed up as efficiency, and the difference between the two is a human judgment that a machine cannot make."
@@ -8675,9 +8759,9 @@ pub fn IMissThePreAiMossadAgents() -> dioxus::prelude::Element {
             "But acknowledging the flaws of the old system does not require pretending that the new system is an improvement. It is possible to have had a flawed human layer and to still recognize that the removal of the human layer made things worse, not better, for most people. The flawed human layer could at least be argued with. It could be reasoned with. It could be moved by a compelling story, a strong reference, an unexpected recommendation. It contained within it the possibility of exception, of the judgment call that goes against the statistical mean. The algorithmic layer contains no such possibility. It does not argue. It does not listen. It does not make exceptions. It computes a score, and the score is the answer, and the answer is final in a way that no human judgment has ever been final, because human judgment always carries within it the seed of revision."
         }
         p {
-            "The ILO has published research noting that the introduction of AI into hiring does not just affect job quantity but job quality and the qualitative experience of job seeking itself. "
+            "The ILO has published research noting that the introduction of AI into hiring does not just affect job quantity but job quality and the qualitative experience of job seeking itself "
             a { href: "#ref-13", "(13)" }
-            " What this means in practice is that the process of looking for work has become a fundamentally more dehumanizing experience than it used to be. Not because there are fewer jobs, necessarily, but because the experience of applying for them now involves mostly interacting with systems that do not see you. This is a deep harm that is difficult to quantify but that everyone who has lived it knows viscerally. There is a particular kind of exhaustion that comes not from trying and failing but from trying and not even being seen. The automated rejection is not a rejection. It is a non-event. The system did not reject you in any meaningful sense. It just never processed you as a human being in the first place."
+            ". What this means in practice is that the process of looking for work has become a fundamentally more dehumanizing experience than it used to be. Not because there are fewer jobs, necessarily, but because the experience of applying for them now involves mostly interacting with systems that do not see you. This is a deep harm that is difficult to quantify but that everyone who has lived it knows viscerally. There is a particular kind of exhaustion that comes not from trying and failing but from trying and not even being seen. The automated rejection is not a rejection. It is a non-event. The system did not reject you in any meaningful sense. It just never processed you as a human being in the first place."
         }
         p {
             "I described what this feels like in "
@@ -8715,9 +8799,9 @@ pub fn IMissThePreAiMossadAgents() -> dioxus::prelude::Element {
             "What we replaced those Mossad agents with is not even a good imitation of what they could do. We replaced them with a much more rudimentary process, a keyword matching engine that has been dressed up in machine learning language to sound sophisticated. The sophistication is real at the technical level: the models behind modern ATS systems involve genuine deep learning, genuine NLP, genuine optimization over large datasets. But sophistication at the technical level does not translate into capability at the human level. A very sophisticated tool for the wrong job is still the wrong tool. And pattern matching at scale, no matter how technically impressive, is not a substitute for judgment, because the things that matter most in a human being cannot be pattern-matched from the surface."
         }
         p {
-            "The research on hallucination in large language models is relevant here, because it exposes a structural truth that applies just as forcefully to the algorithmic filtering of candidates. LLMs hallucinate because they have no access to ground truth. They only have access to statistical patterns in their training data, and those patterns do not contain reality, they contain shadows of reality that humans have already cast into text. "
+            "The research on hallucination in large language models is relevant here, because it exposes a structural truth that applies just as forcefully to the algorithmic filtering of candidates. LLMs hallucinate because they have no access to ground truth. They only have access to statistical patterns in their training data, and those patterns do not contain reality, they contain shadows of reality that humans have already cast into text "
             a { href: "#ref-14", "(14)" }
-            " Automated screening systems are built on the same foundation. They have access to statistical patterns in historical hiring data, and those patterns do not contain the ground truth of who is a good candidate. They contain the shadow of past hiring decisions, which were made by humans who had their own biases, their own limited perspectives, and their own structural inequalities. Training a system to reproduce those patterns does not fix the biases. It scales them. And scaling a bias is not the same as neutralizing it. It is the same as industrializing it."
+            ". Automated screening systems are built on the same foundation. They have access to statistical patterns in historical hiring data, and those patterns do not contain the ground truth of who is a good candidate. They contain the shadow of past hiring decisions, which were made by humans who had their own biases, their own limited perspectives, and their own structural inequalities. Training a system to reproduce those patterns does not fix the biases. It scales them. And scaling a bias is not the same as neutralizing it. It is the same as industrializing it."
         }
         h2 { id: "what-we-have-lost-and-what-it-would-take-to-recover-it",
             a {
@@ -8730,16 +8814,16 @@ pub fn IMissThePreAiMossadAgents() -> dioxus::prelude::Element {
             "I want to be honest about the difficulty of what I am suggesting here. I am not saying that we should abolish AI in hiring, that we should go back to purely manual processes, that we should pretend that the volume problem does not exist. When a single job posting receives 5000 applications, no team of human recruiters can read 5000 resumes with genuine attention. The volume is real, and some form of filtering is necessary. I understand that. I am not arguing against filtering. I am arguing against the specific way we are doing it now, which is to replace the human judgment layer entirely rather than augment it, and to do so in ways that are systematically unfair to the people who are already most vulnerable."
         }
         p {
-            "What would a better system look like? I think it would look like something closer to the original Mossad agent model, where technology handles the genuinely mechanical parts of the process, the scheduling, the logistics, the initial data aggregation, and human judgment handles the qualitatively demanding parts, the ones that require understanding context, interpreting stories, and making the kind of exception that no statistical model can make by definition. The World Economic Forum's research on the future of work emphasizes the importance of what they call \"human-centered AI,\" systems designed to support human decision-making rather than replace it, and that distinction is not a semantic one. "
+            "What would a better system look like? I think it would look like something closer to the original Mossad agent model, where technology handles the genuinely mechanical parts of the process, the scheduling, the logistics, the initial data aggregation, and human judgment handles the qualitatively demanding parts, the ones that require understanding context, interpreting stories, and making the kind of exception that no statistical model can make by definition. The World Economic Forum's research on the future of work emphasizes the importance of what they call \"human-centered AI,\" systems designed to support human decision-making rather than replace it, and that distinction is not a semantic one "
             a { href: "#ref-8", "(8)" }
-            " It describes a fundamentally different relationship between machine and human, one where the machine handles volume and the human handles judgment, rather than one where the machine handles everything and the human is removed from the loop entirely."
+            ". It describes a fundamentally different relationship between machine and human, one where the machine handles volume and the human handles judgment, rather than one where the machine handles everything and the human is removed from the loop entirely."
         }
         p {
-            "The EEOC in the United States has begun to issue guidance making clear that employers are legally responsible for discrimination caused by their AI screening tools, regardless of whether the discrimination was intentional. "
+            "The EEOC in the United States has begun to issue guidance making clear that employers are legally responsible for discrimination caused by their AI screening tools, regardless of whether the discrimination was intentional "
             a { href: "#ref-15", "(15)" }
-            " New York City Local Law 144, passed in 2021 and implemented in 2023, requires employers to conduct annual independent bias audits of any AI tools used in hiring and to notify candidates when such tools are used. "
+            ". New York City Local Law 144, passed in 2021 and implemented in 2023, requires employers to conduct annual independent bias audits of any AI tools used in hiring and to notify candidates when such tools are used "
             a { href: "#ref-16", "(16)" }
-            " These regulatory moves are important, but they are also insufficient, because they address the symptoms of the problem, the discriminatory outcomes, without addressing the structural cause, which is the complete removal of human judgment from the first and most consequential layer of the hiring process."
+            ". These regulatory moves are important, but they are also insufficient, because they address the symptoms of the problem, the discriminatory outcomes, without addressing the structural cause, which is the complete removal of human judgment from the first and most consequential layer of the hiring process."
         }
         p {
             "The Mossad agents did not give us their talent for free, and neither should we expect the algorithmic descendants to give us discernment for free. Discernment costs something. It costs time, attention, relationship, and the willingness to be surprised by a human being who does not fit the expected pattern. We have decided, as an economy, that those costs are too high. And we are paying for that decision in the currency of invisible people, hidden workers, and an inbox that no longer feels like a place where opportunities live."
@@ -8983,6 +9067,393 @@ pub fn IMissThePreAiMossadAgents() -> dioxus::prelude::Element {
             a { href: "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
                 "nyc.gov"
             }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn IntelligenceAtRest() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "There is a question that has been embedded in everything I have written here, hiding underneath the arguments about language models and hiring algorithms and the machinery of modern tech, and I have never stated it plainly until now. Not because I was avoiding it, but because I did not have the right words for it. The question is this: what is intelligence when it is not doing anything? Not when it is generating text, not when it is scoring a resume, not when it is answering a question, but when it is sitting completely still inside a system, as weights in a file on a server somewhere, or as knowledge inside a mind that is asleep. What shape does intelligence take at rest? And does the quality of that resting form determine everything else that follows when the system finally wakes up and moves? I think it does, and I think the reason almost no one talks about this is that rest is invisible, and we are a field obsessed with what is visible."
+        }
+        p {
+            "I realize I have been circling this idea for a while without naming it. When I wrote about "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "language models being trapped in a symbolic cage"
+            }
+            ", the underlying frustration was that their resting structure is too shallow to support genuine understanding, that the motion looks impressive while the substance underneath it is thin. When I wrote about "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "equations being the most compressed representation of reality"
+            }
+            ", I was really writing about what good intelligence looks like at rest, compact enough to transmit, rich enough to generate everything downstream. Even my post about "
+            a { href: "/blogs/i-miss-the-pre-ai-mossad-agents", "the pre-AI Mossad agents" }
+            " was, at its core, about this: what those human recruiters had was a resting structure of judgment that an ATS score does not and cannot replicate, not because the algorithm is slow, but because it never built the right thing in the first place. This post is where I stop circling and land on the idea directly."
+        }
+        h2 { id: "motion-is-not-where-intelligence-lives",
+            a {
+                href: "#motion-is-not-where-intelligence-lives",
+                class: "header",
+                "Motion Is Not Where Intelligence Lives"
+            }
+        }
+        p {
+            "Everything about the way we talk about AI is framed around motion. The model generates. The model predicts. The model responds. The model reasons. Every benchmark, every demo, every launch announcement, every breathless 𝕏eet from a founder who thinks they just built AGI is about what the system does when it moves. We measure tokens per second. We measure latency. We measure how fast the model can produce an output given a prompt. We celebrate fluency, which is a property of language in motion, and we celebrate responsiveness, which is a property of systems under load. The entire discourse is built around the assumption that intelligence is fundamentally about action, about the visible production of something that looks like thought. I want to argue that this assumption is wrong, that it is not just partially wrong but structurally wrong, and that it has led the entire field down a path that optimizes for the wrong thing at enormous cost."
+        }
+        p {
+            "Think about what a trained neural network actually is, not when it is running inference, not when it is generating text or classifying images or predicting the next move in a chess game, but right now, at this moment, sitting as a file on some server somewhere. It is weights. It is numbers. It is a tensor of floating-point values that encodes, in some compressed and distributed form, everything the system learned during training. Nothing is moving. No output is being produced. No computation is running. The system is completely still. And yet something is clearly in there. Something is stored. Something has been compressed into that tensor that makes this particular set of weights more valuable than a random initialization, more capable than the system was before training, more able to do useful things when it does eventually run. That something is what I am calling intelligence at rest. And the fact that it is sitting there, invisible and silent and motionless, does not make it less real. It makes it more important, because the motion is only the surface, and the resting structure is the substance underneath."
+        }
+        p {
+            "This distinction matters because we keep making the same mistake in different contexts. We measure intelligence by its outputs. We evaluate AI by the quality of what it generates. We judge models by benchmark performance, which is a measure of what the system does, not what the system is. But what the system is, that deep structure of latent capability sitting inside the weights, is what determines what it can do across all possible inputs, including inputs it has never seen before. A model that has genuinely learned the statistical structure of a domain will generalize to new inputs in that domain. A model that has memorized its training data will fail on inputs that fall outside the distribution it was shown. You cannot tell the difference by looking at a single output. You can only start to see it when you look at the resting structure, when you ask what is actually encoded in those weights, how much genuine compression is there versus how much raw storage of surface patterns. The resting form of the intelligence is where the real quality lives, and we are almost completely ignoring it."
+        }
+        p {
+            "I also think this framing helps us understand something about the current moment that is very hard to articulate otherwise. We are surrounded by AI systems that move constantly, that produce output at industrial scale, that generate text and code and images and audio faster than any human can evaluate them. And yet, despite all this motion, the feeling that something important is missing has not gone away. It has gotten louder. That feeling is, I think, a signal about the gap between intelligence in motion and intelligence at rest. The motion is impressive. The generation is fast. The outputs are often useful. But the resting structure underneath the generation is, in most current systems, shallow in a way that the motion can sometimes hide. When the system talks about something it has genuinely compressed into its latent space, the outputs feel real. When it is confabulating, pattern-matching on surface features, generating plausible text without any underlying structure, the outputs feel hollow even when they are grammatically perfect. That hollow feeling is the absence of deep resting intelligence, and it is something that can only be fixed at the level of the resting structure, not at the level of the output generator."
+        }
+        p {
+            "I want to be honest about my own experience here, because I have always tried to be honest in these posts, and this idea did not come to me from reading papers. It came from something much more personal. When I was going through the worst of what I described in "
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            ", I kept asking myself why my effort was not translating into progress. I was applying constantly. I was producing work. I was generating output. And nothing was happening. What I eventually realized was that the problem was not the motion. The motion was real and the effort was real. The problem was that I had not yet built the kind of resting structure that could survive contact with a system designed to filter on surface signals. Intelligence in motion without a deep resting foundation is like a river with no riverbed. The water moves, but it does not go anywhere coherent. The resting structure is what gives the motion direction, and without direction, motion is just energy being spent."
+        }
+        p {
+            "The field of AI has a similar problem, and I do not think it is a coincidence that the problem shows up in the same way. There is a great deal of motion. There is a great deal of generation. There is a great deal of output. But the resting structures underneath that motion are, in many cases, very much shallower than the outputs suggest. The confabulation is real. The hallucination is real. The fragility under distribution shift is real. These are all symptoms of a system where the motion is more sophisticated than the resting structure that generates it, where the surface has developed faster than the substance. And the way you fix that is not by making the motion faster or smoother or more impressive. You fix it by going deeper into the resting structure, into the compressed representation of what the system has actually learned, and asking whether that structure is the right shape to support the motion you want to produce."
+        }
+        h2 { id: "what-rest-actually-means-for-an-intelligent-system",
+            a {
+                href: "#what-rest-actually-means-for-an-intelligent-system",
+                class: "header",
+                "What Rest Actually Means for an Intelligent System"
+            }
+        }
+        p {
+            "When I use the phrase \"intelligence at rest\", I am making a claim that is simultaneously intuitive and technical, and I want to be precise about both dimensions before the arguments get complicated. Intuitively, intelligence at rest is the intelligence that a system possesses before it acts, the capability that exists in the structure of the system independently of whether that structure is currently being activated. More technically, intelligence at rest is the useful compression of patterns, regularities, decision boundaries, and causal structures that a system has encoded into its parameters through training, and that determine what the system will do when it eventually receives an input. This is related to, but distinct from, the concept of knowledge. Knowledge is what is stored. Intelligence at rest is the quality and organization of what is stored, the degree to which the stored structure genuinely captures the underlying regularities of the domain rather than just the surface appearances of the training data."
+        }
+        p {
+            "This distinction is important because knowledge and intelligence are not the same thing, as I argued at length in "
+            a { href: "/blogs/knowledge-and-intelligence-are-mutually-exclusive",
+                "Knowledge and Intelligence are Mutually Exclusive"
+            }
+            ". A system can store an enormous amount of information and still be unintelligent in the sense that matters most, which is the ability to deploy that information effectively on problems it has not seen before. The resting structure of an intelligent system is not just a warehouse of facts. It is a compressed representation of how the domain works, a model of the regularities that generate the facts, so that the system can handle new instances of the pattern without having memorized them specifically. That is the difference between a system that has compressed the domain and a system that has memorized the data, and it is exactly the difference that matters for generalization. Compression produces intelligence. Memorization produces recall. And the two are not the same thing even when their surface outputs look identical on a benchmark."
+        }
+        p {
+            "The information bottleneck principle, introduced by Tishby and colleagues, is the clearest rigorous statement of this idea that I have found in the literature "
+            a { href: "#ref-1", "(1)" }
+            ". The principle says that a learning system should be thought of as finding a compressed representation of its input that still preserves the information relevant to predicting the output. A system that compresses too little retains noise along with signal, overfit to the specific training examples, and generalizes poorly. A system that compresses too much loses signal along with noise, underfit to the task, and also generalizes poorly. The sweet spot is a representation that is as compact as possible while still preserving the task-relevant structure. That sweet spot is intelligence at rest. It is the most compressed form of the system's understanding of the domain that still supports the behavior the system is designed to produce. And finding that sweet spot is, in a deep sense, what learning is actually for."
+        }
+        p {
+            "I also want to connect this to the minimum description length principle, because it makes the same argument in a slightly different language that I find very clarifying "
+            a { href: "#ref-2", "(2)" }
+            ". MDL says that the best model of the data is the one that produces the shortest combined description of the model and the data given the model. A model that is too simple will require a long description of the residual errors. A model that is too complex will require a long description of itself. The minimum is achieved by a model that is just complex enough to capture the real structure of the data, and no more. That minimum-description-length model is the most efficient resting intelligence you can build for a given domain. It is not the system with the most parameters. It is the system with the most meaningful parameters. And meaningful parameters are exactly what intelligence at rest consists of, parameters that encode genuine structure rather than memorized surface patterns."
+        }
+        p {
+            "The practical implication of this is something the field has been circling for years without quite landing on it. The quality of a model's resting intelligence is not determined by how large it is. It is determined by how efficiently its structure encodes the domain it was trained on. A small model that has genuinely compressed the regularities of a domain can outperform a large model that has mostly memorized its training data, especially on inputs outside the training distribution. This is the empirical finding behind knowledge distillation, where researchers have shown repeatedly that a smaller student model can achieve performance comparable to a much larger teacher model by learning from the soft probability distributions the teacher assigns to classes rather than from hard labels "
+            a { href: "#ref-3", "(3)" }
+            ". Those soft distributions contain more information about the teacher's internal structure than hard labels do, and the student inherits more of the teacher's resting intelligence by learning from them. The size decreases. The quality of the resting structure is preserved. That is the clearest possible demonstration that intelligence at rest is a property of organization, not of scale."
+        }
+        p {
+            "I also find it useful to think about what happens when intelligence at rest fails, because the failure modes are very revealing. When a system hallucinates, it is producing motion that is not supported by genuine resting structure. The system has learned to produce text that looks like a description of a fact without having genuinely compressed the factual domain into its parameters. The motion is fluent but the rest is hollow, and the hallucination is the artifact of that mismatch. When a system fails dramatically on a distribution shift, it is because the resting structure it developed was shaped by the specific appearance of its training data rather than by the underlying regularities that generate that data, and when the appearance changes, the structure that depended on it collapses. When a system is confidently wrong about a question that falls just outside its training distribution, it is because the resting structure was organized around the surface statistics of the training set rather than around the causal generative model that produced the training set. Every major failure mode of current AI systems is an intelligence-at-rest problem. More motion will not fix them. Only better resting structure will."
+        }
+        p {
+            "I want to close this section by saying something that I think is important for people who are frustrated by AI, which is a lot of people right now, including myself in many moments. The frustration is not irrational, and it is not misplaced, and it is not just about bad outputs. The frustration is a signal that the system's resting structure is not deep enough to support the motion it is producing, and that the surface has outrun the substance. That is a correctible problem, but it requires the field to stop optimizing for the motion and start optimizing for the rest. It requires building systems that compress more genuinely, that memorize less and abstract more, that develop resting structures rich enough to support the kind of generalization that makes intelligence actually useful. That is the direction the field needs to go, and the fact that it is not the direction most people are talking about does not make it less true."
+        }
+        h2 { id: "the-deep-parallel-between-data-at-rest-and-intelligence-at-rest",
+            a {
+                href: "#the-deep-parallel-between-data-at-rest-and-intelligence-at-rest",
+                class: "header",
+                "The Deep Parallel Between Data at Rest and Intelligence at Rest"
+            }
+        }
+        p {
+            "There is a concept in information security and data engineering that most AI researchers never think about, because they work at a different layer of the stack. That concept is data at rest, and it refers to stored data that is idle, not being transmitted, not being processed, just sitting in a database, a file system, a backup drive, or a cloud bucket. The reason data at rest gets special attention in security is that stored data is uniquely vulnerable in specific ways. It can be stolen, copied, corrupted, encrypted by ransomware, exposed by misconfiguration, or lost along with the physical medium that holds it. NIST cybersecurity standards are explicit that data at rest requires protection through encryption, access control, and integrity monitoring precisely because the storage state is where data is most often compromised "
+            a { href: "#ref-4", "(4)" }
+            ". That protection imperative is not incidental. It reflects a deep truth about the relationship between storage, value, and vulnerability: the more valuable something is, the more consequential it is that it rests somewhere, and the resting place is where it is most exposed."
+        }
+        p {
+            "The parallel to intelligence at rest is exact enough to be useful and specific enough to reveal real engineering implications. A trained model's parameters are the AI equivalent of data at rest. They sit in storage between inference runs. They are transmitted between systems when the model is deployed. They are backed up in checkpoints during training. They are exposed to the environment in all the ways that stored data is exposed, through physical media, through network transmission, through access control policies, through the possibilities of tampering and theft and disclosure. And just as with data at rest, the value of what is stored is not proportional to its size. A small file containing a private key is worth more than a large file containing garbage. A small model that has genuinely compressed a domain into its parameters is worth more than a large model that has mostly memorized its training data. The quality of the resting structure determines the value, and the resting state is where that value must be protected."
+        }
+        p {
+            "But the parallel goes deeper than security. It goes into the fundamental question of what compression achieves in both domains. In data engineering, the goal of compression is to represent the same information in a smaller space without losing the ability to recover the original content. In intelligence, the goal of compression is to represent the generative structure of a domain in a compact representational space without losing the ability to predict new instances of the domain. These are not the same thing, but they are related at a deep level, because both are asking how much content can be preserved in how little space, and both are measuring the quality of the compression by how faithfully the stored form supports the original purpose. Lossless data compression recovers every bit. Good intelligence compression recovers every generalization. Lossy data compression accepts some degradation for size benefits. Shallow intelligence compression accepts some generalization failures for parameter efficiency. The entire vocabulary of compression naturally transfers between the two domains, and that transfer is not metaphorical. It reveals that both domains are instances of the same underlying problem: how to make valuable structure durable."
+        }
+        p {
+            "There is also a privacy dimension to this parallel that I think is underappreciated in both fields, and that connects directly to the memorization research I mentioned earlier. Research by Carlini and colleagues has demonstrated that it is possible to extract verbatim training examples from large language models through carefully crafted prompts, a phenomenon they call training data extraction "
+            a { href: "#ref-5", "(5)" }
+            ". This is the exact AI equivalent of what happens when sensitive data is stored without encryption and then accessed by an unauthorized party. In both cases, the resting structure contains more than it was supposed to contain. The data at rest was supposed to contain business information, not personal secrets, but because the storage was not properly controlled, the personal secrets are in there too. The model at rest was supposed to contain generalized knowledge, not memorized training examples, but because the training was not properly regularized, the training examples are in there too. In both cases, the resting state has absorbed material that should have been excluded, and that material can be recovered by someone who knows how to look. This is not a peripheral observation. It is a core challenge for both data governance and AI governance, and it arises from the same structural fact: rest is where content accumulates, and content that accumulates without discipline can leak in ways that are hard to detect and harder to reverse."
+        }
+        p {
+            "The analogy also illuminates something about model ownership and intellectual property that most discussions of AI law completely miss. When we ask who owns a trained model, we are really asking who owns the intelligence at rest inside it, the compressed representation of patterns learned from data. If a model is trained on data that was collected without appropriate consent, the resting intelligence inside that model contains a compressed form of the original data's structure, and the question of who has rights to that structure is not a simple one. It is the AI equivalent of asking who owns the insights derived from improperly obtained data, and the answer involves questions about consent, provenance, and the rights of the people whose intellectual output was compressed into the model's parameters. These questions are being litigated right now in courts around the world, and they are genuinely hard, but they become slightly clearer when you understand that what is at stake is not just the model architecture or the training procedure. What is at stake is the intelligence at rest, the compressed form of human knowledge that lives inside the resting weights, and those weights carry traces of where they came from."
+        }
+        p {
+            "I want to push the parallel one more step, into the concept of redundancy. In data engineering, redundancy is managed deliberately, through replication, through backups, through RAID configurations, to ensure that the stored data survives hardware failure. In intelligence engineering, redundancy appears in the form of parameter over-parameterization, where a model has many more parameters than might seem strictly necessary to represent the learned function. Research has shown that this over-parameterization is not just inefficiency. It plays a role in the dynamics of learning, helping models find smooth, generalizable solutions rather than sharp, memorizing ones "
+            a { href: "#ref-6", "(6)" }
+            ". The redundancy in the resting structure of an over-parameterized model is, in a sense, like the redundancy in a replicated data store. It makes the system more robust, more generalizable, more able to survive the equivalent of hardware failure, which in the intelligence world is encountering inputs that fall slightly outside the training distribution. This is a fascinating convergence: in both data systems and intelligence systems, some amount of redundancy in the resting structure makes the overall system more reliable in motion."
+        }
+        p {
+            "The convergence I have been describing here is not a coincidence, and I do not think it should be treated as a metaphor that eventually breaks down under scrutiny. I think it reflects a genuine structural similarity between two instances of the same underlying problem: how to make useful structure durable in a stored form. The vocabulary of data at rest, including compression, encryption, integrity, provenance, access control, and redundancy, applies with minimal modification to intelligence at rest. And the lessons learned from decades of data engineering practice, from the hard-won understanding of what happens when storage is not disciplined, are lessons that the AI field is in urgent need of learning. The resting state is where value accumulates. It is also where risk accumulates. And treating it with the same seriousness that we treat stored data is not overcautious. It is simply honest."
+        }
+        h2 { id: "compression-is-the-true-measure-of-intelligence",
+            a {
+                href: "#compression-is-the-true-measure-of-intelligence",
+                class: "header",
+                "Compression Is the True Measure of Intelligence"
+            }
+        }
+        p {
+            "There is a quote I keep coming back to when I think about this topic, and it is from a context that has nothing to do with AI. Occam's razor, the principle that the simplest explanation consistent with the evidence should be preferred, is not just a heuristic for scientific modeling. It is a statement about the relationship between intelligence and compression. The simplest explanation is the most compressed one. Preferring it is preferring compression. And the fact that simpler explanations tend to generalize better than complex ones is the empirical basis for the claim I am making in this section: compression is the true measure of intelligence. Not the quality of the outputs. Not the speed of the generation. Not the impressiveness of the benchmark scores. The quality of the resting compression. The degree to which a compact representation of the learned structure genuinely captures what generates the domain."
+        }
+        p {
+            "I want to be clear that I am not arguing that all compression is good or that the most compressed system is always the most intelligent one. Compression has limits, and those limits are real. A system that compresses too aggressively will lose information that is genuinely task-relevant, and the result will be a system that cannot distinguish things that need to be distinguished. A system that compresses too little will retain noise that distorts the signal, and the result will be a system that cannot generalize past the specific training examples it has memorized. The ideal is not maximum compression. The ideal is minimum description length, the compression that is just sufficient to capture the real structure without capturing what is accidental. This is the sense in which Blier and Ollivier's work on training data compression is so important, because it gives us a principled way to measure whether a model's resting structure is genuinely compressing the domain or just storing a large amount of the domain's surface statistics "
+            a { href: "#ref-7", "(7)" }
+            ". The measure is the total description length of the model and the data given the model, and minimizing that measure is approaching the ideal resting intelligence."
+        }
+        p {
+            "The same principle appears in a very different form in the context of model pruning. When you prune a neural network, you remove parameters that contribute little to the network's predictions, often by zeroing out small weights or entire attention heads. The remarkable finding from decades of pruning research is that most models can be pruned quite aggressively without significantly degrading performance. Large fractions of the parameters in a fully trained model appear to contribute almost nothing to the output. This is the Lottery Ticket Hypothesis, which proposes that within a randomly initialized network, there exists a sparse subnetwork called the winning ticket that can be trained in isolation to match the performance of the full network "
+            a { href: "#ref-8", "(8)" }
+            ". If this is right, and the empirical evidence strongly suggests it is, then the intelligent resting structure is sparse: it lives in a small subset of the parameters, and the rest of the parameters are essentially redundant. This has profound implications for what we should be building. We should be building systems that find the winning ticket, that identify and develop the sparse resting structure that actually carries the intelligence, rather than systems that brute-force their way to performance by scaling up the total number of parameters."
+        }
+        p {
+            "Distillation reinforces this point from a different angle. When a small student model is trained to match the probability distributions of a large teacher model rather than the hard labels of the training data, it inherits the teacher's resting intelligence in a compressed form. The student contains fewer parameters. The student runs faster. The student requires less memory. And yet the student achieves performance that is often close to the teacher's on the tasks that matter. This is empirical evidence that intelligence can be compressed without being destroyed, that the useful structure in the teacher's resting weights can survive transfer into a smaller set of parameters. Hinton and colleagues, who introduced knowledge distillation, understood this explicitly, arguing that the soft probability distributions the teacher assigns to incorrect classes contain rich information about the teacher's internal structure that the hard labels completely discard "
+            a { href: "#ref-3", "(3)" }
+            ". The resting intelligence is not in the size. It is in the organization. And good organization can be compressed."
+        }
+        p {
+            "I also want to connect this to something that I think is deeply underappreciated in the current discussion about scaling laws. The empirical observation that model performance improves predictably with scale, with more parameters and more data, has been taken as evidence that scale is the key variable in intelligence. But scaling laws describe what happens at the level of measured performance on benchmark tasks. They do not describe what happens at the level of resting structure. A model that is ten times larger may perform better on benchmarks while having a resting structure that is qualitatively not much richer, just spread across more parameters. The additional parameters may be capturing additional surface statistics rather than additional genuine structure, and the performance gains may be coming from better coverage of the training distribution rather than from deeper compression of the domain's generating regularities. This is a distinction that benchmark scores cannot resolve, because benchmark scores measure outputs, not resting structure. Resolving it requires interpretability tools, compression metrics, and the kind of careful structural analysis that the field has been slow to prioritize because benchmark scores are so much easier to measure and so much easier to publish."
+        }
+        p {
+            "The historical record of science is actually the strongest argument for compression as the measure of intelligence, and it is an argument that does not depend on any particular theory of machine learning. Every major scientific breakthrough has been a compression event. Newton compressed the motion of falling apples and orbiting planets into F = ma, a single equation that contains within its structure every trajectory of every object under gravitational acceleration. Maxwell compressed all of electric and magnetic phenomena into four equations that could fit on a coffee mug. Shannon compressed all of communication theory into a few concepts about entropy, mutual information, and channel capacity. In every case, the breakthrough was not producing more outputs. It was finding a simpler resting structure that generated all the outputs. The genius of Newton, Maxwell, and Shannon was not that they moved faster or generated more text. It was that they found the most compressed representation of the domain that still predicted everything the domain could do. That is intelligence at rest, demonstrated at the highest level the human mind has achieved. And any AI system that wants to claim genuine intelligence has to demonstrate the same thing, not in the outputs it produces, but in the resting structure that generates them."
+        }
+        p {
+            "There is a quiet irony in the fact that the field most obsessed with intelligence has done so little to measure it in its resting form. We have leaderboards for benchmark performance. We have scaling curves for loss versus compute. We have evaluations of fluency, of factual accuracy, of reasoning chain quality. We do not have widely accepted metrics for the quality of the resting compression, for how efficiently the model's parameters encode the domain it was trained on, for how much of the learned structure is genuine abstraction versus surface memorization. That gap is not an accident. Measuring resting intelligence is harder than measuring output quality, because it requires looking inside the model rather than at what the model produces. But harder is not the same as impossible, and the interpretability and mechanistic analysis communities are making real progress on exactly this problem. The question of what intelligence looks like at rest is not just philosophical. It is a measurement problem, and measurement problems can be solved."
+        }
+        h2 { id: "why-compact-intelligence-compounds",
+            a { href: "#why-compact-intelligence-compounds", class: "header",
+                "Why Compact Intelligence Compounds"
+            }
+        }
+        p {
+            "I often think about intelligence and civilization in the same breath, because the history of human civilization is largely the history of how humans have stored and transmitted intelligence across time and space. Before writing, intelligence could only be transmitted by one person speaking or demonstrating to another. The amount of intelligence that could accumulate in a society was limited by the number of people who could be in the room at any given time. Writing changed that. Writing made intelligence portable, durable, and capable of surviving the death of the person who possessed it originally. A book can carry the intelligence of a person who died two thousand years ago into the mind of a person who is alive today, and that transmission is so efficient that a single person can now inherit the resting intelligence of thousands of people who preceded them. That is compounding, and it is the mechanism by which civilizations get smarter across generations."
+        }
+        p {
+            "The invention of mathematics made this compounding even more powerful, because mathematical equations are the most compressed form of resting intelligence that humans can transmit. I wrote about this extensively in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by Default"
+            }
+            ", and I do not want to repeat the full argument, but the core point is worth restating here. A single equation can encode a class of behavior that would take volumes of prose to approximate, and the equation is not approximate. It is exact. When Newton wrote his law of gravitation, he compressed the gravitational behavior of every object in the universe into a single expression, and every subsequent scientist who learned that expression inherited the full generality of Newton's insight in a form that could be read, verified, and extended in minutes. That is the economy of compressed intelligence at rest. One compact resting structure, transmitted and received almost instantaneously, carrying a full generational increment of human understanding."
+        }
+        p {
+            "Modern AI operates on a different but structurally similar principle. A trained model is a form of compressed intelligence that can be copied and distributed to millions of devices at near-zero marginal cost. Once the compression is done, the intelligence can travel. It can be embedded in a phone, deployed on a server, packaged into an application, and accessed by people who have no understanding of how it was built or what it contains. This is both an extraordinary opportunity and a significant risk, and the two aspects are not separable. The opportunity is that compressed intelligence can reach everyone. The risk is that compressed intelligence can be misappropriated, concentrated in the hands of whoever built the compression engine, and used to extract value from the people whose data made the compression possible. I wrote about this tension in "
+            a { href: "/blogs/as-engineers-llms-should-pay-us-for-tokens-usage",
+                "As Engineers, LLMs Should Pay Us for Token Usage"
+            }
+            ", and the argument applies with equal force to the more general concept of intelligence at rest. The compression creates value. The question of who captures that value is political, not technical."
+        }
+        p {
+            "But the compounding effect of resting intelligence has a deeper dimension that I think most people overlook, and it is the dimension that connects to the long arc of human history. Intelligence at rest is not static. It can be updated, refined, extended, and distilled into new resting forms that are more capable than the original. A scientist who inherits Newton's gravitational law does not just use it. They extend it, test it against new phenomena, discover its limits, and eventually compress a richer understanding into Einstein's general relativity, which is a more compressed and more general description of the same domain. That process of inheritance, extension, and recompression is the engine of scientific progress, and it works because each generation's resting intelligence is compact enough to be transmitted and rich enough to serve as the foundation for the next generation's work. If Newton's insights had been too diffuse to compress into equations, each subsequent scientist would have had to rediscover them from scratch, and the compounding would have been impossible."
+        }
+        p {
+            "Modern AI has the potential to participate in this same compounding process, but only if the quality of the resting intelligence it produces is high enough. A model that has genuinely compressed a domain, that has found the minimum-description-length representation of the domain's generative structure, can serve as the foundation for the next model's learning in a way that shallow, memorizing models cannot. Distillation is the clearest example of this principle in action: a large teacher model's resting intelligence is compressed into a smaller student model's resting structure, producing a more efficient system that inherits the teacher's understanding rather than relearning it from raw data. But distillation is just one mechanism of intelligence compounding. The broader point is that any time one system's resting intelligence can serve as the foundation for another system's learning, intelligence is compounding across systems, and that compounding accelerates the growth of the total resting intelligence in the field. That is how human science works. That is how human culture works. And that is how AI could work, if we build it right."
+        }
+        p {
+            "The economic implications of this are enormous, and I think they are not being taken seriously enough. If intelligence at rest can be made compact, it can be made cheap. And if it can be made cheap, it can be made universal. The reason that scientific knowledge shaped civilization so dramatically over the last four centuries is that it became cheap to transmit and verify. The printing press made books cheap. Mathematical notation made equations compact. The internet made both nearly free. Each reduction in the cost of transmission accelerated the rate at which humanity's resting intelligence compounded across generations and across geographies. AI has the potential to do the same thing at a much smaller time scale, to compress the intellectual advances of each year into a resting structure that can bootstrap the next year's advances at lower cost. But that potential will only be realized if the compression is good, if the resting structures that are being built genuinely capture structure rather than just storing surface statistics, and if the organization of who controls those structures allows for the kind of open transmission that makes compounding possible. Neither of those conditions is currently guaranteed, and both are worth fighting for."
+        }
+        p {
+            "I also want to make a point that is easy to miss, which is that the economy of rest is an argument for humility about scale. If the quality of resting intelligence depends on the quality of the compression rather than the quantity of the parameters, then the current race toward larger and larger models is not clearly the right direction. A smaller model with better resting structure can outperform a larger model with worse resting structure on the same domain, and can do so with far less energy, less memory, and less computational overhead. The fact that we do not yet have reliable ways to measure the quality of the resting structure makes it tempting to proxy quality with scale, but proxies are not measurements, and the race toward scale may be accelerating past the point of diminishing returns without anyone noticing because the benchmarks are not sensitive to the dimension that matters most. Developing tools to measure the quality of resting intelligence, to assess how efficiently a model's parameters encode the structure of its domain, is one of the most important technical problems in the field right now, and it is almost completely unrecognized as such."
+        }
+        h2 { id: "memory-memorization-and-the-ethics-of-what-is-stored",
+            a {
+                href: "#memory-memorization-and-the-ethics-of-what-is-stored",
+                class: "header",
+                "Memory, Memorization, and the Ethics of What Is Stored"
+            }
+        }
+        p {
+            "There is something uncomfortable about the idea that a model's resting intelligence contains not just generalized patterns but also specific traces of the data it was trained on. It is uncomfortable because it blurs a boundary that we like to keep sharp: the boundary between a model that has learned from data and a model that has stored data. We want to believe that training is a process of distillation, that the model is learning the structure but not the specifics, that the result is a compressed understanding rather than a compressed copy. The research says this is sometimes true and sometimes not, and the distinction matters enormously for both technical and ethical reasons. I think about this question not just as an abstract problem but as a question about the dignity of the people whose work went into the training data, including engineers whose code was scraped, writers whose words were collected, and ordinary people whose conversations and searches and creations were harvested into training sets without their knowledge."
+        }
+        p {
+            "The memorization literature is unambiguous on the basic facts. Carlini and colleagues showed that large language models will sometimes reproduce verbatim fragments of their training data under the right prompting conditions "
+            a { href: "#ref-5", "(5)" }
+            ". Feldman and colleagues showed that individual training examples can have measurable influence on model outputs even when those examples are not reproduced verbatim, through a phenomenon they call memorization-mediated learning, where rare examples in the training set are learned through implicit memorization rather than through generalization "
+            a { href: "#ref-9", "(9)" }
+            ". And Haim and colleagues showed that in some settings, trained model parameters contain enough information to reconstruct portions of the training data, which means that the resting weights of a model are not just a compressed description of the domain's structure; they are also, in part, a compressed encoding of specific training examples that can be partially recovered "
+            a { href: "#ref-10", "(10)" }
+            ". These findings do not mean that all learning is memorization, but they do mean that the boundary between memorization and learning is not clean, and that the resting structure of a model always contains some mixture of genuinely generalized structure and specific memorized traces."
+        }
+        p {
+            "This has implications that go well beyond technical model quality. It means that when a model is deployed, it carries within its resting weights a form of record of the data it was trained on, a compressed and imperfect record, but a record nonetheless. It means that access to a trained model is, in some non-negligible sense, access to a compressed form of the training data. It means that the privacy protections we apply to training data need to extend, in some modified form, to the models trained on that data. And it means that the people whose work, words, and creations were used to train a model have a legitimate interest in how the resting intelligence that was built from their contributions is used. This is not a fringe legal argument. It is a direct consequence of the technical reality of what training does and what resting intelligence contains. The model is not separate from its training data. It is a compression of its training data, and the ethical status of the training data does not disappear when it is compressed into weights."
+        }
+        p {
+            "I want to connect this to something I wrote in "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            ", where I described how the tech industry extracts value from workers and creators while returning almost none of it to them. The specific mechanism I described was labor, the way that software engineers, like myself, generate enormous value through their work while the systems they build are captured by investors and executives. The memorization finding adds a new dimension to that argument. When a language model is trained on code written by engineers, the model's resting intelligence contains a compressed form of that engineering knowledge. When the model is then used to generate code, it is drawing on that compressed knowledge to produce economic value. The engineers whose code was used to train the model are contributing to every output the model generates, but they are not compensated for that contribution. The intelligence they generated is now resting inside a model they do not own, generating revenue for a company they did not build, and there is no mechanism in the current legal or economic system to redress that. That is a problem that needs to be named clearly before it can be addressed."
+        }
+        p {
+            "The ethics of memorization also connect to something more personal and harder to articulate. There is a sense in which the things we create, the code we write, the essays we publish, the conversations we have, are expressions of our intelligence, compressed forms of how we see the world. When those expressions are used to train a model without consent, what is being taken is not just text files. What is being taken is a form of resting intelligence, a compressed record of how we think, and that compressed record is then stored inside a model that someone else owns and profits from. I do not have a legal argument to make here, because the law has not yet caught up with the technical reality. But the moral argument is straightforward. The resting intelligence inside a trained model is partially composed of the resting intelligence of the humans who created the training data. Acknowledging that is not just accurate. It is the beginning of an honest conversation about who should benefit from what gets stored."
+        }
+        p {
+            "The practical implication for model builders is that the quality of resting intelligence depends on the quality of the data curation, and the ethics of resting intelligence depend on the validity of the consent and provenance of the training data. These are not separate concerns. A model trained on high-quality, well-curated data from consenting sources will have resting intelligence that is both technically better and ethically cleaner than a model trained by scraping whatever is available on the internet. The quality argument and the ethics argument point in the same direction, toward deliberate, careful, consented data curation, and away from the current paradigm of scraping at scale and hoping that the ethical and legal problems resolve themselves. They will not resolve themselves. They will accumulate in the resting structure of every model built under the current paradigm, and at some point they will become impossible to ignore."
+        }
+        p {
+            "I want to end this section by saying something that I hope sounds as obvious as it feels to me. We would not let a company store copies of people's private data without consent, use those copies to generate commercial products, and then refuse to acknowledge that the copies exist inside their systems. The fact that the storage happens through a training process rather than through direct file copying does not change the moral structure of the situation. What gets stored in the resting intelligence of a model is not identical to what was in the training data, but it is derived from it, shaped by it, and partially recoverable from it. That is enough to make the ethical obligations the same. And the sooner we act as though that is true, the better equipped we will be to build AI systems that are not just technically capable but genuinely trustworthy."
+        }
+        h2 { id: "toward-a-civilization-that-learns-to-rest-well",
+            a {
+                href: "#toward-a-civilization-that-learns-to-rest-well",
+                class: "header",
+                "Toward a Civilization That Learns to Rest Well"
+            }
+        }
+        p {
+            "I want to end this post the way I have ended every post since I started writing these, by zooming out and looking at what all of this means not just for AI systems but for the broader project of human civilization. Because I do not think the question of intelligence at rest is a narrow technical question. I think it is one of the most important questions of our time, and it has implications that extend far beyond the field of machine learning into how we understand knowledge, culture, progress, and what we owe to each other. The question of how intelligence rests, how it is stored, how it is compressed, how it is transmitted, and what it carries with it through time, is the question of how civilization thinks. Getting it right matters in a way that is very difficult to overstate."
+        }
+        p {
+            "Every technology that has fundamentally changed human civilization has done so by changing the resting storage of intelligence. Writing changed it by making intelligence portable across space. Printing changed it by making intelligence reproducible at scale. The internet changed it by making intelligence instantaneously accessible across the world. AI training is changing it by making intelligence learnable from the compressed experience of millions of humans simultaneously, and by making that learned compression deployable at near-zero marginal cost. Each of these transitions was accompanied by enormous social disruption, by winners and losers, by questions about who controls the storage medium and who benefits from the intelligence it carries. None of those disruptions was clean. None of them resolved themselves without conflict. And I think it would be extraordinarily naive to expect this one to be different."
+        }
+        p {
+            "The key lesson from those historical transitions is that the storage medium does not determine the quality of the resting intelligence. The printing press could carry Aristotle or it could carry propaganda. The internet can carry the sum of human knowledge or it can carry misinformation at scale. The quality of the resting intelligence depends on the quality of the compression, and the quality of the compression depends on the discipline, the care, and the honesty of the people doing the compressing. AI training is the most powerful compression engine humans have ever built, and whether it produces resting intelligence that is genuinely rich and genuinely beneficial depends entirely on choices that are being made right now, about what data to train on, about how to regularize the training, about how to evaluate the quality of the resting structure, and about who has access to the resulting intelligence. Those are not technical choices alone. They are social, political, and ethical choices, and they are being made mostly by a very small number of people in a very small number of organizations without anything like the broad democratic input that choices of this magnitude require."
+        }
+        p {
+            "I have been arguing throughout this post that the quality of resting intelligence is measured by the quality of the compression, and I want to make one more argument for that claim before I close. The most powerful resting intelligence in human history is not stored in any AI model. It is stored in mathematics, the compact, tested, verified, transmissible body of equations and theorems and proofs that encodes the structure of the physical world. That resting intelligence has been compressed by generations of scientists working with immense care to find the simplest descriptions consistent with the evidence. It has been verified by testing against reality, refined when the tests failed, and extended when the tests succeeded. It has been transmitted across centuries and cultures with minimal loss of fidelity, because it is compressed into a notation that is almost perfectly universal. And it has compounded, each generation building on the resting intelligence of the previous one, at a rate that has produced the entire edifice of modern science and technology. That is what good resting intelligence looks like, and it is the standard against which the intelligence we are now building should be measured."
+        }
+        p {
+            "I do not expect current AI systems to meet that standard immediately. That would be an unreasonable expectation for a technology that is decades old. But I do think the standard should be explicit. The goal of building AI is not to build systems that produce impressive outputs. The goal is to build systems that develop resting intelligence that is genuinely rich, genuinely compressed, genuinely grounded in the structure of the world, and genuinely available to everyone who needs it. That goal requires taking the resting state seriously, not just as infrastructure, not just as an engineering concern about how to store and deploy models, but as the central question of what AI is and what it is for. The motion, the generation, the output, all of that is downstream from the rest. If the rest is good, the motion will be good. If the rest is shallow, no amount of impressive motion will make up for what is missing underneath it."
+        }
+        p {
+            "I want to close with something that came to me when I was thinking about what connecting all of this to my personal experience feels like. In "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            ", I wrote about how creativity sometimes requires holding still, about how the brush you should not pick up is the one you reach for out of anxiety rather than out of genuine readiness. Intelligence at rest is a form of that same discipline. It is the refusal to rush into motion before the resting structure is ready, before the compression is deep enough, before the understanding is solid enough to support the generation that will come from it. The AI field is, in my view, currently picking up the brush too fast. It is generating before it has rested well. It is moving before it has built the resting structures that would make the motion meaningful. That is not a technical failure alone. It is a kind of impatience that has always been the enemy of depth, and depth is exactly what intelligence at rest requires. The most powerful systems, both human and artificial, are the ones that have learned how to rest before they move. They have learned how to compress before they generate. They have learned that the quality of the silence is what determines the quality of the sound."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-1\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "1." }
+            " Tishby, N., Pereira, F. C., & Bialek, W., "
+            em { "The Information Bottleneck Method" }
+            ", Allerton Conference, 1999. "
+            a { href: "https://arxiv.org/abs/physics/0004057", "arXiv:physics/0004057" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-2\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "2." }
+            " Grünwald, P., "
+            em { "The Minimum Description Length Principle" }
+            ", MIT Press, 2007. "
+            a { href: "https://mitpress.mit.edu/9780262072816/the-minimum-description-length-principle/",
+                "MIT Press"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-3\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "3." }
+            " Hinton, G., Vinyals, O., & Dean, J., "
+            em { "Distilling the Knowledge in a Neural Network" }
+            ", NIPS Deep Learning Workshop, 2014. "
+            a { href: "https://arxiv.org/abs/1503.02531", "arXiv:1503.02531" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-4\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "4." }
+            " NIST, "
+            em { "Security and Privacy Controls for Information Systems and Organizations" }
+            " (SP 800-53 Rev. 5), 2020. "
+            a { href: "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final",
+                "NIST SP 800-53"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-5\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "5." }
+            " Carlini, N., Tramèr, F., Wallace, E., et al., "
+            em { "Extracting Training Data from Large Language Models" }
+            ", USENIX Security 2021. "
+            a { href: "https://arxiv.org/abs/2012.07805", "arXiv:2012.07805" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-6\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "6." }
+            " Allen-Zhu, Z., Li, Y., & Song, Z., "
+            em { "A Convergence Theory for Deep Learning via Over-Parameterization" }
+            ", ICML 2019. "
+            a { href: "https://arxiv.org/abs/1811.03962", "arXiv:1811.03962" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-7\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "7." }
+            " Blier, L. & Ollivier, Y., "
+            em { "The Description Length of Deep Learning Models" }
+            ", NeurIPS 2018. "
+            a { href: "https://arxiv.org/abs/1802.07044", "arXiv:1802.07044" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-8\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "8." }
+            " Frankle, J. & Carbin, M., "
+            em { "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks" }
+            ", ICLR 2019. "
+            a { href: "https://arxiv.org/abs/1803.03635", "arXiv:1803.03635" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-9\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "9." }
+            " Feldman, V. & Zhang, C., "
+            em {
+                "What Neural Networks Memorize and Why: Discovering the Long Tail via Influence Estimation"
+            }
+            ", NeurIPS 2020. "
+            a { href: "https://arxiv.org/abs/2008.03703", "arXiv:2008.03703" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-10\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "10." }
+            " Haim, N., Vardi, G., Yehudai, G., et al., "
+            em { "Reconstructing Training Data from Trained Neural Networks" }
+            ", NeurIPS 2022. "
+            a { href: "https://arxiv.org/abs/2206.07758", "arXiv:2206.07758" }
         }
     }
 }
