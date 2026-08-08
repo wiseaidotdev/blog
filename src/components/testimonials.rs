@@ -8,6 +8,8 @@ use crate::components::testimonials::title::Title;
 
 use dioxus::prelude::*;
 use serde::Deserialize;
+use theme::dioxus::use_theme;
+use theme::Theme;
 
 #[derive(Debug, Deserialize, Clone, PartialEq)]
 pub struct ClientTestimonial {
@@ -19,6 +21,9 @@ pub struct ClientTestimonial {
 
 #[component]
 pub fn Testimonials() -> Element {
+    let theme_ctx = use_theme();
+    let is_light = matches!((theme_ctx.theme)(), Theme::Light);
+    let section_bg = if is_light { "bg-gray-50" } else { "bg-black" };
     let clients = vec![
         ClientTestimonial {
             name: "Ferris The Crab".to_string(),
@@ -72,7 +77,7 @@ pub fn Testimonials() -> Element {
     rsx! {
         section {
             id: "testimonials",
-            class: "min-h-screen w-full px-4 md:px-8 py-20 bg-black flex flex-col items-center gap-24",
+            class: format!("min-h-screen w-full px-4 md:px-8 py-20 flex flex-col items-center gap-24 transition-colors duration-300 {}", section_bg),
             aria_labelledby: "testimonials-title",
 
             Title {}

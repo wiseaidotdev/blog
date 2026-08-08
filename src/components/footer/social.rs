@@ -1,13 +1,24 @@
 use dioxus::prelude::*;
 
+#[derive(Props, Clone, PartialEq)]
+pub struct LogoSocialProps {
+    pub is_light: bool,
+}
+
 #[component]
-pub fn LogoSocial() -> Element {
+pub fn LogoSocial(props: LogoSocialProps) -> Element {
     let socials = vec![
         ("Facebook", "fab fa-facebook-f"),
         ("Twitter", "fab fa-x-twitter"),
         ("Instagram", "fab fa-instagram"),
         ("LinkedIn", "fab fa-linkedin-in"),
     ];
+
+    let icon_color = if props.is_light {
+        "text-gray-600 hover:text-green-700"
+    } else {
+        "text-gray-300 hover:text-green-500"
+    };
 
     rsx! {
         div {
@@ -18,7 +29,7 @@ pub fn LogoSocial() -> Element {
                 class: "w-[60px] h-[49px] object-cover",
                 width: 60,
                 height: 60,
-                alt: "Company Logo",
+                alt: "Wise AI Logo",
             }
 
             div {
@@ -28,11 +39,9 @@ pub fn LogoSocial() -> Element {
                     .map(|(label, icon_class)| rsx! {
                         a {
                             href: "#",
-                            class: "flex items-center justify-center text-[#0d0d0d] hover:text-green-500 transition-colors text-[20px]",
+                            class: format!("flex items-center justify-center transition-colors duration-200 text-[20px] {}", icon_color),
                             aria_label: "{label}",
-                            i {
-                                class: "{icon_class} text-xl px-2"
-                            }
+                            i { class: "{icon_class} text-xl px-2" }
                         }
                     })}
             }

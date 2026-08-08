@@ -1,5 +1,6 @@
 use crate::blog::router_blog;
 use crate::pages::blog::Blog;
+use crate::pages::blogs::Blogs;
 use crate::pages::home::Home;
 use dioxus::prelude::*;
 
@@ -11,6 +12,9 @@ pub enum Route {
     #[layout(Blog)]
     #[child("/blogs")]
     BlogPost { child: router_blog::BookRoute },
+    #[end_layout]
+    #[route("/all-blogs")]
+    Blogs {},
     #[route("/:..route")]
     PageNotFound { route: Vec<String> },
 }
@@ -18,9 +22,17 @@ pub enum Route {
 #[component]
 fn PageNotFound(route: Vec<String>) -> Element {
     rsx! {
-        h1 { "Page not found" }
-        p { "We are terribly sorry, but the page you requested doesn't exist." }
-        pre { color: "red", "log:\nattemped to navigate to: {route:?}" }
+        div {
+            class: "min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] flex flex-col items-center justify-center gap-6 font-['Lexend']",
+            i { class: "fa-solid fa-triangle-exclamation text-5xl text-yellow-400" }
+            h1 { class: "text-4xl font-bold", "404 - Page not found" }
+            p { class: "text-[var(--text-secondary)] text-lg text-center max-w-md", "We are terribly sorry, but the page you requested doesn't exist." }
+            Link {
+                to: Route::Home {},
+                class: "px-6 py-3 rounded-lg bg-green-600 text-white font-semibold hover:bg-green-700 transition-colors",
+                "← Back to Home"
+            }
+        }
     }
 }
 
