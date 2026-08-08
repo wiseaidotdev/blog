@@ -12,7 +12,8 @@ dioxus-logger = "0.6.2"
 serde = { version = "1.0.219", features = ["derive"] }
 serde_json = "1.0.140"
 wasm-bindgen = "0.2.100"
-web-sys = { version = "0.3.77", features = ["Window"] }
+js-sys = "0.3.77"
+web-sys = { version = "0.3.77", features = ["Window", "History", "Location", "Storage", "HtmlElement", "MediaQueryList", "StorageEvent"] }
 use-mdbook = { git = "https://github.com/dioxuslabs/include_mdbook", branch = "jk/build-gen" }
 axum = { version = "0.7.7", optional = true }
 tower-http = { version = "0.6.2", features = ["cors"], optional = true }

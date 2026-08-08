@@ -1,14 +1,24 @@
 use dioxus::prelude::*;
+use theme::dioxus::use_theme;
+use theme::Theme;
 
 #[component]
 pub fn Title() -> Element {
+    let theme_ctx = use_theme();
+    let is_light = matches!((theme_ctx.theme)(), Theme::Light);
+    let text_color = if is_light {
+        "text-gray-800"
+    } else {
+        "text-white"
+    };
+
     rsx! {
         div {
             class: "flex flex-col gap-6 md:gap-8 items-center justify-center w-full px-6 md:px-0 h-[345px] text-center",
 
             h2 {
                 id: "team-title",
-                class: "font-['Lexend'] text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold uppercase text-white",
+                class: format!("font-['Lexend'] text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold uppercase {}", text_color),
                 span { class: "mx-2", "The minds" }
                 span { class: "text-green-500", "behind" }
             }
@@ -16,7 +26,7 @@ pub fn Title() -> Element {
             div {
                 class: "flex flex-col md:flex-row gap-6 md:gap-12 items-center",
                 div {
-                    class: "text-xl md:text-5xl font-bold uppercase text-white text-center md:text-right",
+                    class: format!("text-xl md:text-5xl font-bold uppercase text-center md:text-right {}", text_color),
                     span { "Our" }
                     span { class: "mx-2 text-green-500", "creative" }
                     span { "team" }

@@ -1,0 +1,25 @@
+# Wise AI Blog
+
+> Build type safe super agents blazingly fast with Rust
+
+## About
+
+Wise AI is a research and engineering blog focused on building advanced AI systems in Rust. We cover topics including Large Mathematical Models (LMMs), autonomous agent architectures, symbolic regression, and type-safe systems programming.
+
+## Blog Posts
+
+All blog content is available at: https://wiseai.dev/all-blogs
+
+## Sitemap
+
+https://wiseai.dev/sitemap.xml
+
+## Contact
+
+- Email: oss@wiseai.dev
+- Twitter: @wiseaidev
+- Website: https://wiseai.dev
+
+## License
+
+© 2026 Wise AI. All posts are original content unless otherwise noted.

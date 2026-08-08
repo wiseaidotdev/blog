@@ -5,6 +5,8 @@ pub(crate) mod title;
 use crate::components::features::grid::Grid;
 use crate::components::features::title::Title;
 use dioxus::prelude::*;
+use theme::dioxus::use_theme;
+use theme::Theme;
 
 #[derive(Clone, PartialEq)]
 struct Feature {
@@ -15,6 +17,13 @@ struct Feature {
 
 #[component]
 pub fn Features() -> Element {
+    let theme_ctx = use_theme();
+    let is_light = matches!((theme_ctx.theme)(), Theme::Light);
+    let section_bg = if is_light {
+        "bg-gray-50"
+    } else {
+        "bg-gray-900"
+    };
     let icons = vec![
         "fa-infinity",
         "fa-bolt",
@@ -69,10 +78,12 @@ pub fn Features() -> Element {
         .collect::<Vec<Feature>>();
 
     rsx! {
-        section { id: "features", class: "py-28 px-16 md:px-4 font-roboto flex min-h-screen justify-center",
+        section {
+            id: "features",
+            class: format!("{} py-28 px-16 md:px-4 font-roboto flex min-h-screen justify-center transition-colors duration-300", section_bg),
             div { class: "",
                 Title {}
-                Grid { features: features }
+                Grid { features: features, is_light: is_light }
             }
         }
     }

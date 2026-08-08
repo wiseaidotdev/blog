@@ -3593,6 +3593,7 @@ dependencies = [
  "dioxus",
  "dioxus-logger",
  "i18nrs",
+ "js-sys",
  "mdbook-gen",
  "mdbook-shared",
  "serde",
