@@ -43,3 +43,5 @@
 - [ 21 |---| I miss the pre-AI Mossad agents. |---| tech |---| i-miss-the-pre-ai-mossad-agents |---| Jul 16 2026 |---| I miss the pre-AI Mossad agents. |---| assets/images/banner_post_21.webp](i-miss-the-pre-ai-mossad-agents.md)
 
 - [ 22 |---| Intelligence at Rest |---| tech |---| intelligence-at-rest |---| Jul 18 2026 |---| Intelligence at Rest |---| assets/images/banner_post_22.webp](intelligence-at-rest.md)
+
+- [ 23 |---| This Is Why My profile picture is now a shigure ui picture |---| personal |---| this-is-why-my-profile-picture-is-now-a-shigure-ui-picture |---| Aug 22 2026 |---| This Is Why My profile picture is now a shigure ui picture |---| assets/images/banner_post_23.webp](this-is-why-my-profile-picture-is-now-a-shigure-ui-picture.md)
