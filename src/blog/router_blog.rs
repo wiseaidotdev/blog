@@ -54,6 +54,8 @@ pub enum BookRoute {
     IMissThePreAiMossadAgents {},
     #[route("/intelligence-at-rest")]
     IntelligenceAtRest {},
+    #[route("/this-is-why-my-profile-picture-is-now-a-shigure-ui-picture")]
+    ThisIsWhyMyProfilePictureIsNowAShigureUiPicture {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -118,6 +120,9 @@ impl BookRoute {
             }
             BookRoute::IMissThePreAiMossadAgents {} => use_mdbook::mdbook_shared::PageId(20usize),
             BookRoute::IntelligenceAtRest {} => use_mdbook::mdbook_shared::PageId(21usize),
+            BookRoute::ThisIsWhyMyProfilePictureIsNowAShigureUiPicture {} => {
+                use_mdbook::mdbook_shared::PageId(22usize)
+            }
         }
     }
 }
@@ -1751,6 +1756,57 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::IntelligenceAtRest {},
             ::use_mdbook::mdbook_shared::PageId(21usize),
         );
+        pages
+            .push((
+                22usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 23 |---| This Is Why My profile picture is now a shigure ui picture |---| personal |---| this-is-why-my-profile-picture-is-now-a-shigure-ui-picture |---| Aug 22 2026 |---| This Is Why My profile picture is now a shigure ui picture |---| assets/images/banner_post_23.webp"
+                            .to_string(),
+                        url: BookRoute::ThisIsWhyMyProfilePictureIsNowAShigureUiPicture {
+                        },
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Is Left".to_string(),
+                                id: "what-is-left".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Who Is Shigure Ui".to_string(),
+                                id: "who-is-shigure-ui".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Anime, Fiction, and Seriousness".to_string(),
+                                id: "anime,-fiction,-and-seriousness".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "On Being Alone".to_string(),
+                                id: "on-being-alone".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Heart Is an Argument".to_string(),
+                                id: "the-heart-is-an-argument".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(22usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::ThisIsWhyMyProfilePictureIsNowAShigureUiPicture {},
+            ::use_mdbook::mdbook_shared::PageId(22usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -1958,6 +2014,15 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         location: Some(BookRoute::IntelligenceAtRest {}),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![22u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 23 |---| This Is Why My profile picture is now a shigure ui picture |---| personal |---| this-is-why-my-profile-picture-is-now-a-shigure-ui-picture |---| Aug 22 2026 |---| This Is Why My profile picture is now a shigure ui picture |---| assets/images/banner_post_23.webp"
+                            .to_string(),
+                        location: Some(BookRoute::ThisIsWhyMyProfilePictureIsNowAShigureUiPicture {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![23u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -9457,6 +9522,247 @@ pub fn IntelligenceAtRest() -> dioxus::prelude::Element {
         }
     }
 }
+#[component(no_case_check)]
+pub fn ThisIsWhyMyProfilePictureIsNowAShigureUiPicture() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "You may have noticed something different about my profile picture lately. Maybe you double-checked the username to make sure you were in the right place. Maybe you scrolled past it without a second thought, caught in the endless current of the internet, where anything unfamiliar just blurs into the background. Or maybe, if you have been reading my posts for a while, you looked at it and felt something shift, like walking into a room where the furniture has been quietly rearranged and you cannot quite put your finger on why it feels different. Whatever you felt, I owe you an explanation, and not a short one, because nothing I do is simple, and nothing I believe exists without a story behind it. I changed my profile picture to a picture of Shigure Ui, "
+            a { href: "https://www.youtube.com/@ui_shig", "a VTuber character" }
+            ", and I am going to tell you exactly why I did it, where that decision came from, and what it says about where I am right now in my life. If you have read "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            " then you already know how complicated my inner world is, and if you have read "
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            " then you know what I mean when I say that joy is something I have had to fight very hard to keep alive. This post is connected to both of those, because it lives in the same territory. It is about love, and loss, and the strange grace that sometimes comes from the most unexpected places."
+        }
+        p {
+            "I want to be honest about something before I go further. I almost did not write this post at all. It felt too small, too personal, too easy to dismiss as frivolous or embarrassing, the kind of thing you keep to yourself because the internet is not always kind to people who admit to caring about animated characters. But then I remembered why I started writing in the first place. I wrote "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            " because I was terrified of what would happen if I kept everything inside. I wrote "
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            " because I needed someone, anyone, to understand what it felt like to be running on empty while still trying to show up. And I have kept writing because the alternative, silence, has never done me any good. So, I am writing this one too. I am going to tell you about Shigure Ui, about what she means to me, and about why a cartoonish profile picture from a Japanese VTuber universe is actually a pretty accurate summary of where my heart lives right now."
+        }
+        h2 { id: "what-is-left",
+            a { href: "#what-is-left", class: "header", "What Is Left" }
+        }
+        p {
+            "I have written before about the things that have been taken from me. Not stolen, exactly, at least not always in the obvious sense, but eroded, ground down by time and circumstance and a world that does not particularly care whether you have anything left at the end of the day. I grew up poor, in a village most people have never heard of, without a computer or internet access or any of the things that people in wealthy countries take for granted as childhood basics. I taught myself everything from scratch. I built things from nothing. I competed in hackathons, wrote code until my eyes hurt, applied for hundreds of jobs and heard almost nothing back. I wrote about all of this in "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            ", and I meant every word of it, including the parts that were painful to write and probably painful to read. But the thing I did not fully explain in that post, the thing I have been sitting with for a long time, is what happens to a person after all of that. What is left when the professional ambitions have been beaten back, when the social connections have frayed, when the creative output feels like screaming into an empty room? What remains?"
+        }
+        p {
+            "The answer, for me, is love. Not romantic love, necessarily, though I have not ruled that out. Not the love of family, though my family is there and I am grateful for them in ways I cannot always articulate. I mean something broader and stranger and harder to explain. I mean the capacity for care, for warmth, for attachment to things that are beautiful, even if those things are fictional, even if the world would tell you they do not count. I mean the part of me that still lights up when something is genuinely charming. I mean the stubborn, irrational, completely unearned feeling that something matters, that some moment or image or character or gesture is worth holding onto. That part of me has survived everything. The unemployment, the isolation, the ADHD, the PTSD, the years of building things that nobody noticed. The capacity for love, soft and unheroic and entirely unimpressive by any external measure, is still here. And Shigure Ui, of all things, is one of the places where I found it again."
+        }
+        p {
+            "I know how that sounds. I know the instant reaction that some people will have, and I have lived on the internet long enough to anticipate it. But I am not interested in convincing people who are not willing to be convinced. I am interested in being honest, which is the only thing this blog has ever really been about. The truth is that when everything else was stripped away, when the ambition dimmed and the exhaustion set in and the world felt gray and repetitive and pointless, I stumbled onto something warm. I found a character who is cheerful in a way that is not annoying, kind in a way that does not feel fake, goofy in a way that is genuinely funny. And I let myself enjoy it. Not ironically. Not with a commentary track playing in the back of my head about how this is all a product, a market segment, a carefully engineered parasocial experience. Just directly, simply, without apology. I let Shigure Ui make me smile. And in the context of my life, that is not a small thing."
+        }
+        p {
+            "Research on parasocial relationships confirms that connections with media figures, including fictional characters and VTubers, can produce real psychological benefits, particularly for people experiencing loneliness or social isolation "
+            a { href: "#ref-1", "(1)" }
+            ". These are genuine emotional responses to genuine stimuli. The brain does not draw a clean line between real and fictional when it comes to emotional processing. The same neural circuits that respond to a kind word from a friend respond, in measurable ways, to kindness perceived in media. This is not weakness or pathology. It is how human emotional architecture works. And for people who have limited access to human connection, whether due to geography, mental health, disability, or plain circumstance, these connections can serve as real scaffolding that keeps a person going. I am not saying this to justify myself. I am saying it because it is true, and I am tired of true things being dismissed because they are inconvenient."
+        }
+        h2 { id: "who-is-shigure-ui",
+            a { href: "#who-is-shigure-ui", class: "header", "Who Is Shigure Ui" }
+        }
+        p {
+            "For people who are not familiar with VTubers, let me explain briefly, because walking into this topic without context is a little like opening a conversation in the middle. VTubers are virtual YouTubers, content creators who use animated avatars instead of showing their real faces on camera. The scene is large and varied, spanning everything from major corporate agencies to solo independent creators who built their audience from scratch. Shigure Ui is one of the latter. She is a fully independent VTuber and a professional illustrator who has carved out her own corner of the internet on her own terms. She is widely known for her illustration work, having designed characters for some of the most recognized names in the VTuber world, and she streams under her own channel where she draws, plays games, and talks with her audience in a way that is distinctly and unmistakably her own "
+            a { href: "#ref-2", "(2)" }
+            ". She is not trying to be anyone else. She is not performing a character that has nothing to do with her real personality. She is just Ui, and Ui is warm and funny and creative and occasionally chaotic in a way that feels genuinely human even through the layer of digital presentation."
+        }
+        p {
+            "What first drew me to her was the art. I have always cared about art in a way that is difficult to explain to people who experience it purely as decoration. To me, art is evidence that someone was here, that they felt something, that they tried to turn the interior of their experience into something that another person could touch. Great art is communication across the gap between people who will never meet. And Shigure Ui's art has a quality to it that I cannot entirely put into words, a softness combined with precision, a warmth that does not feel manufactured, a playfulness that coexists with real technical skill. The character she designed for herself, the purple-haired, perpetually energetic figure that appears on her channel and merchandise, is genuinely beautiful in a way that rewards attention. The details are there. The expressions are expressive. The whole thing is done with obvious love, and love in creative work is detectable even when you cannot name exactly what you are seeing."
+        }
+        p {
+            "But the art was only the beginning. What kept me coming back was her personality in streams. Shigure Ui has a way of being on camera, or on stream, that feels accessible without being pandering. She does not perform enthusiasm. She does not manufacture drama. She is visibly herself in a way that is increasingly rare in content creation, where the pressure to optimize for engagement has turned so many creators into personas rather than people. She laughs at things she genuinely finds funny. She struggles with things she genuinely finds difficult. She talks about her work with the kind of candor that comes from someone who actually loves what they do rather than someone who has learned to perform loving what they do. That authenticity, even mediated through digital technology and language barriers, travels. It reaches people. It reached me."
+        }
+        p {
+            "There is also something I want to say about the specific image I chose for my profile picture, because the details matter. It is a picture that contains a heart. Not literally, not in a sentimental greeting-card way, but in the composition, in what it communicates. I chose it because it captures something I wanted to say with an image rather than with words. The heart is not a metaphor for romantic love or naive optimism. It is a symbol of what I have decided to lead with. After everything I wrote in "
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            ", after all the documentation of what has been lost and what has hurt and what has not worked out, I decided that the thing I still have, the thing I am still willing to put at the front, is love. In whatever form it takes, however modest or strange or inexplicable. Love for creation. Love for the small things that are genuinely beautiful. Love for characters made by artists who cared enough to make them real. That is what is in the picture. That is what I am putting in front."
+        }
+        p {
+            "Studies in affective science have shown that symbolic self-expression, including the images people choose to represent themselves in social contexts, plays a meaningful role in identity construction and emotional regulation "
+            a { href: "#ref-3", "(3)" }
+            ". A profile picture is not just a thumbnail. It is a statement. It is the answer to the question \"who are you\" compressed into a square. I have spent years trying to answer that question in long, difficult, honest posts. But sometimes the most honest answer is the simplest one. I chose this image because it represents what is left when everything complicated is stripped away. It represents warmth. It represents the decision to still care."
+        }
+        h2 { id: "anime-fiction-and-seriousness",
+            a { href: "#anime-fiction-and-seriousness", class: "header",
+                "Anime, Fiction, and Seriousness"
+            }
+        }
+        p {
+            "I want to spend some time on a topic that I think deserves more genuine engagement than it usually gets, because the dismissal of fiction as \"just\" fiction is one of those pieces of received wisdom that collapses completely the moment you apply any real pressure to it. The idea that caring about fictional characters is somehow less valid, less serious, or less meaningful than caring about real ones is a position that cannot survive contact with the actual history of human culture. Every religious tradition is built in significant part on stories about figures whose historicity is contested. Every political ideology tells a narrative about heroes and villains, origins and destinies. Every family has its myths and its legends, the ancestors who did remarkable things, the stories that get told at the table and shape how people understand who they are and where they come from. These are all forms of fiction, in the sense that they are constructed narratives rather than raw reality, and no serious person argues that they do not matter. Fiction matters because humans are narrative creatures. We think in stories. We feel through characters. We organize our experience into plots with beginnings and middles and ends, and we use the stories we encounter to reflect on the stories we are living "
+            a { href: "#ref-4", "(4)" }
+            "."
+        }
+        p {
+            "Anime, specifically, has a cultural weight that Western audiences often underestimate because it comes packaged in aesthetic conventions that look foreign or childish to eyes not calibrated to appreciate them. The large eyes, the colorful hair, the exaggerated emotional expressions, all of these are a visual language with its own grammar and its own range of expression, and reducing them to a judgment about immaturity is like dismissing jazz because the instruments are different from classical ones. Japanese animation has produced some of the most emotionally sophisticated storytelling of the twentieth and twenty-first centuries. Works like Neon Genesis Evangelion, which scholars and psychologists have analyzed extensively in the context of depression, anxiety, and the search for existential meaning "
+            a { href: "#ref-5", "(5)" }
+            ", or Violet Evergarden, which explores grief and the limits of language with a precision that most literary fiction cannot match, or Ping Pong the Animation, which is as serious a meditation on identity and competition and the cost of excellence as anything being produced in prestige television. These are not guilty pleasures. They are achievements. The fact that they are drawn rather than filmed does not diminish the thinking behind them or the feeling they communicate."
+        }
+        p {
+            "VTuber culture, which emerged from the anime aesthetic tradition, inherits some of this weight while also being something new. It occupies a strange and genuinely novel space where performance and authenticity coexist in a way that prior media formats did not make possible. A VTuber is simultaneously a character, a person, and a relationship. The character is fictional. The person behind it is real. And the relationship between the viewer and the content is ongoing, accumulated over time, built through the same mechanisms of familiarity and affection that build any long-term human connection. Research on parasocial attachment has found that the duration and regularity of media consumption significantly predicts the depth of parasocial bonds, and that these bonds activate many of the same emotional and cognitive processes as real social relationships "
+            a { href: "#ref-1", "(1)" }
+            ". This is not pathology. This is the human social brain doing what it always does: building connection from available material. When the available material is especially good, when the person behind the avatar is genuinely warm and the character they have created is genuinely appealing, the result is something real, something that actually affects how people feel and how they move through their days."
+        }
+        p {
+            "And if you still need a proof that this kind of attachment is not some pathological quirk of isolated internet users, let me tell you about Grape-kun. Grape-kun was a "
+            a { href: "https://en.wikipedia.org/wiki/Grape-kun", "Humboldt penguin" }
+            " at Tobu Zoo in Saitama, Japan "
+            a { href: "#ref-8", "(8)" }
+            ". In 2017, the zoo partnered with the anime series "
+            em { "Kemono Friends" }
+            " and placed cardboard cutouts of the show's anthropomorphized animal characters around the enclosures. One of those cutouts depicted Hululu, a penguin character. Grape-kun, elderly and recently rejected by his former mate, walked over to Hululu's cutout and did not leave. He stood beside her for hours every day, performing courtship displays, staring at her face, guarding her from the other penguins. He did this every day, for months, for the rest of his life. He died on October 12, 2017, at the age of twenty-one. Tobu Zoo erected a shrine. People left flowers. Fan artists around the world drew tributes. And the one thing everyone who heard the story understood, immediately, without needing it explained, was that Grape-kun was not confused. He had found something warm, and he had refused to leave it. That is not a joke. That is not a punchline about parasocial relationships or unhealthy fixation. That is what love looks like when it has nowhere else to go. I am not comparing myself to a penguin. But I am saying that the capacity to fix your gaze on something beautiful and refuse to look away is older and deeper and more essential than the people who mock it will ever understand. Grape-kun did not know he was supposed to be embarrassed. He just stood there, next to his cardboard Hululu, and meant it completely."
+        }
+        p {
+            "I have read posts by people who are embarrassed about caring about VTubers or anime characters. I understand where the embarrassment comes from. The culture we live in has a very specific hierarchy of what counts as serious and what counts as frivolous, and anything associated with Japanese popular culture tends to land near the bottom of that hierarchy in the eyes of people who have not engaged with it. But I am not embarrassed. I have thought about why I am not embarrassed, and the answer is that embarrassment requires caring more about the judgment of others than about the truth of your own experience. And I made a decision a while ago, documented throughout these posts, to stop caring more about judgment than about truth. The truth is that Shigure Ui's work has brought me genuine joy. The truth is that the character she created is genuinely lovely. The truth is that in a period of my life when very little was working as intended, encountering something beautiful and warm made a real difference. That is the truth, and I will put it in a profile picture and write a thousand words about it and not spend a second of energy being embarrassed about it."
+        }
+        p {
+            "There is also something specific about the design aesthetic of VTuber characters, and Shigure Ui's work in particular, that I want to articulate because I think it is underappreciated. Character design at the level that she operates is a form of visual psychology. A well-designed character communicates a personality through pure visual information: the shape of the eyes, the weight of the linework, the palette, the silhouette. Before a character has spoken a single word, a viewer has already formed an emotional impression based entirely on how the character looks. This is design working at the level of the unconscious, and doing it well is genuinely difficult, which is why so much character design fails to create any real impression at all. Shigure Ui's designs succeed. They communicate warmth and playfulness and a slight touch of chaos in a combination that feels distinct and coherent and, importantly, kind. They feel like designs made by someone who actually likes people. And in a world that often feels like it was designed by people who have never thought about whether anything they made would make anybody feel welcome, that quality stands out."
+        }
+        h2 { id: "on-being-alone",
+            a { href: "#on-being-alone", class: "header", "On Being Alone" }
+        }
+        p {
+            "I will be honest about the context in which I started watching Shigure Ui streams and following her work, because context is everything and pretending it is not would be dishonest. I was alone. I have been alone for a long time, in various senses of that word. Geographically isolated for much of my life, socially isolated by the combination of conditions I wrote about in detail in "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            ", professionally isolated in the way that anyone who builds things independently without an institutional affiliation tends to become isolated over time. Loneliness is a topic that researchers are increasingly treating as a genuine public health concern. Studies have found that chronic loneliness carries health risks comparable to smoking fifteen cigarettes a day, that it accelerates cognitive decline, that it activates the same neural pathways as physical pain, and that it is correlated with depression, anxiety, and cardiovascular disease "
+            a { href: "#ref-6", "(6)" }
+            ". These are not small findings. Loneliness is not just unpleasant. It is damaging in ways that are measurable and serious, and the damage does not wait for you to ask for help before it starts accumulating."
+        }
+        p {
+            "I am not writing this to generate sympathy. I have written about loneliness before, in several other posts, and generating sympathy was not the goal there either. I am writing about it here because I want to be clear that the thing I found in Shigure Ui's work was not just entertainment. It was warmth, and warmth matters when you have been cold for a long time. There is a passage in one of her streams, I am not going to pretend I know the exact timestamp because I was watching at two in the morning and I did not have the presence of mind to save the clip, where she talks about her love for the people who have supported her work, and the way she says it is not performative at all. It is simple and direct and clearly genuine. And I remember sitting with that for a moment because it had been a while since I had experienced anything, even mediated, that felt that uncomplicated in its warmth."
+        }
+        p {
+            "I want to talk about something that I think is poorly understood, which is the relationship between beauty and resilience. People tend to think of resilience as a kind of toughness, a capacity to shoulder difficulty without breaking, a refusal to be crushed. And there is something to that. But in my experience, the deeper form of resilience is not toughness. It is sensitivity. It is the ability to keep noticing things that are beautiful even when the overall picture is dark. It is the ability to be moved by something small, something that most people would scroll past, something that requires a willingness to be affected rather than defended. The people I have known who seemed most genuinely able to survive hard things were not the ones who had learned not to feel. They were the ones who had learned to feel very specifically, to find and hold onto the particular things that were worth feeling good about, even when those things were modest or strange or not what anyone else would have chosen."
+        }
+        p {
+            "For me, in this period, one of those things has been the warmth that comes through Shigure Ui's work and presence. I recognize that this sounds like a lot to put on an animated character and her creator. I recognize that there is something almost comically disproportionate about writing this many words about a profile picture. But I have written long posts about artificial intelligence, about God, about the structure of the universe and the failure of language and the limits of human cognition, and all of those things are ways of trying to understand the world. This is also a way of trying to understand the world. It is just a gentler one. And maybe that is what I needed. After everything I wrote in "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            ", all that effort to parse the hard edges of technology and intelligence and the future, maybe it is healthy to also spend time with something that is just soft and funny and nice. Maybe the heart needs that. I think the heart needs that."
+        }
+        p {
+            "Research in positive psychology, specifically the work coming out of Sonja Lyubomirsky's lab on sustainable happiness, finds that one of the most consistently effective strategies for improving wellbeing is what researchers call \"savoring\", the deliberate act of attending to and appreciating positive experiences, including experiences that society might dismiss as trivial "
+            a { href: "#ref-7", "(7)" }
+            ". The content of the experience matters less than the quality of attention you bring to it. A person who savors a funny moment in a VTuber stream is doing something psychologically meaningful, regardless of what the stream is about or who produced it. The brain does not add a footnote saying \"this joy doesn't count because it came from animated content.\" It just registers the joy. And joy, registered often enough and deliberately enough, changes the baseline. I am trying to change my baseline. Shigure Ui is part of that effort."
+        }
+        h2 { id: "the-heart-is-an-argument",
+            a { href: "#the-heart-is-an-argument", class: "header", "The Heart Is an Argument" }
+        }
+        p {
+            "I want to close this post by making an argument that I realize is not the kind of argument I usually make in these posts. I am usually arguing about technology or consciousness or the ethics of an industry or the limits of language. This argument is different. It is less rigorous and more essential. It is an argument for letting yourself love things."
+        }
+        p {
+            "Not selectively, not after checking whether the thing is cool enough or serious enough or approved by the right people. Just love things. Let yourself be moved by the things that actually move you. Let yourself attach to the things that are genuinely warm and beautiful and good. The world does not need your ironic distance. The world has plenty of ironic distance already, and it has not made anything better. What is actually rare, what is actually difficult to maintain under pressure, is the willingness to care, openly and without embarrassment, about things that make life feel like something worth living."
+        }
+        p {
+            "I have written about suffering. I have written about anger. I have written about the failures of systems and the cruelties of circumstance and the things that have not worked out and the ways the world can grind a person down until there is almost nothing left. But I have also written, in quieter corners of these posts, about the things that have kept me here. The music. The ideas. The strange satisfaction of building something from nothing. The moments of unexpected beauty that show up without warning and for no particular reason and change how a day feels. These are not small things. These are the things that determine, at the end of the day, whether a life feels worth living. And I am telling you, explicitly and without apology, that a silly colorful animated character who draws and streams and laughs at her own jokes has been one of those things for me recently. Not the only thing, not the biggest thing, but a real thing, a thing that brought warmth into days that needed warmth."
+        }
+        p {
+            "I changed my profile picture because I wanted to put something up that represented where I actually am, not where I think I should be or where I want to project that I am, but where I actually am. Where I actually am is a person who has been through a lot, who is still here, who is tired and honest and occasionally struggling, and who found something genuinely lovely in an unexpected corner of the internet and decided to let it matter. The picture has a heart in it. That is the point. That is the whole point. When everything else gets complicated, and it always does, the heart is the argument that still holds. The capacity for love and warmth and attachment, even to fictional things, even to made-up characters designed by an artist in Japan who will never know I exist, is not a consolation prize for people who could not get the real thing. It is the thing. It is what makes the rest of this bearable and sometimes, on good days, beautiful."
+        }
+        p {
+            "If you are reading this and you have your own version of this, your own cartoon, your own fictional character, your own corner of culture that makes you feel something genuine when the rest of the world is not cooperating, I want you to know that I see you, and it counts, and you do not have to be embarrassed about it. The heart knows what it needs. It tends to know better than the part of us that is worried about being taken seriously. Trust it."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-1\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "1." }
+            " Horton D, Wohl R. Mass communication and para-social interaction: Observations on intimacy at a distance. "
+            em { "Psychiatry" }
+            ". 1956;19(3):215-229. https://doi.org/10.1080/00332747.1956.11023049"
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-2\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "2." }
+            " Shigure Ui YouTube channel. https://www.youtube.com/@ui_shig"
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-3\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "3." }
+            " Belk RW. Extended self in a digital world. "
+            em { "Journal of Consumer Research" }
+            ". 2013;40(3):477-500. https://doi.org/10.1086/671052"
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-4\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "4." }
+            " Mar RA, Oatley K. The function of fiction is the abstraction and simulation of social experience. "
+            em { "Perspectives on Psychological Science" }
+            ". 2008;3(3):173-192. https://doi.org/10.1111/j.1745-6924.2008.00073.x"
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-5\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "5." }
+            " Veit W. Neon Genesis Evangelion and the Meaning of Life. "
+            em { "Psychology Today" }
+            ". https://www.psychologytoday.com/us/blog/science-and-philosophy/202003/neon-genesis-evangelion-and-the-meaning-life. Published March 21, 2020."
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-6\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "6." }
+            " Holt-Lunstad J, Smith TB, Baker M, Harris T, Stephenson D. Loneliness and social isolation as risk factors for mortality: A meta-analytic review. "
+            em { "Perspectives on Psychological Science" }
+            ". 2015;10(2):227-237. https://doi.org/10.1177/1745691614568352"
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-7\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "7." }
+            " Lyubomirsky S, Sheldon KM, Schkade D. Pursuing happiness: The architecture of sustainable change. "
+            em { "Review of General Psychology" }
+            ". 2005;9(2):111-131. https://doi.org/10.1037/1089-2680.9.2.111"
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-8\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "8." }
+            " Wikipedia contributors. Grape-kun. Wikipedia. https://en.wikipedia.org/wiki/Grape-kun. Accessed August 22, 2026."
+        }
+    }
+}
 
-use crate::components::blog::code::CodeBlock;
 use dioxus::prelude::*;
+use crate::components::blog::code::CodeBlock;
