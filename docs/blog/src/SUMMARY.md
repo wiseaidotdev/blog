@@ -2,7 +2,7 @@
 
 - [ 1 |---| Announcing Kevin RS 🚀 |---| announcement |---| announcing-kevin-rs |---| Apr 21 2025 |---| Kevin RS is a fully open-source Rust framework for building fast, autonomous AGI agents. Designed for reliability, performance, and general intelligence research, it supports zero-shot learning, multi-agent execution, and future-ready tooling - without relying on fragile stacks. |---| assets/images/banner_post_1.webp](announcing-kevin-rs.md)
 
-- [ 2 |---| Rethinking ARC‑AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC‑AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| assets/images/banner_post_2.webp](rethinking-arc-agi.md)
+- [ 2 |---| Rethinking ARC-AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC-AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| assets/images/banner_post_2.webp](rethinking-arc-agi.md)
 
 - [ 3 |---| Just Don't Pick Up the Brush |---| existence |---| who-am-i |---| Jan 27 2026 |---| Hey, Community. I am finally doing this. My name is Mahmoud Harmouch, and I am new here, though in many ways, I have been searching for a space like this for my entire life. For over two decades, I have struggled with a complicated mix of mental health conditions, ADHD, autism, and an extreme stage of PTSD, among others. |---| assets/images/banner_post_3.webp](who-am-i.md)
 
@@ -45,3 +45,5 @@
 - [ 22 |---| Intelligence at Rest |---| tech |---| intelligence-at-rest |---| Jul 18 2026 |---| Intelligence at Rest |---| assets/images/banner_post_22.webp](intelligence-at-rest.md)
 
 - [ 23 |---| This Is Why My profile picture is now a shigure ui picture |---| personal |---| this-is-why-my-profile-picture-is-now-a-shigure-ui-picture |---| Aug 22 2026 |---| This Is Why My profile picture is now a shigure ui picture |---| assets/images/banner_post_23.webp](this-is-why-my-profile-picture-is-now-a-shigure-ui-picture.md)
+
+- [ 24 |---| Life On Earth is 100% AI Generated Slop. |---| tech |---| life-on-earth-is-100-ai-generated-slop |---| Aug 22 2026 |---| Life On Earth is 100% AI Generated Slop. |---| assets/images/banner_post_24.webp](life-on-earth-is-100-ai-generated-slop.md)

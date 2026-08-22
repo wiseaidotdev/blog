@@ -177,10 +177,10 @@ pub fn Blog() -> Element {
                             "#{post.2}"
                         }
 
-                        p {
-                            class: format!("text-base leading-relaxed mb-8 {}", meta_text),
-                            "{post.4}"
-                        }
+                        // p {
+                        //     class: format!("text-base leading-relaxed mb-8 {}", meta_text),
+                        //     "{post.4}"
+                        // }
 
                         div {
                             class: "no-tailwind",

@@ -80,9 +80,9 @@ fn push_query_state(search: &str, category: &Option<String>, page: usize) {
         }
 
         let query = if parts.is_empty() {
-            String::from("/all-blogs")
+            String::from("/blogs")
         } else {
-            format!("/all-blogs?{}", parts.join("&"))
+            format!("/blogs?{}", parts.join("&"))
         };
 
         let _ = history.push_state_with_url(&wasm_bindgen::JsValue::NULL, "", Some(&query));

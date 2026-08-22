@@ -8,7 +8,7 @@ Wise AI is a research and engineering blog focused on building advanced AI syste
 
 ## Blog Posts
 
-All blog content is available at: https://wiseai.dev/all-blogs
+All blog content is available at: https://wiseai.dev/blogs
 
 ## Sitemap
 

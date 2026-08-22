@@ -13,7 +13,7 @@ pub enum Route {
     #[child("/blogs")]
     BlogPost { child: router_blog::BookRoute },
     #[end_layout]
-    #[route("/all-blogs")]
+    #[route("/blogs")]
     Blogs {},
     #[route("/:..route")]
     PageNotFound { route: Vec<String> },
