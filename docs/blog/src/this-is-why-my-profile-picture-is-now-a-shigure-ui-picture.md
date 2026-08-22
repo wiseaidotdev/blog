@@ -68,18 +68,18 @@ Till next time 👋!
 
 ## References
 
-<span id="ref-1"></span>**1.** Horton D, Wohl R. Mass communication and para-social interaction: Observations on intimacy at a distance. _Psychiatry_. 1956;19(3):215-229. https://doi.org/10.1080/00332747.1956.11023049
+<span id="ref-1"></span>**1.** Horton D, Wohl R. Mass communication and para-social interaction: Observations on intimacy at a distance. [_Psychiatry_. 1956;19(3):215-229.](https://doi.org/10.1080/00332747.1956.11023049)
 
-<span id="ref-2"></span>**2.** Shigure Ui YouTube channel. https://www.youtube.com/@ui_shig
+<span id="ref-2"></span>**2.** [Shigure Ui YouTube channel.](https://www.youtube.com/@ui_shig)
 
-<span id="ref-3"></span>**3.** Belk RW. Extended self in a digital world. _Journal of Consumer Research_. 2013;40(3):477-500. https://doi.org/10.1086/671052
+<span id="ref-3"></span>**3.** Belk RW. Extended self in a digital world. [_Journal of Consumer Research_. 2013;40(3):477-500.](https://doi.org/10.1086/671052)
 
-<span id="ref-4"></span>**4.** Mar RA, Oatley K. The function of fiction is the abstraction and simulation of social experience. _Perspectives on Psychological Science_. 2008;3(3):173-192. https://doi.org/10.1111/j.1745-6924.2008.00073.x
+<span id="ref-4"></span>**4.** Mar RA, Oatley K. The function of fiction is the abstraction and simulation of social experience. [_Perspectives on Psychological Science_. 2008;3(3):173-192.](https://doi.org/10.1111/j.1745-6924.2008.00073.x)
 
-<span id="ref-5"></span>**5.** Veit W. Neon Genesis Evangelion and the Meaning of Life. _Psychology Today_. https://www.psychologytoday.com/us/blog/science-and-philosophy/202003/neon-genesis-evangelion-and-the-meaning-life. Published March 21, 2020.
+<span id="ref-5"></span>**5.** Veit W. Neon Genesis Evangelion and the Meaning of Life. [_Psychology Today_. Published March 21, 2020.](https://www.psychologytoday.com/us/blog/science-and-philosophy/202003/neon-genesis-evangelion-and-the-meaning-life)
 
-<span id="ref-6"></span>**6.** Holt-Lunstad J, Smith TB, Baker M, Harris T, Stephenson D. Loneliness and social isolation as risk factors for mortality: A meta-analytic review. _Perspectives on Psychological Science_. 2015;10(2):227-237. https://doi.org/10.1177/1745691614568352
+<span id="ref-6"></span>**6.** For the "fifteen cigarettes" benchmark, see: Holt-Lunstad J, Smith TB, Layton JB. Social relationships and mortality risk: a meta-analytic review. [_PLoS Medicine_. 2010;7(7):e1000316.](https://doi.org/10.1371/journal.pmed.1000316) For the broader 2015 meta-analysis on isolation, see: Holt-Lunstad J, Smith TB, Baker M, Harris T, Stephenson D. Loneliness and social isolation as risk factors for mortality. [_Perspectives on Psychological Science_. 2015;10(2):227-237.](https://doi.org/10.1177/1745691614568352)
 
-<span id="ref-7"></span>**7.** Lyubomirsky S, Sheldon KM, Schkade D. Pursuing happiness: The architecture of sustainable change. _Review of General Psychology_. 2005;9(2):111-131. https://doi.org/10.1037/1089-2680.9.2.111
+<span id="ref-7"></span>**7.** Lyubomirsky S, Sheldon KM, Schkade D. Pursuing happiness: The architecture of sustainable change. [_Review of General Psychology_. 2005;9(2):111-131.](https://doi.org/10.1037/1089-2680.9.2.111)
 
-<span id="ref-8"></span>**8.** Wikipedia contributors. Grape-kun. Wikipedia. https://en.wikipedia.org/wiki/Grape-kun. Accessed August 22, 2026.
+<span id="ref-8"></span>**8.** Wikipedia contributors. Grape-kun. [Wikipedia. Accessed August 2026.](https://en.wikipedia.org/wiki/Grape-kun)

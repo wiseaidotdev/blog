@@ -56,6 +56,8 @@ pub enum BookRoute {
     IntelligenceAtRest {},
     #[route("/this-is-why-my-profile-picture-is-now-a-shigure-ui-picture")]
     ThisIsWhyMyProfilePictureIsNowAShigureUiPicture {},
+    #[route("/life-on-earth-is-100-ai-generated-slop")]
+    LifeOnEarthIs100AiGeneratedSlop {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -122,6 +124,9 @@ impl BookRoute {
             BookRoute::IntelligenceAtRest {} => use_mdbook::mdbook_shared::PageId(21usize),
             BookRoute::ThisIsWhyMyProfilePictureIsNowAShigureUiPicture {} => {
                 use_mdbook::mdbook_shared::PageId(22usize)
+            }
+            BookRoute::LifeOnEarthIs100AiGeneratedSlop {} => {
+                use_mdbook::mdbook_shared::PageId(23usize)
             }
         }
     }
@@ -200,7 +205,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 1usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 2 |---| Rethinking ARC‑AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC‑AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| assets/images/banner_post_2.webp"
+                        title: " 2 |---| Rethinking ARC-AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC-AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| assets/images/banner_post_2.webp"
                             .to_string(),
                         url: BookRoute::RethinkingArcAgi {},
                         segments: vec![],
@@ -211,8 +216,8 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                                 level: 2usize,
                             },
                             ::use_mdbook::mdbook_shared::Section {
-                                title: "About the ARC‑AGI Benchmark".to_string(),
-                                id: "about-the-arc‑agi-benchmark".to_string(),
+                                title: "About the ARC-AGI Benchmark".to_string(),
+                                id: "about-the-arc-agi-benchmark".to_string(),
                                 level: 2usize,
                             },
                             ::use_mdbook::mdbook_shared::Section {
@@ -1807,6 +1812,69 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::ThisIsWhyMyProfilePictureIsNowAShigureUiPicture {},
             ::use_mdbook::mdbook_shared::PageId(22usize),
         );
+        pages
+            .push((
+                23usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 24 |---| Life On Earth is 100% AI Generated Slop. |---| tech |---| life-on-earth-is-100-ai-generated-slop |---| Aug 22 2026 |---| Life On Earth is 100% AI Generated Slop. |---| assets/images/banner_post_24.webp"
+                            .to_string(),
+                        url: BookRoute::LifeOnEarthIs100AiGeneratedSlop {
+                        },
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The World Is Mostly Noise".to_string(),
+                                id: "the-world-is-mostly-noise".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Entropy Is Neutral, But It Will Ruin You"
+                                    .to_string(),
+                                id: "entropy-is-neutral,-but-it-will-ruin-you".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Life and LLMs Run the Same Code".to_string(),
+                                id: "life-and-llms-run-the-same-code".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Attention Economy Is a Slop Machine"
+                                    .to_string(),
+                                id: "the-attention-economy-is-a-slop-machine".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "It Is Neither Random Nor Fair".to_string(),
+                                id: "it-is-neither-random-nor-fair".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Signal Is Real".to_string(),
+                                id: "the-signal-is-real".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "How to Navigate Slop".to_string(),
+                                id: "how-to-navigate-slop".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(23usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::LifeOnEarthIs100AiGeneratedSlop {},
+            ::use_mdbook::mdbook_shared::PageId(23usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -1822,7 +1890,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 2 |---| Rethinking ARC‑AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC‑AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| assets/images/banner_post_2.webp"
+                        name: " 2 |---| Rethinking ARC-AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC-AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| assets/images/banner_post_2.webp"
                             .to_string(),
                         location: Some(BookRoute::RethinkingArcAgi {}),
                         number: Some(
@@ -2026,6 +2094,16 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         ),
                         nested_items: vec![],
                     }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 24 |---| Life On Earth is 100% AI Generated Slop. |---| tech |---| life-on-earth-is-100-ai-generated-slop |---| Aug 22 2026 |---| Life On Earth is 100% AI Generated Slop. |---| assets/images/banner_post_24.webp"
+                            .to_string(),
+                        location: Some(BookRoute::LifeOnEarthIs100AiGeneratedSlop {
+                        }),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![24u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
                 ],
                 suffix_chapters: vec![],
             },
@@ -2124,19 +2202,19 @@ pub fn RethinkingArcAgi() -> dioxus::prelude::Element {
             a { href: "#tldr", class: "header", "TLDR;" }
         }
         p {
-            "Francois Chollet's ARC‑AGI benchmark was introduced to measure fluid intelligence in AI systems and to spotlight key bottlenecks on the path to AGI "
+            "Francois Chollet's ARC-AGI benchmark was introduced to measure fluid intelligence in AI systems and to spotlight key bottlenecks on the path to AGI "
             a { href: "#ref-11", "(11)" }
-            ". However, version 1 quickly went under brute‑force pattern‑matching strategies that bypass genuine reasoning and render the benchmark less effective "
+            ". However, version 1 quickly went under brute-force pattern-matching strategies that bypass genuine reasoning and render the benchmark less effective "
             a { href: "#ref-4", "(4)" }
-            ". In response, version 2 introduced multi‑step compositional reasoning and contextual rule application to raise the bar and mitigate brute forcing "
+            ". In response, version 2 introduced multi-step compositional reasoning and contextual rule application to raise the bar and mitigate brute forcing "
             a { href: "#ref-9", "(9)" }
             ". Yet, despite these improvements, persistent limitations remain, such as narrow task domains, rule ambiguity, and susceptibility to overfitting strategies customized to the test set "
             a { href: "#ref-10", "(10)" }
-            ". Moreover, many stakeholders mistakenly treat ARC‑AGI as a definitive measure of AGI rather than a diagnostic tool for research insights "
+            ". Moreover, many stakeholders mistakenly treat ARC-AGI as a definitive measure of AGI rather than a diagnostic tool for research insights "
             a { href: "#ref-7", "(7)" }
             ". This misuse has fueled conceptual misunderstandings regarding intelligence definitions and benchmark overreach "
             a { href: "#ref-6", "(6)" }
-            ". Alternative methods, such as dynamic environment simulations, broad curriculum learning, and neurosymbolic integration, offer promising directions to complement or replace ARC‑AGI. Additionally, community‑driven benchmarks aiming at open‑ended task generalization may better reflect real‑world AGI demands "
+            ". Alternative methods, such as dynamic environment simulations, broad curriculum learning, and neurosymbolic integration, offer promising directions to complement or replace ARC-AGI. Additionally, community-driven benchmarks aiming at open-ended task generalization may better reflect real-world AGI demands "
             a { href: "#ref-13", "(13)" }
             ". Future research should balance designing challenging puzzles and avoiding artifacts that invite hacky solutions "
             a { href: "#ref-3", "(3)" }
@@ -2144,29 +2222,29 @@ pub fn RethinkingArcAgi() -> dioxus::prelude::Element {
             a { href: "#ref-12", "(12)" }
             "."
         }
-        h2 { id: "about-the-arcagi-benchmark",
-            a { href: "#about-the-arcagi-benchmark", class: "header",
-                "About the ARC‑AGI Benchmark"
+        h2 { id: "about-the-arc-agi-benchmark",
+            a { href: "#about-the-arc-agi-benchmark", class: "header",
+                "About the ARC-AGI Benchmark"
             }
         }
         p {
-            "The Abstraction and Reasoning Corpus for Artificial General Intelligence (ARC‑AGI) was proposed by Francois Chollet in 2019 as a benchmark to evaluate fluid intelligence in AI systems "
+            "The Abstraction and Reasoning Corpus for Artificial General Intelligence (ARC-AGI) was proposed by Francois Chollet in 2019 as a benchmark to evaluate fluid intelligence in AI systems "
             a { href: "#ref-11", "(11)" }
-            ". Inspired by childhood intelligence tests and the principle of program induction, ARC‑AGI presents visual reasoning puzzles that require pattern recognition, transformation, and abstract rule inference "
+            ". Inspired by childhood intelligence tests and the principle of program induction, ARC-AGI presents visual reasoning puzzles that require pattern recognition, transformation, and abstract rule inference "
             a { href: "#ref-5", "(5)" }
-            ". Unlike traditional benchmarks focusing on narrow‑domain performance, ARC‑AGI aims to assess an agent's ability to generalize to novel, unseen tasks with minimal examples "
+            ". Unlike traditional benchmarks focusing on narrow-domain performance, ARC-AGI aims to assess an agent's ability to generalize to novel, unseen tasks with minimal examples "
             a { href: "#ref-11", "(11)" }
             ". The public evaluation set contains 800 tasks, while a private test set of similar complexity is used for scoring and competition purposes "
             a { href: "#ref-5", "(5)" }
-            ". Early participants in ARC‑AGI‑1 relied on deep‑learning‑guided program synthesis techniques to achieve modest success rates around 33% on the private evaluation set "
+            ". Early participants in ARC-AGI-1 relied on deep-learning-guided program synthesis techniques to achieve modest success rates around 33% on the private evaluation set "
             a { href: "#ref-5", "(5)" }
-            ". Given the open‑ended nature of the problem space, human solvers reportedly achieved up to 85% accuracy under time constraints, demonstrating a significant performance gap between humans and machines. Despite the intuitive appeal of this test, version 1 of the benchmark was soon undermined by brute‑force algorithms that exhaustively searched combinations of primitive operations to find valid solutions "
+            ". Given the open-ended nature of the problem space, human solvers reportedly achieved up to 85% accuracy under time constraints, demonstrating a significant performance gap between humans and machines. Despite the intuitive appeal of this test, version 1 of the benchmark was soon undermined by brute-force algorithms that exhaustively searched combinations of primitive operations to find valid solutions "
             a { href: "#ref-4", "(4)" }
-            ". These brute‑force strategies exploited the limited operations vocabulary and the finite search space of simple puzzle dimensions, allowing automated solutions with massive compute to dominate the leaderboard "
+            ". These brute-force strategies exploited the limited operations vocabulary and the finite search space of simple puzzle dimensions, allowing automated solutions with massive compute to dominate the leaderboard "
             a { href: "#ref-4", "(4)" }
-            ". As a result, ARC‑AGI‑1 lost its ability to discriminate truly general reasoning from computationally expensive pattern‑matching hacks, reducing its diagnostic value for AGI research "
+            ". As a result, ARC-AGI-1 lost its ability to discriminate truly general reasoning from computationally expensive pattern-matching hacks, reducing its diagnostic value for AGI research "
             a { href: "#ref-6", "(6)" }
-            ". This shortcoming prompted the design of ARC‑AGI‑2, which aimed to patch these issues by introducing more complex task scaffolding and compositional rule requirements "
+            ". This shortcoming prompted the design of ARC-AGI-2, which aimed to patch these issues by introducing more complex task scaffolding and compositional rule requirements "
             a { href: "#ref-10", "(10)" }
             "."
         }
@@ -2174,14 +2252,14 @@ pub fn RethinkingArcAgi() -> dioxus::prelude::Element {
             a { href: "#flaws-in-version-1", class: "header", "Flaws in Version 1" }
         }
         p {
-            "Version 1 of ARC‑AGI was designed with a fixed set of primitive operations that AI agents could combine to transform input grids into output grids, encompassing actions such as rotation, reflection, and color replacement. While this operational vocabulary captured the essence of many abstract puzzles, it also created a bounded search space that brute‑force techniques could traverse with sufficient computational resources "
+            "Version 1 of ARC-AGI was designed with a fixed set of primitive operations that AI agents could combine to transform input grids into output grids, encompassing actions such as rotation, reflection, and color replacement. While this operational vocabulary captured the essence of many abstract puzzles, it also created a bounded search space that brute-force techniques could traverse with sufficient computational resources "
             a { href: "#ref-4", "(4)" }
-            ". Researchers quickly demonstrated that by systematically enumerating all possible compositions of operations up to a certain depth, AI agents could solve a large fraction of ARC‑AGI‑1 tasks without any genuine pattern understanding "
+            ". Researchers quickly demonstrated that by systematically enumerating all possible compositions of operations up to a certain depth, AI agents could solve a large fraction of ARC-AGI-1 tasks without any genuine pattern understanding "
             a { href: "#ref-4", "(4)" }
             ". For example, a simple Python script leveraging recursive search can iterate through operation sequences and validate them against the provided training examples."
         }
         p {
-            "This brute‑force technique demonstrates how the lack of puzzle diversity made it feasible to bypass the intended challenge through exhaustive search "
+            "This brute-force technique demonstrates how the lack of puzzle diversity made it feasible to bypass the intended challenge through exhaustive search "
             a { href: "#ref-4", "(4)" }
             ". As solver implementations grew more sophisticated, they incorporated heuristics to prune the search tree, further boosting performance and highlighting design weaknesses in version 1 "
             a { href: "#ref-5", "(5)" }
@@ -2189,7 +2267,7 @@ pub fn RethinkingArcAgi() -> dioxus::prelude::Element {
             a { href: "#ref-1", "(1)" }
             ". This experience underscores the threats of static benchmarks on evolving computational landscapes, where solver ingenuity can outpace test designers' assumptions "
             a { href: "#ref-6", "(6)" }
-            ". In response, the ARC‑AGI team moved to strengthen the benchmark's resilience by introducing version 2 later that year "
+            ". In response, the ARC-AGI team moved to strengthen the benchmark's resilience by introducing version 2 later that year "
             a { href: "#ref-3", "(3)" }
             "."
         }
@@ -2197,21 +2275,21 @@ pub fn RethinkingArcAgi() -> dioxus::prelude::Element {
             a { href: "#version-2-improvements", class: "header", "Version 2 Improvements" }
         }
         p {
-            "ARC‑AGI‑2 was released with a suite of modifications intended to thwart brute‑force exploitation by expanding the operational vocabulary and task scaffolding complexity "
+            "ARC-AGI-2 was released with a suite of modifications intended to thwart brute-force exploitation by expanding the operational vocabulary and task scaffolding complexity "
             a { href: "#ref-10", "(10)" }
-            ". Key enhancements included multi‑step compositional reasoning rules that require solvers to apply sequences of transformations conditioned on intermediate results "
+            ". Key enhancements included multi-step compositional reasoning rules that require solvers to apply sequences of transformations conditioned on intermediate results "
             a { href: "#ref-1", "(1)" }
-            ". Contextual rule application was introduced to ensure that puzzles could not be decoupled into independent subproblems, thereby blocking isolated brute‑force searches "
+            ". Contextual rule application was introduced to ensure that puzzles could not be decoupled into independent subproblems, thereby blocking isolated brute-force searches "
             a { href: "#ref-10", "(10)" }
             ". Additionally, version 2 incorporated randomized rule embedding, where certain elements of a puzzle's rule set were obfuscated until specific criteria were met during execution "
             a { href: "#ref-3", "(3)" }
-            ". These measures aimed to force solvers to develop genuine inferential strategies instead of relying solely on exhaustive enumeration. Despite these improvements, developers discovered that by integrating heuristic pruning and dynamic rule inference, many tasks remained susceptible to pattern‑collision bypasses. The added complexity also raised the technical bar for participant engagement, potentially deterring researchers without extensive engineering resources "
+            ". These measures aimed to force solvers to develop genuine inferential strategies instead of relying solely on exhaustive enumeration. Despite these improvements, developers discovered that by integrating heuristic pruning and dynamic rule inference, many tasks remained susceptible to pattern-collision bypasses. The added complexity also raised the technical bar for participant engagement, potentially deterring researchers without extensive engineering resources "
             a { href: "#ref-9", "(9)" }
             ". Furthermore, some puzzles exhibited ambiguous solution paths, leading to multiple valid interpretations and complicating automatic evaluation "
             a { href: "#ref-10", "(10)" }
-            ". These residual issues highlight the challenge of designing puzzles that are simultaneously open‑ended, unambiguous, and resistant to non‑human strategies "
+            ". These residual issues highlight the challenge of designing puzzles that are simultaneously open-ended, unambiguous, and resistant to non-human strategies "
             a { href: "#ref-5", "(5)" }
-            ". As a result, ARC‑AGI‑2, while a marked improvement, still falls short of an ideal AGI benchmark and invites continued iteration "
+            ". As a result, ARC-AGI-2, while a marked improvement, still falls short of an ideal AGI benchmark and invites continued iteration "
             a { href: "#ref-8", "(8)" }
             "."
         }
@@ -2223,21 +2301,21 @@ pub fn RethinkingArcAgi() -> dioxus::prelude::Element {
             }
         }
         p {
-            "Although F. Chollet has repeatedly emphasized that ARC‑AGI is not a definitive test for AGI, many in the community interpret high scores as AGI milestones "
+            "Although F. Chollet has repeatedly emphasized that ARC-AGI is not a definitive test for AGI, many in the community interpret high scores as AGI milestones "
             a { href: "#ref-8", "(8)" }
-            ". This conflation overlooks the fundamental difference between solving a closed set of puzzles and exhibiting broad, human‑like adaptability across diverse tasks. Defining AGI itself remains a complex task, with no consensus on whether intelligence should be gauged by task breadth, learning efficiency, or cognitive flexibility "
+            ". This conflation overlooks the fundamental difference between solving a closed set of puzzles and exhibiting broad, human-like adaptability across diverse tasks. Defining AGI itself remains a complex task, with no consensus on whether intelligence should be gauged by task breadth, learning efficiency, or cognitive flexibility "
             a { href: "#ref-13", "(13)" }
             ". Benchmark overreach may lead to premature claims of AGI achievement, driven more by competition and publicity than by scientific rigor "
             a { href: "#ref-1", "(1)" }
             ". Indeed, OpenAI staff members have argued that surpassing human performance on certain tasks could qualify as AGI under loose definitions, further puzzling the discourse "
             a { href: "#ref-1", "(1)" }
-            ". Such debates underscore the need for clearer conceptual frameworks that distinguish between domain‑specific competence and true general intelligence "
+            ". Such debates underscore the need for clearer conceptual frameworks that distinguish between domain-specific competence and true general intelligence "
             a { href: "#ref-6", "(6)" }
             ". Moreover, an overreliance on any single benchmark risks promoting overfitting of research efforts to that metric at the expense of broader innovation "
             a { href: "#ref-5", "(5)" }
-            ". A holistic assessment of AGI progress should incorporate multiple evaluation modalities, including interactive simulations, real‑world robotics, and language understanding. By diversifying benchmarks, the field can mitigate the risk of tunnel vision and encourage development of versatile, robust AI systems "
+            ". A holistic assessment of AGI progress should incorporate multiple evaluation modalities, including interactive simulations, real-world robotics, and language understanding. By diversifying benchmarks, the field can mitigate the risk of tunnel vision and encourage development of versatile, robust AI systems "
             a { href: "#ref-9", "(9)" }
-            ". Therefore, while ARC‑AGI provides valuable insights, it should be positioned as one tool among many in the AGI evaluation toolkit "
+            ". Therefore, while ARC-AGI provides valuable insights, it should be positioned as one tool among many in the AGI evaluation toolkit "
             a { href: "#ref-11", "(11)" }
             "."
         }
@@ -2245,9 +2323,9 @@ pub fn RethinkingArcAgi() -> dioxus::prelude::Element {
             a { href: "#future-directions", class: "header", "Future Directions" }
         }
         p {
-            "In a recent video presentation, F. Chollet outlines the motivations and developments behind ARC‑AGI and its iterations "
+            "In a recent video presentation, F. Chollet outlines the motivations and developments behind ARC-AGI and its iterations "
             a { href: "#ref-11", "(11)" }
-            ". In light of ARC‑AGI's challenges, researchers are exploring dynamic environment benchmarks that mimic real‑world task variability and interactivity "
+            ". In light of ARC-AGI's challenges, researchers are exploring dynamic environment benchmarks that mimic real-world task variability and interactivity "
             a { href: "#ref-13", "(13)" }
             ". Projects such as "
             a { href: "https://github.com/openai/gym", "OpenAI's AI Gym" }
@@ -2261,13 +2339,13 @@ pub fn RethinkingArcAgi() -> dioxus::prelude::Element {
             a { href: "#ref-5", "(5)" }
             ". Neurosymbolic integration combines neural networks with symbolic reasoning modules, aiming to capture pattern recognition and logical inference in a unified architecture "
             a { href: "#ref-12", "(12)" }
-            ". Program synthesis approaches leverage language models to generate candidate programs, offering a bridge between LLM fluency and precise rule‑based task execution "
+            ". Program synthesis approaches leverage language models to generate candidate programs, offering a bridge between LLM fluency and precise rule-based task execution "
             a { href: "#ref-3", "(3)" }
-            ". Community‑led benchmark initiatives emphasize open‑source evaluation suites, transparent leaderboards, and reproducibility to foster collaborative progress "
+            ". Community-led benchmark initiatives emphasize open-source evaluation suites, transparent leaderboards, and reproducibility to foster collaborative progress "
             a { href: "#ref-9", "(9)" }
             ". Advanced puzzle designs are experimenting with procedurally generated tasks, random perturbations, and adversarial examples to further resist brute forcing "
             a { href: "#ref-10", "(10)" }
-            ". Ultimately, the path to AGI will likely require hybrid evaluation strategies, combining analytical puzzles, simulated environments, and real‑world performance metrics "
+            ". Ultimately, the path to AGI will likely require hybrid evaluation strategies, combining analytical puzzles, simulated environments, and real-world performance metrics "
             a { href: "#ref-13", "(13)" }
             ". At kevin RS, our vision is to unify these methodologies by building modular APIs that allow seamless integration of diverse benchmark types, from visual reasoning to autonomous control "
             a { href: "#ref-12", "(12)" }
@@ -2360,7 +2438,7 @@ pub fn RethinkingArcAgi() -> dioxus::prelude::Element {
             }
             p { class: "inline-html-block", dangerous_inner_html: "</span>" }
             strong { "12." }
-            " github/profile/README.adoc at main · wiseaidotdev/.github. https://github.com/wiseaidotdev/.github/blob/main/profile/README.adoc.."
+            " github/profile/README.adoc at main . wiseaidotdev/.github. https://github.com/wiseaidotdev/.github/blob/main/profile/README.adoc.."
             p {
                 class: "inline-html-block",
                 dangerous_inner_html: "<span id=\"ref-13\">",
@@ -9685,8 +9763,10 @@ pub fn ThisIsWhyMyProfilePictureIsNowAShigureUiPicture() -> dioxus::prelude::Ele
             p { class: "inline-html-block", dangerous_inner_html: "</span>" }
             strong { "1." }
             " Horton D, Wohl R. Mass communication and para-social interaction: Observations on intimacy at a distance. "
-            em { "Psychiatry" }
-            ". 1956;19(3):215-229. https://doi.org/10.1080/00332747.1956.11023049"
+            a { href: "https://doi.org/10.1080/00332747.1956.11023049",
+                em { "Psychiatry" }
+                ". 1956;19(3):215-229."
+            }
         }
         p {
             p {
@@ -9695,7 +9775,8 @@ pub fn ThisIsWhyMyProfilePictureIsNowAShigureUiPicture() -> dioxus::prelude::Ele
             }
             p { class: "inline-html-block", dangerous_inner_html: "</span>" }
             strong { "2." }
-            " Shigure Ui YouTube channel. https://www.youtube.com/@ui_shig"
+            " "
+            a { href: "https://www.youtube.com/@ui_shig", "Shigure Ui YouTube channel." }
         }
         p {
             p {
@@ -9705,8 +9786,10 @@ pub fn ThisIsWhyMyProfilePictureIsNowAShigureUiPicture() -> dioxus::prelude::Ele
             p { class: "inline-html-block", dangerous_inner_html: "</span>" }
             strong { "3." }
             " Belk RW. Extended self in a digital world. "
-            em { "Journal of Consumer Research" }
-            ". 2013;40(3):477-500. https://doi.org/10.1086/671052"
+            a { href: "https://doi.org/10.1086/671052",
+                em { "Journal of Consumer Research" }
+                ". 2013;40(3):477-500."
+            }
         }
         p {
             p {
@@ -9716,8 +9799,10 @@ pub fn ThisIsWhyMyProfilePictureIsNowAShigureUiPicture() -> dioxus::prelude::Ele
             p { class: "inline-html-block", dangerous_inner_html: "</span>" }
             strong { "4." }
             " Mar RA, Oatley K. The function of fiction is the abstraction and simulation of social experience. "
-            em { "Perspectives on Psychological Science" }
-            ". 2008;3(3):173-192. https://doi.org/10.1111/j.1745-6924.2008.00073.x"
+            a { href: "https://doi.org/10.1111/j.1745-6924.2008.00073.x",
+                em { "Perspectives on Psychological Science" }
+                ". 2008;3(3):173-192."
+            }
         }
         p {
             p {
@@ -9727,8 +9812,10 @@ pub fn ThisIsWhyMyProfilePictureIsNowAShigureUiPicture() -> dioxus::prelude::Ele
             p { class: "inline-html-block", dangerous_inner_html: "</span>" }
             strong { "5." }
             " Veit W. Neon Genesis Evangelion and the Meaning of Life. "
-            em { "Psychology Today" }
-            ". https://www.psychologytoday.com/us/blog/science-and-philosophy/202003/neon-genesis-evangelion-and-the-meaning-life. Published March 21, 2020."
+            a { href: "https://www.psychologytoday.com/us/blog/science-and-philosophy/202003/neon-genesis-evangelion-and-the-meaning-life",
+                em { "Psychology Today" }
+                ". Published March 21, 2020."
+            }
         }
         p {
             p {
@@ -9737,9 +9824,16 @@ pub fn ThisIsWhyMyProfilePictureIsNowAShigureUiPicture() -> dioxus::prelude::Ele
             }
             p { class: "inline-html-block", dangerous_inner_html: "</span>" }
             strong { "6." }
-            " Holt-Lunstad J, Smith TB, Baker M, Harris T, Stephenson D. Loneliness and social isolation as risk factors for mortality: A meta-analytic review. "
-            em { "Perspectives on Psychological Science" }
-            ". 2015;10(2):227-237. https://doi.org/10.1177/1745691614568352"
+            " For the \"fifteen cigarettes\" benchmark, see: Holt-Lunstad J, Smith TB, Layton JB. Social relationships and mortality risk: a meta-analytic review. "
+            a { href: "https://doi.org/10.1371/journal.pmed.1000316",
+                em { "PLoS Medicine" }
+                ". 2010;7(7):e1000316."
+            }
+            " For the broader 2015 meta-analysis on isolation, see: Holt-Lunstad J, Smith TB, Baker M, Harris T, Stephenson D. Loneliness and social isolation as risk factors for mortality. "
+            a { href: "https://doi.org/10.1177/1745691614568352",
+                em { "Perspectives on Psychological Science" }
+                ". 2015;10(2):227-237."
+            }
         }
         p {
             p {
@@ -9749,8 +9843,10 @@ pub fn ThisIsWhyMyProfilePictureIsNowAShigureUiPicture() -> dioxus::prelude::Ele
             p { class: "inline-html-block", dangerous_inner_html: "</span>" }
             strong { "7." }
             " Lyubomirsky S, Sheldon KM, Schkade D. Pursuing happiness: The architecture of sustainable change. "
-            em { "Review of General Psychology" }
-            ". 2005;9(2):111-131. https://doi.org/10.1037/1089-2680.9.2.111"
+            a { href: "https://doi.org/10.1037/1089-2680.9.2.111",
+                em { "Review of General Psychology" }
+                ". 2005;9(2):111-131."
+            }
         }
         p {
             p {
@@ -9759,7 +9855,421 @@ pub fn ThisIsWhyMyProfilePictureIsNowAShigureUiPicture() -> dioxus::prelude::Ele
             }
             p { class: "inline-html-block", dangerous_inner_html: "</span>" }
             strong { "8." }
-            " Wikipedia contributors. Grape-kun. Wikipedia. https://en.wikipedia.org/wiki/Grape-kun. Accessed August 22, 2026."
+            " Wikipedia contributors. Grape-kun. "
+            a { href: "https://en.wikipedia.org/wiki/Grape-kun", "Wikipedia. Accessed August 2026." }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn LifeOnEarthIs100AiGeneratedSlop() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "Most arguments I make in these posts start from code, from systems I built, or from some technical thing that broke in an interesting way. This one starts from a feeling, and I want to be upfront about that, because I know how much weaker that sounds and I am going to make the case anyway. The feeling is this: the world does not respond the way a designed system should respond. You push on it and get back something vaguely plausible but not quite right. You follow the rules and get an outcome that seems related to the rules but not actually derived from them. You read the documentation and find that the documented behavior and the actual behavior share a family resemblance rather than an identity. Anyone who has spent serious time debugging knows exactly what I am describing, and anyone who has spent serious time navigating adult life in the 21st century knows it from a different direction. The experience is the same. You are inside a system that produces locally coherent output, that passes surface-level inspection, that quotes the right values in the right moments, but that cannot be made to ground truth in the way that honest systems can. It generates plausible outputs where the criterion for plausibility is internal statistical consistency rather than external accuracy. If you have read "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            " and wanted to argue with the section about hallucination, wait. Because this post is going to make the same argument about something you cannot opt out of."
+        }
+        p {
+            "Let me define the central term before I lose you in the metaphor, because \"slop\" is doing serious rhetorical work here and I owe you precision. Slop, in the AI context, does not mean garbage. I want to be very clear about that. Slop means output that is optimized for the appearance of correctness rather than for correctness itself. It means output generated by a process that has no reliable mechanism for checking what it produces against the world. It means fluency without grounding, confidence without calibration, structure without causation. A language model produces slop not because it is broken but because the generative process it runs on has no ground truth constraint, only statistical consistency constraints. The output can be locally beautiful and globally useless. It can sound like understanding while containing none. It can tell you the right thing to do in a situation while having no model of the situation at all. That is slop, and that distinction, between the appearance of correctness and correctness itself, is the distinction this entire post is about. Because once you understand it as a structural property of a class of generative processes rather than as a failure of any particular instance, you start to see it everywhere. You start to see it in the job market. You start to see it in the news. You start to see it in the advice people give you when you are struggling. You start to see it in the explanations institutions offer for why things are the way they are. The slop is structural. It was not put there on purpose. It emerged from optimization pressure in the wrong dimension, and it is doing exactly what that kind of optimization pressure always produces."
+        }
+        p {
+            "I have not been quiet about my own experience navigating this. "
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            " was an attempt to document what it felt like from the inside. "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            " was an attempt to explain the starting conditions that made the navigation so difficult. "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            " was an attempt to describe what happens when the system accelerates in the name of progress while expelling the people who built the infrastructure for that progress. I am not repeating those arguments here. But I am using them as data points, because data is what changes the status of a feeling into an observation, and observation is what eventually forces an honest person to build a model. The model I have built, very slowly and at considerable personal cost, is this: the world, taken as a generative process, has the same structural properties as a language model that has been trained on its own output for long enough that nobody remembers what the original ground truth was. It is not random. It is not evil. It is optimized for plausibility, and plausibility at scale is what looks, from a distance, like order, and what looks, from close up, like slop."
+        }
+        h2 { id: "the-world-is-mostly-noise",
+            a { href: "#the-world-is-mostly-noise", class: "header", "The World Is Mostly Noise" }
+        }
+        p {
+            "I want to start with the most provocative version of the argument, because I think it is also the most honest one, and the most honest starting point is always the best one even when it is uncomfortable. The structure of human experience, taken in bulk, looks far more like noise than like signal. I do not mean that nothing matters or that no choices have consequences or that the world is completely random. I mean something more specific and more unsettling, which is that the relationship between effort and outcome, between intention and result, between the quality of what you do and the quality of what you receive in return, is almost impossibly weak in most domains of life. The correlation is positive, but it is small, and the variance is enormous, and that combination looks exactly like a system that was generated by a process with massive inherent randomness dressed up in just enough structure to give people the illusion of control."
+        }
+        p {
+            "If you have read "
+            a { href: "/blogs/it-is-always-the-russians", "It Is Always the Russians" }
+            ", you know that I think about systems in terms of who designed them and what assumptions they encoded. The systems that structure most of human life, the job market, the housing market, the attention economy, the political systems, the educational credentialing pipeline, were not designed by anyone with a coherent intention. They evolved by accretion, the way geological sediment accumulates, one layer at a time, each layer deposited by forces that had no knowledge of the layers above or below them. The result is a structure that looks, from the inside, like it was built to do something, but from the outside, from the perspective of anyone trying to navigate it rationally, looks like it was built to absorb effort without producing reliable outcomes. That is not a metaphor for entropy. That is entropy, working at the scale of human social organization."
+        }
+        p {
+            "Research in behavioral economics and organizational theory has found, repeatedly and across many contexts, that the relationship between individual merit and individual outcome is mediated by a degree of randomness that most people fundamentally underestimate. Economists studying labor markets have documented that wages in similar occupations vary enormously even when controlling for skill, experience, and education, and that a substantial portion of that variance is attributable to factors that have nothing to do with the worker's actual contribution "
+            a { href: "#ref-1", "(1)" }
+            ". Sociologists studying career trajectories have found that small initial advantages, often the result of random timing or network access rather than talent, compound dramatically over time, producing outcomes that look like meritocracy from the outside but are better described as luck-amplification from the inside "
+            a { href: "#ref-2", "(2)" }
+            ". These are not edge cases or exceptions. They are the central findings of decades of research, and they describe a world in which the signal-to-noise ratio of individual effort is startlingly low."
+        }
+        p {
+            "I want to be careful here about what I am and am not claiming, because precision matters and I do not want to be misread. I am not claiming that effort is useless or that choices do not matter or that there is no point in trying. I am claiming something much more limited and much more specific: that the world, taken as a generative process, produces outcomes that are only loosely coupled to the merit of the inputs, in the same way that an LLM produces outputs that are only loosely coupled to the truth of the facts. Both processes give you something that looks roughly right most of the time. Both processes occasionally give you something exactly right, and occasionally give you something catastrophically wrong, with no reliable way to predict which you are getting. That structural similarity is not a coincidence, and it is not just a metaphor. It is the signature of a class of generative processes united by high entropy and high dimensionality, and both large language models and human social systems belong to that class."
+        }
+        p {
+            "The reason I think this framing matters is that it changes how we should think about failure. When an LLM hallucinates, nobody blames the prompt. Nobody assumes the question was bad because the answer was wrong. We understand that the model can generate confident false outputs regardless of the quality of the input, because the generation process is not grounded in truth. It is grounded in statistics. When a person works hard and gets nothing back, everybody blames the person. The advice they get is to try harder, to network better, to be more persistent, to develop new skills, to brand themselves more effectively. Nobody points at the system and says that the system is a high-entropy generative process that produces plausible-looking outcomes without any guarantee of causal connection to individual merit. But that description would be at least as accurate as the personal-responsibility narrative, and in many cases more accurate, and the fact that we apply different frameworks to LLM failure and human failure while the underlying structure is the same is a kind of collective delusion that I think we should name directly."
+        }
+        h2 { id: "entropy-is-neutral-but-it-will-ruin-you",
+            a {
+                href: "#entropy-is-neutral-but-it-will-ruin-you",
+                class: "header",
+                "Entropy Is Neutral, But It Will Ruin You"
+            }
+        }
+        p {
+            "One of the things I have been thinking about since I wrote "
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
+                "Language is Limited. ASI is Impossible."
+            }
+            " is the relationship between entropy and intelligence. In information theory, entropy measures the amount of uncertainty in a system. High entropy means high uncertainty, which means the system is hard to predict. Low entropy means low uncertainty, which means the system contains structure, patterns, regularities that reduce surprise. Language models are trained to reduce entropy in text, to take a sequence of tokens and predict the next token with low uncertainty by leveraging the statistical patterns in the training data. When the training data is well-structured and high quality, the model's predictions are good. When the training data is noisy and contradictory, the model's predictions are erratic. Life on Earth is the training data, and life on Earth is extremely noisy."
+        }
+        p {
+            "The physicist Erwin Schrödinger wrote in his 1944 book "
+            em { "What Is Life?" }
+            " that living organisms maintain themselves by feeding on negative entropy, by consuming highly ordered energy sources and exporting disorder into their environment "
+            a { href: "#ref-3", "(3)" }
+            ". He was talking about biology, about the thermodynamics of cells and metabolism, but the idea extends naturally to the social level. Human civilization maintains its local order by generating entropy elsewhere. The wealth that accumulates at the top of the economic hierarchy is matched by disorder and precarity at the bottom. The smoothly functioning systems that some people navigate without friction are matched by dysfunctional, chaotic, unpredictable systems that other people are trapped inside. Order and entropy are conserved in total, even if they are distributed very unequally. The people who benefit most from the world's order are usually the people who are least exposed to its disorder, which is why they tend to believe that the world is more structured and more meritocratic than it actually is. They have never had to navigate the high-entropy regions."
+        }
+        p {
+            "I navigated the high-entropy regions for years. I wrote about this in "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            ", about growing up without internet access or a computer in a village where nobody expected you to build anything technical. Every step I took in the direction of the life I wanted to build was a step through a system with high variance and low predictability. I would apply for hundreds of jobs and hear almost nothing back. I would build things that should have been noticed and watch them go unnoticed while much worse things built by more connected people got attention and funding. I would follow the advice given by the people who had succeeded, and find that most of that advice was specific to their own path through a low-entropy region of the system and had almost no applicability to the high-entropy region I was navigating. That gap between advice and reality is one of the most dispiriting things I have ever experienced, and it is directly analogous to the gap between what an LLM confidently asserts and what is actually true."
+        }
+        p {
+            "The key insight, and this is the one I most want people to take away from this section, is that entropy in a system is not the same as randomness in the philosophical sense. A high-entropy system is not one where everything is equally likely and nothing can be predicted. It is one where the specific outcome is highly sensitive to initial conditions and context, which means it is very hard to predict from general principles without specific knowledge of the particular situation. A weather system is high-entropy not because it is uncaused but because the causal chain is so long and so sensitive to initial conditions that practical prediction is limited beyond a week or so. A human social system is high-entropy not because it is uncaused but because the interactions between individual decisions, institutional structures, cultural norms, historical contingencies, and random events are so numerous and so nonlinearly coupled that prediction from general principles is almost impossible. You can still make local predictions if you know the specific details of the specific situation. But the general advice, the motivational posters, the career guides, the productivity systems, are all attempting to compress a high-entropy system into a low-entropy representation, and that compression, by definition, throws away most of the information that actually determines your outcome."
+        }
+        p {
+            "This is also why I have grown deeply skeptical of what I call the meritocracy narrative, which is not a conspiracy theory but a category error. The meritocracy narrative says that if you work hard enough and develop the right skills and are persistent enough, you will succeed. That narrative is not false in the way a hallucinated fact is false. It has some statistical support. Working hard does increase your probability of success compared to not working hard all else being equal. But all else is never equal, and the variance in outcomes at any given level of effort is enormous, and the narrative systematically underweights that variance because it is constructed from survivorship bias. The people who tell you that hard work leads to success are usually the people for whom it did, and their testimony is drawn entirely from the low-entropy region of the distribution where effort and outcome were actually correlated. The people for whom it did not are quieter, because failure is quieter than success, and their silence is mistaken for absence."
+        }
+        p {
+            "Research in sociology has examined this survivorship bias systematically and found that the visible pool of successful people dramatically overrepresents individuals from advantaged starting positions, and that controlling for starting position, the relationship between individual effort and individual outcome weakens substantially "
+            a { href: "#ref-4", "(4)" }
+            ". That does not mean effort is irrelevant. It means the narrative about effort is constructed from a biased sample, and what looks like a general law turns out to be a description of a specific high-luck, low-entropy path through the distribution. The rest of the distribution, the majority of the distribution, operates under different rules, and nobody is building motivational content about those rules because acknowledging them would be too uncomfortable for the people who benefit from believing the meritocracy narrative is universally applicable."
+        }
+        h2 { id: "life-and-llms-run-the-same-code",
+            a { href: "#life-and-llms-run-the-same-code", class: "header",
+                "Life and LLMs Run the Same Code"
+            }
+        }
+        p {
+            "I want to make the analogy between life and language models more precise now, because I think precision is what separates an interesting observation from an actual argument. The core claim is that life on Earth and large language models share the same underlying generative structure, which is a high-dimensional statistical process that produces locally plausible outputs without global ground truth. Let me unpack what that means and why it matters."
+        }
+        p {
+            "A large language model is trained on the entire written output of human civilization. It learns to produce text that is statistically consistent with that output, which means it learns the surface patterns of human knowledge without learning the causal structures that generated those patterns. The text it produces passes every local consistency check: the grammar is correct, the vocabulary is appropriate, the topic-level coherence is maintained, the tone is reasonable. But it fails global consistency checks routinely, because it has no access to the ground truth that would allow it to determine whether the globally coherent claims are actually true. It can write a confident paragraph about a historical event that never happened, because confidence in text has nothing to do with truth in reality. The generator has learned to make things sound right, not to make things be right, and sounding right and being right are very different properties that are only weakly correlated."
+        }
+        p {
+            "Human social systems are generated by a process with the same structure, one level up in abstraction. The market economy, the attention economy, the credentialing systems, the political systems, they all produce outputs that are locally plausible. A job posting that seems to describe a real opportunity. A news story that seems to describe a real event. An opportunity that seems to represent a real path forward. A piece of advice that seems to describe a genuinely applicable rule. Each of these outputs passes local consistency checks: the language is coherent, the structure is familiar, the framing makes sense within its context. But the global consistency, the connection between what the system promises and what it actually delivers for the average person navigating it, is the same weak and unreliable connection that you find between LLM output and factual truth. The system has learned to produce outputs that look like they should work, without any guarantee that they will work, because the generative process is optimized for local coherence rather than for global truth."
+        }
+        p {
+            "The reason this analogy holds is not coincidence. It is because both systems are generated by the same underlying force, which is the optimization of appearance over substance in a high-dimensional space. An LLM is explicitly trained to produce text that looks right to a human evaluator, because that is what RLHF and other alignment techniques do: they optimize the model against human judgment of surface quality. A human social system evolves to produce outputs that look legitimate to its participants, because legitimacy is what maintains the system's stability and prevents it from being dismantled. Both processes end up optimizing for appearance rather than ground truth, because ground truth is harder to measure and appearances are cheaper to produce. The result in both cases is a system that generates plausible slop at scale: outputs that sound right, look right, feel right, but that do not reliably connect to the underlying reality they claim to represent."
+        }
+        p {
+            "I want to be careful to acknowledge that this is not the whole story. Not everything in life is slop, just as not everything an LLM produces is wrong. There are real connections, real structures, real causal relationships that persist through the noise. Deep mathematics is real. Physical law is real. The love a parent feels for a child is real. The satisfaction of building something that works is real. The moral weight of cruelty is real. I am not arguing for nihilism, because nihilism is just a different kind of slop, the verbal kind, where you dress up entropy in philosophical language and call it a worldview. I am arguing for something more nuanced and more useful, which is that the slop-to-signal ratio in life is much higher than most people acknowledge, that this ratio is not distributed equally across the population, and that understanding the nature of the noise is the first step toward navigating it honestly. You cannot navigate a high-entropy system by pretending it is low-entropy. The pretense just guarantees that you will be blindsided by variance when it arrives."
+        }
+        p {
+            "Research on subjective well-being across populations has consistently found something that is deeply challenging to the standard meritocracy narrative: that life satisfaction is only weakly correlated with objective measures of achievement and is much more strongly correlated with factors that are largely outside individual control, including genetics, early childhood experience, geography, social trust, and institutional quality in the country where one lives "
+            a { href: "#ref-5", "(5)" }
+            ". In other words, how good your life feels has much more to do with the entropy level of the system you are embedded in than with the choices you make within that system. That is a profound finding with enormous implications for how we think about self-improvement, personal responsibility, and social policy. But it almost never makes it into the productivity discourse or the motivational content industry, because it is deeply inconvenient for anyone who sells the idea that individual optimization is the primary lever on life quality."
+        }
+        h2 { id: "the-attention-economy-is-a-slop-machine",
+            a {
+                href: "#the-attention-economy-is-a-slop-machine",
+                class: "header",
+                "The Attention Economy Is a Slop Machine"
+            }
+        }
+        p {
+            "I want to now focus on a specific domain where the slop problem is most visible and most damaging, which is the attention economy, the system by which our collective attention is harvested, packaged, and sold to whoever will pay the most for it. I have touched on this in several previous posts, but I want to bring it into direct contact with the argument I am making here. The attention economy is not a side effect of the digital age. It is the clearest example of what happens when you optimize a generative system for local engagement metrics rather than for any form of global truth or genuine value. It is, in the most literal possible sense, a machine for producing slop at scale, and the slop it produces is designed to be maximally sticky while being minimally nutritious."
+        }
+        p {
+            "An LLM optimized for engagement rather than accuracy will produce fluent, confident, emotionally resonant text that is often wrong, frequently misleading, and perfectly calibrated to make the reader feel like they learned something while ensuring they did not learn anything that would disturb their priors. The engagement metric rewards content that confirms, that flatters, that provokes, that simplifies, because those properties make people click and share and spend more time on the platform. Truth is not rewarded by engagement metrics. Nuance is not rewarded by engagement metrics. Complexity is actively penalized by engagement metrics, because complexity requires sustained attention and sustained attention is exactly what the economy is trying to extract, not provide. The result is a generative system that produces enormous quantities of content optimized for surfaces, and almost none of it is grounded in the deep structural reality that you would need to actually understand anything."
+        }
+        p {
+            "This is the system that most people spend the majority of their waking attention inside, and the consequences are measurable and serious. Research on the effects of social media use on cognitive performance has found that heavy social media use is associated with reduced ability to sustain focused attention, poorer performance on tasks requiring deep processing, and increased susceptibility to misinformation "
+            a { href: "#ref-6", "(6)" }
+            ". The mechanism is not mysterious. When your information environment rewards shallow processing and punishes depth, you get very good at shallow processing and worse at everything else. You become, in a meaningful sense, more like the system that produced you, optimized for local consistency and appearance over global truth. This is one of the most insidious feedback loops in modern life, and almost nobody talks about it in the terms I am using here because those terms are uncomfortable and because the people who benefit from the attention economy have very strong incentives to prevent those terms from becoming mainstream."
+        }
+        p {
+            "I also want to connect this to something I've been building toward across multiple posts: the idea that LLMs are not the cause of the slop problem but the product of it. In "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            ", I noted that hallucination happens because the model learns from text, and text contains truth and lies in equal measure, all mixed together in a soup the model cannot separate. But that soup is the text of the internet, and the text of the internet is what the attention economy produced. LLMs are, in this sense, the distilled essence of the attention economy: a statistical compression of everything humans ever wrote while optimizing for engagement rather than truth, fed into a model that then produces more of the same at scale. We created a system that generated slop, fed all the slop into a model, and now we are surprised that the model generates slop. The surprise is the most revealing part. It suggests that most people did not see the slop in the original, did not notice what the generative process of the attention economy was actually producing, and so they cannot recognize its reflection in the model's output."
+        }
+        p {
+            "The philosopher Harry Frankfurt wrote a short book in 2005 called "
+            em { "On Bullshit" }
+            " in which he distinguished between lying and bullshitting on the grounds that a liar is oriented toward truth, attempting to get you to believe something false while knowing it is false, while a bullshitter is not oriented toward truth at all, producing output without any concern for its relationship to reality "
+            a { href: "#ref-7", "(7)" }
+            ". That distinction maps perfectly onto the difference between intentional misinformation and the structural slop I am describing. The attention economy is not a conspiracy of liars. It is a massive bullshit machine, generating content without any mechanism for grounding it in truth, because truth is not what the system was optimized for. And LLMs, trained on that content, inherit not the lies but the indifference to truth, which Frankfurt correctly identifies as the deeper and more corrupting problem."
+        }
+        p {
+            "I want to say something that I think most people in the tech space will not want to hear. Every engineer who has ever worked on a recommendation algorithm, every product manager who has ever A/B tested push notification frequency, and every executive who has ever set a daily active user growth target has contributed to the slop problem. Not maliciously, in most cases. Not with any intention of degrading the quality of human life or epistemic standards. But with the same indifference to ground truth that Frankfurt identifies as the defining feature of bullshit. The engagement metric does not care whether what it is optimizing is true or false, healthy or harmful, meaningful or empty. It cares only that people click, and in optimizing for the click, it produces a world where the primary driver of content production is the appearance of value rather than actual value. That is the attention economy, that is the slop machine, and it is the water we all swim in every day."
+        }
+        h2 { id: "it-is-neither-random-nor-fair",
+            a { href: "#it-is-neither-random-nor-fair", class: "header",
+                "It Is Neither Random Nor Fair"
+            }
+        }
+        p {
+            "I used a phrase in the draft of this post that I want to expand on more carefully, because I think it contains a key idea that I have not seen articulated well anywhere else. The phrase is: nothing is deterministic, nothing is random, it is pure chaos. I want to be precise about what I mean, because chaos in the colloquial sense, meaning disorder and confusion, is not what I have in mind. I mean chaos in the technical sense, meaning the kind of dynamical behavior that appears random but is actually deterministic, except that the determinism is rendered practically inaccessible because the system is so sensitive to initial conditions that even tiny uncertainties in the starting state produce enormous divergence in the long-term outcome."
+        }
+        p {
+            "This is the second branch of the analogy between life and LLMs that I want to develop, and it is less obvious than the first but just as important. LLMs are not random systems. They are deterministic systems, given a fixed seed, they produce the same output every time. But the space of possible outputs is so large, and the sensitivity of the output to minute variations in the prompt is so high, that the behavior looks random to anyone who does not have complete knowledge of the model's internal state and the exact input. A single word changed in a prompt can produce a radically different response, just as a single degree of temperature difference in the atmosphere can, over the course of days, produce completely different weather patterns. The system is governed by rules. But the rules are sensitive, the space is vast, and the result looks chaotic."
+        }
+        p {
+            "Human social systems have exactly this structure, and the failure to recognize it causes enormous harm. People treat the social world as if it were either fully deterministic, your outcomes are perfectly determined by your choices, or fully random, everything is luck. Both frameworks are wrong, and the wrong frameworks lead to wrong responses. If you believe the world is fully deterministic, you blame the victim for every bad outcome, because if outcomes follow from choices, then bad outcomes must follow from bad choices. If you believe the world is fully random, you despair and stop trying, because if nothing you do matters, why do anything? The correct framework, the chaotic one, says something harder to hold but more accurate: your choices do matter, and their consequences are real, but the system is so sensitive to conditions that are outside your control that prediction from individual choice is unreliable, variance is enormous, and the same choice made at different times by different people with different starting conditions will produce wildly different outcomes. That is the framework of chaotic systems, and it is the framework that honest engagement with empirical evidence forces you toward."
+        }
+        p {
+            "The mathematician Nassim Nicholas Taleb has written extensively about this under the label of the fourth quadrant problem "
+            a { href: "#ref-8", "(8)" }
+            ", the domain where both the payoffs and the probabilities are opaque and fat-tailed, meaning that rare events have outsized consequences and the standard tools of prediction and risk management fail catastrophically. His argument is that much of modern life occupies the fourth quadrant, that the most consequential domains, finance, career, health, geopolitics, innovation, are precisely the ones where fat-tailed distributions make simple causal narratives almost entirely false. The narratives persist anyway, he argues, because human cognition is built for the thin-tailed world of our evolutionary past, where cause and effect were immediate and legible, and we map that cognitive apparatus onto a thick-tailed world where it fails systematically. That systematic failure is the cognitive source of the slop problem. We produce narratives that would be true in a thin-tailed world, apply them to a fat-tailed world, and then treat the resulting confidence as if it were grounded in the actual structure of the system. It is not. It is pattern-matching in the wrong distribution, and the output is, by definition, slop."
+        }
+        p {
+            "I also want to connect this to something I have observed personally across my years of building things and watching the market respond to them. In "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            ", I described how I kept building things that should have worked and watching them not work, and how that experience was genuinely shattering because it violated every model I had been given of how the world operated. What I understand now, in retrospect, is that I was in the fourth quadrant the whole time. The domain I was navigating, which was small-scale independent technical innovation in a market dominated by large incumbents and heavily shaped by network effects, is a maximally fat-tailed distribution where most participants fail entirely and the occasional success is determined largely by timing, visibility, and luck. No amount of technical excellence can guarantee success in a domain with that structure, because the determining factors are mostly outside the individual's control. Knowing this would not have changed my actions, because working hard in a fat-tailed domain is still better than not working hard. But it would have changed my relationship to the outcomes, and that relationship is the thing that either breaks you or does not."
+        }
+        p {
+            "Research on locus of control across different socioeconomic environments has found that people who grow up in genuinely chaotic systems, where outcomes are weakly coupled to individual effort, tend to develop an external locus of control as an accurate response to their actual environment, while people who grow up in stable systems with strong effort-outcome correlations develop an internal locus of control as an equally accurate response to their environment "
+            a { href: "#ref-9", "(9)" }
+            ". The tragedy is that when these two groups interact, the internal-locus-of-control group tends to pathologize the external-locus-of-control group as being defeatist or unmotivated, when in fact the external group has made a more accurate calibration of the actual entropy level of their system. This is a profound failure of empathy and a profound failure of analysis, and it produces policy responses that are systematically wrong because they misdiagnose a structural problem as an individual problem and prescribe individual solutions for systemic causes."
+        }
+        h2 { id: "the-signal-is-real",
+            a { href: "#the-signal-is-real", class: "header", "The Signal Is Real" }
+        }
+        p {
+            "Everything I have written so far could easily be read as an argument for despair, and I want to be very explicit that it is not, because despair has never solved anything and I am not interested in adding to the world's supply of it. I have written about hope before, in "
+            a { href: "/blogs/this-is-why-my-profile-picture-is-now-a-shigure-ui-picture",
+                "This Is Why My Profile Picture Is Now a Shigure Ui Picture"
+            }
+            ", where I talked about love as the argument that still holds when everything else gets complicated. And in "
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            ", I tried to describe what it means to keep going when the evidence suggests that keeping going is irrational. I am not going to take any of that back. But I want to add something to it, something that I think is harder to say but more important: the signal is real, even if the noise is overwhelming, and seeing the noise clearly is the prerequisite for finding the signal honestly."
+        }
+        p {
+            "When I say life is mostly AI-generated slop, I am not saying it is entirely AI-generated slop. There are things in life that are genuinely low-entropy. The laws of physics do not hallucinate. Mathematics does not produce plausible-sounding falsehoods. A friend who has known you for years and still shows up when things are bad is a low-entropy event, something you can actually build on. The satisfaction of understanding something you did not understand before, really understanding it, not just being able to reproduce it verbally, is a low-entropy experience that is worth seeking. These things exist, and they are worth protecting, and the reason I think it is important to name the slop is precisely so that you can tell the difference between the slop and the signal, rather than treating them as equivalent because they are both present. You cannot clean a muddy river by pretending it is clean. You clean it by first acknowledging the mud, then finding the source, then addressing the source. The same logic applies to the slop problem in life."
+        }
+        p {
+            "One of the most consistent findings in psychology is that accurate calibration, meaning believing things with the confidence level they deserve given the available evidence, is both rare and deeply beneficial for long-term functioning. Research on epistemic calibration has found that overconfidence is pervasive across human populations and that the costs of overconfidence are asymmetric: being overconfident in a high-entropy, fat-tailed domain tends to produce catastrophic failures, while being accurately calibrated in the same domain allows you to make decisions that are robust to uncertainty rather than decisions that assume certainty you do not have "
+            a { href: "#ref-10", "(10)" }
+            ". The argument I am making in this post is, at its core, an argument for better calibration. The world is noisier than the narratives suggest. The signal-to-noise ratio is lower than the motivational industry claims. Entropy is higher and more consequential than most people want to acknowledge. Accepting that does not mean giving up. It means making decisions that are appropriate to the true level of uncertainty, rather than decisions that assume a clean causal world and then break catastrophically when the chaos arrives."
+        }
+        p {
+            "I also want to say something about resilience, because I think the way resilience is talked about in popular culture is one of the most egregious examples of the slop problem I am describing. The resilience industry produces an enormous quantity of content that is locally plausible, grammatically correct, emotionally resonant, and globally useless. It tells you to get up when you fall, to push through adversity, to believe in yourself, to stay positive, to find your why, to build your habits, to optimize your morning routine. All of this advice would be sound in a low-entropy world where effort and outcome are tightly coupled. In a high-entropy world, it is not wrong exactly, but it is operating at the wrong level of analysis. The problem is not that you are not getting up enough. The problem is that you are navigating a system that imposes enormous variance on outcomes regardless of effort, and what you need is not more motivational content but better structural understanding of the system so that you can make decisions that acknowledge the variance rather than pretending it is not there. That difference is the difference between functional resilience and magical thinking, and the slop machine produces almost exclusively the latter."
+        }
+        p {
+            "Research in post-traumatic growth and stress inoculation has found that what actually builds resilience is not positive thinking but accurate mental models of the environment, specifically models that include uncertainty, that represent outcomes as distributions rather than as certainties, and that preserve agency within acknowledged constraints rather than demanding agency over everything or conceding agency over nothing "
+            a { href: "#ref-11", "(11)" }
+            ". In other words, what makes people actually capable of navigating hard situations is the capacity to see the situation clearly, with its noise and its signal intact, not the capacity to reframe everything as a learning opportunity. The learning-opportunity framing is beautiful slop: it sounds right, it feels better than the alternative in the short term, and it is not grounded in what the research actually says about how people survive genuinely hard circumstances."
+        }
+        h2 { id: "how-to-navigate-slop",
+            a { href: "#how-to-navigate-slop", class: "header", "How to Navigate Slop" }
+        }
+        p {
+            "I want to end this post with something practical, because I think that is what I owe anyone who has read this far. The argument I have made across six sections is uncomfortable, and I have not softened it much, because I think softening it would be dishonest and because I think the people reading this deserve honesty more than they deserve comfort. But honesty without utility is just a different kind of slop, the verbal kind, where you perform depth without delivering anything that helps. So here is what I actually think, based on everything I have written in this post and everything I have written before it: the appropriate response to living in a high-entropy world is not despair and not denial but what I am going to call structural humility combined with local intensity."
+        }
+        p {
+            "Structural humility means acknowledging honestly that the systems you are navigating are far noisier than the narratives about them suggest, that your individual effort, while necessary, is not sufficient, and that variance will affect you in ways that have nothing to do with your merit. It means not internalizing every failure as evidence of personal inadequacy, because many failures are evidence of system entropy rather than personal error. It means not treating every success as evidence that you have decoded the rules, because many successes are evidence of low-entropy luck rather than reliable method. It means holding your models of how the world works with more flexibility and more humility than the certainty merchants, the success gurus, the productivity influencers, ever encourage you to. That does not feel good in the short term, because certainty feels better than uncertainty and simple models feel better than complex ones. But it produces better decisions over time, because decisions made within an accurate model of uncertainty are more robust than decisions made within an inaccurate model of certainty."
+        }
+        p {
+            "Local intensity means pouring your energy into the things that are actually within your domain of control, even while acknowledging that the outputs of that control will be filtered through a noisy system you cannot fully manipulate. You cannot control whether the world rewards your work. You can control the quality of the work. You cannot control whether the system recognizes your talent. You can control whether you develop your talent. You cannot control the fat tail events that will shape your life in ways you cannot predict. You can control how you interpret and respond to those events after they arrive. That domain of control is real, and it matters, even inside a high-entropy world. The mistake is not in exerting control inside your domain. The mistake is in expecting that control inside your domain to deterministically produce the outcomes you want in the broader system. It will not, because the broader system is too noisy for that, and expecting it will produce the same kind of brittle overconfidence that produces catastrophic failure in fat-tailed domains."
+        }
+        p {
+            "I built things through years when nothing was working, as I described in "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            ". I kept writing, kept coding, kept thinking. Not because I was certain it would work, because I learned very early that certainty in high-entropy systems is a liability. But because the alternative to building things in a noisy world is not to find a noiseless world. It is to build things in a noisy world and accept the noise as part of the process. The noise does not mean your work is meaningless. It means the path from work to outcome is not the straight line the meritocracy narrative describes. It is a random walk in a high-dimensional space with a drift term in the direction of your effort, and the drift is real even if the variance is large. You move in the right direction over time, even if any given step is swamped by noise. That is the mathematical truth of navigating a fat-tailed world with sustained effort, and it is also, improbably, a kind of hope."
+        }
+        p {
+            "I also want to say something about meaning, because I think meaning is the thing that most often gets buried under the slop, and it is the thing most worth digging for. Meaning is not something the system provides. The system is a slop machine, and slop machines do not produce meaning, they produce engagement, plausibility, local coherence, and the feeling that something is happening. Meaning is something you construct, from the low-entropy things in your life, from the things that are actually grounded in something real: mathematics, honest relationships, the satisfaction of understanding, the evidence of genuine creation. Those things exist inside the slop, but they are not the slop. They are what survives when you filter for signal, when you are willing to do the hard work of separating the appearance of value from actual value, which is exactly as difficult as it sounds and exactly as necessary as it sounds."
+        }
+        p {
+            "Research on meaning-making in adverse conditions has found that the perception of meaningful activity is the single strongest predictor of resilience across multiple types of adversity, stronger than social support, stronger than optimism, stronger than individual coping strategies "
+            a { href: "#ref-12", "(12)" }
+            ". But the meaningful activity has to be real in some grounded sense, not merely labeled as meaningful by an external audience. People who convince themselves that slop is meaningful do not build resilience. People who find something genuinely low-entropy inside the noise and commit to it with intensity do. That distinction is what I am trying to describe, and it is why naming the slop is the first step rather than the last step. You cannot find the signal if you are not willing to see the noise. And you cannot commit to the signal with the kind of intensity that matters if you are still confusing it with the noise that surrounds it."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-1\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "1." }
+            " Abowd, J.M., Kramarz, F. & Margolis, D.N., "
+            em { "High Wage Workers and High Wage Firms" }
+            ", "
+            a { href: "https://doi.org/10.1111/1468-0262.00020", "Econometrica, 1999;67(2):251-333" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-2\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "2." }
+            " DiPrete, T.A. & Eirich, G.M., "
+            em {
+                "Cumulative Advantage as a Mechanism for Inequality: A Review of Theoretical and Empirical Developments"
+            }
+            ", "
+            a { href: "https://doi.org/10.1146/annurev.soc.32.061604.123127",
+                "Annual Review of Sociology, 2006;32:271-297"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-3\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "3." }
+            " Schrödinger, E., "
+            em { "What Is Life? The Physical Aspect of the Living Cell" }
+            ", originally published Cambridge University Press, 1944; "
+            a { href: "https://doi.org/10.1017/CBO9781107295629",
+                "Canto Classics ed., Cambridge University Press, 2012"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-4\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "4." }
+            " Chetty, R., Hendren, N., Kline, P. & Saez, E., "
+            em {
+                "Where Is the Land of Opportunity? The Geography of Intergenerational Mobility in the United States"
+            }
+            ", "
+            a { href: "https://doi.org/10.1093/qje/qju022",
+                "The Quarterly Journal of Economics, 2014;129(4):1553-1623"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-5\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "5." }
+            " Helliwell, J.F., Layard, R. & Sachs, J.D. (Eds.), "
+            a { href: "https://worldhappiness.report/ed/2023/",
+                em { "World Happiness Report 2023" }
+            }
+            ", Sustainable Development Solutions Network (SDSN), 2023"
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-6\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "6." }
+            " Twenge, J.M. & Campbell, W.K., "
+            em {
+                "Associations between screen time and lower psychological well-being among children and adolescents: Evidence from a population-based study"
+            }
+            ", "
+            a { href: "https://doi.org/10.1016/j.pmedr.2018.10.003",
+                "Preventive Medicine Reports, 2018;12:271-283"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-7\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "7." }
+            " Frankfurt, H.G., "
+            a { href: "https://press.princeton.edu/books/hardcover/9780691122946/on-bullshit",
+                em { "On Bullshit" }
+            }
+            ", Princeton University Press, 2005, ISBN 978-0691122946"
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-8\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "8." }
+            " Taleb, N.N., "
+            em { "The Black Swan: The Impact of the Highly Improbable" }
+            ", Random House, 2007. For the fourth quadrant specifically: "
+            a { href: "https://www.edge.org/conversation/nassim_nicholas_taleb-the-fourth-quadrant-a-map-of-the-limits-of-statistics",
+                em { "The Fourth Quadrant: A Map of the Limits of Statistics" }
+                ", Edge.org, 2008"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-9\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "9." }
+            " Cobb-Clark, D.A., "
+            em { "Locus of Control and the Labor Market" }
+            ", "
+            a { href: "https://doi.org/10.1186/s40172-014-0017-x",
+                "IZA Journal of Labor Economics, 2015;4(1):3"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-10\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "10." }
+            " Moore, D.A. & Healy, P.J., "
+            em { "The Trouble with Overconfidence" }
+            ", "
+            a { href: "https://doi.org/10.1037/0033-295X.115.2.502",
+                "Psychological Review, 2008;115(2):502-517"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-11\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "11." }
+            " Tedeschi, R.G. & Calhoun, L.G., "
+            em { "Posttraumatic Growth: Conceptual Foundations and Empirical Evidence" }
+            ", "
+            a { href: "https://doi.org/10.1207/s15327965pli1501_01",
+                "Psychological Inquiry, 2004;15(1):1-18"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-12\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "12." }
+            " Steger, M.F., "
+            em { "Meaning in Life" }
+            ", in Lopez, S.J. & Snyder, C.R. (Eds.), "
+            a { href: "https://doi.org/10.1093/oxfordhb/9780195187243.013.0064",
+                em { "Oxford Handbook of Positive Psychology" }
+                " (2nd ed., pp. 679-687), Oxford University Press, 2009"
+            }
         }
     }
 }
