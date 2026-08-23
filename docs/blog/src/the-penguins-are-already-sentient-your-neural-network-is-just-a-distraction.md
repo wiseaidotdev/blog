@@ -208,7 +208,7 @@ Till next time 👋!
 
 <span id="ref-1"></span>**1.** Low, P. et al., _The Cambridge Declaration on Consciousness_, [Francis Crick Memorial Conference, Cambridge, 2012](https://fcmconference.org/img/CambridgeDeclarationOnConsciousness.pdf)
 
-<span id="ref-2"></span>**2.** Robisson, P., Aubin, T. & Brémond, J.C., _Individuality in the Voice of the Emperor Penguin Aptenodytes forsteri: Adaptation to a Noisy Environment_, [Ethology 94, 279–290, 1993](https://doi.org/10.1111/j.1439-0310.1993.tb00445.x)
+<span id="ref-2"></span>**2.** Robisson, P., Aubin, T. & Brémond, J.C., _Individuality in the Voice of the Emperor Penguin Aptenodytes forsteri: Adaptation to a Noisy Environment_, [Ethology 94, 279-290, 1993](https://doi.org/10.1111/j.1439-0310.1993.tb00445.x)
 
 <span id="ref-3"></span>**3.** Fodor, J.A., _The Modularity of Mind_, [MIT Press, 1983](https://mitpress.mit.edu/9780262560252/the-modularity-of-mind/)
 
@@ -216,7 +216,7 @@ Till next time 👋!
 
 <span id="ref-5"></span>**5.** Marcus, G. & Davis, E., _Rebooting AI: Building Artificial Intelligence We Can Trust_, [Pantheon Books, 2019, ISBN 978-1-524-74825-8](https://www.worldcat.org/isbn/9781524748258)
 
-<span id="ref-6"></span>**6.** Balda, R.P. & Kamil, A.C., _Long-term Spatial Memory in Clark's Nutcracker, Nucifraga columbiana_, [Animal Behaviour 44(4), 761–769, 1992](<https://doi.org/10.1016/S0003-3472(05)80302-1>)
+<span id="ref-6"></span>**6.** Balda, R.P. & Kamil, A.C., _Long-term Spatial Memory in Clark's Nutcracker, Nucifraga columbiana_, [Animal Behaviour 44(4), 761-769, 1992](<https://doi.org/10.1016/S0003-3472(05)80302-1>)
 
 <span id="ref-7"></span>**7.** Riley, J.R. et al., _The Flight Paths of Honeybees Recruited by the Waggle Dance_, [Nature, 2005](https://doi.org/10.1038/nature03526)
 
