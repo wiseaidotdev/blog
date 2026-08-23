@@ -47,3 +47,5 @@
 - [ 23 |---| This Is Why My profile picture is now a shigure ui picture |---| personal |---| this-is-why-my-profile-picture-is-now-a-shigure-ui-picture |---| Aug 22 2026 |---| This Is Why My profile picture is now a shigure ui picture |---| assets/images/banner_post_23.webp](this-is-why-my-profile-picture-is-now-a-shigure-ui-picture.md)
 
 - [ 24 |---| Life On Earth is 100% AI Generated Slop. |---| tech |---| life-on-earth-is-100-ai-generated-slop |---| Aug 22 2026 |---| Life On Earth is 100% AI Generated Slop. |---| assets/images/banner_post_24.webp](life-on-earth-is-100-ai-generated-slop.md)
+
+- [ 25 |---| Jesus Was Right. You Are God and Infinite. |---| religion |---| jesus-was-right-you-are-god-and-infinite |---| Aug 23 2026 |---| Jesus Was Right. You Are God and Infinite. |---| assets/images/banner_post_25.webp](jesus-was-right-you-are-god-and-infinite.md)
