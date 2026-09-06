@@ -13,6 +13,7 @@ pub fn Partners() -> Element {
     rsx! {
         div {
             class: "flex w-[1634px] gap-[100px] justify-center items-start shrink-0 flex-nowrap relative z-[162]",
+            role: "region",
             aria_label: "Partner logos",
 
             for (src, width, height) in logos.iter() {

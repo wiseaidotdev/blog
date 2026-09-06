@@ -102,4 +102,33 @@
     <loc>https://wiseai.dev/blogs/be-aware-of-the-current-ufos-pandemic-remember-we-are-alone</loc>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://wiseai.dev/blogs/if-you-cant-build-agi-then-why-should-we-hire-you</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseai.dev/blogs/i-miss-the-pre-ai-mossad-agents</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseai.dev/blogs/intelligence-at-rest</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseai.dev/blogs/this-is-why-my-profile-picture-is-now-a-shigure-ui-picture</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseai.dev/blogs/life-on-earth-is-100-ai-generated-slop</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseai.dev/blogs/jesus-was-right-you-are-god-and-infinite</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wiseai.dev/blogs/i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
