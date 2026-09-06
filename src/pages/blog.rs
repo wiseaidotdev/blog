@@ -111,16 +111,39 @@ pub fn Blog() -> Element {
     rsx! {
         document::Title { "{page_title}" }
         document::Meta { name: "description", content: "{page_description}" }
+        document::Meta { name: "robots", content: "index, follow" }
+        document::Meta { name: "author", content: "Mahmoud Harmouch" }
         document::Meta { property: "og:title", content: "{page_title}" }
         document::Meta { property: "og:description", content: "{page_description}" }
         document::Meta { property: "og:url", content: "{canonical_url}" }
         document::Meta { property: "og:image", content: "{og_image}" }
+        document::Meta { property: "og:image:width", content: "1200" }
+        document::Meta { property: "og:image:height", content: "630" }
         document::Meta { property: "og:type", content: "article" }
+        document::Meta { property: "og:site_name", content: "Wise AI Blog" }
+        document::Meta { property: "og:locale", content: "en_US" }
+        document::Meta { property: "article:author", content: "Mahmoud Harmouch" }
+        document::Meta { property: "article:section", content: "{blog_info().map(|i| i.1).unwrap_or_default()}" }
+        document::Meta { name: "twitter:card", content: "summary_large_image" }
         document::Meta { name: "twitter:title", content: "{page_title}" }
         document::Meta { name: "twitter:description", content: "{page_description}" }
         document::Meta { name: "twitter:image", content: "{og_image}" }
-        document::Meta { name: "twitter:card", content: "summary_large_image" }
+        document::Meta { name: "twitter:site", content: "@wiseaidev" }
+        document::Meta { name: "twitter:creator", content: "@wiseaidev" }
         document::Link { rel: "canonical", href: "{canonical_url}" }
+        document::Script {
+            r#type: "application/ld+json",
+            dangerous_inner_html: {
+                let title = page_title.clone();
+                let desc = page_description.clone();
+                let url = canonical_url.clone();
+                let img = og_image.clone();
+                format!(
+                    r#"{{"@context":"https://schema.org","@type":"Article","headline":"{title}","description":"{desc}","url":"{url}","image":"{img}","author":{{"@type":"Person","name":"Mahmoud Harmouch","url":"https://github.com/wiseaidev"}},"publisher":{{"@type":"Organization","name":"Wise AI","url":"https://wiseai.dev","logo":{{"@type":"ImageObject","url":"https://wiseai.dev/assets/logo.png"}}}}}}"#
+                )
+            }
+        }
+
 
         div {
             class: format!("min-h-screen transition-colors duration-300 {}", outer_bg),

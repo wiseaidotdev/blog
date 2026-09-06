@@ -41,7 +41,9 @@ pub fn SubscribeForm(props: SubscribeFormProps) -> Element {
                 button {
                     r#type: "submit",
                     class: "px-4 py-2 rounded-lg bg-green-600 text-white font-semibold text-sm hover:bg-green-700 transition-colors duration-200 shrink-0",
-                    i { class: "fa-solid fa-paper-plane" }
+                    aria_label: "Subscribe",
+                    title: "Subscribe",
+                    i { class: "fa-solid fa-paper-plane", aria_hidden: "true" }
                 }
             }
         }

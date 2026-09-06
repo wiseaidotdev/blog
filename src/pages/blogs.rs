@@ -256,6 +256,26 @@ pub fn Blogs() -> Element {
     };
 
     rsx! {
+        document::Title { "All Blog Posts | Wise AI Blog" }
+        document::Meta { name: "description", content: "Browse all Wise AI blog posts on Rust, ASI, autonomous agents, Large Mathematical Models, and type-safe systems programming." }
+        document::Meta { name: "robots", content: "index, follow" }
+        document::Meta { property: "og:title", content: "All Blog Posts | Wise AI Blog" }
+        document::Meta { property: "og:description", content: "Browse all Wise AI blog posts on Rust, ASI, autonomous agents, Large Mathematical Models, and type-safe systems programming." }
+        document::Meta { property: "og:url", content: "https://wiseai.dev/blogs" }
+        document::Meta { property: "og:image", content: "https://wiseai.dev/assets/og-image.jpg" }
+        document::Meta { property: "og:type", content: "website" }
+        document::Meta { property: "og:site_name", content: "Wise AI Blog" }
+        document::Meta { name: "twitter:card", content: "summary_large_image" }
+        document::Meta { name: "twitter:title", content: "All Blog Posts | Wise AI Blog" }
+        document::Meta { name: "twitter:description", content: "Browse all Wise AI blog posts on Rust, ASI, autonomous agents, Large Mathematical Models, and type-safe systems programming." }
+        document::Meta { name: "twitter:image", content: "https://wiseai.dev/assets/og-image.jpg" }
+        document::Meta { name: "twitter:site", content: "@wiseaidev" }
+        document::Link { rel: "canonical", href: "https://wiseai.dev/blogs" }
+        document::Script {
+            r#type: "application/ld+json",
+            dangerous_inner_html: "{{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://wiseai.dev\"}},{{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://wiseai.dev/blogs\"}}]}}"
+        }
+
         div {
             class: "blogs-page",
             style: "background: var(--bg-primary); min-height: 100vh; padding-top: 80px;",

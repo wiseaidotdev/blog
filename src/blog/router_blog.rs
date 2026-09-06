@@ -60,6 +60,10 @@ pub enum BookRoute {
     LifeOnEarthIs100AiGeneratedSlop {},
     #[route("/jesus-was-right-you-are-god-and-infinite")]
     JesusWasRightYouAreGodAndInfinite {},
+    #[route(
+        "/i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts"
+    )]
+    IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -76,7 +80,9 @@ impl BookRoute {
             BookRoute::AnEmptyLifeFilledWithConstantSuffering {} => {
                 use_mdbook::mdbook_shared::PageId(3usize)
             }
-            BookRoute::ItIsAlwaysTheRussians {} => use_mdbook::mdbook_shared::PageId(4usize),
+            BookRoute::ItIsAlwaysTheRussians {} => {
+                use_mdbook::mdbook_shared::PageId(4usize)
+            }
             BookRoute::AsEngineersLlmsShouldPayUsForTokensUsage {} => {
                 use_mdbook::mdbook_shared::PageId(5usize)
             }
@@ -122,8 +128,12 @@ impl BookRoute {
             BookRoute::IfYouCantBuildAgiThenWhyShouldWeHireYou {} => {
                 use_mdbook::mdbook_shared::PageId(19usize)
             }
-            BookRoute::IMissThePreAiMossadAgents {} => use_mdbook::mdbook_shared::PageId(20usize),
-            BookRoute::IntelligenceAtRest {} => use_mdbook::mdbook_shared::PageId(21usize),
+            BookRoute::IMissThePreAiMossadAgents {} => {
+                use_mdbook::mdbook_shared::PageId(20usize)
+            }
+            BookRoute::IntelligenceAtRest {} => {
+                use_mdbook::mdbook_shared::PageId(21usize)
+            }
             BookRoute::ThisIsWhyMyProfilePictureIsNowAShigureUiPicture {} => {
                 use_mdbook::mdbook_shared::PageId(22usize)
             }
@@ -132,6 +142,9 @@ impl BookRoute {
             }
             BookRoute::JesusWasRightYouAreGodAndInfinite {} => {
                 use_mdbook::mdbook_shared::PageId(24usize)
+            }
+            BookRoute::IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts {} => {
+                use_mdbook::mdbook_shared::PageId(25usize)
             }
         }
     }
@@ -1941,6 +1954,133 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::JesusWasRightYouAreGodAndInfinite {},
             ::use_mdbook::mdbook_shared::PageId(24usize),
         );
+        pages
+            .push((
+                25usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 26 |---| I Built a Version Bump Tool in Rust That Is 10,000x Faster Than Its Python Counterparts |---| tech |---| i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts |---| Sep 06 2026 |---| bump2version 0.2.0 is out: a multi-language version bumper written in 100% safe Rust with Python and Node.js bindings, ~10,000x faster than the bump-my-version CLI. |---| assets/images/banner_post_26.webp"
+                            .to_string(),
+                        url: BookRoute::IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts {},
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🤔 Wait, What Even Is ".to_string(),
+                                id: "🤔-wait,-what-even-is".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🦀 Rust, Python, and Node.js: A Love Triangle"
+                                    .to_string(),
+                                id: "🦀-rust,-python,-and-node.js:-a-love-triangle"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "As a Rust crate:".to_string(),
+                                id: "as-a-rust-crate:".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "As a Python package:".to_string(),
+                                id: "as-a-python-package:".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "As a Node.js add-on:".to_string(),
+                                id: "as-a-node.js-add-on:".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🕵\u{fe0f} The Mossad Agents Who Architected This"
+                                    .to_string(),
+                                id: "🕵\u{fe0f}-the-mossad-agents-who-architected-this"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🔥 The Numbers That Made Me Cackle Maniacally"
+                                    .to_string(),
+                                id: "🔥-the-numbers-that-made-me-cackle-maniacally"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Version Bumping: Full Round-Trip (Parse + Bump + Serialize)"
+                                    .to_string(),
+                                id: "version-bumping:-full-round-trip-(parse-+-bump-+-serialize)"
+                                    .to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "File Search/Replace".to_string(),
+                                id: "file-search/replace".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🤖 Abusing Claude to Achieve the 10,000x Speed-Up"
+                                    .to_string(),
+                                id: "🤖-abusing-claude-to-achieve-the-10,000x-speed-up"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🐴 And Then the Borrow Checker Got Stuck"
+                                    .to_string(),
+                                id: "🐴-and-then-the-borrow-checker-got-stuck"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🛠\u{fe0f} Getting Started".to_string(),
+                                id: "🛠\u{fe0f}-getting-started".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "CLI Usage".to_string(),
+                                id: "cli-usage".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Python".to_string(),
+                                id: "python".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Node.js".to_string(),
+                                id: "node.js".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: " Embedding".to_string(),
+                                id: "embedding".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🔒 The Safety Contract".to_string(),
+                                id: "🔒-the-safety-contract".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🔭 What's Coming in Future Releases".to_string(),
+                                id: "🔭-what's-coming-in-future-releases".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "💬 Final Thoughts".to_string(),
+                                id: "💬-final-thoughts".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(25usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts {},
+            ::use_mdbook::mdbook_shared::PageId(25usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -2177,6 +2317,15 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         }),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![25u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 26 |---| I Built a Version Bump Tool in Rust That Is 10,000x Faster Than Its Python Counterparts |---| tech |---| i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts |---| Sep 06 2026 |---| bump2version 0.2.0 is out: a multi-language version bumper written in 100% safe Rust with Python and Node.js bindings, ~10,000x faster than the bump-my-version CLI. |---| assets/images/banner_post_26.webp"
+                            .to_string(),
+                        location: Some(BookRoute::IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![26u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -10791,6 +10940,706 @@ pub fn JesusWasRightYouAreGodAndInfinite() -> dioxus::prelude::Element {
             a { href: "https://doi.org/10.1606/1044-3894.3483",
                 "Families in Society: The Journal of Contemporary Social Services, 2006;87(1):43-52"
             }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts(
+) -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        blockquote {
+            p {
+                "Hello, fellow version-bumping enthusiasts, sleep-deprived Rustaceans, and accidental software archaeologists who just found out that  "
+                code { "bumpversion" }
+                " is a thing 👋!"
+            }
+        }
+        p {
+            "So there I was, staring at my terminal at 2AM, trying to release version  "
+            code { "0.1.0" }
+            " of something. I typed  "
+            code { "bump-my-version patch" }
+            ", pressed Enter, and watched my CPU fan spin up like it was launching a SpaceX rocket. One Second later, "
+            em { "one second" }
+            ", it bumped a number. One tiny number. "
+            code { "0.1.0" }
+            " → "
+            code { "0.1.1" }
+            "."
+        }
+        p { "I sat there in silence for a moment." }
+        p {
+            "Then I did what any rational developer would do: I rewrote it. In Rust. From scratch. With Python "
+            em { "and" }
+            " Node.js bindings. And a CLI. And "
+            code { "no_std" }
+            " support. And "
+            code { "gix" }
+            " for pure-Rust git operations."
+        }
+        p {
+            "The result? "
+            a { href: "https://github.com/wiseaidev/bump2version",
+                code { "bump2version" }
+            }
+            " "
+            code { "0.2.0" }
+            ": a version bumper that is legitimately, measurably, embarrassingly "
+            strong { "~10,000x faster" }
+            " than the Python CLI it replaces."
+        }
+        p {
+            img {
+                src: asset!("assets/images/fast-ket-typing.webp"),
+                alt: "Fast Ket Typing non stop!",
+                title: "",
+            }
+        }
+        h2 { id: "-wait-what-even-is",
+            a { href: "#-wait-what-even-is", class: "header", "🤔 Wait, What Even Is " }
+            code { "bump2version" }
+            "?"
+        }
+        p {
+            "Glad you asked.  "
+            code { "bump2version" }
+            " automates the tedious part of releasing software: updating version strings across multiple files. You know, the part where you manually grep through  "
+            code { "Cargo.toml" }
+            ",  "
+            code { "package.json" }
+            ",  "
+            code { "pyproject.toml" }
+            ",  "
+            code { "CHANGELOG.md" }
+            ", and your README, change  "
+            code { "1.2.3" }
+            " to  "
+            code { "1.2.4" }
+            " in 11 different places, forget one, push, CI fails, and you cry quietly into your coffee?"
+        }
+        p { "Yeah. That part." }
+        p {
+            code { "bump2version" }
+            " does all of that for you:"
+        }
+        ul {
+            li {
+                strong { "Parses" }
+                " version strings using a fully configurable regex (defaults to semver "
+                code { "major.minor.patch" }
+                ")."
+            }
+            li {
+                strong { "Bumps" }
+                " any component you ask it to: "
+                code { "major" }
+                ", "
+                code { "minor" }
+                ", "
+                code { "patch" }
+                ", or custom cyclic stages like "
+                code { "alpha → beta → stable" }
+                "."
+            }
+            li {
+                strong { "Rewrites" }
+                " version occurrences across multiple files, including multiline "
+                code { "CHANGELOG" }
+                " patterns using proper "
+                code { "(?ms)" }
+                " DOTALL + MULTILINE semantics."
+            }
+            li {
+                strong { "Commits and tags" }
+                " via "
+                code { "gix" }
+                " - 100% pure-Rust git, zero subprocess calls, zero ghost authors in your commit history."
+            }
+        }
+        p {
+            "And it does all of this in "
+            strong { "safe Rust" }
+            ", with "
+            code { "#![forbid(unsafe_code)]" }
+            " at the crate root, because we have principles around here. Or at least we pretend to."
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> .bumpversion.toml: the config file that actually bumps the right things\n</span><span style=\"color:#f8f8f2;\">[bumpversion]\n</span><span style=\"color:#f8f8f2;\">current_version </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;0.2.0&quot;\n</span><span style=\"color:#f8f8f2;\">commit </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ff80f4;\">true\n</span><span style=\"color:#f8f8f2;\">tag </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ff80f4;\">true\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">[bumpversion:file:Cargo.toml]\n</span><span style=\"color:#f8f8f2;\">search  </span><span style=\"color:#f92672;\">= &#39;version = </span><span style=\"color:#ffee99;\">&quot;{{current_version}}&quot;</span><span style=\"color:#f92672;\">&#39;\n</span><span style=\"color:#f8f8f2;\">replace </span><span style=\"color:#f92672;\">= &#39;version = </span><span style=\"color:#ffee99;\">&quot;{{new_version}}&quot;</span><span style=\"color:#f92672;\">&#39;\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">[bumpversion:file:</span><span style=\"color:#ff80f4;\">CHANGELOG</span><span style=\"color:#f8f8f2;\">.md]\n</span><span style=\"color:#f8f8f2;\">search  </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;## {{current_version}}</span><span style=\"color:#ff80f4;\">\\n</span><span style=\"color:#ffee99;\">    Release notes line 1&quot;\n</span><span style=\"color:#f8f8f2;\">replace </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;## {{new_version}}</span><span style=\"color:#ff80f4;\">\\n</span><span style=\"color:#ffee99;\">    Release notes line 1&quot;</span></pre>\n",
+        }
+        p { "One config file. Multiple files updated. One git commit. One tag. Done." }
+        p {
+            img {
+                src: asset!("assets/images/meme-4.png", ImageAssetOptions::new().with_avif()),
+                alt: "2 GFs ain't enough bro!",
+                title: "",
+            }
+        }
+        h2 { id: "-rust-python-and-nodejs-a-love-triangle",
+            a {
+                href: "#-rust-python-and-nodejs-a-love-triangle",
+                class: "header",
+                "🦀 Rust, Python, and Node.js: A Love Triangle"
+            }
+        }
+        p {
+            "Here's the fun part:  "
+            code { "bump2version" }
+            " isn't "
+            em { "just" }
+            " a Rust crate. It's three tools pretending to be one in a trench coat."
+        }
+        h3 { id: "as-a-rust-crate",
+            a { href: "#as-a-rust-crate", class: "header", "As a Rust crate:" }
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">[dependencies]\n</span><span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;0.2.0&quot;</span></pre>\n" }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n</pre>\n" }
+        h3 { id: "as-a-python-package",
+            a { href: "#as-a-python-package", class: "header", "As a Python package:" }
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">pip install bump</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">rs</span></pre>\n" }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">from bump_rs import bump_version, BumpConfig\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">bump_version</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;1.2.3&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;patch&quot;</span><span style=\"color:#f8f8f2;\">))  </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ffee99;\">&quot;1.2.4&quot;\n</span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">bump_version</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;1.2.3&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;minor&quot;</span><span style=\"color:#f8f8f2;\">))  </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ffee99;\">&quot;1.3.0&quot;\n</span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">bump_version</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;1.2.3&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;major&quot;</span><span style=\"color:#f8f8f2;\">))  </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ffee99;\">&quot;2.0.0&quot;</span></pre>\n",
+        }
+        h3 { id: "as-a-nodejs-add-on",
+            a { href: "#as-a-nodejs-add-on", class: "header", "As a Node.js add-on:" }
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">npm install bump2version</span></pre>\n" }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"font-style:italic;color:#66d9ef;\">const </span><span style=\"color:#f8f8f2;\">{{ bumpVersion, applyFileChange }} </span><span style=\"color:#f92672;\">= </span><span style=\"color:#66d9ef;\">require</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;bump2version&quot;</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">console.</span><span style=\"color:#66d9ef;\">log</span><span style=\"color:#f8f8f2;\">(bumpVersion(</span><span style=\"color:#ffee99;\">&quot;1.2.3&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;patch&quot;</span><span style=\"color:#f8f8f2;\">)); </span><span style=\"color:#8c8c8c;\">// &#39;1.2.4&#39;\n</span><span style=\"color:#f8f8f2;\">console.</span><span style=\"color:#66d9ef;\">log</span><span style=\"color:#f8f8f2;\">(bumpVersion(</span><span style=\"color:#ffee99;\">&quot;1.2.3&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;minor&quot;</span><span style=\"color:#f8f8f2;\">)); </span><span style=\"color:#8c8c8c;\">// &#39;1.3.0&#39;</span></pre>\n",
+        }
+        p {
+            "One Rust core. Three ecosystems. Zero Python subprocesses. Ferris the crab is now a polyglot, and honestly? Good for them. 🦀"
+        }
+        h2 { id: "-the-mossad-agents-who-architected-this",
+            a {
+                href: "#-the-mossad-agents-who-architected-this",
+                class: "header",
+                "🕵\u{fe0f} The Mossad Agents Who Architected This"
+            }
+        }
+        p {
+            "Let me be transparent about one thing: I did not architect the full system design for this project alone."
+        }
+        p { "No, I had help. Specifically, I reached out to some very professional consultants." }
+        p {
+            img {
+                src: asset!("assets/images/meme-2.png", ImageAssetOptions::new().with_avif()),
+                alt: "The Mossad Agents That Helped Me Develop This Project.",
+                title: "",
+            }
+        }
+        p {
+            em {
+                "They arrived at my door at 3AM with a whiteboard and a very detailed opinion on "
+                code { "Arc<Regex>" }
+                " caching strategies."
+            }
+            " Their key architectural recommendation, which I followed verbatim after reviewing it at gunpoint (metaphorically, probably), was the thread-safe "
+            code { "Arc<Regex>" }
+            " cache. This means the compiled regex pattern is compiled "
+            em { "once" }
+            ", shared across threads, and reused for every subsequent call, no recompilation overhead on hot paths."
+        }
+        p {
+            "The result: version bumping in "
+            strong { "~57 microseconds" }
+            " from Python land. Not 57 milliseconds. Not 57 seconds. "
+            strong { "57 microseconds." }
+            " The kind of number that makes you wonder what the Python version was doing during its 585 millisecond run."
+        }
+        h2 { id: "-the-numbers-that-made-me-cackle-maniacally",
+            a {
+                href: "#-the-numbers-that-made-me-cackle-maniacally",
+                class: "header",
+                "🔥 The Numbers That Made Me Cackle Maniacally"
+            }
+        }
+        p {
+            "Okay. Let's talk benchmarks. Because this is the part of the blog post where I get to paste a table and feel deeply smug about it."
+        }
+        p {
+            "These are real numbers, measured on x86-64 Linux (CPython 3.12, 3-sigma filtered  "
+            code { "timeit" }
+            "):"
+        }
+        h3 { id: "version-bumping-full-round-trip-parse--bump--serialize",
+            a {
+                href: "#version-bumping-full-round-trip-parse--bump--serialize",
+                class: "header",
+                "Version Bumping: Full Round-Trip (Parse + Bump + Serialize)"
+            }
+        }
+        table {
+            thead {
+                th { "Library" }
+                th {
+                    code { "patch" }
+                    ""
+                }
+                th {
+                    code { "minor" }
+                    ""
+                }
+                th {
+                    code { "major" }
+                    ""
+                }
+            }
+            tr {
+                th {
+                    strong { "bump-rs" }
+                    " (Rust, "
+                    code { "Arc<Regex>" }
+                    " cache)"
+                }
+                th {
+                    strong { "~57 µs" }
+                    ""
+                }
+                th {
+                    strong { "~54 µs" }
+                    ""
+                }
+                th {
+                    strong { "~53 µs" }
+                    ""
+                }
+            }
+            tr {
+                th {
+                    code { "bump-my-version" }
+                    " (Python library)"
+                }
+                th { "~79 µs" }
+                th { "~95 µs" }
+                th { "~72 µs" }
+            }
+            tr {
+                th {
+                    "Pure Python ("
+                    code { "re.compile" }
+                    " + "
+                    code { "int()" }
+                    ")"
+                }
+                th { "~3.6 µs" }
+                th { "~2.2 µs" }
+                th { "~2.2 µs" }
+            }
+            tr {
+                th {
+                    strong {
+                        code { "bump-my-version" }
+                        " CLI (subprocess)"
+                    }
+                    ""
+                }
+                th { "~585 ms" }
+                th { "~585 ms" }
+                th { "~585 ms" }
+            }
+        }
+        p {
+            "The headline result: "
+            strong {
+                "bump-rs is "
+                code { "bump-my-version" }
+                " CLI."
+            }
+        }
+        p {
+            "Now, I can already hear you: "
+            em { "\"But the pure Python version is actually faster for single calls!\"" }
+        }
+        p {
+            "Yes. You're right. The "
+            code { "re.compile" }
+            " +  "
+            code { "int()" }
+            " will smoke us."
+        }
+        p {
+            "But the moment you're doing anything real, parsing a config file, updating multiple files, running a git commit, you're doing it once with  "
+            code { "bump-rs" }
+            " vs. spawning a subprocess, importing  "
+            code { "click" }
+            ", importing  "
+            code { "importlib" }
+            ", importing the entire  "
+            code { "bump-my-version" }
+            " dependency graph... and waiting "
+            strong { "585 milliseconds" }
+            "."
+        }
+        p { "Every. Single. Time." }
+        p {
+            img {
+                src: asset!("assets/images/meme-4.png", ImageAssetOptions::new().with_avif()),
+                alt: "Why would you do this, ma boy!",
+                title: "",
+            }
+        }
+        h3 { id: "file-searchreplace",
+            a { href: "#file-searchreplace", class: "header", "File Search/Replace" }
+        }
+        table {
+            thead {
+                th { "Library" }
+                th { "Single-line" }
+                th { "Multiline CHANGELOG" }
+            }
+            tr {
+                th {
+                    strong { "bump-rs" }
+                    " (Rust, cached)"
+                }
+                th {
+                    strong { "~65 µs" }
+                    ""
+                }
+                th {
+                    strong { "~104 µs" }
+                    ""
+                }
+            }
+            tr {
+                th {
+                    "Pure Python "
+                    code { "re.sub" }
+                    ""
+                }
+                th { "~1.7 µs" }
+                th { "~1.3 µs" }
+            }
+        }
+        p {
+            "For file I/O work, thread safety, and pipeline operations, bump-rs wins. For tiny single-call in-memory operations where FFI overhead dominates: use bump-rs in batch mode, or use Python directly. We believe in honesty here."
+        }
+        h2 { id: "-abusing-claude-to-achieve-the-10000x-speed-up",
+            a {
+                href: "#-abusing-claude-to-achieve-the-10000x-speed-up",
+                class: "header",
+                "🤖 Abusing Claude to Achieve the 10,000x Speed-Up"
+            }
+        }
+        p {
+            "Here's a confession. A "
+            em { "deeply personal" }
+            " one. One that my legal team has strongly advised me not to make public."
+        }
+        p { "I abused Claude." }
+        p {
+            "Not in the "
+            em { "normal" }
+            " way where you ask it to generate boilerplate. No no no. I pushed it to its absolute limits. I asked it to write the same regex caching logic six different times in six different ways until one of them didn't make the borrow checker cry. I had it architecting FFI boundary semantics at 4AM. I used it to debate whether "
+            code { "Arc<Regex>" }
+            " was overkill for a single-threaded benchmark (it was not). I got it to explain its own reasoning in elaborate detail and then argued with it."
+        }
+        p { "Anthropic noticed." }
+        p {
+            img {
+                src: asset!("assets/images/meme-1.png", ImageAssetOptions::new().with_avif()),
+                alt: "My lawyer defending me in court for abusing Claude",
+                title: "",
+            }
+        }
+        p {
+            "My lawyer, argued that I was simply \"exploring the full capability surface of the model.\" The judge was unmoved. The Anthropic lawyers were also unmoved, but in a different direction."
+        }
+        p {
+            "The verdict is still pending. The  "
+            code { "Arc<Regex>" }
+            " cache, however, is production-ready."
+        }
+        p {
+            "The lesson here: if you want to squeeze 10,000x performance out of a tool, you need to be willing to go to uncomfortable places. Dark places. Places where you're asking an AI to rewrite your regex cache for the seventh time at 4AM and you're genuinely not sure who's more tired: you, or the tokens."
+        }
+        p { "Turns out: the tokens don't get tired. That's why Rust wins." }
+        p {
+            img {
+                src: asset!("assets/images/meme-6.png", ImageAssetOptions::new().with_avif()),
+                alt: "Argue with Claude about the regex caching strategy!",
+                title: "",
+            }
+        }
+        h2 { id: "-and-then-the-borrow-checker-got-stuck",
+            a {
+                href: "#-and-then-the-borrow-checker-got-stuck",
+                class: "header",
+                "🐴 And Then the Borrow Checker Got Stuck"
+            }
+        }
+        p {
+            "There is a moment in every Rust developer's life where you write something that you "
+            em { "know" }
+            " is correct, you've proven it in your head using mathematical induction and also vibes, and the borrow checker looks you dead in the eyes and says: "
+            strong { "\"No.\"" }
+        }
+        p {
+            "No explanation. No suggestion. Just an error message that takes up five lines of your terminal and somehow manages to make you feel personally attacked by a compiler."
+        }
+        p {
+            "That happened. Multiple times. Specifically in the Python binding layer, where the intersection of PyO3's GIL management,  "
+            code { "Arc<Regex>" }
+            " shared state, and Rust's lifetime rules creates a special kind of chaos that can only be described as \"my head hurts and I want to go home\"."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-3.png", ImageAssetOptions::new().with_avif()),
+                alt: "AND My Rust Borrow Checker Got Stuck!",
+                title: "",
+            }
+        }
+        p {
+            "The horse on the balcony railing is an accurate representation of  "
+            code { "Arc<Mutex<HashMap<String, Regex>>>" }
+            " trying to cross a PyO3 function boundary. It got there. It works. But the  "
+            code { "stuck" }
+            " moment before it worked? That was real."
+        }
+        p {
+            "The fix, anticlimactically, was changing the cache from a  "
+            code { "HashMap" }
+            " behind a  "
+            code { "Mutex" }
+            " to a thread-local  "
+            code { "Arc<Regex>" }
+            " initialized with  "
+            code { "once_cell::sync::Lazy" }
+            ". The borrow checker immediately, "
+            em { "graciously" }
+            ", let the horse off the railing."
+        }
+        p { "There's a metaphor in there somewhere. I choose not to examine it too closely." }
+        p {
+            img {
+                src: asset!("assets/images/meme-7.png", ImageAssetOptions::new().with_avif()),
+                alt: "AND My Rust Borrow Checker Got Stuck!",
+                title: "",
+            }
+        }
+        h2 { id: "-getting-started",
+            a { href: "#-getting-started", class: "header", "🛠\u{fe0f} Getting Started" }
+        }
+        p {
+            "Let's get practical. Here's how to use  "
+            code { "bump2version" }
+            " in your project right now:"
+        }
+        h3 { id: "cli-usage",
+            a { href: "#cli-usage", class: "header", "CLI Usage" }
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">cargo install bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">features rust</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">binary\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch   </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">1\n</span><span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump minor   </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">0.3</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0\n</span><span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump major   </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">1.0</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span></pre>\n",
+        }
+        p { "Useful flags:" }
+        table {
+            thead {
+                th { "Option" }
+                th { "What it does" }
+            }
+            tr {
+                th {
+                    code { "--config-file" }
+                    ""
+                }
+                th { "Specify config file path" }
+            }
+            tr {
+                th {
+                    code { "--current-version" }
+                    ""
+                }
+                th { "Override detected current version" }
+            }
+            tr {
+                th {
+                    code { "--bump" }
+                    ""
+                }
+                th {
+                    "Which part: "
+                    code { "major" }
+                    ", "
+                    code { "minor" }
+                    ", "
+                    code { "patch" }
+                    ""
+                }
+            }
+            tr {
+                th {
+                    code { "--dry-run" }
+                    " / "
+                    code { "-n" }
+                    ""
+                }
+                th { "Simulate without touching any file" }
+            }
+            tr {
+                th {
+                    code { "--commit" }
+                    " / "
+                    code { "--tag" }
+                    ""
+                }
+                th { "Auto-commit and tag after bumping" }
+            }
+        }
+        h3 { id: "python",
+            a { href: "#python", class: "header", "Python" }
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">pip install bump</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">rs</span></pre>\n" }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">from bump_rs import bump_version, apply_file_change, BumpConfig\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Custom parse</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">serialize </span><span style=\"color:#f92672;\">for </span><span style=\"color:#ff80f4;\">2</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">component versions\n</span><span style=\"color:#f8f8f2;\">cfg </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> BumpConfig(parse</span><span style=\"color:#f92672;\">=</span><span style=\"font-style:italic;color:#66d9ef;\">r</span><span style=\"color:#ffee99;\">&quot;(?P&lt;major&gt;\\d+)\\.(?P&lt;minor&gt;\\d+)&quot;</span><span style=\"color:#f8f8f2;\">, serialize</span><span style=\"color:#f92672;\">=</span><span style=\"color:#ffee99;\">&quot;{{major}}.{{minor}}&quot;</span><span style=\"color:#f8f8f2;\">)\n</span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">bump_version</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;2.0&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;minor&quot;</span><span style=\"color:#f8f8f2;\">, config</span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\">cfg))  </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ffee99;\">&quot;2.1&quot;</span></pre>\n",
+        }
+        h3 { id: "nodejs",
+            a { href: "#nodejs", class: "header", "Node.js" }
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">npm install bump2version</span></pre>\n" }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">import {{ bumpVersion, applyFileChange }} from </span><span style=\"color:#ffee99;\">&quot;bump2version&quot;</span><span style=\"color:#f8f8f2;\">;\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"font-style:italic;color:#66d9ef;\">const</span><span style=\"color:#f8f8f2;\"> next </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> bumpVersion(</span><span style=\"color:#ffee99;\">&quot;1.2.3&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;minor&quot;</span><span style=\"color:#f8f8f2;\">); </span><span style=\"color:#8c8c8c;\">// &quot;1.3.0&quot;</span></pre>\n" }
+        h3 { id: "",
+            a { href: "#", class: "header", "" }
+            code { "no_std" }
+            " Embedding"
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">{{ version </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;0.2.0&quot;</span><span style=\"color:#f8f8f2;\">, default</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">features </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ff80f4;\">false </span><span style=\"color:#f8f8f2;\">}}</span></pre>\n" }
+        p {
+            "The core modules ( "
+            code { "config" }
+            ",  "
+            code { "version" }
+            ",  "
+            code { "files" }
+            ",  "
+            code { "error" }
+            ") compile on  "
+            code { "no_std + alloc" }
+            ". Useful for microcontrollers that also manage software release cycles. You know. If that's your situation."
+        }
+        h2 { id: "-the-safety-contract",
+            a { href: "#-the-safety-contract", class: "header", "🔒 The Safety Contract" }
+        }
+        p {
+            code { "bump2version" }
+            " enforces  "
+            code { "#![forbid(unsafe_code)]" }
+            " at the crate root. Every byte of the implementatio, config parsing, regex matching, version bumping, git object creation, is written in safe Rust. The compiler will literally "
+            em { "reject" }
+            " any future "
+            code { "unsafe" }
+            " introduced into the safe portions."
+        }
+        p {
+            "The only  "
+            code { "unsafe" }
+            " in the entire codebase is in the Node.js FFI layer, because  "
+            code { "napi-rs" }
+            " requires it for native add-on interop and there's genuinely no way around that. If we could have avoided it, we would have. We tried. The borrow checker nodded approvingly at our effort, then still said no."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-8.png", ImageAssetOptions::new().with_avif()),
+                alt: "unsafe Rust in production",
+                title: "",
+            }
+        }
+        h2 { id: "-whats-coming-in-future-releases",
+            a { href: "#-whats-coming-in-future-releases", class: "header",
+                "🔭 What's Coming in Future Releases"
+            }
+        }
+        p {
+            code { "bump2version" }
+            " 0.2.0 is out the door, but the roadmap is full:"
+        }
+        ul {
+            li {
+                strong { "Workspace-aware bumping" }
+                ": Update all crates in a Cargo workspace atomically in a single pass."
+            }
+            li {
+                strong { "Pre-release cycling" }
+                ": Better first-class support for "
+                code { "alpha → beta → rc → stable" }
+                " lifecycle."
+            }
+            li {
+                strong { "Watch mode" }
+                ": Because apparently some people want their versions bumped on file save. (I won't judge. I "
+                em { "want" }
+                " to judge, but I won't.)"
+            }
+            li {
+                strong { "WASM target" }
+                ": Core logic compiled to WebAssembly for browser-side version management. Yes, this is probably overkill. Yes, we're doing it anyway."
+            }
+            li {
+                strong { "More benchmarks" }
+                ": The Mossad agents have requested a full comparative analysis against every Python version tool ever created. We've filed the paperwork."
+            }
+        }
+        h2 { id: "-final-thoughts",
+            a { href: "#-final-thoughts", class: "header", "💬 Final Thoughts" }
+        }
+        p {
+            "Look. At the end of the day,  "
+            code { "bump2version" }
+            " does one thing: it bumps numbers in your files, commits the result, and tags the commit. That's it. That's the whole feature set."
+        }
+        p {
+            "But it does it in "
+            strong { "safe Rust" }
+            ". With "
+            strong { "Python bindings" }
+            " so Pythonistas don't have to care. With "
+            strong { "Node.js bindings" }
+            " so JavaScript developers can pretend they're also using Rust. With "
+            strong { "no_std support" }
+            " so embedded engineers can participate in the versioning conversation. With "
+            strong { "pure-gix git integration" }
+            " so there are zero subprocess calls anywhere in the hot path. And with benchmarks that show it's "
+            strong { "~10,000x faster" }
+            " than the incumbent CLI tool."
+        }
+        p { "Is that overkill for bumping a number? Absolutely. Are we sorry? Not even slightly." }
+        blockquote {
+            p {
+                code { "cargo install bump2version --features rust-binary" }
+                " → bump → ship → repeat 🦀"
+            }
+        }
+        p {
+            "Star "
+            a { href: "https://github.com/wiseaidev/bump2version", "the repo" }
+            ", try the "
+            a { href: "https://pypi.org/project/bump-rs", "Python bindings" }
+            ", install the "
+            a { href: "https://www.npmjs.com/package/bump2version", "npm package" }
+            ", or just read the "
+            a { href: "https://docs.rs/bump2version", "docs" }
+            ". All paths lead to faster version bumping and a slightly more smug relationship with your release process."
+        }
+        p {
+            "This has been a public service announcement from a developer who really, "
+            em { "really" }
+            " did not want to wait 585 milliseconds for a number to go up by one."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-9.png", ImageAssetOptions::new().with_avif()),
+                alt: "pip install bump-rs",
+                title: "",
+            }
+        }
+        p {
+            "Till next time: "
+            em { "Keep bumpin', keep rustin'" }
+            " 🦀⬆\u{fe0f}"
+        }
+        p {
+            "P.S. The legal proceedings with Anthropic are ongoing. My lawyer has advised me to stop mentioning it. I have not taken that advice."
         }
     }
 }

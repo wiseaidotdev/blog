@@ -2,23 +2,44 @@
 
 > Build type safe super agents blazingly fast with Rust
 
+Wise AI is a research and engineering blog focused on building advanced AI systems in Rust. We cover topics including Large Mathematical Models (LMMs), autonomous agent architectures, symbolic regression, and type-safe systems programming.
+
 ## About
 
-Wise AI is a research and engineering blog focused on building advanced AI systems in Rust. We cover topics including Large Mathematical Models (LMMs), autonomous agent architectures, symbolic regression, and type-safe systems programming.
+- Website: [https://wiseai.dev](https://wiseai.dev)
+- Blog index: [https://wiseai.dev/blogs](https://wiseai.dev/blogs)
+- Sitemap: [https://wiseai.dev/assets/sitemap.xml](https://wiseai.dev/assets/sitemap.xml)
+- Contact: oss@wiseai.dev
+- Twitter: [@wiseaidev](https://x.com/wiseaidev) , resurrect my X account? Nah, this shit is slop.
 
 ## Blog Posts
 
-All blog content is available at: https://wiseai.dev/blogs
-
-## Sitemap
-
-https://wiseai.dev/sitemap.xml
-
-## Contact
-
-- Email: oss@wiseai.dev
-- Twitter: @wiseaidev
-- Website: https://wiseai.dev
+- [Announcing Kevin RS 🚀](https://wiseai.dev/blogs/announcing-kevin-rs)
+- [Rethinking ARC-AGI 🧠](https://wiseai.dev/blogs/rethinking-arc-agi)
+- [Just Don't Pick Up the Brush](https://wiseai.dev/blogs/who-am-i)
+- [An Empty Life Filled With Constant Suffering](https://wiseai.dev/blogs/an-empty-life-filled-with-constant-suffering)
+- [It is always the Russians](https://wiseai.dev/blogs/it-is-always-the-russians)
+- [As Engineers, LLMs should pay us for tokens usage](https://wiseai.dev/blogs/as-engineers-llms-should-pay-us-for-tokens-usage)
+- [Technology Has Destroyed My Livelihood](https://wiseai.dev/blogs/technology-has-destroyed-my-livelihood)
+- [Language is Limited. ASI is Impossible.](https://wiseai.dev/blogs/language-is-limited-asi-is-impossible)
+- [Christianity Makes Perfect Sense!](https://wiseai.dev/blogs/christianity-makes-perfect-sense)
+- [LLMs are Usefull. LMMs will Break Reality](https://wiseai.dev/blogs/llms-are-usefull-lmms-will-break-reality)
+- [Mathematical Equations are Multimodal by default](https://wiseai.dev/blogs/mathematical-equations-are-multimodal-by-default)
+- [Pharaohs were the first to achieve ASI](https://wiseai.dev/blogs/pharaohs-were-the-first-to-achieve-asi)
+- [LLMs destroyed the Internet. LMMs will make it alive.](https://wiseai.dev/blogs/llms-destroyed-the-internet-lmms-will-make-it-alive)
+- [Training Is an Evil Concept. LMMs Eliminates it Altogether.](https://wiseai.dev/blogs/training-is-an-evil-concept-lmms-eliminates-it-altogether)
+- [The penguins are already sentient. Your neural network is just a distraction.](https://wiseai.dev/blogs/the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction)
+- [All You Have Access To Is Knowledge and Tools; Never Intelligence!](https://wiseai.dev/blogs/all-you-have-access-to-is-knowledge-and-tools-never-intelligence)
+- [Genuine Intelligence will never in trillion years emerge from neural networks.](https://wiseai.dev/blogs/genuine-intelligence-will-never-emerge-from-neural-networks)
+- [Knowledge and Intelligence ARE Mutually Exclusive.](https://wiseai.dev/blogs/knowledge-and-intelligence-are-mutually-exclusive)
+- [Be Aware of The Current UFOs Pandemic. Remember, We Are Alone.](https://wiseai.dev/blogs/be-aware-of-the-current-ufos-pandemic-remember-we-are-alone)
+- [If You Can't Build AGI, Then Why Should We Hire You?](https://wiseai.dev/blogs/if-you-cant-build-agi-then-why-should-we-hire-you)
+- [I miss the pre-AI Mossad agents.](https://wiseai.dev/blogs/i-miss-the-pre-ai-mossad-agents)
+- [Intelligence at Rest](https://wiseai.dev/blogs/intelligence-at-rest)
+- [This Is Why My profile picture is now a shigure ui picture](https://wiseai.dev/blogs/this-is-why-my-profile-picture-is-now-a-shigure-ui-picture)
+- [Life On Earth is 100% AI Generated Slop.](https://wiseai.dev/blogs/life-on-earth-is-100-ai-generated-slop)
+- [Jesus Was Right. You Are God and Infinite.](https://wiseai.dev/blogs/jesus-was-right-you-are-god-and-infinite)
+- [I Built a Version Bump Tool in Rust That Is 10,000x Faster Than Its Python Counterparts](https://wiseai.dev/blogs/i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts)
 
 ## License
 

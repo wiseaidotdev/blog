@@ -49,3 +49,5 @@
 - [ 24 |---| Life On Earth is 100% AI Generated Slop. |---| tech |---| life-on-earth-is-100-ai-generated-slop |---| Aug 22 2026 |---| Life On Earth is 100% AI Generated Slop. |---| assets/images/banner_post_24.webp](life-on-earth-is-100-ai-generated-slop.md)
 
 - [ 25 |---| Jesus Was Right. You Are God and Infinite. |---| religion |---| jesus-was-right-you-are-god-and-infinite |---| Aug 23 2026 |---| Jesus Was Right. You Are God and Infinite. |---| assets/images/banner_post_25.webp](jesus-was-right-you-are-god-and-infinite.md)
+
+- [ 26 |---| I Built a Version Bump Tool in Rust That Is 10,000x Faster Than Its Python Counterparts |---| tech |---| i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts |---| Sep 06 2026 |---| bump2version 0.2.0 is out: a multi-language version bumper written in 100% safe Rust with Python and Node.js bindings, ~10,000x faster than the bump-my-version CLI. |---| assets/images/banner_post_26.webp](i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts.md)

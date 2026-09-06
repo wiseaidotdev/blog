@@ -164,6 +164,11 @@ fn App() -> Element {
         document::Stylesheet { href: TAILWIND_CSS }
         document::Link { rel: "stylesheet", href: "/assets/fonts/fonts.css" }
 
+        document::Script {
+            r#type: "application/ld+json",
+            dangerous_inner_html: "{{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"Wise AI\",\"url\":\"https://wiseai.dev\",\"description\":\"Build type safe super agents blazingly fast with Rust\",\"potentialAction\":{{\"@type\":\"SearchAction\",\"target\":{{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://wiseai.dev/blogs?search={{search_term_string}}\"}},\"query-input\":\"required name=search_term_string\"}},\"publisher\":{{\"@type\":\"Organization\",\"name\":\"Wise AI\",\"url\":\"https://wiseai.dev\",\"logo\":{{\"@type\":\"ImageObject\",\"url\":\"https://wiseai.dev/assets/og-image.jpg\"}},\"sameAs\":[\"https://x.com/wiseaidev\",\"https://github.com/wiseaidev\"]}}}}"
+        }
+
         ThemeProvider {
             I18nProvider {
                 translations: translations.clone(),
