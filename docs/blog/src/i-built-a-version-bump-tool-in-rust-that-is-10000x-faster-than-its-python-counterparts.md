@@ -133,7 +133,7 @@ But the moment you're doing anything real, parsing a config file, updating multi
 
 Every. Single. Time.
 
-![Why would you do this, ma boy!](assets/images/meme-4.png)
+![Why would you do this, ma boy!](assets/images/meme-5.png)
 
 ### File Search/Replace
 
@@ -192,6 +192,7 @@ Let's get practical. Here's how to use `bump2version` in your project right now:
 
 ```sh
 cargo install bump2version --features rust-binary
+> **Note**: You get three binaries! `bump` (the modern CLI), `cargo-bump`, and `bump2version` (retained for backward compatibility so your old CI tutorials don't break!).
 
 bump2version --bump patch   # 0.2.0 → 0.2.1
 bump2version --bump minor   # 0.2.0 → 0.3.0
@@ -244,7 +245,7 @@ The core modules (`config`, `version`, `files`, `error`) compile on `no_std + al
 
 ## 🔒 The Safety Contract
 
-`bump2version` enforces `#![forbid(unsafe_code)]` at the crate root. Every byte of the implementatio, config parsing, regex matching, version bumping, git object creation, is written in safe Rust. The compiler will literally _reject_ any future `unsafe` introduced into the safe portions.
+`bump2version` enforces `#![forbid(unsafe_code)]` at the crate root. Every byte of the implementation, config parsing, regex matching, version bumping, git object creation, is written in safe Rust. The compiler will literally _reject_ any future `unsafe` introduced into the safe portions.
 
 The only `unsafe` in the entire codebase is in the Node.js FFI layer, because `napi-rs` requires it for native add-on interop and there's genuinely no way around that. If we could have avoided it, we would have. We tried. The borrow checker nodded approvingly at our effort, then still said no.
 
