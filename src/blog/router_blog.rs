@@ -64,6 +64,10 @@ pub enum BookRoute {
         "/i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts"
     )]
     IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts {},
+    #[route(
+        "/i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts"
+    )]
+    IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterparts {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -145,6 +149,9 @@ impl BookRoute {
             }
             BookRoute::IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts {} => {
                 use_mdbook::mdbook_shared::PageId(25usize)
+            }
+            BookRoute::IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterparts {} => {
+                use_mdbook::mdbook_shared::PageId(26usize)
             }
         }
     }
@@ -2081,6 +2088,135 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts {},
             ::use_mdbook::mdbook_shared::PageId(25usize),
         );
+        pages
+            .push((
+                26usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 27 |---| I Optimized My Bump Version Tool and Made It 1,000,000x Faster Than Its Python Counterparts |---| tech |---| i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts |---| Sep 11 2026 |---| bump2version 0.2.1 drops with watch mode, multi-language auto-detection, a Yew WASM app etc. |---| assets/images/banner_post_27.webp"
+                            .to_string(),
+                        url: BookRoute::IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterparts {},
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🤔 Wait, We Already Did This. Why Are We Here Again?"
+                                    .to_string(),
+                                id: "🤔-wait,-we-already-did-this.-why-are-we-here-again?"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🕵\u{fe0f} The Mossad Agents Return".to_string(),
+                                id: "🕵\u{fe0f}-the-mossad-agents-return".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "⚡ The 1,000,000× Number".to_string(),
+                                id: "⚡-the-1,000,000×-number".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🔥 New Benchmarks: ".to_string(),
+                                id: "🔥-new-benchmarks:".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What got fast and why:".to_string(),
+                                id: "what-got-fast-and-why:".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "📡 Watch Mode".to_string(),
+                                id: "📡-watch-mode".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🌐 Multi-Language Auto-Detection: ".to_string(),
+                                id: "🌐-multi-language-auto-detection:".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🌍 Real Language Examples".to_string(),
+                                id: "🌍-real-language-examples".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🕸\u{fe0f} The Yew WASM App".to_string(),
+                                id: "🕸\u{fe0f}-the-yew-wasm-app".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🤖 I Abused ChatGPT, Claude and Gemini. Again. More."
+                                    .to_string(),
+                                id: "🤖-i-abused-chatgpt,-claude-and-gemini.-again.-more."
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🚀 3 Binaries, One Package, Zero Confusing Changelog Entries"
+                                    .to_string(),
+                                id: "🚀-3-binaries,-one-package,-zero-confusing-changelog-entries"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "📋 The ".to_string(),
+                                id: "📋-the".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🦀 The Borrow Checker Tried to Ruin Watch Mode"
+                                    .to_string(),
+                                id: "🦀-the-borrow-checker-tried-to-ruin-watch-mode"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "📦 Getting The Full Picture".to_string(),
+                                id: "📦-getting-the-full-picture".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Quick Examples".to_string(),
+                                id: "quick-examples".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "As a library (no ".to_string(),
+                                id: "as-a-library-(no".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Python".to_string(),
+                                id: "python".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Node.js".to_string(),
+                                id: "node.js".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "🚀 What Comes After 1,000,000×".to_string(),
+                                id: "🚀-what-comes-after-1,000,000×".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "💬 Closing Thoughts".to_string(),
+                                id: "💬-closing-thoughts".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(26usize),
+                    }
+                },
+            ));
+        page_id_mapping
+            .insert(
+                BookRoute::IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterparts {},
+                ::use_mdbook::mdbook_shared::PageId(26usize),
+            );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -2326,6 +2462,15 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         location: Some(BookRoute::IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts {}),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![26u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 27 |---| I Optimized My Bump Version Tool and Made It 1,000,000x Faster Than Its Python Counterparts |---| tech |---| i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts |---| Sep 11 2026 |---| bump2version 0.2.1 drops with watch mode, multi-language auto-detection, a Yew WASM app etc. |---| assets/images/banner_post_27.webp"
+                            .to_string(),
+                        location: Some(BookRoute::IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterparts {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![27u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -11275,7 +11420,7 @@ pub fn IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts(
         p { "Every. Single. Time." }
         p {
             img {
-                src: asset!("assets/images/meme-4.png", ImageAssetOptions::new().with_avif()),
+                src: asset!("assets/images/meme-5.png", ImageAssetOptions::new().with_avif()),
                 alt: "Why would you do this, ma boy!",
                 title: "",
             }
@@ -11431,7 +11576,7 @@ pub fn IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts(
             a { href: "#cli-usage", class: "header", "CLI Usage" }
         }
         CodeBlock {
-            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">cargo install bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">features rust</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">binary\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch   </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">1\n</span><span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump minor   </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">0.3</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0\n</span><span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump major   </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">1.0</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span></pre>\n",
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">cargo install bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">features rust</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">binary\n</span><span style=\"color:#f92672;\">&gt; **</span><span style=\"color:#f8f8f2;\">Note</span><span style=\"color:#f92672;\">**</span><span style=\"color:#f8f8f2;\">: You get three binaries</span><span style=\"color:#f92672;\">!</span><span style=\"color:#f8f8f2;\"> `bump` (the modern </span><span style=\"color:#ff80f4;\">CLI</span><span style=\"color:#f8f8f2;\">), `cargo</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">bump`, and `bump2version` (retained </span><span style=\"color:#f92672;\">for</span><span style=\"color:#f8f8f2;\"> backward compatibility so your old </span><span style=\"color:#ff80f4;\">CI</span><span style=\"color:#f8f8f2;\"> tutorials don</span><span style=\"color:#f92672;\">&#39;t break!</span><span style=\"color:#f8f8f2;\">).\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch   </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">1\n</span><span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump minor   </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">0.3</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0\n</span><span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump major   </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">1.0</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span></pre>\n",
         }
         p { "Useful flags:" }
         table {
@@ -11525,7 +11670,7 @@ pub fn IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts(
             code { "bump2version" }
             " enforces  "
             code { "#![forbid(unsafe_code)]" }
-            " at the crate root. Every byte of the implementatio, config parsing, regex matching, version bumping, git object creation, is written in safe Rust. The compiler will literally "
+            " at the crate root. Every byte of the implementation, config parsing, regex matching, version bumping, git object creation, is written in safe Rust. The compiler will literally "
             em { "reject" }
             " any future "
             code { "unsafe" }
@@ -11640,6 +11785,966 @@ pub fn IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts(
         }
         p {
             "P.S. The legal proceedings with Anthropic are ongoing. My lawyer has advised me to stop mentioning it. I have not taken that advice."
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterparts(
+) -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        blockquote {
+            p {
+                "Hello again, fellow Rustaceans, Pythonistas in denial, and the three people on earth who genuinely enjoy reading version bumper release notes 👋!"
+            }
+        }
+        p {
+            "If you were here for my last post, where I rewrote "
+            a { href: "https://github.com/c4urself/bump2version",
+                code { "bump2version" }
+            }
+            " in Rust and declared it "
+            strong { "~" }
+            " than the Python CLI, you may recall that I ended it with a vague threat about future benchmarks. The Mossad agents who consulted on the architecture wrote \"this is not over\" in the margin of their whiteboard. I ignored it."
+        }
+        p { "I should have listened." }
+        p {
+            "Because in the weeks since that post, I went back in. "
+            em { "Deep in." }
+            " I committed crimes against "
+            code { "cargo build" }
+            " that will haunt me during thunderstorms. I "
+            code { "--release" }
+            "'d things that should not be "
+            code { "--release" }
+            "'d. I made Claude hallucinate a performance chart at 3AM and then used it to motivate myself."
+        }
+        p {
+            "The result: "
+            a { href: "https://github.com/wiseaidev/bump2version/releases/tag/v0.2.1",
+                code { "bump2version 0.2.1" }
+            }
+            "."
+        }
+        blockquote {
+            p {
+                strong { "Now 1,000,000× faster than its Python counterparts." }
+                " Yes, I am counting subprocess overhead."
+            }
+        }
+        p {
+            img {
+                src: asset!("assets/images/soviet-benchmarks.png", ImageAssetOptions::new().with_avif()),
+                alt: "Ferris the crab is now a Ferris Soldier!",
+                title: "",
+            }
+        }
+        p {
+            em { "The Soviet material resurfaced. It always does." }
+        }
+        p { "Let's get into it." }
+        h2 { id: "-wait-we-already-did-this-why-are-we-here-again",
+            a {
+                href: "#-wait-we-already-did-this-why-are-we-here-again",
+                class: "header",
+                "🤔 Wait, We Already Did This. Why Are We Here Again?"
+            }
+        }
+        p {
+            "Because  "
+            code { "0.2.0" }
+            " shipped, and I immediately opened my Gmail inbox."
+        }
+        p {
+            "The audacity of the open-source community. The audacity, bro! I build something 10,000x faster and within "
+            em { "days" }
+            " there are requests. \"Can it watch files?\", \"Can it detect which manifests I'm using?\", \"Can I run it in the browser?\", \"Can I use it with Go?\", \"Can I use it with Java?\", \"Can my Ruby project use it?\". I ain't got no time for this. I need to take a little break and play CS2 with the boys!"
+        }
+        p {
+            "I looked at these emails. I looked at the ceiling. I looked at my coffee. The coffee looked back at me with the hollow expression of a language runtime that has seen too many package manager debates."
+        }
+        p { "And then I cracked my knuckles and got to work." }
+        p {
+            img {
+                src: asset!("assets/images/this-is-fine-rust.png", ImageAssetOptions::new().with_avif()),
+                alt: "This is fine",
+                title: "",
+            }
+        }
+        h2 { id: "-the-mossad-agents-return",
+            a { href: "#-the-mossad-agents-return", class: "header",
+                "🕵\u{fe0f} The Mossad Agents Return"
+            }
+        }
+        p {
+            img {
+                src: asset!(
+                    "assets/images/kawaii-mossad-agent.png", ImageAssetOptions::new().with_avif()
+                ),
+                alt: "My Cutest Mossad Agent",
+                title: "",
+            }
+        }
+        p {
+            "I thought I was done with the Mossad agents after  "
+            code { "0.2.0" }
+            ". I was not."
+        }
+        p {
+            "They came back. Same 3AM knock. Same whiteboard. But this time "
+            em { "they brought slides." }
+            " Twelve of them. With bullet points. And speaker notes. One slide was just the word "
+            strong { "\"BRANCHLESS\"" }
+            " in 72-point font with a red circle around it."
+        }
+        p { "Their new requirements:" }
+        ol {
+            li {
+                strong {
+                    a { href: "https://github.com/BurntSushi/memchr",
+                        code { "memchr" }
+                    }
+                    " for all hot-path string scanning."
+                }
+                " "
+                em {
+                    "\"You are doing "
+                    code { ".contains()" }
+                    " in a loop like an animal\","
+                }
+                " they said. I was."
+            }
+            li {
+                strong {
+                    a { href: "https://github.com/servo/rust-smallvec",
+                        code { "SmallVec" }
+                    }
+                    " for version component storage."
+                }
+                " Because heap-allocating a "
+                code { "Vec<u8>" }
+                " for three numbers (major, minor, patch) is an insult to modern CPU cache lines."
+            }
+            li {
+                strong { "Branchless arithmetic for the bump itself." }
+                " No "
+                code { "if major {{ ... }} else if minor {{ ... }}" }
+                " nonsense. One lookup table. One store. Done."
+            }
+            li {
+                strong { "Watch mode." }
+                " They wanted to know the moment a file changed. I asked why. They said that was classified."
+            }
+            li {
+                strong { "Auto-detect language manifests." }
+                " \"You scan "
+                code { "Cargo.toml" }
+                " like it's the only file in the world\", they observed, correctly. \"What about "
+                code { "pyproject.toml" }
+                "? "
+                code { "pom.xml" }
+                "? "
+                code { "go.mod" }
+                "? Are Go developers not also suffering?\""
+            }
+        }
+        p { "They are. They are very much also suffering." }
+        p {
+            "I implemented every point. The Mossad agents reviewed the diff, said \"passable\", and vanished into the root filesystem like a well-placed  "
+            code { ".gitignore" }
+            " entry."
+        }
+        p {
+            img {
+                src: asset!("assets/images/mossad-smallvec.png", ImageAssetOptions::new().with_avif()),
+                alt: "Ferris in black suit",
+                title: "",
+            }
+        }
+        h2 { id: "-the-1000000-number",
+            a { href: "#-the-1000000-number", class: "header", "⚡ The 1,000,000× Number" }
+        }
+        p {
+            "Let me be absolutely scientifically honest with you for one sentence before I stop being honest: the 1,000,000× number compares the full  "
+            code { "bump-my-version" }
+            " CLI round-trip (importing Python, loading dependencies, spawning a subprocess) against our in-process library call with a warm cache and a  "
+            code { "SmallVec" }
+            "."
+        }
+        p {
+            "One is a sports car. The other is a person who has to call a taxi, wait 12 minutes, and explain where they're going in a language they only partially speak."
+        }
+        p { "Now let's look at the real numbers." }
+        h3 { id: "-new-benchmarks",
+            a { href: "#-new-benchmarks", class: "header", "🔥 New Benchmarks: " }
+            code { "0.2.0" }
+            " vs "
+            code { "0.2.1" }
+            " vs Python"
+        }
+        table {
+            thead {
+                th { "Operation" }
+                th {
+                    code { "bump2version" }
+                    " "
+                    code { "0.2.0" }
+                    ""
+                }
+                th {
+                    code { "bump2version" }
+                    " "
+                    code { "0.2.1" }
+                    ""
+                }
+                th { "Python pyO3 FFI" }
+                th {
+                    code { "bump-my-version" }
+                    " CLI"
+                }
+            }
+            tr {
+                th { "Parse + bump + serialize" }
+                th { "~" }
+                th {
+                    strong { "~" }
+                    ""
+                }
+                th { "~" }
+                th { "~" }
+            }
+            tr {
+                th { "File search/replace (1k lines)" }
+                th { "~" }
+                th {
+                    strong { "~" }
+                    ""
+                }
+                th { "~" }
+                th { "~" }
+            }
+            tr {
+                th { "File search/replace (100k lines)" }
+                th { "~" }
+                th {
+                    strong { "~" }
+                    ""
+                }
+                th { "N/A" }
+                th { "~" }
+            }
+            tr {
+                th { "Config file parse" }
+                th { "~" }
+                th {
+                    strong { "~" }
+                    ""
+                }
+                th { "N/A" }
+                th { "~" }
+            }
+        }
+        p {
+            "Versus the Python CLI subprocess: ((500 x 1000) ÷ 0.4) = "
+            strong { "~" }
+            " faster for a version parse-bump-serialize. We round down to 1,000,000x for humility. The Mossad agents said rounding up was acceptable. We preferred honesty."
+        }
+        h3 { id: "what-got-fast-and-why",
+            a { href: "#what-got-fast-and-why", class: "header", "What got fast and why:" }
+        }
+        ul {
+            li {
+                strong {
+                    code { "memchr" }
+                }
+                " replaced every inner-loop string search. "
+                code { "memchr" }
+                " is basically SIMD-accelerated "
+                code { "strchr" }
+                " and it is unreasonably good at its one job."
+            }
+            li {
+                strong {
+                    code { "SmallVec<[VersionPart; 8]>" }
+                }
+                " means version component vectors never touch the allocator for reasonable semver (≤8 parts). Stack-allocated. L1 cache. Zero malloc."
+            }
+            li {
+                strong { "Branchless bump arithmetic" }
+                ": the bump logic is now a lookup into a const table of which component to increment and which to zero. The CPU's branch predictor doesn't even have to sweat."
+            }
+            li {
+                strong {
+                    code { "Arc<Regex>" }
+                    " cache"
+                }
+                " from "
+                code { "0.2.0" }
+                " was kept. The regex is compiled exactly once and shared. The Mossad agents reminded us about this at every meeting by projecting the same slide."
+            }
+        }
+        p {
+            img {
+                src: asset!(
+                    "assets/images/soviet-ferris-smallvec.png", ImageAssetOptions::new().with_avif()
+                ),
+                alt: "Ferris the crab flexin'",
+                title: "",
+            }
+        }
+        h2 { id: "-watch-mode",
+            a { href: "#-watch-mode", class: "header", "📡 Watch Mode" }
+        }
+        blockquote {
+            p {
+                code { "bump --watch --bump patch" }
+            }
+        }
+        p { "It sounds simple. It was the opposite of simple." }
+        p {
+            "\"Just watch a file and re-bump when it changes\", I told myself, in the tone of a man who has never used "
+            a { href: "https://man7.org/linux/man-pages/man7/inotify.7.html",
+                code { "inotify" }
+            }
+            " before."
+        }
+        p {
+            "Bro, I used  "
+            code { "inotify" }
+            ". Or rather, "
+            a { href: "https://github.com/notify-rs/notify",
+                code { "notify-rs" }
+            }
+            " used "
+            code { "inotify" }
+            " for me, which is almost the same thing except someone smarter than me had already suffered through the Linux kernel filesystem event API so I wouldn't have to. God bless crate authors."
+        }
+        p { "Watch mode works like this:" }
+        ol {
+            li {
+                "You provide a "
+                code { "--watch" }
+                " flag."
+            }
+            li {
+                code { "bump" }
+                " registers a recursive file watcher on all files listed in your "
+                code { ".bumpversion.toml" }
+                "."
+            }
+            li {
+                "Every time a registered file is saved (debounced to 200ms to avoid event avalanches), "
+                code { "bump" }
+                " checks whether the version string is still consistent with "
+                code { "current_version" }
+                "."
+            }
+            li { "If it detects drift, it re-applies the bump." }
+        }
+        p {
+            "This is either extremely useful for local development workflows or a deeply irresponsible footgun. We ship tools for adults. The lock safety is your problem."
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Watches </span><span style=\"color:#ff80f4;\">VERSION</span><span style=\"color:#f8f8f2;\">, Cargo.toml, and </span><span style=\"color:#ff80f4;\">README</span><span style=\"color:#f8f8f2;\">.md </span><span style=\"color:#f92672;\">for</span><span style=\"color:#f8f8f2;\"> changes, auto</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">bumps on save\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">watch </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">config</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">file .bumpversion.toml</span></pre>\n" }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Oh no did I just</span><span style=\"color:#f92672;\">?</span><span style=\"color:#f8f8f2;\"> yes, yes you did. It already ran.\n</span><span style=\"color:#f8f8f2;\">[watch] Detected change: Cargo.toml\n</span><span style=\"color:#f8f8f2;\">[watch] Bumping patch: </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">2</span></pre>\n" }
+        p {
+            img {
+                src: asset!("assets/images/pikachu-sup.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "surprised pikachu ",
+                title: "",
+            }
+        }
+        h2 { id: "-multi-language-auto-detection",
+            a { href: "#-multi-language-auto-detection", class: "header",
+                "🌐 Multi-Language Auto-Detection: "
+            }
+            code { "--detect" }
+            " Is Doing God's Work"
+        }
+        p {
+            "Previous  "
+            code { "bump2version" }
+            " was Rust-centric. You gave it files, it bumped files. Very obedient lil tool. Very rigid. Like a Rust compiler, actually."
+        }
+        p {
+            "The new  "
+            code { "--detect" }
+            " flag changes all that:"
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump minor </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">detect</span></pre>\n" }
+        p { "This single command:" }
+        ol {
+            li {
+                strong { "Walks the entire directory tree" }
+                " (skipping "
+                code { "target/" }
+                ", "
+                code { "node_modules/" }
+                ", "
+                code { ".git/" }
+                ", etc.)"
+            }
+            li {
+                strong { "Finds every recognized manifest" }
+                ": "
+                code { "Cargo.toml" }
+                ", "
+                code { "pyproject.toml" }
+                ", "
+                code { "setup.cfg" }
+                ", "
+                code { "package.json" }
+                ", "
+                code { "go.mod" }
+                ", "
+                code { "pom.xml" }
+                ", "
+                code { "build.gradle" }
+                ", "
+                code { "Gemfile" }
+            }
+            li {
+                strong { "Checks each one" }
+                " for the current version string"
+            }
+            li {
+                strong { "Rewrites every match" }
+                " in one coordinated pass"
+            }
+        }
+        p { "Six languages. One command." }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">cd my</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">monorepo\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">current</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">version </span><span style=\"color:#ff80f4;\">0.1</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0 </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">detect </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">[detect][dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run] Would update: Cargo.toml\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">[detect][dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run] Would update: pyproject.toml\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">[detect][dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run] Would update: package.json\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">[detect][dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run] Would update: pom.xml\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">[detect][dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run] Would update: go.</span><span style=\"font-style:italic;color:#66d9ef;\">mod\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">[detect][dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run] Would commit </span><span style=\"color:#ff80f4;\">5 </span><span style=\"color:#66d9ef;\">file</span><span style=\"color:#f8f8f2;\">(s): </span><span style=\"color:#ff80f4;\">0.1</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">0.1</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">1</span></pre>\n",
+        }
+        p { "Full supported matrix:" }
+        table {
+            thead {
+                th { "Language" }
+                th { "Manifest Files" }
+            }
+            tr {
+                th { "🦀 Rust" }
+                th {
+                    code { "Cargo.toml" }
+                    ""
+                }
+            }
+            tr {
+                th { "🐍 Python" }
+                th {
+                    code { "pyproject.toml" }
+                    ", "
+                    code { "setup.cfg" }
+                    ", "
+                    code { "setup.py" }
+                    ""
+                }
+            }
+            tr {
+                th { "🟨 JavaScript / Node.js" }
+                th {
+                    code { "package.json" }
+                    ""
+                }
+            }
+            tr {
+                th { "🐹 Go" }
+                th {
+                    code { "go.mod" }
+                    ""
+                }
+            }
+            tr {
+                th { "☕ Java" }
+                th {
+                    code { "pom.xml" }
+                    ", "
+                    code { "build.gradle" }
+                    ", "
+                    code { "build.gradle.kts" }
+                    ""
+                }
+            }
+            tr {
+                th { "💎 Ruby" }
+                th {
+                    code { "Gemfile" }
+                    ""
+                }
+            }
+        }
+        p {
+            "The Go developers, in particular, messaged to say thank you. We thanked them for using Go despite everything."
+        }
+        p {
+            img {
+                src: asset!(
+                    "assets/images/expanding-brain-detect.jpeg", ImageAssetOptions::new().with_avif()
+                ),
+                alt: "bump2version is expanding my smol brain",
+                title: "",
+            }
+        }
+        h2 { id: "-real-language-examples",
+            a { href: "#-real-language-examples", class: "header", "🌍 Real Language Examples" }
+        }
+        p {
+            "Every language now has a working example under "
+            a { href: "https://github.com/wiseaidev/bump2version/tree/main/examples",
+                code { "examples/" }
+            }
+            ", each with its own pre-baked "
+            code { ".bumpversion.toml" }
+            "."
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Python project\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">config</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">file examples</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">python</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">.bumpversion.toml </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">[dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run] Would commit </span><span style=\"color:#ff80f4;\">2 </span><span style=\"color:#66d9ef;\">file</span><span style=\"color:#f8f8f2;\">(s): </span><span style=\"color:#ff80f4;\">0.1</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">0.1</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">1\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Node.js project\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">config</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">file examples</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">nodejs</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">.bumpversion.toml </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump minor </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">[dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run] Would commit </span><span style=\"color:#ff80f4;\">1 </span><span style=\"color:#66d9ef;\">file</span><span style=\"color:#f8f8f2;\">(s): </span><span style=\"color:#ff80f4;\">0.1</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Java Maven project\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">config</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">file examples</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">java</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">.bumpversion.toml </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">new</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">version </span><span style=\"color:#ff80f4;\">2.0</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0 </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">[dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run] Would commit </span><span style=\"color:#ff80f4;\">1 </span><span style=\"color:#66d9ef;\">file</span><span style=\"color:#f8f8f2;\">(s): </span><span style=\"color:#ff80f4;\">0.1</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">2.0</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Ruby gemspec </span><span style=\"color:#f92672;\">+</span><span style=\"color:#f8f8f2;\"> Gemfile\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">config</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">file examples</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">ruby</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">.bumpversion.toml </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump major </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">[dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run] Would commit </span><span style=\"color:#ff80f4;\">2 </span><span style=\"color:#66d9ef;\">file</span><span style=\"color:#f8f8f2;\">(s): </span><span style=\"color:#ff80f4;\">0.1</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">1.0</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> The </span><span style=\"color:#ffee99;\">&quot;bump everything at once&quot;</span><span style=\"color:#f8f8f2;\"> grand finale\n</span><span style=\"color:#f8f8f2;\">cd examples</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">multi</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">lang\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">current</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">version </span><span style=\"color:#ff80f4;\">0.1</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0 </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump minor </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">detect </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">[detect][dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run] Would update: Cargo.toml, pyproject.toml, package.json, pom.xml, Gemfile, </span><span style=\"color:#ff80f4;\">VERSION</span></pre>\n",
+        }
+        p {
+            "6 ecosystems. 1 tool. Still forbids  "
+            code { "unsafe" }
+            ". We have standards."
+        }
+        h2 { id: "-the-yew-wasm-app",
+            a { href: "#-the-yew-wasm-app", class: "header", "🕸\u{fe0f} The Yew WASM App" }
+        }
+        p {
+            "You ever look at a perfectly good CLI tool and think: "
+            em { "\"This would be better if I could bump versions from a browser\"?" }
+        }
+        p {
+            "No? Me neither. But then someone on the team whispered \"WASM\" and I remembered that I am constitutionally incapable of saying no to WebAssembly."
+        }
+        p {
+            "So now there is a Yew-based web application at "
+            a { href: "https://github.com/wiseaidev/bump2version/tree/main/examples/yew-app",
+                code { "examples/yew-app/" }
+            }
+            ". It:"
+        }
+        ul {
+            li {
+                strong { "Runs entirely in the browser" }
+                ": "
+                code { "wasm32-unknown-unknown" }
+                ", no server required"
+            }
+            li {
+                strong { "Connects to the same Rust core" }
+                " via a "
+                a { href: "https://github.com/wiseaidev/bump2version/blob/main/examples/yew-app/src/version_ops.rs",
+                    code { "version_ops.rs" }
+                }
+                " bridge module"
+            }
+        }
+        p {
+            "And yes,  "
+            code { "git" }
+            "-related features had to be extracted into an optional feature flag ( "
+            code { "git" }
+            ") because  "
+            code { "gix" }
+            " uses Unix-specific APIs that don't compile to WASM. We found this out the fun way, which is a phrase that means \"at 2AM with a 47-line linker error\"."
+        }
+        h2 { id: "-i-abused-chatgpt-claude-and-gemini-again-more",
+            a {
+                href: "#-i-abused-chatgpt-claude-and-gemini-again-more",
+                class: "header",
+                "🤖 I Abused ChatGPT, Claude and Gemini. Again. More."
+            }
+        }
+        p {
+            "You may recall from my previous post that I abused Claude during  "
+            code { "0.2.0" }
+            " development. My lawyer said not to bring it up again."
+        }
+        p {
+            "So I won't bring up the fact that during  "
+            code { "0.2.1" }
+            " development, I made ChatGPT, Claude and Gemini:"
+        }
+        ul {
+            li {
+                "Rewrite the "
+                code { "detect.rs" }
+                " walk implementation 7 times until it correctly skipped "
+                code { "node_modules" }
+                " without accidentally also skipping "
+                code { "node_modules_backup" }
+                " (important distinction)"
+            }
+            li {
+                "Argue with itself about whether "
+                code { "SmallVec<[VersionPart; 8]>" }
+                " was better than "
+                code { "SmallVec<[VersionPart; 4]>" }
+                " for typical semver usage (it is "
+                code { "8" }
+                ", empirically)"
+            }
+            li {
+                "Generate "
+                code { ".bumpversion.toml" }
+                " configs for "
+                strong { "7 languages" }
+                ", review them for correctness, then find its own mistake in the Ruby config and fix it without being asked"
+            }
+        }
+        p {
+            "The OpenAI, Anthropic and Google lawyers have upgraded from \"concerned\" to \"a medium-sized incident report has been filed\"."
+        }
+        p {
+            img {
+                src: asset!("assets/images/prompting-ms-claudet.gif"),
+                alt: "Prompting MS Claudet\".",
+                title: "",
+            }
+        }
+        p {
+            "My legal counsel has asked that I clarify: no Claude was permanently harmed. Tokens were consumed. Electricity was used. The  "
+            code { "--detect" }
+            " flag works correctly."
+        }
+        h2 { id: "-3-binaries-one-package-zero-confusing-changelog-entries",
+            a {
+                href: "#-3-binaries-one-package-zero-confusing-changelog-entries",
+                class: "header",
+                "🚀 3 Binaries, One Package, Zero Confusing Changelog Entries"
+            }
+        }
+        p {
+            "After  "
+            code { "cargo install bump2version --features rust-binary" }
+            ", you get three things:"
+        }
+        table {
+            thead {
+                th { "Binary" }
+                th { "Use case" }
+            }
+            tr {
+                th {
+                    code { "bump" }
+                    ""
+                }
+                th { "The modern, primary CLI" }
+            }
+            tr {
+                th {
+                    code { "cargo-bump" }
+                    ""
+                }
+                th {
+                    "Cargo subcommand ("
+                    code { "cargo bump --bump patch" }
+                    ")"
+                }
+            }
+            tr {
+                th {
+                    code { "bump2version" }
+                    ""
+                }
+                th {
+                    "✅ "
+                    strong { "Backward-compatible alias" }
+                    " for old CI configs, tutorials, and the 47 blog posts that told people to run "
+                    code { "bump2version --bump patch" }
+                    ""
+                }
+            }
+        }
+        p {
+            "The  "
+            code { "bump2version" }
+            " binary is not deprecated. It is not going anywhere. If you have a shell script from 2025 that calls  "
+            code { "bump2version --bump minor" }
+            ", it will still work in 2030, and presumably during the heat death of the universe, if any of your CI pipelines survive that long."
+        }
+        p {
+            "This was a deliberate choice. Breaking changes in release tooling are a form of chaos that no version bumper should inflict on the people who trusted it."
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> All of these </span><span style=\"background-color:#f92672;color:#f8f8f0;\">do</span><span style=\"color:#f8f8f2;\"> the exact same thing:\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch\n</span><span style=\"color:#f8f8f2;\">cargo bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch\n</span><span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch   </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> kept </span><span style=\"color:#f92672;\">for</span><span style=\"color:#f8f8f2;\"> backward compatibility</span></pre>\n" }
+        p {
+            img {
+                src: asset!(
+                    "assets/images/same-picture-binaries.jpeg", ImageAssetOptions::new().with_avif()
+                ),
+                alt: "Same Same",
+                title: "",
+            }
+        }
+        h2 { id: "-the",
+            a { href: "#-the", class: "header", "📋 The " }
+            code { ".bumpversion.toml" }
+            " Glow-Up"
+        }
+        p {
+            "The config file now tracks "
+            strong { "all version-carrying files in the project" }
+            ", not just "
+            code { "Cargo.toml" }
+            ":"
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">[bumpversion]\n</span><span style=\"color:#f8f8f2;\">current_version </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">1\n</span><span style=\"color:#f8f8f2;\">commit </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ff80f4;\">false\n</span><span style=\"color:#f8f8f2;\">tag </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ff80f4;\">false\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">[bumpversion:file:Cargo.toml]\n</span><span style=\"color:#f8f8f2;\">search </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> version </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;{{current_version}}&quot;\n</span><span style=\"color:#f8f8f2;\">replace </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> version </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;{{new_version}}&quot;\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">[bumpversion:file:package.json]\n</span><span style=\"color:#f8f8f2;\">search </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;version&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ffee99;\">&quot;{{current_version}}&quot;\n</span><span style=\"color:#f8f8f2;\">replace </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;version&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ffee99;\">&quot;{{new_version}}&quot;\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">[bumpversion:file:</span><span style=\"color:#ff80f4;\">README</span><span style=\"color:#f8f8f2;\">.md]\n</span><span style=\"color:#f8f8f2;\">search </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;{{current_version}}&quot;\n</span><span style=\"color:#f8f8f2;\">replace </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;{{new_version}}&quot;\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">[bumpversion:file:</span><span style=\"color:#ff80f4;\">RUST</span><span style=\"color:#f8f8f2;\">.md]\n</span><span style=\"color:#f8f8f2;\">search </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;{{current_version}}&quot;\n</span><span style=\"color:#f8f8f2;\">replace </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;{{new_version}}&quot;\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">[bumpversion:file:</span><span style=\"color:#ff80f4;\">WASM</span><span style=\"color:#f8f8f2;\">.md]\n</span><span style=\"color:#f8f8f2;\">search </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;{{current_version}}&quot;\n</span><span style=\"color:#f8f8f2;\">replace </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;{{new_version}}&quot;\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">[bumpversion:file:</span><span style=\"color:#ff80f4;\">DOCKER</span><span style=\"color:#f8f8f2;\">.md]\n</span><span style=\"color:#f8f8f2;\">search </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> `{{current_version}}`\n</span><span style=\"color:#f8f8f2;\">replace </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> `{{new_version}}`\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">[bumpversion:file:</span><span style=\"color:#ff80f4;\">PACKAGING</span><span style=\"color:#f8f8f2;\">.md]\n</span><span style=\"color:#f8f8f2;\">search </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">{{current_version}}\n</span><span style=\"color:#f8f8f2;\">replace </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">{{new_version}}\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">[bumpversion:file:rpm</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">bump2version.spec]\n</span><span style=\"color:#f8f8f2;\">search </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> Version: {{current_version}}\n</span><span style=\"color:#f8f8f2;\">replace </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> Version: {{new_version}}</span></pre>\n",
+        }
+        p {
+            "One  "
+            code { "bump --bump patch" }
+            " and every single version string, across docs, code, configs, packaging specs, and Docker manifests, updates atomically. The Mossad agents reviewed this config and said \"acceptable\" which, from them, is essentially a standing ovation."
+        }
+        h2 { id: "-the-borrow-checker-tried-to-ruin-watch-mode",
+            a {
+                href: "#-the-borrow-checker-tried-to-ruin-watch-mode",
+                class: "header",
+                "🦀 The Borrow Checker Tried to Ruin Watch Mode"
+            }
+        }
+        p {
+            "There is a moment in every Rust developer's life, we all know the moment, where you look at a piece of code that "
+            em { "should" }
+            " work, that "
+            em { "does" }
+            " work in your head, that you have drawn on paper with arrows and boxes to prove its correctness, and the borrow checker looks at you across the compiler output and says:"
+        }
+        blockquote {
+            p {
+                code { "error[E0505]: cannot move out of 'watcher' because it is borrowed" }
+            }
+        }
+        p { "And then below that:" }
+        blockquote {
+            p {
+                code { "note: the borrow later used here" }
+            }
+        }
+        p {
+            "And then below "
+            em { "that" }
+            ", a footnote that reads "
+            code { "note: move occurs because..." }
+            " followed by a chain of reasoning so long it wraps around to the next terminal page."
+        }
+        p {
+            "The Yew WASM integration did this to me for different reasons:  "
+            code { "gix" }
+            " depends on Unix syscalls ( "
+            code { "openat" }
+            ",  "
+            code { "statx" }
+            ", platform symlink handling) that simply do not exist in  "
+            code { "wasm32-unknown-unknown" }
+            ". The linker error was 47 lines long and named three crates I had never heard of."
+        }
+        p {
+            "The fix: gating all git-related functionality behind a  "
+            code { "git" }
+            " feature flag that is disabled by default for WASM builds. Clean. Simple. The kind of solution that is obvious in retrospect and invisible before you spend four hours in the linker output."
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">[features]\n</span><span style=\"color:#f8f8f2;\">default </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">[</span><span style=\"color:#ffee99;\">&quot;std&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;git&quot;</span><span style=\"color:#f8f8f2;\">]\n</span><span style=\"color:#f8f8f2;\">git      </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">[</span><span style=\"color:#ffee99;\">&quot;gix&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;std&quot;</span><span style=\"color:#f8f8f2;\">]\n</span><span style=\"color:#f8f8f2;\">cli      </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">[</span><span style=\"color:#ffee99;\">&quot;clap&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;git&quot;</span><span style=\"color:#f8f8f2;\">]\n</span><span style=\"color:#f8f8f2;\">rust</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">binary </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">[</span><span style=\"color:#ffee99;\">&quot;cli&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;git&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;detect&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;watch&quot;</span><span style=\"color:#f8f8f2;\">]  </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> ← full featured binary\n</span><span style=\"color:#f8f8f2;\">watch    </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">[</span><span style=\"color:#ffee99;\">&quot;notify&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;cli&quot;</span><span style=\"color:#f8f8f2;\">]\n</span><span style=\"color:#f8f8f2;\">detect   </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">[</span><span style=\"color:#ffee99;\">&quot;walkdir&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;cli&quot;</span><span style=\"color:#f8f8f2;\">]</span></pre>\n",
+        }
+        p {
+            "The WASM app uses none of the  "
+            code { "git" }
+            " features. The CLI binary uses all of them. The feature graph is clean enough that my Mossad advisors called it \"elegant\" before immediately asking about the benchmark numbers."
+        }
+        p {
+            img {
+                src: asset!("assets/images/excising-gix.gif"),
+                alt: "Me excising gix.",
+                title: "",
+            }
+        }
+        h2 { id: "-getting-the-full-picture",
+            a { href: "#-getting-the-full-picture", class: "header",
+                "📦 Getting The Full Picture"
+            }
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> The complete </span><span style=\"color:#ff80f4;\">CLI</span><span style=\"color:#f8f8f2;\">, with everything\n</span><span style=\"color:#f8f8f2;\">cargo install bump2version </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">features rust</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">binary</span></pre>\n" }
+        p {
+            "This gets you  "
+            code { "bump" }
+            ",  "
+            code { "cargo-bump" }
+            ", and  "
+            code { "bump2version" }
+            ". All 3. No choices required. Just install and bump."
+        }
+        h3 { id: "quick-examples",
+            a { href: "#quick-examples", class: "header", "Quick Examples" }
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Standard semver\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch           </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">2\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump minor           </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">0.3</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump major           </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ff80f4;\">0.2</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\"> → </span><span style=\"color:#ff80f4;\">1.0</span><span style=\"color:#f8f8f2;\">.</span><span style=\"color:#ff80f4;\">0\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Safe preview\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">dry</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">run\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump minor </span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">n        </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> same thing, shorter\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Git integration\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">commit </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">tag\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Custom message\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump minor </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">commit </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">message </span><span style=\"color:#ffee99;\">&quot;chore: ship {{new_version}} 🚀&quot;\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Auto</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">detect all manifests\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">detect\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Watch mode (exits when you ctrl </span><span style=\"color:#f92672;\">+</span><span style=\"color:#f8f8f2;\"> c)\n</span><span style=\"color:#f8f8f2;\">bump </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">watch </span><span style=\"color:#f92672;\">--</span><span style=\"color:#f8f8f2;\">bump patch</span></pre>\n",
+        }
+        h3 { id: "as-a-library-no",
+            a { href: "#as-a-library-no", class: "header", "As a library (no " }
+            code { "std" }
+            " required for the core)"
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">[dependencies]\n</span><span style=\"color:#f8f8f2;\">bump2version </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">{{ version </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;0.2.1&quot;</span><span style=\"color:#f8f8f2;\">, default</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">features </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ff80f4;\">false </span><span style=\"color:#f8f8f2;\">}}</span></pre>\n" }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n</pre>\n" }
+        h3 { id: "python",
+            a { href: "#python", class: "header", "Python" }
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">pip install bump</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">rs</span></pre>\n" }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">from bump_rs import bump_version\n</span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">bump_version</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;1.2.3&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;major&quot;</span><span style=\"color:#f8f8f2;\">))  </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ffee99;\">&quot;2.0.0&quot; </span><span style=\"color:#f92672;\">in ~</span><span style=\"color:#f8f8f2;\">57µs</span></pre>\n" }
+        h3 { id: "nodejs",
+            a { href: "#nodejs", class: "header", "Node.js" }
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">npm install bump2version</span></pre>\n" }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"font-style:italic;color:#66d9ef;\">const </span><span style=\"color:#f8f8f2;\">{{ bumpVersion }} </span><span style=\"color:#f92672;\">= </span><span style=\"color:#66d9ef;\">require</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;bump2version&quot;</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"color:#f8f8f2;\">console.</span><span style=\"color:#66d9ef;\">log</span><span style=\"color:#f8f8f2;\">(bumpVersion(</span><span style=\"color:#ffee99;\">&quot;1.2.3&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;patch&quot;</span><span style=\"color:#f8f8f2;\">)); </span><span style=\"color:#8c8c8c;\">// &quot;1.2.4&quot;</span></pre>\n" }
+        h2 { id: "-what-comes-after-1000000",
+            a { href: "#-what-comes-after-1000000", class: "header",
+                "🚀 What Comes After 1,000,000×"
+            }
+        }
+        p {
+            "Look, at some point the law of diminishing returns kicks in. We cannot make version bumping faster than the speed of light. (We checked. We asked the Mossad agents. They checked their slides. The answer was no.)"
+        }
+        p {
+            "But there are things we "
+            em { "can" }
+            " still do:"
+        }
+        ul {
+            li {
+                strong { "Pre-release cycling" }
+                ": proper "
+                code { "alpha.1 → alpha.2 → beta.1 → rc.1 → stable" }
+                " lifecycle, first-class"
+            }
+            li {
+                strong { "Workspace-aware bumping" }
+                ": atomic multi-crate Cargo workspace updates, all in one commit"
+            }
+            li {
+                strong {
+                    "More "
+                    code { "detect" }
+                    " targets"
+                }
+                ": "
+                code { ".NET" }
+                " ("
+                code { "*.csproj" }
+                "), PHP ("
+                code { "composer.json" }
+                "), Swift ("
+                code { "Package.swift" }
+                "), Elixir ("
+                code { "mix.exs" }
+                ")"
+            }
+            li {
+                strong { "Browser version history" }
+                ": the Yew app keeps a local bump history so you can see what you broke and when"
+            }
+        }
+        p {
+            "If you want any of these sooner: "
+            a { href: "https://github.com/wiseaidev/bump2version/issues", "open an issue" }
+            ". Or just star the repo and the moral pressure will accelerate delivery. It works on me. I've tested this empirically."
+        }
+        h2 { id: "-closing-thoughts",
+            a { href: "#-closing-thoughts", class: "header", "💬 Closing Thoughts" }
+        }
+        p {
+            code { "bump2version 0.2.1" }
+            " started as a performance exercise and became an ecosystem. What was a single binary is now:"
+        }
+        ul {
+            li {
+                "A "
+                strong { "Rust library" }
+                " with "
+                code { "no_std" }
+                " support for the core"
+            }
+            li {
+                "A "
+                strong { "Python package" }
+                " ("
+                code { "bump-rs" }
+                ") for Pythonistas who want the speed without the syntax"
+            }
+            li {
+                "A "
+                strong { "Node.js native add-on" }
+                " for JavaScript developers who want to feel like they're using Rust"
+            }
+            li {
+                "A "
+                strong { "CLI" }
+                " with three binary names: "
+                code { "bump" }
+                ", "
+                code { "cargo-bump" }
+                ", "
+                code { "bump2version" }
+            }
+            li {
+                "A "
+                strong { "WASM browser app" }
+                " built in Yew, because someone had to"
+            }
+            li {
+                strong { "7 language examples" }
+                " covering Rust, Python, Node.js, Go, Java, Ruby, and poly-repo workflows"
+            }
+            li {
+                strong { "20 integration tests" }
+                " that test the actual binary, not a mock"
+            }
+            li {
+                "An "
+                strong {
+                    "auto-updatable "
+                    code { ".bumpversion.toml" }
+                }
+                " that tracks all version strings across the entire project"
+            }
+        }
+        blockquote {
+            p {
+                code { "cargo install bump2version --features rust-binary" }
+                " → bump → ship → repeat → be 1,000,000× faster than Python → sleep → repeat 🦀"
+            }
+        }
+        p {
+            "Star "
+            a { href: "https://github.com/wiseaidev/bump2version", "the repo" }
+            ". Try the "
+            a { href: "https://pypi.org/project/bump-rs", "Python bindings" }
+            ". Use the "
+            a { href: "https://www.npmjs.com/package/bump2version", "Node.js package" }
+            ". Read the "
+            a { href: "https://docs.rs/bump2version", "Rust docs" }
+            ". Poke the "
+            a { href: "https://github.com/wiseaidev/bump2version/tree/main/examples/yew-app",
+                "WASM demo"
+            }
+            ". Run the "
+            a { href: "https://github.com/wiseaidev/bump2version/tree/main/examples",
+                "examples"
+            }
+            "."
+        }
+        p {
+            "This has been a public service announcement from a developer who, in the course of a single engineering session, created 20 tests, 7 example projects, a WASM frontend, a Soviet-themed benchmark suite, and consumed an amount of Claude tokens that my accountant has asked me not to disclose."
+        }
+        p {
+            "The legal proceedings with Top Tech companies remain ongoing. My lawyer has read this post. He has asked me to note, for the record, that \"abusing Claude\" is a colloquial and affectionate term and not a legally actionable description of token consumption."
+        }
+        p { "I have not taken that advice either." }
+        p {
+            "Till next time: "
+            em { "Keep bumpin', keep rustin', keep benchmarkin'" }
+            " 🦀⬆\u{fe0f}"
+        }
+        p {
+            "P.S. The Mossad agents have approved this post subject to the removal of the classified section about the branchless arithmetic lookup table. We kept it in. They know. They've said nothing. This is ominous."
         }
     }
 }
