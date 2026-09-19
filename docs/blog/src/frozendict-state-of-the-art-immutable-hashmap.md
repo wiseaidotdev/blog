@@ -1,6 +1,6 @@
 > Hello 👋!
 
-So there I was, staring at Python's `frozenset`, feeling that specific special rage that only a data structure enthusiast at 1AM can feel, while `dict` sat there, utterly mutable, fully hashable, completely disobedient.
+So there I was, staring at [Python's `frozenset`](https://docs.python.org/3/builtins/stdtypes.html#set-types-set-frozenset), feeling that specific special rage that only a data structure enthusiast at 1AM can feel, while `dict` sat there, utterly mutable, fully hashable, completely disobedient.
 
 Dictionary keys can change. You can `pop` from it. You can `clear` it. You can `update` it mid-computation and break 30 tests simultaneously.
 
@@ -206,8 +206,6 @@ list(reversed(FrozenDict({"c": 3, "a": 1, "b": 2})))
 `fromkeys` on a subclass returns an instance of the subclass. `__class_getitem__` returns a `frozndict`. `__reversed__` iterates keys in reverse insertion order.
 
 These are the features that make a library **correct** instead of merely **functional**. There's a difference.
-
-![same same but different](assets/images/meme-16.jpeg)
 
 ## Getting Started
 

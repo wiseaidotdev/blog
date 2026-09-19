@@ -2233,7 +2233,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 27usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 28 |---| Frozendict: State of the Art Immutable Hashmap |---| tech |---| frozendict-state-of-the-art-immutable-hashmap |---| Sep 19 2026 |---| frozndict is a fully immutable, insertion-ordered, O(1)-hashable Python dictionary written in 100% safe Rust. Iteration in 4 µs. copy() in 63 ns. Pure Rust functions running 1,000,000x faster than Python equivalents. |---| assets/images/banner_post_28.webp |---| |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/frozendict-state-of-the-art-immutable-hashmap.md"
+                        title: " 28 |---| Frozendict: State of the Art Immutable Hashmap |---| tech |---| frozendict-state-of-the-art-immutable-hashmap |---| Sep 19 2026 |---| frozndict is a fully immutable, insertion-ordered, O(1)-hashable Python dictionary written in 100% safe Rust. Iteration in 4 µs. copy() in 63 ns. Pure Rust functions running 1,000,000x faster than Python equivalents. |---| assets/images/banner_post_28.webp |---| https://dev.to/wiseai/frozendict-state-of-the-art-immutable-hashmap-for-python-and-node-js-284o |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/frozendict-state-of-the-art-immutable-hashmap.md"
                             .to_string(),
                         url: BookRoute::FrozendictStateOfTheArtImmutableHashmap {
                         },
@@ -2717,7 +2717,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 28 |---| Frozendict: State of the Art Immutable Hashmap |---| tech |---| frozendict-state-of-the-art-immutable-hashmap |---| Sep 19 2026 |---| frozndict is a fully immutable, insertion-ordered, O(1)-hashable Python dictionary written in 100% safe Rust. Iteration in 4 µs. copy() in 63 ns. Pure Rust functions running 1,000,000x faster than Python equivalents. |---| assets/images/banner_post_28.webp |---| |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/frozendict-state-of-the-art-immutable-hashmap.md"
+                        name: " 28 |---| Frozendict: State of the Art Immutable Hashmap |---| tech |---| frozendict-state-of-the-art-immutable-hashmap |---| Sep 19 2026 |---| frozndict is a fully immutable, insertion-ordered, O(1)-hashable Python dictionary written in 100% safe Rust. Iteration in 4 µs. copy() in 63 ns. Pure Rust functions running 1,000,000x faster than Python equivalents. |---| assets/images/banner_post_28.webp |---| https://dev.to/wiseai/frozendict-state-of-the-art-immutable-hashmap-for-python-and-node-js-284o |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/frozendict-state-of-the-art-immutable-hashmap.md"
                             .to_string(),
                         location: Some(BookRoute::FrozendictStateOfTheArtImmutableHashmap {}),
                         number: Some(
@@ -13025,9 +13025,12 @@ pub fn FrozendictStateOfTheArtImmutableHashmap() -> dioxus::prelude::Element {
             p { "Hello 👋!" }
         }
         p {
-            "So there I was, staring at Python's  "
-            code { "frozenset" }
-            ", feeling that specific special rage that only a data structure enthusiast at 1AM can feel, while  "
+            "So there I was, staring at "
+            a { href: "https://docs.python.org/3/builtins/stdtypes.html#set-types-set-frozenset",
+                "Python's  "
+                code { "frozenset" }
+            }
+            ", feeling that specific special rage that only a data structure enthusiast at 1AM can feel, while "
             code { "dict" }
             " sat there, utterly mutable, fully hashable, completely disobedient."
         }
@@ -13572,13 +13575,6 @@ pub fn FrozendictStateOfTheArtImmutableHashmap() -> dioxus::prelude::Element {
             " instead of merely "
             strong { "functional" }
             ". There's a difference."
-        }
-        p {
-            img {
-                src: asset!("assets/images/meme-16.jpeg", ImageAssetOptions::new().with_avif()),
-                alt: "same same but different",
-                title: "",
-            }
         }
         h2 { id: "getting-started",
             a { href: "#getting-started", class: "header", "Getting Started" }
