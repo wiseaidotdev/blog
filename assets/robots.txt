@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wiseai.dev/sitemap.xml
+Sitemap: https://wiseai.dev/assets/sitemap.xml

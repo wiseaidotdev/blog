@@ -476,6 +476,78 @@ html {
   background: transparent !important;
 }
 
+.post-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  cursor: default;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    opacity 0.18s ease;
+}
+
+a.post-badge {
+  cursor: pointer;
+}
+
+a.post-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  opacity: 0.92;
+  text-decoration: none;
+}
+
+.post-badge-ai {
+  background-color: #ede9fe;
+  color: #6d28d9;
+  border-color: #c4b5fd;
+}
+
+html.dark .post-badge-ai,
+:root:not(.light) .post-badge-ai {
+  background-color: rgba(109, 40, 217, 0.15);
+  color: #c4b5fd;
+  border-color: rgba(109, 40, 217, 0.4);
+}
+
+.post-badge-dev {
+  background-color: #111827;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+.post-badge-dev:hover {
+  background-color: #1f2937;
+}
+
+.post-badge-github {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  border-color: #374151;
+}
+
+.post-badge-github:hover {
+  background-color: #374151;
+}
+
+html.light .post-badge-dev,
+html.light .post-badge-github {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
 .blogs-page {
   background: var(--bg-primary);
   min-height: 100vh;

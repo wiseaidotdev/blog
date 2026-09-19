@@ -6,6 +6,18 @@ use dioxus::prelude::*;
 use theme::dioxus::use_theme;
 use theme::Theme;
 
+#[derive(Clone, PartialEq)]
+struct PostInfo {
+    title: String,
+    category: String,
+    slug: String,
+    date: String,
+    description: String,
+    img: String,
+    dev_url: String,
+    github_url: String,
+}
+
 #[component]
 pub fn Blog() -> Element {
     let path: Route = use_route();
@@ -45,65 +57,68 @@ pub fn Blog() -> Element {
         "text-green-400"
     };
 
-    let mut blog_info = use_signal(|| None::<(String, String, String, String, String, String)>);
-    let mut post_id = use_signal(|| None::<String>);
+    let mut blog_info = use_signal(|| None::<PostInfo>);
 
     let blog_post = BlogRoute::static_routes().into_iter().rev().find(|route| {
         let raw_title = &route.page().title;
-
         if raw_title.contains("[draft]") {
             return false;
         }
-
-        let items = raw_title.splitn(8, " |---| ").collect::<Vec<_>>();
+        let clean_title = raw_title
+            .replace(" |---| |---| ", " |---|  |---| ")
+            .replace(" |---| |---| ", " |---|  |---| ");
+        let items = clean_title.splitn(10, " |---| ").collect::<Vec<_>>();
         let [_, _, _, slug, ..] = items.as_slice() else {
             return false;
         };
-
         *slug == slug_from_url
     });
 
     if let Some(route) = blog_post {
         let raw_title = &route.page().title;
-        let items = raw_title.splitn(8, " |---| ").collect::<Vec<_>>();
-        let [id, title, category, slug, date, description, img, ..] = items.as_slice() else {
-            return Ok(Default::default());
-        };
-
-        blog_info.set(Some((
-            title.to_string(),
-            category.to_string(),
-            slug.to_string(),
-            date.to_string(),
-            description.to_string(),
-            img.to_string(),
-        )));
-        post_id.set(Some(id.to_string()));
+        let clean_title = raw_title
+            .replace(" |---| |---| ", " |---|  |---| ")
+            .replace(" |---| |---| ", " |---|  |---| ");
+        let items = clean_title.splitn(10, " |---| ").collect::<Vec<_>>();
+        if let [_id, title, category, slug, date, description, img, dev_url, github_url, ..] =
+            items.as_slice()
+        {
+            blog_info.set(Some(PostInfo {
+                title: title.to_string(),
+                category: category.to_string(),
+                slug: slug.to_string(),
+                date: date.to_string(),
+                description: description.to_string(),
+                img: img.to_string(),
+                dev_url: dev_url.trim().to_string(),
+                github_url: github_url.trim().to_string(),
+            }));
+        }
     } else {
         blog_info.set(None);
     }
 
     let canonical_url = if let Some(ref info) = blog_info() {
-        format!("https://wiseai.dev/blogs/{}", info.2)
+        format!("https://wiseai.dev/blogs/{}", info.slug)
     } else {
         "https://wiseai.dev/blogs".to_string()
     };
 
     let page_title = if let Some(ref info) = blog_info() {
-        format!("{} | Wise AI Blog", info.0)
+        format!("{} | Wise AI Blog", info.title)
     } else {
         "Wise AI Blog".to_string()
     };
 
     let page_description = if let Some(ref info) = blog_info() {
-        info.4.clone()
+        info.description.clone()
     } else {
         "Explore Wise AI's latest insights on Rust, ASI, and advanced agent architectures."
             .to_string()
     };
 
     let og_image = if let Some(ref info) = blog_info() {
-        format!("https://wiseai.dev/{}", info.5)
+        format!("https://wiseai.dev/{}", info.img)
     } else {
         "https://wiseai.dev/assets/og-image.jpg".to_string()
     };
@@ -123,7 +138,7 @@ pub fn Blog() -> Element {
         document::Meta { property: "og:site_name", content: "Wise AI Blog" }
         document::Meta { property: "og:locale", content: "en_US" }
         document::Meta { property: "article:author", content: "Mahmoud Harmouch" }
-        document::Meta { property: "article:section", content: "{blog_info().map(|i| i.1).unwrap_or_default()}" }
+        document::Meta { property: "article:section", content: "{blog_info().map(|i| i.category).unwrap_or_default()}" }
         document::Meta { name: "twitter:card", content: "summary_large_image" }
         document::Meta { name: "twitter:title", content: "{page_title}" }
         document::Meta { name: "twitter:description", content: "{page_description}" }
@@ -144,7 +159,6 @@ pub fn Blog() -> Element {
             }
         }
 
-
         div {
             class: format!("min-h-screen transition-colors duration-300 {}", outer_bg),
             style: "padding-top: 72px; background: var(--bg-primary);",
@@ -155,8 +169,8 @@ pub fn Blog() -> Element {
                 div { class: "w-full overflow-hidden",
                     style: "max-height: 480px;",
                     img {
-                        src: "/{post.5}",
-                        alt: "{post.0}",
+                        src: "/{post.img}",
+                        alt: "{post.title}",
                         class: "w-full object-cover",
                         style: "max-height: 480px;",
                         loading: "eager",
@@ -170,7 +184,7 @@ pub fn Blog() -> Element {
                         class: "blog-article",
 
                         div {
-                            class: "flex items-center gap-3 mb-6 mt-2",
+                            class: "flex items-center gap-3 mb-4 mt-2",
 
                             img {
                                 src: asset!("/assets/ceo.webp"),
@@ -185,25 +199,53 @@ pub fn Blog() -> Element {
                                 }
                                 span {
                                     class: format!("text-xs {}", meta_text),
-                                    "{post.3}"
+                                    "{post.date}"
+                                }
+                            }
+                        }
+
+                        div {
+                            class: "flex flex-wrap items-center gap-2 mb-5",
+
+                            span {
+                                class: "post-badge post-badge-ai",
+                                title: "This post is AI-assisted. Core ideas and facts are human-authored and verified.",
+                                i { class: "fa-solid fa-robot" }
+                                "AI Assisted"
+                            }
+
+                            if !post.dev_url.is_empty() {
+                                a {
+                                    href: "{post.dev_url}",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    class: "post-badge post-badge-dev",
+                                    i { class: "fa-brands fa-dev" }
+                                    "Read on Dev"
+                                }
+                            }
+
+                            if !post.github_url.is_empty() {
+                                a {
+                                    href: "{post.github_url}",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    class: "post-badge post-badge-github",
+                                    i { class: "fa-brands fa-github" }
+                                    "Edit on GitHub"
                                 }
                             }
                         }
 
                         h1 {
                             class: format!("text-2xl sm:text-3xl md:text-4xl font-black font-['Lexend'] leading-tight mb-2 {}", title_color),
-                            "{post.0}"
+                            "{post.title}"
                         }
 
                         p {
                             class: format!("text-xs mb-6 font-mono {}", meta_text),
-                            "#{post.2}"
+                            "#{post.slug}"
                         }
-
-                        // p {
-                        //     class: format!("text-base leading-relaxed mb-8 {}", meta_text),
-                        //     "{post.4}"
-                        // }
 
                         div {
                             class: "no-tailwind",

@@ -107,6 +107,7 @@ pub fn Blogs() -> Element {
             .into_iter()
             .rev()
             .filter(|route| !route.page().title.contains("[draft]"))
+            .filter(|route| !route.page().title.contains(" |---| legal |---| "))
             .collect::<Vec<_>>()
     });
 
@@ -116,7 +117,10 @@ pub fn Blogs() -> Element {
             .into_iter()
             .filter(|route| {
                 let raw_title = &route.page().title;
-                let items = raw_title.splitn(8, " |---| ").collect::<Vec<_>>();
+                let clean_title = raw_title
+                    .replace(" |---| |---| ", " |---|  |---| ")
+                    .replace(" |---| |---| ", " |---|  |---| ");
+                let items = clean_title.splitn(10, " |---| ").collect::<Vec<_>>();
                 let [_, title, category, _, _, description, _, ..] = items.as_slice() else {
                     return false;
                 };
@@ -157,7 +161,10 @@ pub fn Blogs() -> Element {
             .take(5)
             .filter_map(|route| {
                 let raw_title = &route.page().title;
-                let items = raw_title.splitn(8, " |---| ").collect::<Vec<_>>();
+                let clean_title = raw_title
+                    .replace(" |---| |---| ", " |---|  |---| ")
+                    .replace(" |---| |---| ", " |---|  |---| ");
+                let items = clean_title.splitn(10, " |---| ").collect::<Vec<_>>();
                 if let [_, title, _, slug, _, _, img, ..] = items.as_slice() {
                     Some((title.to_string(), slug.to_string(), img.to_string()))
                 } else {
@@ -172,9 +179,13 @@ pub fn Blogs() -> Element {
         .into_iter()
         .rev()
         .filter(|route| !route.page().title.contains("[draft]"))
+        .filter(|route| !route.page().title.contains(" |---| legal |---| "))
         .filter_map(|route| {
             let raw_title = &route.page().title;
-            let items = raw_title.splitn(8, " |---| ").collect::<Vec<_>>();
+            let clean_title = raw_title
+                .replace(" |---| |---| ", " |---|  |---| ")
+                .replace(" |---| |---| ", " |---|  |---| ");
+            let items = clean_title.splitn(10, " |---| ").collect::<Vec<_>>();
             if let [_, _, category, ..] = items.as_slice() {
                 let cat_str = category.to_string();
                 if unique_categories.insert(cat_str.clone()) {
@@ -485,7 +496,10 @@ fn BlogPostItem(route: BlogRoute) -> Element {
         return rsx! {};
     }
 
-    let items = raw_title.splitn(8, " |---| ").collect::<Vec<_>>();
+    let clean_title = raw_title
+        .replace(" |---| |---| ", " |---|  |---| ")
+        .replace(" |---| |---| ", " |---|  |---| ");
+    let items = clean_title.splitn(10, " |---| ").collect::<Vec<_>>();
     let [_, title, category, slug, date, description, img, ..] = items.as_slice() else {
         return rsx! {};
     };
