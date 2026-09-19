@@ -5,9 +5,7 @@ pub mod social;
 pub mod subscribe;
 
 use crate::components::footer::contacts::LocationContact;
-use crate::components::footer::services::ServicesList;
 use crate::components::footer::social::LogoSocial;
-use crate::components::footer::subscribe::SubscribeForm;
 
 use dioxus::prelude::*;
 use theme::dioxus::use_theme;
@@ -23,16 +21,27 @@ pub fn Footer() -> Element {
         "bg-[#0d0d0d]"
     };
 
-    let services = vec![
-        "AI Consulting".to_string(),
-        "ML Training".to_string(),
-        "Model Deployment".to_string(),
-        "Edge AI Solutions".to_string(),
-    ];
+    let bottom_bar_bg = if is_light {
+        "bg-gray-200 border-t border-gray-300"
+    } else {
+        "bg-black border-t border-gray-800"
+    };
+
+    let bottom_text_color = if is_light {
+        "text-gray-500"
+    } else {
+        "text-gray-500"
+    };
+
+    let legal_link_color = if is_light {
+        "text-gray-500 hover:text-green-700 transition-colors duration-200"
+    } else {
+        "text-gray-500 hover:text-green-400 transition-colors duration-200"
+    };
 
     rsx! {
         footer {
-            class: format!("w-full py-16 transition-colors duration-300 {}", footer_bg),
+            class: format!("w-full transition-colors duration-300 {}", footer_bg),
             aria_labelledby: "footer-heading",
 
             h2 {
@@ -42,15 +51,57 @@ pub fn Footer() -> Element {
             }
 
             div {
-                class: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-[1313.667px] mx-auto px-4 md:px-0 relative z-[220]",
+                class: "max-w-[1313.667px] mx-auto px-6 md:px-10 py-16 relative z-[220]",
 
-                LogoSocial { is_light }
+                div {
+                    class: "grid grid-cols-1 md:grid-cols-3 gap-10 items-start",
 
-                LocationContact { is_light }
+                    LogoSocial { is_light }
 
-                ServicesList { services, is_light }
+                    LocationContact { is_light, section: "location" }
 
-                SubscribeForm { is_light }
+                    LocationContact { is_light, section: "contact" }
+                }
+            }
+
+            div {
+                class: format!("w-full py-4 {}", bottom_bar_bg),
+
+                div {
+                    class: "max-w-[1313.667px] mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3",
+
+                    span {
+                        class: format!("text-xs font-['Lexend'] {}", bottom_text_color),
+                        "© 2026 Wise AI. All rights reserved."
+                    }
+
+                    div {
+                        class: "flex items-center gap-4",
+
+                        a {
+                            href: "/blogs/privacy-policy",
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            class: format!("text-xs font-['Lexend'] {}", legal_link_color),
+                            i { class: "fa-solid fa-shield-halved mr-1 text-xs" }
+                            "Privacy Policy"
+                        }
+
+                        span {
+                            class: format!("text-xs {}", bottom_text_color),
+                            "·"
+                        }
+
+                        a {
+                            href: "/blogs/terms-of-service",
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            class: format!("text-xs font-['Lexend'] {}", legal_link_color),
+                            i { class: "fa-solid fa-file-contract mr-1 text-xs" }
+                            "Terms of Service"
+                        }
+                    }
+                }
             }
         }
     }

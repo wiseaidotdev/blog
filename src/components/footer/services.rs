@@ -23,10 +23,10 @@ pub fn ServicesList(props: ServicesListProps) -> Element {
         div {
             class: "flex flex-col gap-[25px] w-full md:w-[233px]",
 
-            h3 {
-                class: format!("font-['Lexend'] text-[30px] font-bold uppercase {}", title_color),
-                "Services"
-            }
+            // h3 {
+            //     class: format!("font-['Lexend'] text-[30px] font-bold uppercase {}", title_color),
+            //     "Services"
+            // }
 
             ul {
                 class: "flex flex-col gap-[10px]",

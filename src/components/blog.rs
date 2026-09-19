@@ -42,9 +42,13 @@ pub fn Blog() -> Element {
             .into_iter()
             .rev()
             .filter(|r| !r.page().title.contains("[draft]"))
+            .filter(|route| !route.page().title.contains(" |---| legal |---| "))
             .filter_map(|route| {
                 let raw = route.page().title.clone();
-                let parts: Vec<&str> = raw.splitn(8, " |---| ").collect();
+                let clean = raw
+                    .replace(" |---| |---| ", " |---|  |---| ")
+                    .replace(" |---| |---| ", " |---|  |---| ");
+                let parts: Vec<&str> = clean.splitn(10, " |---| ").collect();
                 if let [_, title, category, slug, date, desc, img, ..] = parts.as_slice() {
                     Some(PostData {
                         title: title.to_string(),
@@ -72,7 +76,10 @@ pub fn Blog() -> Element {
             .filter(|r| !r.page().title.contains("[draft]"))
             .filter_map(|route| {
                 let raw = route.page().title.clone();
-                let parts: Vec<&str> = raw.splitn(8, " |---| ").collect();
+                let clean = raw
+                    .replace(" |---| |---| ", " |---|  |---| ")
+                    .replace(" |---| |---| ", " |---|  |---| ");
+                let parts: Vec<&str> = clean.splitn(10, " |---| ").collect();
                 if let [_, _, category, ..] = parts.as_slice() {
                     let c = category.to_string();
                     if seen.insert(c.clone()) {

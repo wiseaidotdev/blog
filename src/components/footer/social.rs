@@ -32,19 +32,19 @@ pub fn LogoSocial(props: LogoSocialProps) -> Element {
                 alt: "Wise AI Logo",
             }
 
-            div {
-                class: "flex",
-                {socials
-                    .iter()
-                    .map(|(label, icon_class)| rsx! {
-                        a {
-                            href: "#",
-                            class: format!("flex items-center justify-center transition-colors duration-200 text-[20px] {}", icon_color),
-                            aria_label: "{label}",
-                            i { class: "{icon_class} text-xl px-2" }
-                        }
-                    })}
-            }
+            // div {
+            //     class: "flex",
+            //     {socials
+            //         .iter()
+            //         .map(|(label, icon_class)| rsx! {
+            //             a {
+            //                 href: "#",
+            //                 class: format!("flex items-center justify-center transition-colors duration-200 text-[20px] {}", icon_color),
+            //                 aria_label: "{label}",
+            //                 i { class: "{icon_class} text-xl px-2" }
+            //             }
+            //         })}
+            // }
         }
     }
 }

@@ -68,6 +68,12 @@ pub enum BookRoute {
         "/i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts"
     )]
     IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterparts {},
+    #[route("/frozendict-state-of-the-art-immutable-hashmap")]
+    FrozendictStateOfTheArtImmutableHashmap {},
+    #[route("/privacy-policy")]
+    PrivacyPolicy {},
+    #[route("/terms-of-service")]
+    TermsOfService {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -153,6 +159,11 @@ impl BookRoute {
             BookRoute::IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterparts {} => {
                 use_mdbook::mdbook_shared::PageId(26usize)
             }
+            BookRoute::FrozendictStateOfTheArtImmutableHashmap {} => {
+                use_mdbook::mdbook_shared::PageId(27usize)
+            }
+            BookRoute::PrivacyPolicy {} => use_mdbook::mdbook_shared::PageId(28usize),
+            BookRoute::TermsOfService {} => use_mdbook::mdbook_shared::PageId(29usize),
         }
     }
 }
@@ -170,7 +181,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 0usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 1 |---| Announcing Kevin RS 🚀 |---| announcement |---| announcing-kevin-rs |---| Apr 21 2025 |---| Kevin RS is a fully open-source Rust framework for building fast, autonomous AGI agents. Designed for reliability, performance, and general intelligence research, it supports zero-shot learning, multi-agent execution, and future-ready tooling - without relying on fragile stacks. |---| assets/images/banner_post_1.webp"
+                        title: " 1 |---| Announcing Kevin RS 🚀 |---| announcement |---| announcing-kevin-rs |---| Apr 21 2025 |---| Kevin RS is a fully open-source Rust framework for building fast, autonomous AGI agents. Designed for reliability, performance, and general intelligence research, it supports zero-shot learning, multi-agent execution, and future-ready tooling - without relying on fragile stacks. |---| assets/images/banner_post_1.webp |---| |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/announcing-kevin-rs.md"
                             .to_string(),
                         url: BookRoute::AnnouncingKevinRs {},
                         segments: vec![],
@@ -230,7 +241,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 1usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 2 |---| Rethinking ARC-AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC-AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| assets/images/banner_post_2.webp"
+                        title: " 2 |---| Rethinking ARC-AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC-AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| assets/images/banner_post_2.webp |---| |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/rethinking-arc-agi.md"
                             .to_string(),
                         url: BookRoute::RethinkingArcAgi {},
                         segments: vec![],
@@ -287,7 +298,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 2usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 3 |---| Just Don't Pick Up the Brush |---| existence |---| who-am-i |---| Jan 27 2026 |---| Hey, Community. I am finally doing this. My name is Mahmoud Harmouch, and I am new here, though in many ways, I have been searching for a space like this for my entire life. For over two decades, I have struggled with a complicated mix of mental health conditions, ADHD, autism, and an extreme stage of PTSD, among others. |---| assets/images/banner_post_3.webp"
+                        title: " 3 |---| Just Don't Pick Up the Brush |---| existence |---| who-am-i |---| Jan 27 2026 |---| Hey, Community. I am finally doing this. My name is Mahmoud Harmouch, and I am new here, though in many ways, I have been searching for a space like this for my entire life. For over two decades, I have struggled with a complicated mix of mental health conditions, ADHD, autism, and an extreme stage of PTSD, among others. |---| assets/images/banner_post_3.webp |---| https://dev.to/wiseai/just-dont-pick-up-the-brush-3ldf |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/who-am-i.md"
                             .to_string(),
                         url: BookRoute::WhoAmI {},
                         segments: vec![],
@@ -410,7 +421,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 3usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 4 |---| An Empty Life Filled With Constant Suffering |---| existence |---| an-empty-life-filled-with-constant-suffering |---| Apr 07 2026 |---| An empty life filled with constant suffering. |---| assets/images/banner_post_4.webp"
+                        title: " 4 |---| An Empty Life Filled With Constant Suffering |---| existence |---| an-empty-life-filled-with-constant-suffering |---| Apr 07 2026 |---| An empty life filled with constant suffering. |---| assets/images/banner_post_4.webp |---| https://dev.to/wiseai/an-empty-life-filled-with-constant-suffering-5ca8 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/an-empty-life-filled-with-constant-suffering.md"
                             .to_string(),
                         url: BookRoute::AnEmptyLifeFilledWithConstantSuffering {
                         },
@@ -484,7 +495,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 4usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 5 |---| It is always the Russians |---| existence |---| it-is-always-the-russians |---| Apr 07 2026 |---| It is always the Russians |---| assets/images/banner_post_5.webp"
+                        title: " 5 |---| It is always the Russians |---| existence |---| it-is-always-the-russians |---| Apr 07 2026 |---| It is always the Russians |---| assets/images/banner_post_5.webp |---| https://dev.to/wiseai/it-is-always-the-russians-49pg |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/it-is-always-the-russians.md"
                             .to_string(),
                         url: BookRoute::ItIsAlwaysTheRussians {
                         },
@@ -540,7 +551,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 5usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 6 |---| As Engineers, LLMs should pay us for tokens usage. |---| tech |---| as-engineers-llms-should-pay-us-for-tokens-usage |---| Apr 07 2026 |---| As Engineers, LLMs should pay us for tokens usage. |---| assets/images/banner_post_6.webp"
+                        title: " 6 |---| As Engineers, LLMs should pay us for tokens usage. |---| tech |---| as-engineers-llms-should-pay-us-for-tokens-usage |---| Apr 07 2026 |---| As Engineers, LLMs should pay us for tokens usage. |---| assets/images/banner_post_6.webp |---| https://dev.to/wiseai/as-engineers-llms-should-pay-us-for-tokens-usage-11ic |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/as-engineers-llms-should-pay-us-for-tokens-usage.md"
                             .to_string(),
                         url: BookRoute::AsEngineersLlmsShouldPayUsForTokensUsage {
                         },
@@ -592,7 +603,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 6usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 7 |---| Technology Has Destroyed My Livelihood |---| tech |---| technology-has-destroyed-my-livelihood |---| Apr 07 2026 |---| Technology Has Destroyed My Livelihood |---| assets/images/banner_post_7.webp"
+                        title: " 7 |---| Technology Has Destroyed My Livelihood |---| tech |---| technology-has-destroyed-my-livelihood |---| Apr 07 2026 |---| Technology Has Destroyed My Livelihood |---| assets/images/banner_post_7.webp |---| https://dev.to/wiseai/technology-has-destroyed-my-livelihood-15de |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md"
                             .to_string(),
                         url: BookRoute::TechnologyHasDestroyedMyLivelihood {
                         },
@@ -664,7 +675,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 7usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 8 |---| Language is Limited. ASI is Impossible. |---| tech |---| language-is-limited-asi-is-impossible |---| Apr 08 2026 |---| Language is Limited. ASI is Impossible. |---| assets/images/banner_post_8.webp"
+                        title: " 8 |---| Language is Limited. ASI is Impossible. |---| tech |---| language-is-limited-asi-is-impossible |---| Apr 08 2026 |---| Language is Limited. ASI is Impossible. |---| assets/images/banner_post_8.webp |---| https://dev.to/wiseai/language-is-limited-asi-is-impossible-e5l |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/language-is-limited-asi-is-impossible.md"
                             .to_string(),
                         url: BookRoute::LanguageIsLimitedAsiIsImpossible {
                         },
@@ -728,7 +739,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 8usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 9 |---| Christianity Makes Perfect Sense! |---| religion |---| christianity-makes-perfect-sense |---| Apr 08 2026 |---| Christianity Makes Perfect Sense! |---| assets/images/banner_post_9.webp"
+                        title: " 9 |---| Christianity Makes Perfect Sense! |---| religion |---| christianity-makes-perfect-sense |---| Apr 08 2026 |---| Christianity Makes Perfect Sense! |---| assets/images/banner_post_9.webp |---| https://dev.to/wiseai/christianity-makes-perfect-sense-2e1e |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/christianity-makes-perfect-sense.md"
                             .to_string(),
                         url: BookRoute::ChristianityMakesPerfectSense {
                         },
@@ -791,7 +802,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 9usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 10 |---| LLMs are Usefull. LMMs will Break Reality |---| tech |---| llms-are-usefull-lmms-will-break-reality |---| Apr 10 2026 |---| LLMs are Usefull. LMMs will Break Reality |---| assets/images/banner_post_10.webp"
+                        title: " 10 |---| LLMs are Usefull. LMMs will Break Reality |---| tech |---| llms-are-usefull-lmms-will-break-reality |---| Apr 10 2026 |---| LLMs are Usefull. LMMs will Break Reality |---| assets/images/banner_post_10.webp |---| https://dev.to/wiseai/llms-are-usefull-lmms-will-break-reality-8an |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/llms-are-usefull-lmms-will-break-reality.md"
                             .to_string(),
                         url: BookRoute::LlmsAreUsefullLmmsWillBreakReality {
                         },
@@ -865,7 +876,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 10usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| assets/images/banner_post_11.webp"
+                        title: " 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| assets/images/banner_post_11.webp |---| https://dev.to/wiseai/mathematical-equations-are-multimodal-by-default-53fk |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/mathematical-equations-are-multimodal-by-default.md"
                             .to_string(),
                         url: BookRoute::MathematicalEquationsAreMultimodalByDefault {
                         },
@@ -932,7 +943,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 11usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 12 |---| Pharaohs were the first to achieve ASI. |---| history |---| pharaohs-were-the-first-to-achieve-asi |---| Apr 13 2026 |---| Pharaohs were the first to achieve ASI. |---| assets/images/banner_post_12.webp"
+                        title: " 12 |---| Pharaohs were the first to achieve ASI. |---| history |---| pharaohs-were-the-first-to-achieve-asi |---| Apr 13 2026 |---| Pharaohs were the first to achieve ASI. |---| assets/images/banner_post_12.webp |---| https://dev.to/wiseai/pharaohs-were-the-first-to-achieve-asi-eid |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/pharaohs-were-the-first-to-achieve-asi.md"
                             .to_string(),
                         url: BookRoute::PharaohsWereTheFirstToAchieveAsi {
                         },
@@ -1017,7 +1028,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 12usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 13 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| tech |---| llms-destroyed-the-internet-lmms-will-make-it-alive |---| Apr 15 2026 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| assets/images/banner_post_13.webp"
+                        title: " 13 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| tech |---| llms-destroyed-the-internet-lmms-will-make-it-alive |---| Apr 15 2026 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| assets/images/banner_post_13.webp |---| https://dev.to/wiseai/llms-destroyed-the-internet-lmms-will-make-it-alive-1fbk |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/llms-destroyed-the-internet-lmms-will-make-it-alive.md"
                             .to_string(),
                         url: BookRoute::LlmsDestroyedTheInternetLmmsWillMakeItAlive {
                         },
@@ -1092,7 +1103,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 13usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 14 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| tech |---| training-is-an-evil-concept-lmms-eliminates-it-altogether |---| Apr 16 2026 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| assets/images/banner_post_14.webp"
+                        title: " 14 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| tech |---| training-is-an-evil-concept-lmms-eliminates-it-altogether |---| Apr 16 2026 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| assets/images/banner_post_14.webp |---| https://dev.to/wiseai/training-is-an-evil-concept-lmms-eliminates-it-altogether-15ej |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/training-is-an-evil-concept-lmms-eliminates-it-altogether.md"
                             .to_string(),
                         url: BookRoute::TrainingIsAnEvilConceptLmmsEliminatesItAltogether {},
                         segments: vec![],
@@ -1172,7 +1183,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 14usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 15 |---| the penguins are already sentient. Your neural network is just a distraction. |---| tech |---| the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction |---| Apr 18 2026 |---| the penguins are already sentient. Your neural network is just a distraction. |---| assets/images/banner_post_15.webp"
+                        title: " 15 |---| the penguins are already sentient. Your neural network is just a distraction. |---| tech |---| the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction |---| Apr 18 2026 |---| the penguins are already sentient. Your neural network is just a distraction. |---| assets/images/banner_post_15.webp |---| https://dev.to/wiseai/the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction-1kgj |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction.md"
                             .to_string(),
                         url: BookRoute::ThePenguinsAreAlreadySentientYourNeuralNetworkIsJustADistraction {},
                         segments: vec![],
@@ -1260,7 +1271,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 15usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 16 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| tech |---| all-you-have-access-to-is-knowledge-and-tools-never-intelligence |---| Apr 21 2026 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| assets/images/banner_post_16.webp"
+                        title: " 16 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| tech |---| all-you-have-access-to-is-knowledge-and-tools-never-intelligence |---| Apr 21 2026 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| assets/images/banner_post_16.webp |---| https://dev.to/wiseai/all-you-have-access-to-is-knowledge-and-tools-never-intelligence-5792 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/all-you-have-access-to-is-knowledge-and-tools-never-intelligence.md"
                             .to_string(),
                         url: BookRoute::AllYouHaveAccessToIsKnowledgeAndToolsNeverIntelligence {},
                         segments: vec![],
@@ -1339,7 +1350,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 16usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 17 |---| Genuine Intelligence will never in trillion years emerge from neural networks. |---| tech |---| genuine-intelligence-will-never-emerge-from-neural-networks |---| Apr 23 2026 |---| Genuine Intelligence will never in trillions years emerge from neural networks |---| assets/images/banner_post_17.webp"
+                        title: " 17 |---| Genuine Intelligence will never in trillion years emerge from neural networks. |---| tech |---| genuine-intelligence-will-never-emerge-from-neural-networks |---| Apr 23 2026 |---| Genuine Intelligence will never in trillions years emerge from neural networks |---| assets/images/banner_post_17.webp |---| https://dev.to/wiseai/genuine-intelligence-will-never-in-trillion-years-emerge-from-neural-networks-1250 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/genuine-intelligence-will-never-emerge-from-neural-networks.md"
                             .to_string(),
                         url: BookRoute::GenuineIntelligenceWillNeverEmergeFromNeuralNetworks {},
                         segments: vec![],
@@ -1413,7 +1424,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 17usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 18 |---| Knowledge and Intelligence ARE Mutually Exclusive. |---| tech |---| knowledge-and-intelligence-are-mutually-exclusive |---| Apr 28 2026 |---| Knowledge and Intelligence ARE Mutually Exclusive. |---| assets/images/banner_post_18.webp "
+                        title: " 18 |---| Knowledge and Intelligence ARE Mutually Exclusive. |---| tech |---| knowledge-and-intelligence-are-mutually-exclusive |---| Apr 28 2026 |---| Knowledge and Intelligence ARE Mutually Exclusive. |---| assets/images/banner_post_18.webp |---| https://dev.to/wiseai/knowledge-and-intelligence-are-mutually-exclusive-kd4 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/knowledge-and-intelligence-are-mutually-exclusive.md"
                             .to_string(),
                         url: BookRoute::KnowledgeAndIntelligenceAreMutuallyExclusive {
                         },
@@ -1487,7 +1498,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 18usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 19 |---| Be Aware of The Current UFOs Pandemic. Remember, We Are Alone. |---| existence |---| be-aware-of-the-current-ufos-pandemic-remember-we-are-alone |---| May 12 2026 |---| The current news about UFOs is a distraction from reality. We are alone, and that is a responsibility we must embrace. |---| assets/images/banner_post_19.webp"
+                        title: " 19 |---| Be Aware of The Current UFOs Pandemic. Remember, We Are Alone. |---| existence |---| be-aware-of-the-current-ufos-pandemic-remember-we-are-alone |---| May 12 2026 |---| The current news about UFOs is a distraction from reality. We are alone, and that is a responsibility we must embrace. |---| assets/images/banner_post_19.webp |---| https://dev.to/wiseai/be-aware-of-the-current-ufos-pandemic-remember-we-are-alone-5cl0 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/be-aware-of-the-current-ufos-pandemic-remember-we-are-alone.md"
                             .to_string(),
                         url: BookRoute::BeAwareOfTheCurrentUfosPandemicRememberWeAreAlone {},
                         segments: vec![],
@@ -1557,7 +1568,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 19usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 20 |---| If You Can't Build AGI, Then Why Should We Hire You? |---| tech |---| if-you-cant-build-agi-then-why-should-we-hire-you |---| May 14 2026 |---| If you can't build AGI, then why should we hire you? |---| assets/images/banner_post_20.webp"
+                        title: " 20 |---| If You Can't Build AGI, Then Why Should We Hire You? |---| tech |---| if-you-cant-build-agi-then-why-should-we-hire-you |---| May 14 2026 |---| If you can't build AGI, then why should we hire you? |---| assets/images/banner_post_20.webp |---| |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/if-you-cant-build-agi-then-why-should-we-hire-you.md"
                             .to_string(),
                         url: BookRoute::IfYouCantBuildAgiThenWhyShouldWeHireYou {
                         },
@@ -1639,7 +1650,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 20usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 21 |---| I miss the pre-AI Mossad agents. |---| tech |---| i-miss-the-pre-ai-mossad-agents |---| Jul 16 2026 |---| I miss the pre-AI Mossad agents. |---| assets/images/banner_post_21.webp"
+                        title: " 21 |---| I miss the pre-AI Mossad agents. |---| tech |---| i-miss-the-pre-ai-mossad-agents |---| Jul 16 2026 |---| I miss the pre-AI Mossad agents. |---| assets/images/banner_post_21.webp |---| https://dev.to/wiseai/i-miss-the-pre-ai-mossad-agents-1ka1 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/i-miss-the-pre-ai-mossad-agents.md"
                             .to_string(),
                         url: BookRoute::IMissThePreAiMossadAgents {
                         },
@@ -1721,7 +1732,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 21usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 22 |---| Intelligence at Rest |---| tech |---| intelligence-at-rest |---| Jul 18 2026 |---| Intelligence at Rest |---| assets/images/banner_post_22.webp"
+                        title: " 22 |---| Intelligence at Rest |---| tech |---| intelligence-at-rest |---| Jul 18 2026 |---| Intelligence at Rest |---| assets/images/banner_post_22.webp |---| https://dev.to/wiseai/intelligence-at-rest-43co |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/intelligence-at-rest.md"
                             .to_string(),
                         url: BookRoute::IntelligenceAtRest {},
                         segments: vec![],
@@ -1791,7 +1802,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 22usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 23 |---| This Is Why My profile picture is now a shigure ui picture |---| personal |---| this-is-why-my-profile-picture-is-now-a-shigure-ui-picture |---| Aug 22 2026 |---| This Is Why My profile picture is now a shigure ui picture |---| assets/images/banner_post_23.webp"
+                        title: " 23 |---| This Is Why My profile picture is now a shigure ui picture |---| personal |---| this-is-why-my-profile-picture-is-now-a-shigure-ui-picture |---| Aug 22 2026 |---| This Is Why My profile picture is now a shigure ui picture |---| assets/images/banner_post_23.webp |---| |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/this-is-why-my-profile-picture-is-now-a-shigure-ui-picture.md"
                             .to_string(),
                         url: BookRoute::ThisIsWhyMyProfilePictureIsNowAShigureUiPicture {
                         },
@@ -1842,7 +1853,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 23usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 24 |---| Life On Earth is 100% AI Generated Slop. |---| tech |---| life-on-earth-is-100-ai-generated-slop |---| Aug 22 2026 |---| Life On Earth is 100% AI Generated Slop. |---| assets/images/banner_post_24.webp"
+                        title: " 24 |---| Life On Earth is 100% AI Generated Slop. |---| tech |---| life-on-earth-is-100-ai-generated-slop |---| Aug 22 2026 |---| Life On Earth is 100% AI Generated Slop. |---| assets/images/banner_post_24.webp |---| https://dev.to/wiseai/life-on-earth-is-100-ai-generated-slop-2hc4 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/life-on-earth-is-100-ai-generated-slop.md"
                             .to_string(),
                         url: BookRoute::LifeOnEarthIs100AiGeneratedSlop {
                         },
@@ -1905,7 +1916,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 24usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 25 |---| Jesus Was Right. You Are God and Infinite. |---| religion |---| jesus-was-right-you-are-god-and-infinite |---| Aug 23 2026 |---| Jesus Was Right. You Are God and Infinite. |---| assets/images/banner_post_25.webp"
+                        title: " 25 |---| Jesus Was Right. You Are God and Infinite. |---| religion |---| jesus-was-right-you-are-god-and-infinite |---| Aug 23 2026 |---| Jesus Was Right. You Are God and Infinite. |---| assets/images/banner_post_25.webp |---| https://dev.to/wiseai/jesus-was-right-you-are-god-and-infinite-6cc |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/jesus-was-right-you-are-god-and-infinite.md"
                             .to_string(),
                         url: BookRoute::JesusWasRightYouAreGodAndInfinite {
                         },
@@ -1966,7 +1977,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 25usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 26 |---| I Built a Version Bump Tool in Rust That Is 10,000x Faster Than Its Python Counterparts |---| tech |---| i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts |---| Sep 06 2026 |---| bump2version 0.2.0 is out: a multi-language version bumper written in 100% safe Rust with Python and Node.js bindings, ~10,000x faster than the bump-my-version CLI. |---| assets/images/banner_post_26.webp"
+                        title: " 26 |---| I Built a Version Bump Tool in Rust That Is 10,000x Faster Than Its Python Counterparts |---| tech |---| i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts |---| Sep 06 2026 |---| bump2version 0.2.0 is out: a multi-language version bumper written in 100% safe Rust with Python and Node.js bindings, ~10,000x faster than the bump-my-version CLI. |---| assets/images/banner_post_26.webp |---| https://dev.to/wiseai/i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts-i6b |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts.md"
                             .to_string(),
                         url: BookRoute::IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts {},
                         segments: vec![],
@@ -2093,7 +2104,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 26usize,
                 {
                     ::use_mdbook::mdbook_shared::Page {
-                        title: " 27 |---| I Optimized My Bump Version Tool and Made It 1,000,000x Faster Than Its Python Counterparts |---| tech |---| i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts |---| Sep 11 2026 |---| bump2version 0.2.1 drops with watch mode, multi-language auto-detection, a Yew WASM app etc. |---| assets/images/banner_post_27.webp"
+                        title: " 27 |---| I Optimized My Bump Version Tool and Made It 1,000,000x Faster Than Its Python Counterparts |---| tech |---| i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts |---| Sep 11 2026 |---| bump2version 0.2.1 drops with watch mode, multi-language auto-detection, a Yew WASM app etc. |---| assets/images/banner_post_27.webp |---| https://dev.to/wiseai/i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts-2i83 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts.md"
                             .to_string(),
                         url: BookRoute::IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterparts {},
                         segments: vec![],
@@ -2217,13 +2228,244 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                 BookRoute::IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterparts {},
                 ::use_mdbook::mdbook_shared::PageId(26usize),
             );
+        pages
+            .push((
+                27usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 28 |---| Frozendict: State of the Art Immutable Hashmap |---| tech |---| frozendict-state-of-the-art-immutable-hashmap |---| Sep 19 2026 |---| frozndict is a fully immutable, insertion-ordered, O(1)-hashable Python dictionary written in 100% safe Rust. Iteration in 4 µs. copy() in 63 ns. Pure Rust functions running 1,000,000x faster than Python equivalents. |---| assets/images/banner_post_28.webp |---| |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/frozendict-state-of-the-art-immutable-hashmap.md"
+                            .to_string(),
+                        url: BookRoute::FrozendictStateOfTheArtImmutableHashmap {
+                        },
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why Should You Care?".to_string(),
+                                id: "why-should-you-care?".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Architecture".to_string(),
+                                id: "the-architecture".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Performance Numbers".to_string(),
+                                id: "the-performance-numbers".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Python-level benchmark".to_string(),
+                                id: "python-level-benchmark".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Rust-level benchmark".to_string(),
+                                id: "rust-level-benchmark".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Equality Problem".to_string(),
+                                id: "the-equality-problem".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The ".to_string(),
+                                id: "the".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Views".to_string(),
+                                id: "the-views".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Mutation Guards".to_string(),
+                                id: "mutation-guards".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Subclassing, ".to_string(),
+                                id: "subclassing,".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Getting Started".to_string(),
+                                id: "getting-started".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "As a Rust library:".to_string(),
+                                id: "as-a-rust-library:".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Road Ahead".to_string(),
+                                id: "the-road-ahead".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Closing Thoughts".to_string(),
+                                id: "closing-thoughts".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(27usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::FrozendictStateOfTheArtImmutableHashmap {},
+            ::use_mdbook::mdbook_shared::PageId(27usize),
+        );
+        pages
+            .push((
+                28usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 29 |---| Privacy Policy |---| legal |---| privacy-policy |---| Sep 19 2026 |---| Privacy Policy for wiseai.dev |---| assets/images/banner_post_1.webp |---| |---| "
+                            .to_string(),
+                        url: BookRoute::PrivacyPolicy {},
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Privacy Policy".to_string(),
+                                id: "privacy-policy".to_string(),
+                                level: 1usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Who We Are".to_string(),
+                                id: "who-we-are".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Data We Collect".to_string(),
+                                id: "what-data-we-collect".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Cookies".to_string(),
+                                id: "cookies".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Third-Party Links".to_string(),
+                                id: "third-party-links".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Content Attribution".to_string(),
+                                id: "content-attribution".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Changes to This Policy".to_string(),
+                                id: "changes-to-this-policy".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Contact".to_string(),
+                                id: "contact".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(28usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::PrivacyPolicy {},
+            ::use_mdbook::mdbook_shared::PageId(28usize),
+        );
+        pages
+            .push((
+                29usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 30 |---| Terms of Service |---| legal |---| terms-of-service |---| Sep 19 2026 |---| Terms of Service for wiseai.dev |---| assets/images/banner_post_1.webp |---| |---| "
+                            .to_string(),
+                        url: BookRoute::TermsOfService {},
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Terms of Service".to_string(),
+                                id: "terms-of-service".to_string(),
+                                level: 1usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Acceptance of Terms".to_string(),
+                                id: "acceptance-of-terms".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What This Service Provides".to_string(),
+                                id: "what-this-service-provides".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What This Service Does Not Provide".to_string(),
+                                id: "what-this-service-does-not-provide".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Content License".to_string(),
+                                id: "content-license".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "AI-Assisted Content".to_string(),
+                                id: "ai-assisted-content".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Open Source Code".to_string(),
+                                id: "open-source-code".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Accuracy and Liability".to_string(),
+                                id: "accuracy-and-liability".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "External Links".to_string(),
+                                id: "external-links".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Governing Law".to_string(),
+                                id: "governing-law".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Changes".to_string(),
+                                id: "changes".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Contact".to_string(),
+                                id: "contact".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(29usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::TermsOfService {},
+            ::use_mdbook::mdbook_shared::PageId(29usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
                 prefix_chapters: vec![],
                 numbered_chapters: vec![
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 1 |---| Announcing Kevin RS 🚀 |---| announcement |---| announcing-kevin-rs |---| Apr 21 2025 |---| Kevin RS is a fully open-source Rust framework for building fast, autonomous AGI agents. Designed for reliability, performance, and general intelligence research, it supports zero-shot learning, multi-agent execution, and future-ready tooling - without relying on fragile stacks. |---| assets/images/banner_post_1.webp"
+                        name: " 1 |---| Announcing Kevin RS 🚀 |---| announcement |---| announcing-kevin-rs |---| Apr 21 2025 |---| Kevin RS is a fully open-source Rust framework for building fast, autonomous AGI agents. Designed for reliability, performance, and general intelligence research, it supports zero-shot learning, multi-agent execution, and future-ready tooling - without relying on fragile stacks. |---| assets/images/banner_post_1.webp |---| |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/announcing-kevin-rs.md"
                             .to_string(),
                         location: Some(BookRoute::AnnouncingKevinRs {}),
                         number: Some(
@@ -2232,7 +2474,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 2 |---| Rethinking ARC-AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC-AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| assets/images/banner_post_2.webp"
+                        name: " 2 |---| Rethinking ARC-AGI 🧠 |---| analysis |---| rethinking-arc-agi |---| Apr 22 2025 |---| Francois Chollet's ARC-AGI benchmark aimed to measure fluid intelligence in AI, but early versions were undermined by brute-force pattern-matching. |---| assets/images/banner_post_2.webp |---| |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/rethinking-arc-agi.md"
                             .to_string(),
                         location: Some(BookRoute::RethinkingArcAgi {}),
                         number: Some(
@@ -2241,7 +2483,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 3 |---| Just Don't Pick Up the Brush |---| existence |---| who-am-i |---| Jan 27 2026 |---| Hey, Community. I am finally doing this. My name is Mahmoud Harmouch, and I am new here, though in many ways, I have been searching for a space like this for my entire life. For over two decades, I have struggled with a complicated mix of mental health conditions, ADHD, autism, and an extreme stage of PTSD, among others. |---| assets/images/banner_post_3.webp"
+                        name: " 3 |---| Just Don't Pick Up the Brush |---| existence |---| who-am-i |---| Jan 27 2026 |---| Hey, Community. I am finally doing this. My name is Mahmoud Harmouch, and I am new here, though in many ways, I have been searching for a space like this for my entire life. For over two decades, I have struggled with a complicated mix of mental health conditions, ADHD, autism, and an extreme stage of PTSD, among others. |---| assets/images/banner_post_3.webp |---| https://dev.to/wiseai/just-dont-pick-up-the-brush-3ldf |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/who-am-i.md"
                             .to_string(),
                         location: Some(BookRoute::WhoAmI {}),
                         number: Some(
@@ -2250,7 +2492,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 4 |---| An Empty Life Filled With Constant Suffering |---| existence |---| an-empty-life-filled-with-constant-suffering |---| Apr 07 2026 |---| An empty life filled with constant suffering. |---| assets/images/banner_post_4.webp"
+                        name: " 4 |---| An Empty Life Filled With Constant Suffering |---| existence |---| an-empty-life-filled-with-constant-suffering |---| Apr 07 2026 |---| An empty life filled with constant suffering. |---| assets/images/banner_post_4.webp |---| https://dev.to/wiseai/an-empty-life-filled-with-constant-suffering-5ca8 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/an-empty-life-filled-with-constant-suffering.md"
                             .to_string(),
                         location: Some(BookRoute::AnEmptyLifeFilledWithConstantSuffering {}),
                         number: Some(
@@ -2259,7 +2501,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 5 |---| It is always the Russians |---| existence |---| it-is-always-the-russians |---| Apr 07 2026 |---| It is always the Russians |---| assets/images/banner_post_5.webp"
+                        name: " 5 |---| It is always the Russians |---| existence |---| it-is-always-the-russians |---| Apr 07 2026 |---| It is always the Russians |---| assets/images/banner_post_5.webp |---| https://dev.to/wiseai/it-is-always-the-russians-49pg |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/it-is-always-the-russians.md"
                             .to_string(),
                         location: Some(BookRoute::ItIsAlwaysTheRussians {
                         }),
@@ -2269,7 +2511,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 6 |---| As Engineers, LLMs should pay us for tokens usage. |---| tech |---| as-engineers-llms-should-pay-us-for-tokens-usage |---| Apr 07 2026 |---| As Engineers, LLMs should pay us for tokens usage. |---| assets/images/banner_post_6.webp"
+                        name: " 6 |---| As Engineers, LLMs should pay us for tokens usage. |---| tech |---| as-engineers-llms-should-pay-us-for-tokens-usage |---| Apr 07 2026 |---| As Engineers, LLMs should pay us for tokens usage. |---| assets/images/banner_post_6.webp |---| https://dev.to/wiseai/as-engineers-llms-should-pay-us-for-tokens-usage-11ic |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/as-engineers-llms-should-pay-us-for-tokens-usage.md"
                             .to_string(),
                         location: Some(BookRoute::AsEngineersLlmsShouldPayUsForTokensUsage {}),
                         number: Some(
@@ -2278,7 +2520,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 7 |---| Technology Has Destroyed My Livelihood |---| tech |---| technology-has-destroyed-my-livelihood |---| Apr 07 2026 |---| Technology Has Destroyed My Livelihood |---| assets/images/banner_post_7.webp"
+                        name: " 7 |---| Technology Has Destroyed My Livelihood |---| tech |---| technology-has-destroyed-my-livelihood |---| Apr 07 2026 |---| Technology Has Destroyed My Livelihood |---| assets/images/banner_post_7.webp |---| https://dev.to/wiseai/technology-has-destroyed-my-livelihood-15de |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/technology-has-destroyed-my-livelihood.md"
                             .to_string(),
                         location: Some(BookRoute::TechnologyHasDestroyedMyLivelihood {
                         }),
@@ -2288,7 +2530,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 8 |---| Language is Limited. ASI is Impossible. |---| tech |---| language-is-limited-asi-is-impossible |---| Apr 08 2026 |---| Language is Limited. ASI is Impossible. |---| assets/images/banner_post_8.webp"
+                        name: " 8 |---| Language is Limited. ASI is Impossible. |---| tech |---| language-is-limited-asi-is-impossible |---| Apr 08 2026 |---| Language is Limited. ASI is Impossible. |---| assets/images/banner_post_8.webp |---| https://dev.to/wiseai/language-is-limited-asi-is-impossible-e5l |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/language-is-limited-asi-is-impossible.md"
                             .to_string(),
                         location: Some(BookRoute::LanguageIsLimitedAsiIsImpossible {
                         }),
@@ -2298,7 +2540,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 9 |---| Christianity Makes Perfect Sense! |---| religion |---| christianity-makes-perfect-sense |---| Apr 08 2026 |---| Christianity Makes Perfect Sense! |---| assets/images/banner_post_9.webp"
+                        name: " 9 |---| Christianity Makes Perfect Sense! |---| religion |---| christianity-makes-perfect-sense |---| Apr 08 2026 |---| Christianity Makes Perfect Sense! |---| assets/images/banner_post_9.webp |---| https://dev.to/wiseai/christianity-makes-perfect-sense-2e1e |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/christianity-makes-perfect-sense.md"
                             .to_string(),
                         location: Some(BookRoute::ChristianityMakesPerfectSense {
                         }),
@@ -2308,7 +2550,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 10 |---| LLMs are Usefull. LMMs will Break Reality |---| tech |---| llms-are-usefull-lmms-will-break-reality |---| Apr 10 2026 |---| LLMs are Usefull. LMMs will Break Reality |---| assets/images/banner_post_10.webp"
+                        name: " 10 |---| LLMs are Usefull. LMMs will Break Reality |---| tech |---| llms-are-usefull-lmms-will-break-reality |---| Apr 10 2026 |---| LLMs are Usefull. LMMs will Break Reality |---| assets/images/banner_post_10.webp |---| https://dev.to/wiseai/llms-are-usefull-lmms-will-break-reality-8an |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/llms-are-usefull-lmms-will-break-reality.md"
                             .to_string(),
                         location: Some(BookRoute::LlmsAreUsefullLmmsWillBreakReality {
                         }),
@@ -2318,7 +2560,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| assets/images/banner_post_11.webp"
+                        name: " 11 |---| Mathematical Equations are Multimodal by default |---| tech |---| mathematical-equations-are-multimodal-by-default |---| Apr 11 2026 |---| Mathematical Equations are Multimodal by default |---| assets/images/banner_post_11.webp |---| https://dev.to/wiseai/mathematical-equations-are-multimodal-by-default-53fk |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/mathematical-equations-are-multimodal-by-default.md"
                             .to_string(),
                         location: Some(BookRoute::MathematicalEquationsAreMultimodalByDefault {}),
                         number: Some(
@@ -2327,7 +2569,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 12 |---| Pharaohs were the first to achieve ASI. |---| history |---| pharaohs-were-the-first-to-achieve-asi |---| Apr 13 2026 |---| Pharaohs were the first to achieve ASI. |---| assets/images/banner_post_12.webp"
+                        name: " 12 |---| Pharaohs were the first to achieve ASI. |---| history |---| pharaohs-were-the-first-to-achieve-asi |---| Apr 13 2026 |---| Pharaohs were the first to achieve ASI. |---| assets/images/banner_post_12.webp |---| https://dev.to/wiseai/pharaohs-were-the-first-to-achieve-asi-eid |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/pharaohs-were-the-first-to-achieve-asi.md"
                             .to_string(),
                         location: Some(BookRoute::PharaohsWereTheFirstToAchieveAsi {
                         }),
@@ -2337,7 +2579,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 13 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| tech |---| llms-destroyed-the-internet-lmms-will-make-it-alive |---| Apr 15 2026 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| assets/images/banner_post_13.webp"
+                        name: " 13 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| tech |---| llms-destroyed-the-internet-lmms-will-make-it-alive |---| Apr 15 2026 |---| LLMs destroyed the Internet. LMMs will make it alive. |---| assets/images/banner_post_13.webp |---| https://dev.to/wiseai/llms-destroyed-the-internet-lmms-will-make-it-alive-1fbk |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/llms-destroyed-the-internet-lmms-will-make-it-alive.md"
                             .to_string(),
                         location: Some(BookRoute::LlmsDestroyedTheInternetLmmsWillMakeItAlive {}),
                         number: Some(
@@ -2346,7 +2588,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 14 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| tech |---| training-is-an-evil-concept-lmms-eliminates-it-altogether |---| Apr 16 2026 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| assets/images/banner_post_14.webp"
+                        name: " 14 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| tech |---| training-is-an-evil-concept-lmms-eliminates-it-altogether |---| Apr 16 2026 |---| Training Is an Evil Concept. LMMs Eliminates it Altogether. |---| assets/images/banner_post_14.webp |---| https://dev.to/wiseai/training-is-an-evil-concept-lmms-eliminates-it-altogether-15ej |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/training-is-an-evil-concept-lmms-eliminates-it-altogether.md"
                             .to_string(),
                         location: Some(BookRoute::TrainingIsAnEvilConceptLmmsEliminatesItAltogether {}),
                         number: Some(
@@ -2355,7 +2597,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 15 |---| the penguins are already sentient. Your neural network is just a distraction. |---| tech |---| the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction |---| Apr 18 2026 |---| the penguins are already sentient. Your neural network is just a distraction. |---| assets/images/banner_post_15.webp"
+                        name: " 15 |---| the penguins are already sentient. Your neural network is just a distraction. |---| tech |---| the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction |---| Apr 18 2026 |---| the penguins are already sentient. Your neural network is just a distraction. |---| assets/images/banner_post_15.webp |---| https://dev.to/wiseai/the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction-1kgj |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/the-penguins-are-already-sentient-your-neural-network-is-just-a-distraction.md"
                             .to_string(),
                         location: Some(BookRoute::ThePenguinsAreAlreadySentientYourNeuralNetworkIsJustADistraction {}),
                         number: Some(
@@ -2364,7 +2606,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 16 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| tech |---| all-you-have-access-to-is-knowledge-and-tools-never-intelligence |---| Apr 21 2026 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| assets/images/banner_post_16.webp"
+                        name: " 16 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| tech |---| all-you-have-access-to-is-knowledge-and-tools-never-intelligence |---| Apr 21 2026 |---| All You Have Access To Is Knowledge and Tools; Never Intelligence! |---| assets/images/banner_post_16.webp |---| https://dev.to/wiseai/all-you-have-access-to-is-knowledge-and-tools-never-intelligence-5792 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/all-you-have-access-to-is-knowledge-and-tools-never-intelligence.md"
                             .to_string(),
                         location: Some(BookRoute::AllYouHaveAccessToIsKnowledgeAndToolsNeverIntelligence {}),
                         number: Some(
@@ -2373,7 +2615,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 17 |---| Genuine Intelligence will never in trillion years emerge from neural networks. |---| tech |---| genuine-intelligence-will-never-emerge-from-neural-networks |---| Apr 23 2026 |---| Genuine Intelligence will never in trillions years emerge from neural networks |---| assets/images/banner_post_17.webp"
+                        name: " 17 |---| Genuine Intelligence will never in trillion years emerge from neural networks. |---| tech |---| genuine-intelligence-will-never-emerge-from-neural-networks |---| Apr 23 2026 |---| Genuine Intelligence will never in trillions years emerge from neural networks |---| assets/images/banner_post_17.webp |---| https://dev.to/wiseai/genuine-intelligence-will-never-in-trillion-years-emerge-from-neural-networks-1250 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/genuine-intelligence-will-never-emerge-from-neural-networks.md"
                             .to_string(),
                         location: Some(BookRoute::GenuineIntelligenceWillNeverEmergeFromNeuralNetworks {}),
                         number: Some(
@@ -2382,7 +2624,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 18 |---| Knowledge and Intelligence ARE Mutually Exclusive. |---| tech |---| knowledge-and-intelligence-are-mutually-exclusive |---| Apr 28 2026 |---| Knowledge and Intelligence ARE Mutually Exclusive. |---| assets/images/banner_post_18.webp "
+                        name: " 18 |---| Knowledge and Intelligence ARE Mutually Exclusive. |---| tech |---| knowledge-and-intelligence-are-mutually-exclusive |---| Apr 28 2026 |---| Knowledge and Intelligence ARE Mutually Exclusive. |---| assets/images/banner_post_18.webp |---| https://dev.to/wiseai/knowledge-and-intelligence-are-mutually-exclusive-kd4 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/knowledge-and-intelligence-are-mutually-exclusive.md"
                             .to_string(),
                         location: Some(BookRoute::KnowledgeAndIntelligenceAreMutuallyExclusive {}),
                         number: Some(
@@ -2391,7 +2633,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 19 |---| Be Aware of The Current UFOs Pandemic. Remember, We Are Alone. |---| existence |---| be-aware-of-the-current-ufos-pandemic-remember-we-are-alone |---| May 12 2026 |---| The current news about UFOs is a distraction from reality. We are alone, and that is a responsibility we must embrace. |---| assets/images/banner_post_19.webp"
+                        name: " 19 |---| Be Aware of The Current UFOs Pandemic. Remember, We Are Alone. |---| existence |---| be-aware-of-the-current-ufos-pandemic-remember-we-are-alone |---| May 12 2026 |---| The current news about UFOs is a distraction from reality. We are alone, and that is a responsibility we must embrace. |---| assets/images/banner_post_19.webp |---| https://dev.to/wiseai/be-aware-of-the-current-ufos-pandemic-remember-we-are-alone-5cl0 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/be-aware-of-the-current-ufos-pandemic-remember-we-are-alone.md"
                             .to_string(),
                         location: Some(BookRoute::BeAwareOfTheCurrentUfosPandemicRememberWeAreAlone {}),
                         number: Some(
@@ -2400,7 +2642,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 20 |---| If You Can't Build AGI, Then Why Should We Hire You? |---| tech |---| if-you-cant-build-agi-then-why-should-we-hire-you |---| May 14 2026 |---| If you can't build AGI, then why should we hire you? |---| assets/images/banner_post_20.webp"
+                        name: " 20 |---| If You Can't Build AGI, Then Why Should We Hire You? |---| tech |---| if-you-cant-build-agi-then-why-should-we-hire-you |---| May 14 2026 |---| If you can't build AGI, then why should we hire you? |---| assets/images/banner_post_20.webp |---| |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/if-you-cant-build-agi-then-why-should-we-hire-you.md"
                             .to_string(),
                         location: Some(BookRoute::IfYouCantBuildAgiThenWhyShouldWeHireYou {}),
                         number: Some(
@@ -2409,7 +2651,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 21 |---| I miss the pre-AI Mossad agents. |---| tech |---| i-miss-the-pre-ai-mossad-agents |---| Jul 16 2026 |---| I miss the pre-AI Mossad agents. |---| assets/images/banner_post_21.webp"
+                        name: " 21 |---| I miss the pre-AI Mossad agents. |---| tech |---| i-miss-the-pre-ai-mossad-agents |---| Jul 16 2026 |---| I miss the pre-AI Mossad agents. |---| assets/images/banner_post_21.webp |---| https://dev.to/wiseai/i-miss-the-pre-ai-mossad-agents-1ka1 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/i-miss-the-pre-ai-mossad-agents.md"
                             .to_string(),
                         location: Some(BookRoute::IMissThePreAiMossadAgents {
                         }),
@@ -2419,7 +2661,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 22 |---| Intelligence at Rest |---| tech |---| intelligence-at-rest |---| Jul 18 2026 |---| Intelligence at Rest |---| assets/images/banner_post_22.webp"
+                        name: " 22 |---| Intelligence at Rest |---| tech |---| intelligence-at-rest |---| Jul 18 2026 |---| Intelligence at Rest |---| assets/images/banner_post_22.webp |---| https://dev.to/wiseai/intelligence-at-rest-43co |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/intelligence-at-rest.md"
                             .to_string(),
                         location: Some(BookRoute::IntelligenceAtRest {}),
                         number: Some(
@@ -2428,7 +2670,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 23 |---| This Is Why My profile picture is now a shigure ui picture |---| personal |---| this-is-why-my-profile-picture-is-now-a-shigure-ui-picture |---| Aug 22 2026 |---| This Is Why My profile picture is now a shigure ui picture |---| assets/images/banner_post_23.webp"
+                        name: " 23 |---| This Is Why My profile picture is now a shigure ui picture |---| personal |---| this-is-why-my-profile-picture-is-now-a-shigure-ui-picture |---| Aug 22 2026 |---| This Is Why My profile picture is now a shigure ui picture |---| assets/images/banner_post_23.webp |---| |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/this-is-why-my-profile-picture-is-now-a-shigure-ui-picture.md"
                             .to_string(),
                         location: Some(BookRoute::ThisIsWhyMyProfilePictureIsNowAShigureUiPicture {}),
                         number: Some(
@@ -2437,7 +2679,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 24 |---| Life On Earth is 100% AI Generated Slop. |---| tech |---| life-on-earth-is-100-ai-generated-slop |---| Aug 22 2026 |---| Life On Earth is 100% AI Generated Slop. |---| assets/images/banner_post_24.webp"
+                        name: " 24 |---| Life On Earth is 100% AI Generated Slop. |---| tech |---| life-on-earth-is-100-ai-generated-slop |---| Aug 22 2026 |---| Life On Earth is 100% AI Generated Slop. |---| assets/images/banner_post_24.webp |---| https://dev.to/wiseai/life-on-earth-is-100-ai-generated-slop-2hc4 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/life-on-earth-is-100-ai-generated-slop.md"
                             .to_string(),
                         location: Some(BookRoute::LifeOnEarthIs100AiGeneratedSlop {
                         }),
@@ -2447,7 +2689,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 25 |---| Jesus Was Right. You Are God and Infinite. |---| religion |---| jesus-was-right-you-are-god-and-infinite |---| Aug 23 2026 |---| Jesus Was Right. You Are God and Infinite. |---| assets/images/banner_post_25.webp"
+                        name: " 25 |---| Jesus Was Right. You Are God and Infinite. |---| religion |---| jesus-was-right-you-are-god-and-infinite |---| Aug 23 2026 |---| Jesus Was Right. You Are God and Infinite. |---| assets/images/banner_post_25.webp |---| https://dev.to/wiseai/jesus-was-right-you-are-god-and-infinite-6cc |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/jesus-was-right-you-are-god-and-infinite.md"
                             .to_string(),
                         location: Some(BookRoute::JesusWasRightYouAreGodAndInfinite {
                         }),
@@ -2457,7 +2699,7 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 26 |---| I Built a Version Bump Tool in Rust That Is 10,000x Faster Than Its Python Counterparts |---| tech |---| i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts |---| Sep 06 2026 |---| bump2version 0.2.0 is out: a multi-language version bumper written in 100% safe Rust with Python and Node.js bindings, ~10,000x faster than the bump-my-version CLI. |---| assets/images/banner_post_26.webp"
+                        name: " 26 |---| I Built a Version Bump Tool in Rust That Is 10,000x Faster Than Its Python Counterparts |---| tech |---| i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts |---| Sep 06 2026 |---| bump2version 0.2.0 is out: a multi-language version bumper written in 100% safe Rust with Python and Node.js bindings, ~10,000x faster than the bump-my-version CLI. |---| assets/images/banner_post_26.webp |---| https://dev.to/wiseai/i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts-i6b |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts.md"
                             .to_string(),
                         location: Some(BookRoute::IBuiltAVersionBumpToolInRustThatIs10000XFasterThanItsPythonCounterparts {}),
                         number: Some(
@@ -2466,11 +2708,38 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         nested_items: vec![],
                     }),
                     ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
-                        name: " 27 |---| I Optimized My Bump Version Tool and Made It 1,000,000x Faster Than Its Python Counterparts |---| tech |---| i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts |---| Sep 11 2026 |---| bump2version 0.2.1 drops with watch mode, multi-language auto-detection, a Yew WASM app etc. |---| assets/images/banner_post_27.webp"
+                        name: " 27 |---| I Optimized My Bump Version Tool and Made It 1,000,000x Faster Than Its Python Counterparts |---| tech |---| i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts |---| Sep 11 2026 |---| bump2version 0.2.1 drops with watch mode, multi-language auto-detection, a Yew WASM app etc. |---| assets/images/banner_post_27.webp |---| https://dev.to/wiseai/i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts-2i83 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts.md"
                             .to_string(),
                         location: Some(BookRoute::IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterparts {}),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![27u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 28 |---| Frozendict: State of the Art Immutable Hashmap |---| tech |---| frozendict-state-of-the-art-immutable-hashmap |---| Sep 19 2026 |---| frozndict is a fully immutable, insertion-ordered, O(1)-hashable Python dictionary written in 100% safe Rust. Iteration in 4 µs. copy() in 63 ns. Pure Rust functions running 1,000,000x faster than Python equivalents. |---| assets/images/banner_post_28.webp |---| |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/frozendict-state-of-the-art-immutable-hashmap.md"
+                            .to_string(),
+                        location: Some(BookRoute::FrozendictStateOfTheArtImmutableHashmap {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![28u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 29 |---| Privacy Policy |---| legal |---| privacy-policy |---| Sep 19 2026 |---| Privacy Policy for wiseai.dev |---| assets/images/banner_post_1.webp |---| |---| "
+                            .to_string(),
+                        location: Some(BookRoute::PrivacyPolicy {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![29u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 30 |---| Terms of Service |---| legal |---| terms-of-service |---| Sep 19 2026 |---| Terms of Service for wiseai.dev |---| assets/images/banner_post_1.webp |---| |---| "
+                            .to_string(),
+                        location: Some(BookRoute::TermsOfService {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![30u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -11804,7 +12073,7 @@ pub fn IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterpar
                 code { "bump2version" }
             }
             " in Rust and declared it "
-            strong { "~" }
+            strong { "~10,000x faster" }
             " than the Python CLI, you may recall that I ended it with a vague threat about future benchmarks. The Mossad agents who consulted on the architecture wrote \"this is not over\" in the margin of their whiteboard. I ignored it."
         }
         p { "I should have listened." }
@@ -12005,48 +12274,48 @@ pub fn IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterpar
             }
             tr {
                 th { "Parse + bump + serialize" }
-                th { "~" }
+                th { "~57 µs" }
                 th {
-                    strong { "~" }
+                    strong { "~0.4 µs" }
                     ""
                 }
-                th { "~" }
-                th { "~" }
+                th { "~79 µs" }
+                th { "~585 ms" }
             }
             tr {
                 th { "File search/replace (1k lines)" }
-                th { "~" }
+                th { "~65 µs" }
                 th {
-                    strong { "~" }
+                    strong { "~11 µs" }
                     ""
                 }
-                th { "~" }
-                th { "~" }
+                th { "~1.7 µs" }
+                th { "~590 ms" }
             }
             tr {
                 th { "File search/replace (100k lines)" }
-                th { "~" }
+                th { "~4.2 ms" }
                 th {
-                    strong { "~" }
+                    strong { "~0.9 ms" }
                     ""
                 }
                 th { "N/A" }
-                th { "~" }
+                th { "~600 ms" }
             }
             tr {
                 th { "Config file parse" }
-                th { "~" }
+                th { "~800 µs" }
                 th {
-                    strong { "~" }
+                    strong { "~140 µs" }
                     ""
                 }
                 th { "N/A" }
-                th { "~" }
+                th { "~500 ms (on import)" }
             }
         }
         p {
             "Versus the Python CLI subprocess: ((500 x 1000) ÷ 0.4) = "
-            strong { "~" }
+            strong { "~1,250,000×" }
             " faster for a version parse-bump-serialize. We round down to 1,000,000x for humility. The Mossad agents said rounding up was acceptable. We preferred honesty."
         }
         h3 { id: "what-got-fast-and-why",
@@ -12589,7 +12858,7 @@ pub fn IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterpar
             a { href: "#python", class: "header", "Python" }
         }
         CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">pip install bump</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">rs</span></pre>\n" }
-        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">from bump_rs import bump_version\n</span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">bump_version</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;1.2.3&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;major&quot;</span><span style=\"color:#f8f8f2;\">))  </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ffee99;\">&quot;2.0.0&quot; </span><span style=\"color:#f92672;\">in ~</span><span style=\"color:#f8f8f2;\">57µs</span></pre>\n" }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">from bump_rs import bump_version\n</span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">bump_version</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;1.2.3&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;major&quot;</span><span style=\"color:#f8f8f2;\">))  </span><span style=\"color:#f92672;\"># </span><span style=\"color:#ffee99;\">&quot;2.0.0&quot; </span><span style=\"color:#f92672;\">in</span><span style=\"color:#f8f8f2;\"> \\</span><span style=\"color:#f92672;\">~</span><span style=\"color:#f8f8f2;\">57µs</span></pre>\n" }
         h3 { id: "nodejs",
             a { href: "#nodejs", class: "header", "Node.js" }
         }
@@ -12745,6 +13014,824 @@ pub fn IOptimizedMyBumpVersionToolAndMadeIt1000000XFasterThanItsPythonCounterpar
         }
         p {
             "P.S. The Mossad agents have approved this post subject to the removal of the classified section about the branchless arithmetic lookup table. We kept it in. They know. They've said nothing. This is ominous."
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn FrozendictStateOfTheArtImmutableHashmap() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        blockquote {
+            p { "Hello 👋!" }
+        }
+        p {
+            "So there I was, staring at Python's  "
+            code { "frozenset" }
+            ", feeling that specific special rage that only a data structure enthusiast at 1AM can feel, while  "
+            code { "dict" }
+            " sat there, utterly mutable, fully hashable, completely disobedient."
+        }
+        p {
+            "Dictionary keys can change. You can  "
+            code { "pop" }
+            " from it. You can  "
+            code { "clear" }
+            " it. You can  "
+            code { "update" }
+            " it mid-computation and break 30 tests simultaneously."
+        }
+        p {
+            "I looked at this situation calmly. And then I did what any reasonable person would do: I wrote  "
+            code { "frozndict" }
+            ", a fully immutable, insertion-ordered, O(1)-hashable dictionary in "
+            strong { "100% safe Rust" }
+            " with Python and Node.js bindings so fast they make "
+            code { "frozendict" }
+            " (the C extension) look briefly embarrassed at its own party."
+        }
+        p {
+            "The result? "
+            a { href: "https://github.com/wiseaidev/frozndict",
+                code { "frozndict" }
+            }
+            ": the state of the art immutable hashmap. Frozen at construction. Hashable by design. Faster than guilt."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-10.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Make Python dict immutable!",
+                title: "",
+            }
+        }
+        h2 { id: "why-should-you-care",
+            a { href: "#why-should-you-care", class: "header", "Why Should You Care?" }
+        }
+        p {
+            a { href: "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+                "Python's  "
+                code { "dict" }
+            }
+            " is a magnificent beast. It's ordered, fast, flexible. It is also a ticking time bomb if you try to use one as a cache key, a "
+            a { href: "https://docs.python.org/3/library/functools.html",
+                code { "functools.lru_cache" }
+            }
+            " argument, or anywhere that requires hashability."
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">cache </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">{{}}\n</span><span style=\"color:#f8f8f2;\">key </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">{{</span><span style=\"color:#ffee99;\">&quot;x&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\">}}\n</span><span style=\"color:#f8f8f2;\">cache[key] </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ff80f4;\">42  </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> TypeError: unhashable </span><span style=\"font-style:italic;color:#66d9ef;\">type</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">dict</span><span style=\"color:#f92672;\">&#39;</span></pre>\n" }
+        p {
+            "The "
+            a { href: "https://docs.python.org/3/builtins/stdtypes.html#set-types-set-frozenset",
+                "stdlib's  "
+                code { "frozenset" }
+            }
+            " solved this for sets. Nobody solved it properly for dicts for 15+ years, until "
+            a { href: "https://github.com/Marco-Sulla/python-frozendict",
+                code { "frozendict" }
+                " (the C extension)"
+            }
+            " came along. And then I looked at "
+            code { "frozendict" }
+            "'s construction time and made a concerned face."
+        }
+        p {
+            code { "frozndict" }
+            " solves all of this:"
+        }
+        ul {
+            li {
+                strong { "Truly immutable" }
+                ": mutation attempts at the Rust level raise "
+                code { "TypeError" }
+                ". Not "
+                code { "AttributeError" }
+                ". No monkey-patching. "
+                code { "__setitem__" }
+                ", "
+                code { "__delitem__" }
+                ", "
+                code { "update" }
+                ", "
+                code { "clear" }
+                ", "
+                code { "pop" }
+                ", "
+                code { "popitem" }
+                ", and "
+                code { "setdefault" }
+                " are all implemented, as gates that will refuse you entry and then log the attempt somewhere in the moral universe."
+            }
+            li {
+                strong {
+                    "O(1) "
+                    code { "__hash__" }
+                }
+                ": computed once at construction. Subsequent calls return a cached "
+                code { "isize" }
+                ". No recomputation. Ever."
+            }
+            li {
+                strong {
+                    "O(1) "
+                    code { "copy()" }
+                }
+                ": returns the same "
+                code { "Arc<FrozenDictInner>" }
+                ". One pointer copy. 63 ns. Done."
+            }
+            li {
+                strong { "Insertion-ordered" }
+                ": all views, "
+                code { "keys()" }
+                ", "
+                code { "values()" }
+                ", "
+                code { "items()" }
+                ", iterate in the order you inserted."
+            }
+            li {
+                strong {
+                    code { "fromkeys" }
+                    " support"
+                }
+                ": "
+                code { "FrozenDict.fromkeys([\"a\", \"b\"], 0)" }
+                " works exactly as you'd expect, including on subclasses."
+            }
+            li {
+                strong { "Set algebra on views" }
+                ": "
+                code { "fd.keys() & other_keys" }
+                ", "
+                code { "fd.items() - other_items" }
+                ", "
+                code { "^" }
+                ", "
+                code { "|" }
+                ", "
+                code { "isdisjoint" }
+                ", all there."
+            }
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-11.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Change My Mind!",
+                title: "",
+            }
+        }
+        h2 { id: "the-architecture",
+            a { href: "#the-architecture", class: "header", "The Architecture" }
+        }
+        p { "Here is the internal layout:" }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">FrozenDict\n</span><span style=\"color:#f8f8f2;\">  └── Arc&lt;FrozenDictInner&gt;          ← shared ownership, O(</span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\">) clone\n</span><span style=\"color:#f8f8f2;\">        ├── entries: Box&lt;[(</span><span style=\"font-style:italic;color:#66d9ef;\">isize</span><span style=\"color:#f8f8f2;\">, Obj, Obj)]&gt;   ← insertion</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">ordered (key_hash, key, val)\n</span><span style=\"color:#f8f8f2;\">        ├── lookup: Box&lt;[(</span><span style=\"font-style:italic;color:#66d9ef;\">isize</span><span style=\"color:#f8f8f2;\">, </span><span style=\"font-style:italic;color:#66d9ef;\">u32</span><span style=\"color:#f8f8f2;\">)]&gt;          ← sorted by hash </span><span style=\"color:#f92672;\">for</span><span style=\"color:#f8f8f2;\"> binary search\n</span><span style=\"color:#f8f8f2;\">        ├── hash: </span><span style=\"font-style:italic;color:#66d9ef;\">isize</span><span style=\"color:#f8f8f2;\">                          ← pre</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">computed at build time\n</span><span style=\"color:#f8f8f2;\">        ├── cached_keys: OnceLock&lt;Py&lt;PyList&gt;&gt;    ← lazy, shared across views\n</span><span style=\"color:#f8f8f2;\">        ├── cached_values: OnceLock&lt;Py&lt;PyList&gt;&gt;\n</span><span style=\"color:#f8f8f2;\">        └── cached_items: OnceLock&lt;Py&lt;PyList&gt;&gt;</span></pre>\n",
+        }
+        p {
+            "The key insight: "
+            strong { "entries stay in insertion order" }
+            ". The "
+            strong { "lookup table" }
+            " is a separate, sorted slice used only for binary search. This gives us:"
+        }
+        ul {
+            li {
+                "O(n) insertion-ordered iteration (just walk "
+                code { "entries" }
+                ")"
+            }
+            li {
+                "O(log n + k) lookup (binary search to the hash bucket, then linear scan for collision k)"
+            }
+            li { "O(n log n) construction (one sort of the lookup table, then done)" }
+            li {
+                "O(1) "
+                code { "copy()" }
+                " and "
+                code { "clone()" }
+                " (pointer copy of the "
+                code { "Arc" }
+                ")"
+            }
+        }
+        p {
+            "The hash is computed by XOR-mixing each  "
+            code { "key_hash * MIX_KEY ^ value_hash * MIX_VAL" }
+            ". Order-independent. Two frozen dicts with the same contents but different insertion order are equal and share a hash. As nature intended."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-12.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Ferris the crab holding a sorted lookup slice",
+                title: "",
+            }
+        }
+        h2 { id: "the-performance-numbers",
+            a { href: "#the-performance-numbers", class: "header", "The Performance Numbers" }
+        }
+        p {
+            "These are real numbers. Benchmarked with  "
+            code { "timeit" }
+            " on Python 3.12.3, x86-64 Linux, min of 7 runs × 2,000 iterations, N=1000 entries."
+        }
+        h3 { id: "python-level-benchmark",
+            a { href: "#python-level-benchmark", class: "header", "Python-level benchmark" }
+        }
+        table {
+            thead {
+                th { "Operation" }
+                th { "Python dict" }
+                th { "frozendict (C)" }
+                th { "immutables.Map" }
+                th { "frozndict 🧊" }
+            }
+            tr {
+                th { "Construction" }
+                th { "6.45 µs" }
+                th { "7.70 µs" }
+                th { "241.67 µs" }
+                th { "90.70 µs" }
+            }
+            tr {
+                th { "Clone O(1)" }
+                th { "6.45 µs" }
+                th { "70.48 ns" }
+                th { "404.62 ns" }
+                th {
+                    strong { "138.68 ns" }
+                    ""
+                }
+            }
+            tr {
+                th { "Equality" }
+                th { "19.37 µs" }
+                th { "19.44 µs" }
+                th { "24.39 ns" }
+                th {
+                    strong { "32.42 ns" }
+                    ""
+                }
+            }
+            tr {
+                th { "Iteration" }
+                th { "7.39 µs" }
+                th { "7.42 µs" }
+                th { "14.97 µs" }
+                th {
+                    strong { "4.14 µs" }
+                    ""
+                }
+            }
+            tr {
+                th { "copy()" }
+                th { "6.53 µs" }
+                th { "323.83 ns" }
+                th { "317.07 µs" }
+                th {
+                    strong { "63.29 ns" }
+                    ""
+                }
+            }
+            tr {
+                th { "hash()" }
+                th { "N/A" }
+                th { "168.19 ns" }
+                th { "45.07 ns" }
+                th {
+                    strong { "45.52 ns" }
+                    ""
+                }
+            }
+            tr {
+                th { "Lookup" }
+                th {
+                    strong { "32.52 ns" }
+                    ""
+                }
+                th { "48.31 ns" }
+                th { "48.11 ns" }
+                th { "82.62 ns" }
+            }
+        }
+        p {
+            code { "frozndict" }
+            " wins iteration,  "
+            code { "copy()" }
+            ", equality, clone, and very nearly ties  "
+            code { "immutables.Map" }
+            " on  "
+            code { "hash()" }
+            ". On a per-call basis, the pure Rust functions run in "
+            strong { "nanoseconds" }
+            ", which is approximately "
+            strong { "1,000,000x faster" }
+            " than any Python-level re-implementation of the same logic would be. This is what happens when you move computation to Rust and let LLVM take it from there."
+        }
+        h3 { id: "rust-level-benchmark",
+            a { href: "#rust-level-benchmark", class: "header", "Rust-level benchmark" }
+        }
+        table {
+            thead {
+                th { "Workload" }
+                th { "Time" }
+            }
+            tr {
+                th { "Construction, n=100" }
+                th { "~2.7 µs" }
+            }
+            tr {
+                th { "Construction, n=1000" }
+                th { "~35 µs" }
+            }
+            tr {
+                th { "Lookup hit" }
+                th { "~41 ns" }
+            }
+            tr {
+                th { "Lookup miss" }
+                th { "~39 ns" }
+            }
+            tr {
+                th { "Iteration, n=1000" }
+                th { "~3.1 µs" }
+            }
+            tr {
+                th {
+                    code { "hash()" }
+                    ""
+                }
+                th { "~4.8 µs" }
+            }
+            tr {
+                th {
+                    code { "with()" }
+                    " (functional update)"
+                }
+                th { "~31 µs" }
+            }
+            tr {
+                th {
+                    code { "merge()" }
+                    ""
+                }
+                th { "~35 µs" }
+            }
+        }
+        p {
+            "The lookup path is 40 nanoseconds. For comparison, a Python function call overhead alone is about 60-100 ns.  "
+            code { "frozndict" }
+            " answers your lookup query faster than Python could even begin thinking about it."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-13.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Ferris the crab holding a sorted lookup slice",
+                title: "",
+            }
+        }
+        h2 { id: "the-equality-problem",
+            a { href: "#the-equality-problem", class: "header", "The Equality Problem" }
+        }
+        p {
+            "Here is a question for you: are these two  "
+            code { "FrozenDict" }
+            "s equal?"
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">a </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> FrozenDict({{</span><span style=\"color:#ffee99;\">&quot;x&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;y&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">2</span><span style=\"color:#f8f8f2;\">}})\n</span><span style=\"color:#f8f8f2;\">b </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> FrozenDict({{</span><span style=\"color:#ffee99;\">&quot;y&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">2</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;x&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\">}})  </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> different insertion order\n</span><span style=\"color:#f8f8f2;\">a </span><span style=\"color:#f92672;\">==</span><span style=\"color:#f8f8f2;\"> b  </span><span style=\"color:#f92672;\"># ?</span></pre>\n",
+        }
+        p {
+            "Yes. Obviously yes. They have the same key-value pairs. The answer is  "
+            code { "True" }
+            "."
+        }
+        p {
+            "The naive implementation, comparing entries positionally, index by index, returns  "
+            code { "False" }
+            " because the entries are stored in insertion order. Early  "
+            code { "frozndict" }
+            " versions had exactly this bug. I discovered it while writing the tests at midnight and sat in silence for a moment before going to fix it."
+        }
+        p {
+            "The correct implementation uses the "
+            strong { "sorted lookup table" }
+            " to do a key-based lookup for each entry in "
+            code { "other" }
+            ", then checks the value. Order-independent. Hash-consistent. Correct."
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">a </span><span style=\"color:#f92672;\">==</span><span style=\"color:#f8f8f2;\"> b  </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> True\n</span><span style=\"color:#66d9ef;\">hash</span><span style=\"color:#f8f8f2;\">(a) </span><span style=\"color:#f92672;\">== </span><span style=\"color:#66d9ef;\">hash</span><span style=\"color:#f8f8f2;\">(b)  </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> True, hash is order</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">independent by design\n</span><span style=\"color:#f8f8f2;\">{{a, b}}  </span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">{{</span><span style=\"color:#66d9ef;\">frozendict</span><span style=\"color:#f8f8f2;\">({{</span><span style=\"color:#ffee99;\">&#39;x&#39;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&#39;y&#39;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">2</span><span style=\"color:#f8f8f2;\">}})}}, only one element</span></pre>\n",
+        }
+        p {
+            "That last line, being usable in a  "
+            code { "set" }
+            ", is the whole point. If your immutable dict can't be a set member, what are you even doing with your life?"
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-14.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "frozndict: (presses both simultaneously)",
+                title: "",
+            }
+        }
+        h2 { id: "the",
+            a { href: "#the", class: "header", "The " }
+            code { "Arc<FrozenDictInner>" }
+            " Design"
+        }
+        p {
+            "Every Python object wrapping  "
+            code { "frozndict" }
+            " shares one  "
+            code { "Arc<FrozenDictInner>" }
+            ". When you call  "
+            code { "copy()" }
+            ", we clone the  "
+            code { "Arc" }
+            ", which is a single atomic increment on a reference count. No allocation. No copying of entries. No touching the lookup table."
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">import time\n</span><span style=\"color:#f8f8f2;\">from frozndict import FrozenDict\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">d </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> FrozenDict({{i: i</span><span style=\"color:#f92672;\">*</span><span style=\"color:#ff80f4;\">2 </span><span style=\"color:#f92672;\">for</span><span style=\"color:#f8f8f2;\"> i </span><span style=\"color:#f92672;\">in </span><span style=\"color:#66d9ef;\">range</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ff80f4;\">1000</span><span style=\"color:#f8f8f2;\">)}})\n</span><span style=\"color:#f8f8f2;\">t0 </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> time.</span><span style=\"color:#66d9ef;\">perf_counter_ns</span><span style=\"color:#f8f8f2;\">()\n</span><span style=\"color:#f8f8f2;\">c </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> d.</span><span style=\"color:#66d9ef;\">copy</span><span style=\"color:#f8f8f2;\">()\n</span><span style=\"color:#f8f8f2;\">t1 </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> time.</span><span style=\"color:#66d9ef;\">perf_counter_ns</span><span style=\"color:#f8f8f2;\">()\n</span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(t1 </span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\"> t0)  </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> \\</span><span style=\"color:#f92672;\">~</span><span style=\"color:#ff80f4;\">63</span><span style=\"color:#f8f8f2;\"> ns</span></pre>\n",
+        }
+        p { "63 nanoseconds. For a 1,000-entry dictionary." }
+        p {
+            "For comparison,  "
+            code { "copy.copy()" }
+            " on a Python  "
+            code { "dict" }
+            " of the same size is "
+            code { "frozndict.copy()" }
+            ". And  "
+            code { "copy()" }
+            " on the C  "
+            code { "frozendict" }
+            " is "
+        }
+        p {
+            code { "frozndict.copy()" }
+            " is so fast it's almost a moral argument for immutability. Why would you ever mutate a dictionary when the immutable version is cheaper to \"clone\"?"
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-15.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Surprised Pikachu",
+                title: "",
+            }
+        }
+        h2 { id: "the-views",
+            a { href: "#the-views", class: "header", "The Views" }
+        }
+        p {
+            code { "frozndict" }
+            " returns view objects that behave like  "
+            code { "dict_keys" }
+            ",  "
+            code { "dict_values" }
+            ", and  "
+            code { "dict_items" }
+            ", but with the full set-algebra API you always wished Python's dict views had by default."
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">d1 </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> FrozenDict({{</span><span style=\"color:#ffee99;\">&quot;a&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;b&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">2</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;c&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">3</span><span style=\"color:#f8f8f2;\">}})\n</span><span style=\"color:#f8f8f2;\">d2 </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> FrozenDict({{</span><span style=\"color:#ffee99;\">&quot;b&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">2</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;c&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">99</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;d&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">4</span><span style=\"color:#f8f8f2;\">}})\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Keys set algebra\n</span><span style=\"color:#f8f8f2;\">d1.</span><span style=\"color:#66d9ef;\">keys</span><span style=\"color:#f8f8f2;\">() </span><span style=\"color:#f92672;\">&amp;</span><span style=\"color:#f8f8f2;\"> d2.</span><span style=\"color:#66d9ef;\">keys</span><span style=\"color:#f8f8f2;\">()          </span><span style=\"color:#f92672;\"># </span><span style=\"color:#66d9ef;\">frozenset</span><span style=\"color:#f8f8f2;\">({{</span><span style=\"color:#ffee99;\">&#39;b&#39;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&#39;c&#39;</span><span style=\"color:#f8f8f2;\">}})\n</span><span style=\"color:#f8f8f2;\">d1.</span><span style=\"color:#66d9ef;\">keys</span><span style=\"color:#f8f8f2;\">() </span><span style=\"color:#f92672;\">|</span><span style=\"color:#f8f8f2;\"> d2.</span><span style=\"color:#66d9ef;\">keys</span><span style=\"color:#f8f8f2;\">()          </span><span style=\"color:#f92672;\"># </span><span style=\"color:#66d9ef;\">frozenset</span><span style=\"color:#f8f8f2;\">({{</span><span style=\"color:#ffee99;\">&#39;a&#39;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&#39;b&#39;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&#39;c&#39;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&#39;d&#39;</span><span style=\"color:#f8f8f2;\">}})\n</span><span style=\"color:#f8f8f2;\">d1.</span><span style=\"color:#66d9ef;\">keys</span><span style=\"color:#f8f8f2;\">() </span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\"> d2.</span><span style=\"color:#66d9ef;\">keys</span><span style=\"color:#f8f8f2;\">()          </span><span style=\"color:#f92672;\"># </span><span style=\"color:#66d9ef;\">frozenset</span><span style=\"color:#f8f8f2;\">({{</span><span style=\"color:#ffee99;\">&#39;a&#39;</span><span style=\"color:#f8f8f2;\">}})\n</span><span style=\"color:#f8f8f2;\">d1.</span><span style=\"color:#66d9ef;\">keys</span><span style=\"color:#f8f8f2;\">() </span><span style=\"color:#f92672;\">^</span><span style=\"color:#f8f8f2;\"> d2.</span><span style=\"color:#66d9ef;\">keys</span><span style=\"color:#f8f8f2;\">()          </span><span style=\"color:#f92672;\"># </span><span style=\"color:#66d9ef;\">frozenset</span><span style=\"color:#f8f8f2;\">({{</span><span style=\"color:#ffee99;\">&#39;a&#39;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&#39;d&#39;</span><span style=\"color:#f8f8f2;\">}})\n</span><span style=\"color:#f8f8f2;\">d1.</span><span style=\"color:#66d9ef;\">keys</span><span style=\"color:#f8f8f2;\">().</span><span style=\"color:#66d9ef;\">isdisjoint</span><span style=\"color:#f8f8f2;\">([</span><span style=\"color:#ffee99;\">&quot;x&quot;</span><span style=\"color:#f8f8f2;\">])    </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> True\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Items set algebra (tuples</span><span style=\"color:#f92672;\">!</span><span style=\"color:#f8f8f2;\">)\n</span><span style=\"color:#f8f8f2;\">d1.</span><span style=\"color:#66d9ef;\">items</span><span style=\"color:#f8f8f2;\">() </span><span style=\"color:#f92672;\">&amp;</span><span style=\"color:#f8f8f2;\"> d2.</span><span style=\"color:#66d9ef;\">items</span><span style=\"color:#f8f8f2;\">()        </span><span style=\"color:#f92672;\"># </span><span style=\"color:#66d9ef;\">frozenset</span><span style=\"color:#f8f8f2;\">({{(</span><span style=\"color:#ffee99;\">&#39;b&#39;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ff80f4;\">2</span><span style=\"color:#f8f8f2;\">)}}), only exact (k,v) matches\n</span><span style=\"color:#f8f8f2;\">d1.</span><span style=\"color:#66d9ef;\">items</span><span style=\"color:#f8f8f2;\">() </span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\"> d2.</span><span style=\"color:#66d9ef;\">items</span><span style=\"color:#f8f8f2;\">()        </span><span style=\"color:#f92672;\"># </span><span style=\"color:#66d9ef;\">frozenset</span><span style=\"color:#f8f8f2;\">({{(</span><span style=\"color:#ffee99;\">&#39;a&#39;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\">), (</span><span style=\"color:#ffee99;\">&#39;c&#39;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ff80f4;\">3</span><span style=\"color:#f8f8f2;\">)}})</span></pre>\n",
+        }
+        p {
+            "The views are lazy, they hold a reference to the same  "
+            code { "Arc<FrozenDictInner>" }
+            ", share zero extra memory overhead, and do all set operations on demand. The items view is particularly clever:  "
+            code { "(\"c\", 3)" }
+            " is NOT in both dicts' items because the values differ ( "
+            code { "3" }
+            " vs  "
+            code { "99" }
+            "). The binary lookup handles this correctly."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-16.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "DaDrake",
+                title: "",
+            }
+        }
+        h2 { id: "mutation-guards",
+            a { href: "#mutation-guards", class: "header", "Mutation Guards" }
+        }
+        p {
+            "Every mutable dict method exists on  "
+            code { "FrozenDict" }
+            ". All of them raise  "
+            code { "TypeError" }
+            ". This is important:"
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">fd </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> FrozenDict({{</span><span style=\"color:#ffee99;\">&quot;a&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\">}})\n</span><span style=\"color:#f8f8f2;\">fd[</span><span style=\"color:#ffee99;\">&quot;b&quot;</span><span style=\"color:#f8f8f2;\">] </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ff80f4;\">2         </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> TypeError: </span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">FrozenDict</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\"> object does not support mutation\n</span><span style=\"color:#f8f8f2;\">fd.</span><span style=\"color:#66d9ef;\">update</span><span style=\"color:#f8f8f2;\">({{</span><span style=\"color:#ffee99;\">&quot;c&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">3</span><span style=\"color:#f8f8f2;\">}}) </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> TypeError: </span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">FrozenDict</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\"> object does not support mutation\n</span><span style=\"color:#f8f8f2;\">fd.</span><span style=\"color:#66d9ef;\">pop</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;a&quot;</span><span style=\"color:#f8f8f2;\">)         </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> TypeError: </span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">FrozenDict</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\"> object does not support mutation\n</span><span style=\"color:#f8f8f2;\">fd.</span><span style=\"color:#66d9ef;\">clear</span><span style=\"color:#f8f8f2;\">()          </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> TypeError: </span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">FrozenDict</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\"> object does not support mutation\n</span><span style=\"color:#f8f8f2;\">del fd.x            </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> TypeError: </span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">frozendict</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\"> object does not support mutation</span></pre>\n",
+        }
+        p {
+            "Why implement these at all if they just fail? Because Python's  "
+            code { "typing.MutableMapping" }
+            " and  "
+            code { "collections.abc.Mapping" }
+            " ABCs expect these methods to exist for proper isinstance checks and duck-typing. If you use a  "
+            code { "FrozenDict" }
+            " anywhere a  "
+            code { "dict | MutableMapping" }
+            " is type-hinted, you get the correct  "
+            code { "TypeError" }
+            ", not a cryptic  "
+            code { "AttributeError" }
+            " suggesting the method doesn't exist."
+        }
+        p {
+            "This is the difference between \"I cannot do this\" and \"this object has no concept of doing this\".  "
+            code { "frozndict" }
+            " chooses the former. We exist. We just refuse."
+        }
+        h2 { id: "subclassing",
+            a { href: "#subclassing", class: "header", "Subclassing, " }
+            code { "fromkeys" }
+            ", "
+            code { "__class_getitem__" }
+            ", and "
+            code { "reversed()" }
+        }
+        p { "All of the things Python developers expect to work, work." }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">class ColdStorage(FrozenDict):\n</span><span style=\"color:#f8f8f2;\">    pass\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">cs </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> ColdStorage({{</span><span style=\"color:#ffee99;\">&quot;temp&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#f92672;\">-</span><span style=\"color:#ff80f4;\">273</span><span style=\"color:#f8f8f2;\">}})\n</span><span style=\"color:#f8f8f2;\">ColdStorage.</span><span style=\"color:#66d9ef;\">fromkeys</span><span style=\"color:#f8f8f2;\">([</span><span style=\"color:#ffee99;\">&quot;a&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;b&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;c&quot;</span><span style=\"color:#f8f8f2;\">], </span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\">)\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#66d9ef;\">frozendict</span><span style=\"color:#f8f8f2;\">({{</span><span style=\"color:#ffee99;\">&#39;a&#39;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&#39;b&#39;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&#39;c&#39;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\">}})\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f8f8f2;\">FrozenDict[</span><span style=\"font-style:italic;color:#66d9ef;\">str</span><span style=\"color:#f8f8f2;\">, int]\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> frozndict.FrozenDict[</span><span style=\"font-style:italic;color:#66d9ef;\">str</span><span style=\"color:#f8f8f2;\">, int]  ← GenericAlias, works with </span><span style=\"font-style:italic;color:#66d9ef;\">type </span><span style=\"color:#f8f8f2;\">hints\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#66d9ef;\">list</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">reversed</span><span style=\"color:#f8f8f2;\">(FrozenDict({{</span><span style=\"color:#ffee99;\">&quot;c&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">3</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;a&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;b&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ff80f4;\">2</span><span style=\"color:#f8f8f2;\">}})))\n</span><span style=\"color:#f92672;\"># </span><span style=\"color:#f8f8f2;\">[</span><span style=\"color:#ffee99;\">&#39;b&#39;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&#39;a&#39;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&#39;c&#39;</span><span style=\"color:#f8f8f2;\">]</span></pre>\n",
+        }
+        p {
+            code { "fromkeys" }
+            " on a subclass returns an instance of the subclass.  "
+            code { "__class_getitem__" }
+            " returns a  "
+            code { "frozndict" }
+            ".  "
+            code { "__reversed__" }
+            " iterates keys in reverse insertion order."
+        }
+        p {
+            "These are the features that make a library "
+            strong { "correct" }
+            " instead of merely "
+            strong { "functional" }
+            ". There's a difference."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-16.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "same same but different",
+                title: "",
+            }
+        }
+        h2 { id: "getting-started",
+            a { href: "#getting-started", class: "header", "Getting Started" }
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">pip install frozndict</span></pre>\n" }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">from frozndict import FrozenDict\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;</span><span style=\"color:#f8f8f2;\"> fd </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> FrozenDict({{</span><span style=\"color:#ffee99;\">&quot;name&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ffee99;\">&quot;Ferris&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;type&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ffee99;\">&quot;crab&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;mood&quot;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#ffee99;\">&quot;frozen&quot;</span><span style=\"color:#f8f8f2;\">}})\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;</span><span style=\"color:#f8f8f2;\"> fd[</span><span style=\"color:#ffee99;\">&quot;name&quot;</span><span style=\"color:#f8f8f2;\">]\n</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">Ferris</span><span style=\"color:#f92672;\">&#39;\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;</span><span style=\"color:#f8f8f2;\"> fd.</span><span style=\"color:#66d9ef;\">get</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;age&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\">)\n</span><span style=\"color:#ff80f4;\">0\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt; </span><span style=\"color:#66d9ef;\">hash</span><span style=\"color:#f8f8f2;\">(fd)\n</span><span style=\"color:#f92672;\">-</span><span style=\"color:#ff80f4;\">7563131740537042003\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;</span><span style=\"color:#f8f8f2;\"> fd.</span><span style=\"color:#66d9ef;\">copy</span><span style=\"color:#f8f8f2;\">()\n</span><span style=\"color:#66d9ef;\">frozendict</span><span style=\"color:#f8f8f2;\">({{</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">name</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">Ferris</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#f92672;\">&#39;</span><span style=\"font-style:italic;color:#66d9ef;\">type</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">crab</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">mood</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">: </span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">frozen</span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">}})\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt; #</span><span style=\"color:#f8f8f2;\"> Use it </span><span style=\"color:#f92672;\">as</span><span style=\"color:#f8f8f2;\"> a dict key:\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;</span><span style=\"color:#f8f8f2;\"> memo </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">{{fd: </span><span style=\"color:#ffee99;\">&quot;result&quot;</span><span style=\"color:#f8f8f2;\">}}\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt; #</span><span style=\"color:#f8f8f2;\"> Use it </span><span style=\"color:#f92672;\">in</span><span style=\"color:#f8f8f2;\"> a set:\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;</span><span style=\"color:#f8f8f2;\"> seen </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">{{fd}}</span></pre>\n",
+        }
+        h3 { id: "as-a-rust-library",
+            a { href: "#as-a-rust-library", class: "header", "As a Rust library:" }
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">[dependencies]\n</span><span style=\"color:#f8f8f2;\">frozndict </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;2.1.1&quot;</span></pre>\n" }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">use </span><span style=\"color:#f8f8f2;\">frozndict::FrozenMap;\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"font-style:italic;color:#66d9ef;\">let</span><span style=\"color:#f8f8f2;\"> map: FrozenMap&lt;</span><span style=\"color:#f92672;\">&amp;</span><span style=\"font-style:italic;color:#66d9ef;\">str</span><span style=\"color:#f8f8f2;\">, </span><span style=\"font-style:italic;color:#66d9ef;\">i32</span><span style=\"color:#f8f8f2;\">&gt; </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">FrozenMap::new([(</span><span style=\"color:#ffee99;\">&quot;a&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\">), (</span><span style=\"color:#ffee99;\">&quot;b&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ff80f4;\">2</span><span style=\"color:#f8f8f2;\">)]);\n</span><span style=\"color:#f8f8f2;\">assert_eq!(map.</span><span style=\"color:#66d9ef;\">get</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;a&quot;</span><span style=\"color:#f8f8f2;\">), </span><span style=\"font-style:italic;color:#66d9ef;\">Some</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#f92672;\">&amp;</span><span style=\"color:#ff80f4;\">1</span><span style=\"color:#f8f8f2;\">));\n</span><span style=\"color:#f8f8f2;\">assert_eq!(map.</span><span style=\"color:#66d9ef;\">len</span><span style=\"color:#f8f8f2;\">(), </span><span style=\"color:#ff80f4;\">2</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"font-style:italic;color:#66d9ef;\">let</span><span style=\"color:#f8f8f2;\"> extended </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> map.</span><span style=\"color:#66d9ef;\">with</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;c&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ff80f4;\">3</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"color:#f8f8f2;\">assert_eq!(extended.</span><span style=\"color:#66d9ef;\">len</span><span style=\"color:#f8f8f2;\">(), </span><span style=\"color:#ff80f4;\">3</span><span style=\"color:#f8f8f2;\">);</span></pre>\n",
+        }
+        h2 { id: "the-road-ahead",
+            a { href: "#the-road-ahead", class: "header", "The Road Ahead" }
+        }
+        p {
+            code { "frozndict 2.1.1" }
+            " is stable but not finished. The roadmap includes:"
+        }
+        ul {
+            li {
+                strong { "WASM target" }
+                ": compile the core to "
+                code { "wasm32-unknown-unknown" }
+                " for browser-side immutable hashmaps"
+            }
+            li {
+                strong {
+                    code { "serde" }
+                    " support"
+                }
+                ": serialize/deserialize "
+                code { "FrozenMap" }
+                " as naturally as a "
+                code { "HashMap" }
+            }
+        }
+        p {
+            "If any of these sound urgent to you: "
+            a { href: "https://github.com/wiseaidev/frozndict/issues", "open an issue" }
+            ". Or star the repo."
+        }
+        h2 { id: "closing-thoughts",
+            a { href: "#closing-thoughts", class: "header", "Closing Thoughts" }
+        }
+        p {
+            code { "frozndict" }
+            " does one thing: it gives Python a dictionary that is genuinely, provably, irreversibly frozen. Not \"sort of frozen if you don't try to break it\". Frozen at the hardware level, where the Rust borrow checker watches over your entries like a disapproving parent at a teen party."
+        }
+        p {
+            "It's insertion-ordered. It's hashable. It's  "
+            code { "O(1)" }
+            " to copy. Its inner functions run in "
+            strong { "nanoseconds" }
+            ". It has views with set algebra. It subclasses correctly. Its "
+            code { "fromkeys" }
+            " works. Its mutation guards are polite but firm."
+        }
+        p {
+            "Star "
+            a { href: "https://github.com/wiseaidev/frozndict", "the repo" }
+            ". File issues. Use it as a cache key confidently. And the next time someone tries to mutate your dictionary mid-computation, point them here."
+        }
+        p {
+            "Till next time: "
+            em { "Stay frozen. Stay fast. Don't mutate." }
+            " 🦀🧊"
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn PrivacyPolicy() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        h1 { id: "privacy-policy",
+            a { href: "#privacy-policy", class: "header", "Privacy Policy" }
+        }
+        p {
+            strong { "Last updated: September 19, 2026" }
+        }
+        h2 { id: "who-we-are",
+            a { href: "#who-we-are", class: "header", "Who We Are" }
+        }
+        p {
+            "This blog ( "
+            code { "wiseai.dev" }
+            ") is operated by Mahmoud Harmouch. We publish technical articles on Rust, AI research, open-source tooling, and related topics."
+        }
+        h2 { id: "what-data-we-collect",
+            a { href: "#what-data-we-collect", class: "header", "What Data We Collect" }
+        }
+        p {
+            strong { "We do not collect personal data directly." }
+            " This is a static-ish blog with no login, no comments, and no data entry forms beyond an optional newsletter subscription."
+        }
+        p { "The following data may be collected by third-party systems:" }
+        ul {
+            li {
+                strong { "Hosting / CDN" }
+                ": Server logs may capture anonymized IP addresses and request metadata (user agent, page URL, timestamp) for performance and abuse protection purposes. These are not linked to individuals."
+            }
+            li {
+                strong { "Analytics" }
+                " (if enabled): We may use privacy-respecting, cookieless analytics tools to understand aggregate traffic patterns. No personally identifiable information is collected by these tools."
+            }
+        }
+        h2 { id: "cookies",
+            a { href: "#cookies", class: "header", "Cookies" }
+        }
+        p {
+            "This website does not use tracking cookies. A  "
+            code { "localStorage" }
+            " entry may be written to save your light/dark theme preference. This stays on your device and is never sent to any server."
+        }
+        h2 { id: "third-party-links",
+            a { href: "#third-party-links", class: "header", "Third-Party Links" }
+        }
+        p {
+            "This blog links to GitHub, crates.io, PyPI, npm, dev.to, and other external services. We are not responsible for the privacy practices of those platforms."
+        }
+        h2 { id: "content-attribution",
+            a { href: "#content-attribution", class: "header", "Content Attribution" }
+        }
+        p {
+            "This blog occasionally uses AI language models (such as Claude, Gemini, or GPT) to assist in drafting or reviewing content. Human authors are responsible for all published content; all facts are cross-checked."
+        }
+        h2 { id: "changes-to-this-policy",
+            a { href: "#changes-to-this-policy", class: "header", "Changes to This Policy" }
+        }
+        p {
+            "We may update this policy as the blog evolves. The \"last updated\" date at the top of this page reflects the most recent revision."
+        }
+        h2 { id: "contact",
+            a { href: "#contact", class: "header", "Contact" }
+        }
+        p {
+            "Questions? Concerns? Fan mail? Send them to: "
+            strong { "oss@wiseai.dev" }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn TermsOfService() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        h1 { id: "terms-of-service",
+            a { href: "#terms-of-service", class: "header", "Terms of Service" }
+        }
+        p {
+            strong { "Last updated: September 19, 2026" }
+        }
+        h2 { id: "acceptance-of-terms",
+            a { href: "#acceptance-of-terms", class: "header", "Acceptance of Terms" }
+        }
+        p {
+            "By accessing  "
+            code { "wiseai.dev" }
+            " (the \"Blog\"), you agree to these Terms of Service. If you do not agree, please stop reading, though we'd prefer you stayed, because the content is quite good."
+        }
+        h2 { id: "what-this-service-provides",
+            a { href: "#what-this-service-provides", class: "header", "What This Service Provides" }
+        }
+        p { "This Blog provides:" }
+        ul {
+            li {
+                "Technical writing on Rust, Python, open-source software, AI research, philosophy, and related topics"
+            }
+            li { "Open-source project announcements and documentation" }
+            li {
+                "Opinions and analysis on technology and the future, written by humans (sometimes with AI assistance)"
+            }
+        }
+        h2 { id: "what-this-service-does-not-provide",
+            a { href: "#what-this-service-does-not-provide", class: "header",
+                "What This Service Does Not Provide"
+            }
+        }
+        ul {
+            li { "Legal advice" }
+            li { "Financial advice" }
+            li { "Medical advice" }
+            li { "Predictions about GPU prices" }
+            li {
+                "Guarantees that any benchmark numbers will apply to your specific hardware configuration"
+            }
+        }
+        h2 { id: "content-license",
+            a { href: "#content-license", class: "header", "Content License" }
+        }
+        p {
+            "All original written content on this Blog is the intellectual property of Mahmoud Harmouch unless otherwise stated. You are welcome to:"
+        }
+        ul {
+            li { "Share links to posts" }
+            li { "Quote excerpts with attribution" }
+            li { "Reproduce content with explicit written permission" }
+        }
+        p {
+            "You may "
+            strong { "not" }
+            " reproduce entire posts without permission, sell content, or claim it as your own."
+        }
+        h2 { id: "ai-assisted-content",
+            a { href: "#ai-assisted-content", class: "header", "AI-Assisted Content" }
+        }
+        p {
+            "Some posts on this Blog are written with assistance from AI language models (Claude, Gemini, GPT, or similar). All AI-assisted posts are labeled as such. The core ideas, analysis, and conclusions in every post are human-authored."
+        }
+        h2 { id: "open-source-code",
+            a { href: "#open-source-code", class: "header", "Open Source Code" }
+        }
+        p {
+            "Code snippets published on this Blog follow the MIT license unless otherwise specified. The linked open-source repositories have their own licenses, check the repository  "
+            code { "LICENSE" }
+            " file."
+        }
+        h2 { id: "accuracy-and-liability",
+            a { href: "#accuracy-and-liability", class: "header", "Accuracy and Liability" }
+        }
+        p { "We make reasonable efforts to ensure all technical information is accurate. However:" }
+        ul {
+            li { "Benchmarks are environment-specific. Your numbers will vary." }
+            li { "Software APIs change. Information may be out of date." }
+            li { "We accept no liability for any damage resulting from following advice in this Blog." }
+        }
+        p { "Always test in a safe environment before applying anything to production." }
+        h2 { id: "external-links",
+            a { href: "#external-links", class: "header", "External Links" }
+        }
+        p {
+            "Links to external services (GitHub, crates.io, dev.to, etc.) are provided for convenience. We are not responsible for the content or availability of those sites."
+        }
+        h2 { id: "governing-law",
+            a { href: "#governing-law", class: "header", "Governing Law" }
+        }
+        p {
+            "These terms are governed by the laws applicable in the author's jurisdiction, to the extent permitted."
+        }
+        h2 { id: "changes",
+            a { href: "#changes", class: "header", "Changes" }
+        }
+        p {
+            "We may update these terms. The \"last updated\" date reflects the most recent revision. Continued use of the Blog constitutes acceptance of any changes."
+        }
+        h2 { id: "contact",
+            a { href: "#contact", class: "header", "Contact" }
+        }
+        p {
+            "For any questions or legal inquiries: "
+            strong { "oss@wiseai.dev" }
         }
     }
 }

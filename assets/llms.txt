@@ -40,6 +40,10 @@ Wise AI is a research and engineering blog focused on building advanced AI syste
 - [Life On Earth is 100% AI Generated Slop.](https://wiseai.dev/blogs/life-on-earth-is-100-ai-generated-slop)
 - [Jesus Was Right. You Are God and Infinite.](https://wiseai.dev/blogs/jesus-was-right-you-are-god-and-infinite)
 - [I Built a Version Bump Tool in Rust That Is 10,000x Faster Than Its Python Counterparts](https://wiseai.dev/blogs/i-built-a-version-bump-tool-in-rust-that-is-10000x-faster-than-its-python-counterparts)
+- [I Optimized My Bump Version Tool and Made It 1,000,000x Faster Than Its Python Counterparts](https://wiseai.dev/blogs/i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts)
+- [Frozendict: State of the Art Immutable Hashmap](https://wiseai.dev/blogs/frozendict-state-of-the-art-immutable-hashmap)
+- [Privacy Policy](https://wiseai.dev/blogs/privacy-policy)
+- [Terms of Service](https://wiseai.dev/blogs/terms-of-service)
 
 ## License
 

@@ -1,6 +1,6 @@
 > Hello again, fellow Rustaceans, Pythonistas in denial, and the three people on earth who genuinely enjoy reading version bumper release notes 👋!
 
-If you were here for my last post, where I rewrote [`bump2version`](https://github.com/c4urself/bump2version) in Rust and declared it **~10,000x faster** than the Python CLI, you may recall that I ended it with a vague threat about future benchmarks. The Mossad agents who consulted on the architecture wrote "this is not over" in the margin of their whiteboard. I ignored it.
+If you were here for my last post, where I rewrote [`bump2version`](https://github.com/c4urself/bump2version) in Rust and declared it **\~10,000x faster** than the Python CLI, you may recall that I ended it with a vague threat about future benchmarks. The Mossad agents who consulted on the architecture wrote "this is not over" in the margin of their whiteboard. I ignored it.
 
 I should have listened.
 
@@ -62,12 +62,12 @@ Now let's look at the real numbers.
 
 | Operation                        | `bump2version` `0.2.0` | `bump2version` `0.2.1` | Python pyO3 FFI | `bump-my-version` CLI |
 | -------------------------------- | ---------------------- | ---------------------- | --------------- | --------------------- |
-| Parse + bump + serialize         | ~57 µs                 | **~0.4 µs**            | ~79 µs          | ~585 ms               |
-| File search/replace (1k lines)   | ~65 µs                 | **~11 µs**             | ~1.7 µs         | ~590 ms               |
-| File search/replace (100k lines) | ~4.2 ms                | **~0.9 ms**            | N/A             | ~600 ms               |
-| Config file parse                | ~800 µs                | **~140 µs**            | N/A             | ~500 ms (on import)   |
+| Parse + bump + serialize         | \~57 µs                | **\~0.4 µs**           | \~79 µs         | \~585 ms              |
+| File search/replace (1k lines)   | \~65 µs                | **\~11 µs**            | \~1.7 µs        | \~590 ms              |
+| File search/replace (100k lines) | \~4.2 ms               | **\~0.9 ms**           | N/A             | \~600 ms              |
+| Config file parse                | \~800 µs               | **\~140 µs**           | N/A             | \~500 ms (on import)  |
 
-Versus the Python CLI subprocess: ((500 x 1000) ÷ 0.4) = **~1,250,000×** faster for a version parse-bump-serialize. We round down to 1,000,000x for humility. The Mossad agents said rounding up was acceptable. We preferred honesty.
+Versus the Python CLI subprocess: ((500 x 1000) ÷ 0.4) = **\~1,250,000×** faster for a version parse-bump-serialize. We round down to 1,000,000x for humility. The Mossad agents said rounding up was acceptable. We preferred honesty.
 
 ### What got fast and why:
 
@@ -370,7 +370,7 @@ pip install bump-rs
 
 ```python
 from bump_rs import bump_version
-print(bump_version("1.2.3", "major"))  # "2.0.0" in ~57µs
+print(bump_version("1.2.3", "major"))  # "2.0.0" in \~57µs
 ```
 
 ### Node.js

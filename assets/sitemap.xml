@@ -131,4 +131,22 @@
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://wiseai.dev/blogs/i-optimized-my-bump-version-tool-and-made-it-1000000x-faster-than-its-python-counterparts</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://wiseai.dev/blogs/frozendict-state-of-the-art-immutable-hashmap</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://wiseai.dev/blogs/privacy-policy</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wiseai.dev/blogs/terms-of-service</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>

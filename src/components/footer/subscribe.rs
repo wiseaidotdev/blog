@@ -19,33 +19,33 @@ pub fn SubscribeForm(props: SubscribeFormProps) -> Element {
     };
 
     rsx! {
-        div {
-            class: "flex flex-col gap-[25px] w-full md:w-[250px]",
+        // div {
+        //     class: "flex flex-col gap-[25px] w-full md:w-[250px]",
 
-            h3 {
-                class: format!("font-['Lexend'] text-[30px] font-bold uppercase {}", title_color),
-                "Subscribe"
-            }
+        //     h3 {
+        //         class: format!("font-['Lexend'] text-[30px] font-bold uppercase {}", title_color),
+        //         "Subscribe"
+        //     }
 
-            form {
-                class: "flex gap-2",
-                onsubmit: |evt: Event<FormData>| { evt.prevent_default(); },
+        //     form {
+        //         class: "flex gap-2",
+        //         onsubmit: |evt: Event<FormData>| { evt.prevent_default(); },
 
-                input {
-                    r#type: "email",
-                    class: "{input_class}",
-                    placeholder: "Enter your email",
-                    aria_label: "Enter your email",
-                }
+        //         input {
+        //             r#type: "email",
+        //             class: "{input_class}",
+        //             placeholder: "Enter your email",
+        //             aria_label: "Enter your email",
+        //         }
 
-                button {
-                    r#type: "submit",
-                    class: "px-4 py-2 rounded-lg bg-green-600 text-white font-semibold text-sm hover:bg-green-700 transition-colors duration-200 shrink-0",
-                    aria_label: "Subscribe",
-                    title: "Subscribe",
-                    i { class: "fa-solid fa-paper-plane", aria_hidden: "true" }
-                }
-            }
-        }
+        //         button {
+        //             r#type: "submit",
+        //             class: "px-4 py-2 rounded-lg bg-green-600 text-white font-semibold text-sm hover:bg-green-700 transition-colors duration-200 shrink-0",
+        //             aria_label: "Subscribe",
+        //             title: "Subscribe",
+        //             i { class: "fa-solid fa-paper-plane", aria_hidden: "true" }
+        //         }
+        //     }
+        // }
     }
 }
