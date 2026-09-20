@@ -59,3 +59,5 @@
 - [ 29 |---| Privacy Policy |---| legal |---| privacy-policy |---| Sep 19 2026 |---| Privacy Policy for wiseai.dev |---| assets/images/banner_post_1.webp |---| |---| ](privacy-policy.md)
 
 - [ 30 |---| Terms of Service |---| legal |---| terms-of-service |---| Sep 19 2026 |---| Terms of Service for wiseai.dev |---| assets/images/banner_post_1.webp |---| |---| ](terms-of-service.md)
+
+- [ 31 |---| I Resurrected a Dead CRC Crate and It Suddenly Went Viral |---| tech |---| i-resurrected-a-dead-crc-crate-and-it-suddenly-went-viral |---| Sep 20 2026 |---| I resurrected a rust crate with slicing-by-16 tables, no_std support, build-time proc-macro codegen, Python & Node.js bindings. |---| assets/images/banner_post_31.webp |---| https://dev.to/wiseai/i-resurrected-a-dead-crc-crate-and-it-suddenly-went-viral-19c1 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/i-resurrected-a-dead-crc-crate-and-it-suddenly-went-viral.md](i-resurrected-a-dead-crc-crate-and-it-suddenly-went-viral.md)

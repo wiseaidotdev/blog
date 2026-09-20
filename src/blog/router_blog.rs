@@ -74,6 +74,8 @@ pub enum BookRoute {
     PrivacyPolicy {},
     #[route("/terms-of-service")]
     TermsOfService {},
+    #[route("/i-resurrected-a-dead-crc-crate-and-it-suddenly-went-viral")]
+    IResurrectedADeadCrcCrateAndItSuddenlyWentViral {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -164,6 +166,9 @@ impl BookRoute {
             }
             BookRoute::PrivacyPolicy {} => use_mdbook::mdbook_shared::PageId(28usize),
             BookRoute::TermsOfService {} => use_mdbook::mdbook_shared::PageId(29usize),
+            BookRoute::IResurrectedADeadCrcCrateAndItSuddenlyWentViral {} => {
+                use_mdbook::mdbook_shared::PageId(30usize)
+            }
         }
     }
 }
@@ -2459,6 +2464,102 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::TermsOfService {},
             ::use_mdbook::mdbook_shared::PageId(29usize),
         );
+        pages
+            .push((
+                30usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 31 |---| I Resurrected a Dead CRC Crate and It Suddenly Went Viral |---| tech |---| i-resurrected-a-dead-crc-crate-and-it-suddenly-went-viral |---| Sep 20 2026 |---| I resurrected a rust crate with slicing-by-16 tables, no_std support, build-time proc-macro codegen, Python & Node.js bindings. |---| assets/images/banner_post_31.webp |---| https://dev.to/wiseai/i-resurrected-a-dead-crc-crate-and-it-suddenly-went-viral-19c1 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/i-resurrected-a-dead-crc-crate-and-it-suddenly-went-viral.md"
+                            .to_string(),
+                        url: BookRoute::IResurrectedADeadCrcCrateAndItSuddenlyWentViral {
+                        },
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Wait, What Even Is CRC-32?".to_string(),
+                                id: "wait,-what-even-is-crc-32?".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Architecture".to_string(),
+                                id: "the-architecture".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Magic Trick".to_string(),
+                                id: "the-magic-trick".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The 4 Speeds of CRC-32".to_string(),
+                                id: "the-4-speeds-of-crc-32".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Cross-Library Reality Check".to_string(),
+                                id: "the-cross-library-reality-check".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Python Bindings".to_string(),
+                                id: "python-bindings".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Rust for Python Developers".to_string(),
+                                id: "rust-for-python-developers".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: ": Ferris Goes Embedded".to_string(),
+                                id: ":-ferris-goes-embedded".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Safety".to_string(),
+                                id: "safety".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Getting Started".to_string(),
+                                id: "getting-started".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Rust".to_string(),
+                                id: "rust".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Python".to_string(),
+                                id: "python".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Node.js".to_string(),
+                                id: "node.js".to_string(),
+                                level: 3usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What's Next".to_string(),
+                                id: "what's-next".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Closing Thoughts".to_string(),
+                                id: "closing-thoughts".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(30usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::IResurrectedADeadCrcCrateAndItSuddenlyWentViral {},
+            ::use_mdbook::mdbook_shared::PageId(30usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -2740,6 +2841,15 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         location: Some(BookRoute::TermsOfService {}),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![30u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 31 |---| I Resurrected a Dead CRC Crate and It Suddenly Went Viral |---| tech |---| i-resurrected-a-dead-crc-crate-and-it-suddenly-went-viral |---| Sep 20 2026 |---| I resurrected a rust crate with slicing-by-16 tables, no_std support, build-time proc-macro codegen, Python & Node.js bindings. |---| assets/images/banner_post_31.webp |---| https://dev.to/wiseai/i-resurrected-a-dead-crc-crate-and-it-suddenly-went-viral-19c1 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/i-resurrected-a-dead-crc-crate-and-it-suddenly-went-viral.md"
+                            .to_string(),
+                        location: Some(BookRoute::IResurrectedADeadCrcCrateAndItSuddenlyWentViral {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![31u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -13828,6 +13938,782 @@ pub fn TermsOfService() -> dioxus::prelude::Element {
         p {
             "For any questions or legal inquiries: "
             strong { "oss@wiseai.dev" }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn IResurrectedADeadCrcCrateAndItSuddenlyWentViral() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        blockquote {
+            p { "Bonjour 👋!" }
+        }
+        p {
+            "So there I was, browsing "
+            a { href: "https://crates.io", "crates.io" }
+            " at an hour that most reasonable people would describe as \"the middle of the night\", doing what all emotionally stable developers do at that hour: auditing dead Rust crates for signs of life."
+        }
+        p {
+            "That's when I found "
+            a { href: "https://crates.io/crates/crc32",
+                code { "crc32" }
+            }
+            "."
+        }
+        p {
+            "Not  "
+            code { "crc32fast" }
+            ". Not  "
+            code { "crc" }
+            ". Not  "
+            code { "crc32c" }
+            ". The original. The stubby, ancient,  "
+            code { "crc32" }
+            " crate. Last published in 2015. No changelog. No CI. A  "
+            code { "Cargo.toml" }
+            " that predates most of the stable Rust syntax I use daily. And sitting there, abandoned and unloved."
+        }
+        p {
+            "People were using this thing. Were probably "
+            em { "shipping" }
+            " software with it in their dependency tree. They just didn't know how to reach the crate maintainer, who had apparently retired to a cabin in the woods with no internet access sometime around when Rust 1.0 was announced."
+        }
+        p { "I stared at those download numbers for thirty seconds." }
+        p {
+            "Then I did what any emotionally stable rustacean would do: I resurrected it. From the ashes. In modern Rust. With  "
+            code { "no_std" }
+            ". With Python bindings. With a build-time proc-macro codegen crate. With CI/CD, Debian packaging, RPM packaging, and a Ferris logo."
+        }
+        p { "You know. Normal stuff." }
+        p {
+            img {
+                src: asset!("assets/images/meme-18.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "shipping Ferris to production",
+                title: "",
+            }
+        }
+        h2 { id: "wait-what-even-is-crc-32",
+            a { href: "#wait-what-even-is-crc-32", class: "header", "Wait, What Even Is CRC-32?" }
+        }
+        p {
+            "CRC-32 stands for Cyclic Redundancy Check, 32-bit variant. It's the checksum algorithm that:"
+        }
+        ul {
+            li {
+                strong { "ZIP files" }
+                " use to verify archive integrity."
+            }
+            li {
+                strong { "Ethernet frames" }
+                " use to detect bit errors in transmission."
+            }
+            li {
+                strong { "FDDI, PKZIP, PNG" }
+                " and approximately half the binary protocols ever invented also use."
+            }
+            li {
+                "Every "
+                code { "zlib" }
+                " function you've ever called calls internally when you weren't paying attention."
+            }
+        }
+        p {
+            "In other words, CRC-32 is "
+            em { "everywhere" }
+            ". It's the duct tape of data integrity. It's been computing checksums since before most of today's developers were handing in their first homework assignments."
+        }
+        p {
+            "The original Rust  "
+            code { "crc32" }
+            " crate implemented the byte-at-a-time version, the classic, the grandaddy variant. Simple. Correct. Slow as a 56k modem by 2024 standards."
+        }
+        p {
+            "I didn't just port it. I rewrote the whole thing from the zlib source, added slicing-by-4, slicing-by-8, and slicing-by-16 table variants, pulled the table-generation itself into a build-time proc-macro subcrate, added a streaming  "
+            code { "Digest" }
+            ", a GF(2) matrix  "
+            code { "combine" }
+            " function, and shipped the whole thing as a  "
+            code { "no_std" }
+            " library with Python and Node.js bindings."
+        }
+        p {
+            "All in 100% safe Rust. With  "
+            code { "#![forbid(unsafe_code)]" }
+            " at the crate root."
+        }
+        p {
+            "Because anything worth resurrecting is worth resurrecting "
+            em { "properly" }
+            "."
+        }
+        h2 { id: "the-architecture",
+            a { href: "#the-architecture", class: "header", "The Architecture" }
+        }
+        p {
+            "Let me tell you what the original  "
+            code { "crc32" }
+            " crate looked like. It was, essentially:"
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">src</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">lib.rs\n</span><span style=\"color:#f8f8f2;\">src</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">crc32gen.rs\n</span><span style=\"color:#f8f8f2;\">src</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">crc32gen_file.rs</span></pre>\n" }
+        p {
+            "That's it. 3 files. A lookup table, a loop, a bitwise XOR. Beautiful in its simplicity, like a stone hut in a field. Functional. Zero frills. Absolutely not capable of 1 GiB/s throughput."
+        }
+        p {
+            "Here's what  "
+            code { "crc32-v2" }
+            " looks like today:"
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">crc32</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">v2</span><span style=\"color:#f92672;\">/\n</span><span style=\"color:#f8f8f2;\">├── crc32</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">codegen</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">             ← </span><span style=\"background-color:#f92672;color:#f8f8f0;\">proc</span><span style=\"color:#f92672;\">-</span><span style=\"background-color:#f92672;color:#f8f8f0;\">macro</span><span style=\"color:#f8f8f2;\"> subcrate: generates all </span><span style=\"color:#ff80f4;\">17 CRC</span><span style=\"color:#f8f8f2;\"> tables at build time\n</span><span style=\"color:#f8f8f2;\">│   └── src</span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\">lib.rs             ← build.rs calls crc32_codegen::run() → writes to $OUT_DIR\n</span><span style=\"color:#f8f8f2;\">├── src</span><span style=\"color:#f92672;\">/\n</span><span style=\"color:#f8f8f2;\">│   ├── lib.rs                 ← minimal entry point: #![no_std], module declarations, Python </span><span style=\"color:#ff80f4;\">FFI\n</span><span style=\"color:#f8f8f2;\">│   ├── tables.rs              ← </span><span style=\"color:#66d9ef;\">crc32</span><span style=\"color:#f8f8f2;\">() byte</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">at</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">a</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">time baseline\n</span><span style=\"color:#f8f8f2;\">│   ├── byfour.rs              ← crc32_little </span><span style=\"color:#f92672;\">/ </span><span style=\"color:#ff80f4;\">_8 </span><span style=\"color:#f92672;\">/ </span><span style=\"color:#ff80f4;\">_16 </span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\"> crc32_big\n</span><span style=\"color:#f8f8f2;\">│   ├── combine.rs             ← </span><span style=\"color:#66d9ef;\">crc32_combine</span><span style=\"color:#f8f8f2;\">() via </span><span style=\"color:#ff80f4;\">GF</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ff80f4;\">2</span><span style=\"color:#f8f8f2;\">) matrix squaring </span><span style=\"color:#f92672;\">in</span><span style=\"color:#f8f8f2;\"> O(log n)\n</span><span style=\"color:#f8f8f2;\">│   ├── digest.rs              ← streaming Digest with </span><span style=\"color:#66d9ef;\">update</span><span style=\"color:#f8f8f2;\">() </span><span style=\"color:#f92672;\">/ </span><span style=\"color:#66d9ef;\">finalize</span><span style=\"color:#f8f8f2;\">() </span><span style=\"color:#f92672;\">/ </span><span style=\"color:#66d9ef;\">digest</span><span style=\"color:#f8f8f2;\">()\n</span><span style=\"color:#f8f8f2;\">│   └── python.rs              ← PyO3 bindings (gated on feature </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;python&quot; </span><span style=\"color:#f92672;\">+ </span><span style=\"color:#ffee99;\">&quot;std&quot;</span><span style=\"color:#f8f8f2;\">)\n</span><span style=\"color:#f8f8f2;\">├── tests</span><span style=\"color:#f92672;\">/\n</span><span style=\"color:#f8f8f2;\">│   └── byfour.rs              ← </span><span style=\"color:#ff80f4;\">40</span><span style=\"color:#f8f8f2;\"> Rust integration tests\n</span><span style=\"color:#f8f8f2;\">└── python</span><span style=\"color:#f92672;\">/\n</span><span style=\"color:#f8f8f2;\">    └── crc32_rs</span><span style=\"color:#f92672;\">/\n</span><span style=\"color:#f8f8f2;\">        └── __init__.py        ← re</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">exports all symbols from the compiled .so</span></pre>\n",
+        }
+        p {
+            "The stone hut has been converted into a, uh, "
+            em { "well-appointed facility" }
+            "."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-2.webp"),
+                alt: "Before and after the refactor",
+                title: "",
+            }
+        }
+        h2 { id: "the-magic-trick",
+            a { href: "#the-magic-trick", class: "header", "The Magic Trick" }
+        }
+        p { "This is my personal favourite part of the whole project. And possibly the most unhinged." }
+        p {
+            "CRC-32 slicing-by-16 requires 17 lookup tables: one 256-entry big-endian table, and 16 256-entry little-endian tables at different offsets. That's 17 × 256 × 4 = 17,408 bytes of lookup table data that needs to exist at runtime."
+        }
+        p {
+            "The naive way: write the tables by hand and commit 17,000 bytes of constants to git as a  "
+            code { ".rs" }
+            " file."
+        }
+        p {
+            "The normal way: generate them at startup and cache them in a  "
+            code { "static" }
+            "."
+        }
+        p {
+            "The way I did it: proc-macro subcrate ( "
+            code { "crc32-codegen" }
+            ") that is invoked from  "
+            code { "build.rs" }
+            " at compile time, generates all 17 tables using the CRC-32 polynomial arithmetic, writes them to  "
+            code { "$OUT_DIR/crc_tables.rs" }
+            ", and the main crate  "
+            code { "include!" }
+            "s the output. Zero runtime initialization. Zero startup cost. The tables are baked into the binary at link time."
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">[build</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">dependencies]\n</span><span style=\"color:#f8f8f2;\">crc32</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">codegen </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">{{ path </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;crc32-codegen&quot; </span><span style=\"color:#f8f8f2;\">}}</span></pre>\n" }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"font-style:italic;color:#66d9ef;\">fn </span><span style=\"color:#a6e22e;\">main</span><span style=\"color:#f8f8f2;\">() {{\n</span><span style=\"color:#f8f8f2;\">    crc32_codegen::run();\n</span><span style=\"color:#f8f8f2;\">}}</span></pre>\n" }
+        p {
+            "That's the entire  "
+            code { "build.rs" }
+            ". One function call. The codegen crate does all the polynomial math, formats the Rust source, and writes it to disk. The main crate wakes up with all 17 tables pre-computed, pre-verified, and pre-formatted."
+        }
+        p {
+            "This is the kind of thing that inspires either awe or a mildly concerned Slack message from your coworkers. There is no middle ground."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-19.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Ferris generating a lookup table",
+                title: "",
+            }
+        }
+        h2 { id: "the-4-speeds-of-crc-32",
+            a { href: "#the-4-speeds-of-crc-32", class: "header", "The 4 Speeds of CRC-32" }
+        }
+        p {
+            "Let me paint you a picture of what \"slicing-by-N\" actually means, because it's one of those ideas that sounds arcane until you see the numbers and then you can't stop thinking about it."
+        }
+        p { "The classic CRC-32 loop looks like this:" }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">for &amp;</span><span style=\"color:#f8f8f2;\">byte </span><span style=\"color:#f92672;\">in</span><span style=\"color:#f8f8f2;\"> buf {{\n</span><span style=\"color:#f8f8f2;\">    </span><span style=\"font-style:italic;color:#66d9ef;\">let</span><span style=\"color:#f8f8f2;\"> index </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">(crc </span><span style=\"color:#f92672;\">^ </span><span style=\"font-style:italic;color:#66d9ef;\">u32</span><span style=\"color:#f8f8f2;\">::from(byte)) </span><span style=\"color:#f92672;\">&amp; </span><span style=\"color:#ff80f4;\">0xff</span><span style=\"color:#f8f8f2;\">;\n</span><span style=\"color:#f8f8f2;\">    crc </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ff80f4;\">CRC_TABLE</span><span style=\"color:#f8f8f2;\">[</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\">][index </span><span style=\"color:#f92672;\">as </span><span style=\"font-style:italic;color:#66d9ef;\">usize</span><span style=\"color:#f8f8f2;\">] </span><span style=\"color:#f92672;\">^ </span><span style=\"color:#f8f8f2;\">(crc </span><span style=\"color:#f92672;\">&gt;&gt; </span><span style=\"color:#ff80f4;\">8</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"color:#f8f8f2;\">}}</span></pre>\n",
+        }
+        p {
+            "One byte per iteration. One table lookup. On a 1 MiB payload that's 1,048,576 iterations. At "
+        }
+        p {
+            "Slicing-by-4 says: what if we process "
+            em { "four" }
+            " bytes per iteration instead? You pre-compute four separate 256-entry tables (one for each byte offset), and in each step you XOR together four table lookups instead of one. Four bytes per iteration, four table lookups, but modern CPUs can do all four lookups in parallel because there are no data dependencies between them. Result: roughly 2.4× faster."
+        }
+        p {
+            "Slicing-by-8 does the same with eight tables. Slicing-by-16 pushes it to sixteen tables and sixteen bytes per step, letting the CPU's out-of-order execution and instruction-level parallelism do the heavy lifting. With  "
+            code { "#[inline(always)]" }
+            " on the inner fold functions, fat LTO, and  "
+            code { "overflow-checks = false" }
+            " in the bench profile, LLVM sees through all the abstraction and generates machine code that is, frankly, embarrassingly fast for code written entirely in safe Rust."
+        }
+        p { "The full breakdown:" }
+        table {
+            thead {
+                th { "Method" }
+                th { "1 B" }
+                th { "64 B" }
+                th { "1 KiB" }
+                th { "64 KiB" }
+                th { "1 MiB" }
+                th { "Throughput" }
+            }
+            tr {
+                th {
+                    code { "crc32" }
+                    " (byte-at-a-time)"
+                }
+                th { "2 ns" }
+                th { "167 ns" }
+                th { "2,856 ns" }
+                th { "188,134 ns" }
+                th { "2,916,562 ns" }
+                th { "~" }
+            }
+            tr {
+                th {
+                    code { "crc32_little" }
+                    " (slicing-by-4)"
+                }
+                th { "3 ns" }
+                th { "73 ns" }
+                th { "1,086 ns" }
+                th { "82,129 ns" }
+                th { "1,199,953 ns" }
+                th { "~" }
+            }
+            tr {
+                th {
+                    code { "crc32_little_8" }
+                    " (slicing-by-8)"
+                }
+                th { "3 ns" }
+                th { "61 ns" }
+                th { "922 ns" }
+                th { "56,486 ns" }
+                th { "1,004,746 ns" }
+                th { "~" }
+            }
+            tr {
+                th {
+                    strong {
+                        code { "crc32_little_16" }
+                        " (slicing-by-16)"
+                    }
+                    ""
+                }
+                th {
+                    strong { "3 ns" }
+                    ""
+                }
+                th {
+                    strong { "39 ns" }
+                    ""
+                }
+                th {
+                    strong { "753 ns" }
+                    ""
+                }
+                th {
+                    strong { "48,101 ns" }
+                    ""
+                }
+                th {
+                    strong { "781,535 ns" }
+                    ""
+                }
+                th {
+                    strong { "~" }
+                    ""
+                }
+            }
+            tr {
+                th {
+                    code { "crc32fast" }
+                    " (SIMD via "
+                    code { "pclmulqdq" }
+                    ")"
+                }
+                th { "11 ns" }
+                th { "20 ns" }
+                th { "102 ns" }
+                th { "5,802 ns" }
+                th { "89,204 ns" }
+                th { "~" }
+            }
+        }
+        p {
+            code { "crc32_little_16" }
+            " hits "
+            strong { "~" }
+            " on a 1 MiB payload. That's "
+            strong { "3.7× faster than the baseline" }
+            ", without a single SIMD intrinsic, without a single "
+            code { "unsafe" }
+            " block, and without any CPU feature detection. It Just Works on x86-64, ARM, RISC-V, WASM, and whatever exotic architecture you're running this week."
+        }
+        p {
+            "Note that tiny 1-byte payloads still favour the baseline  "
+            code { "crc32" }
+            " (2 ns vs 3 ns) because the slicing variants pay a small alignment prologue overhead. We document this honestly, unlike some people's README files."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-20.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Surprised Ferris",
+                title: "",
+            }
+        }
+        h2 { id: "the-cross-library-reality-check",
+            a { href: "#the-cross-library-reality-check", class: "header",
+                "The Cross-Library Reality Check"
+            }
+        }
+        p {
+            "Look. I know what you're thinking. "
+            em { "\"But crc32fast uses SIMD and does 11 GiB/s. Doesn't that make this pointless?\"" }
+        }
+        p { "No. Here's why." }
+        p {
+            code { "crc32fast" }
+            " is genuinely excellent for x86-64 with  "
+            code { "pclmulqdq" }
+            ". But  "
+            code { "crc32-v2" }
+            " occupies a different niche:"
+        }
+        table {
+            thead {
+                th { "Library" }
+                th { "Method" }
+                th { "Time (1 MiB)" }
+                th { "Throughput" }
+                th { "Type" }
+            }
+            tr {
+                th {
+                    code { "crc32fast" }
+                    ""
+                }
+                th {
+                    code { "hash" }
+                    ""
+                }
+                th { "89,204 ns" }
+                th { "~" }
+                th {
+                    "SIMD ("
+                    code { "pclmulqdq" }
+                    ") / Rust"
+                }
+            }
+            tr {
+                th {
+                    code { "zlib-rs" }
+                    ""
+                }
+                th {
+                    code { "crc32" }
+                    ""
+                }
+                th { "96,968 ns" }
+                th { "~" }
+                th { "SIMD / Rust" }
+            }
+            tr {
+                th {
+                    "Python ("
+                    code { "zlib.crc32" }
+                    ")"
+                }
+                th { "C extension" }
+                th { "355,270 ns" }
+                th { "~" }
+                th { "SIMD / C" }
+            }
+            tr {
+                th {
+                    strong {
+                        code { "crc32-v2" }
+                    }
+                    ""
+                }
+                th {
+                    code { "crc32_little_16" }
+                    ""
+                }
+                th {
+                    strong { "781,535 ns" }
+                    ""
+                }
+                th {
+                    strong { "~" }
+                    ""
+                }
+                th {
+                    strong { "Pure safe Rust" }
+                    ""
+                }
+            }
+            tr {
+                th {
+                    "Python ("
+                    code { "crcmod" }
+                    ")"
+                }
+                th { "C extension" }
+                th { "2,865,836 ns" }
+                th { "~" }
+                th { "Non-SIMD / C" }
+            }
+        }
+        p {
+            code { "crc32fast" }
+            ": amazing.  "
+            code { "zlib-rs" }
+            ": also amazing. Both use runtime SIMD dispatch and  "
+            code { "unsafe" }
+            ". Both don't compile to WASM without special handling. Both don't work in  "
+            code { "no_std" }
+            " environments without a careful dance."
+        }
+        p {
+            code { "crc32-v2" }
+            " compiles everywhere Rust compiles. Embedded RISC-V? Yes.  "
+            code { "wasm32-unknown-unknown" }
+            "? Yes. A microcontroller that needs to verify a firmware checksum before flashing? Yes. A kernel module? With  "
+            code { "#![no_std]" }
+            " and a custom allocator? "
+            em { "Also" }
+            " yes."
+        }
+        p {
+            "When you need 11 GiB/s you use  "
+            code { "crc32fast" }
+            ". When you need something that works anywhere, has zero dependencies outside  "
+            code { "alloc" }
+            ", and is produced by a compiler that will literally refuse to let you write unsafe code: you use  "
+            code { "crc32-v2" }
+            ". There are more situations in the second category than you'd expect."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-21.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "use crc32-v2 davai davai",
+                title: "",
+            }
+        }
+        h2 { id: "python-bindings",
+            a { href: "#python-bindings", class: "header", "Python Bindings" }
+        }
+        p {
+            "Here's a section I am writing in the spirit of radical honesty. Shipping Python bindings for a Rust library requires configuring:"
+        }
+        ul {
+            li {
+                code { "maturin" }
+                " (the build tool)"
+            }
+            li {
+                code { "pyo3" }
+                " (the FFI framework)"
+            }
+            li {
+                code { "pyproject.toml" }
+                " (the Python packaging config)"
+            }
+            li {
+                "A "
+                code { "python/crc32_rs/__init__.py" }
+                " that re-exports from the compiled "
+                code { ".so" }
+            }
+            li {
+                "The "
+                code { "module-name" }
+                " field in "
+                code { "pyproject.toml" }
+                " matching the "
+                code { "#[pymodule]" }
+                " name in Rust"
+            }
+        }
+        p { "If any one of these four things is even slightly wrong, Python greets you with:" }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">ModuleNotFoundError: No module named </span><span style=\"color:#f92672;\">&#39;</span><span style=\"color:#f8f8f2;\">crc32_rs</span><span style=\"color:#f92672;\">&#39;</span></pre>\n" }
+        p {
+            "Not a helpful error. Not  "
+            code { "\"the module-name in pyproject.toml doesn't match the pymodule attribute\"" }
+            ". Just: it doesn't exist. Good luck."
+        }
+        p {
+            "I went through approximately four rounds of this before getting it right. The root cause was a mismatch between  "
+            code { "module-name = \"crc32_v2._crc32_v2\"" }
+            " (incorrect) and  "
+            code { "module-name = \"crc32_rs._crc32_v2\"" }
+            " (correct). One underscore in the wrong namespace and Python acts as if the entire compiled extension simply does not exist in this universe."
+        }
+        p { "The fix took three characters. The investigation took forty-five minutes." }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">&gt;&gt;&gt;</span><span style=\"color:#f8f8f2;\"> from crc32_rs import crc32, crc32_little_16, crc32_bytes, crc32_hex, Digest\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt; </span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">hex</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">crc32</span><span style=\"color:#f8f8f2;\">(</span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;Hello, world!&quot;</span><span style=\"color:#f8f8f2;\">)))\n</span><span style=\"color:#ff80f4;\">0xebe6c6e6\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt; </span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">hex</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">crc32_little_16</span><span style=\"color:#f8f8f2;\">(</span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;Hello, world!&quot;</span><span style=\"color:#f8f8f2;\">)))\n</span><span style=\"color:#ff80f4;\">0xebe6c6e6\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt; </span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">crc32_bytes</span><span style=\"color:#f8f8f2;\">(</span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;Hello, world!&quot;</span><span style=\"color:#f8f8f2;\">).</span><span style=\"color:#66d9ef;\">hex</span><span style=\"color:#f8f8f2;\">())\n</span><span style=\"color:#f8f8f2;\">ebe6c6e6\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt; </span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">crc32_hex</span><span style=\"color:#f8f8f2;\">(</span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;Hello, world!&quot;</span><span style=\"color:#f8f8f2;\">))\n</span><span style=\"color:#f8f8f2;\">ebe6c6e6\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;</span><span style=\"color:#f8f8f2;\"> d </span><span style=\"color:#f92672;\">=</span><span style=\"color:#f8f8f2;\"> Digest()\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;</span><span style=\"color:#f8f8f2;\"> d.</span><span style=\"color:#66d9ef;\">update</span><span style=\"color:#f8f8f2;\">(</span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;Hello, &quot;</span><span style=\"color:#f8f8f2;\">)\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;</span><span style=\"color:#f8f8f2;\"> d.</span><span style=\"color:#66d9ef;\">update</span><span style=\"color:#f8f8f2;\">(</span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;world!&quot;</span><span style=\"color:#f8f8f2;\">)\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt; </span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">hex</span><span style=\"color:#f8f8f2;\">(d.</span><span style=\"color:#66d9ef;\">finalize</span><span style=\"color:#f8f8f2;\">()))\n</span><span style=\"color:#ff80f4;\">0xebe6c6e6\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt; </span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">repr</span><span style=\"color:#f8f8f2;\">(d))\n</span><span style=\"color:#f8f8f2;\">Digest(crc</span><span style=\"color:#f92672;\">=</span><span style=\"color:#ff80f4;\">0xEBE6C6E6</span><span style=\"color:#f8f8f2;\">)</span></pre>\n",
+        }
+        p {
+            "Now it works. The Python interpreter is stuffed. We do not speak of the forty-five minutes."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-22.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "same same",
+                title: "",
+            }
+        }
+        h2 { id: "rust-for-python-developers",
+            a { href: "#rust-for-python-developers", class: "header", "Rust for Python Developers" }
+        }
+        p {
+            "Let's talk about something that the throughput benchmarks don't fully capture: what happens to performance when you're computing CRC-32 on "
+            em { "tiny" }
+            " payloads? Like, really tiny. 1 byte tiny."
+        }
+        p {
+            "The issue with Python's "
+            a { href: "https://docs.python.org/3/library/zlib.html#zlib.crc32",
+                code { "zlib.crc32" }
+            }
+            " is not that it's slow for large inputs, it delegates to SIMD C code under the hood and handles 1 MiB payloads at 2,815 MiB/s, which is genuinely fast. The issue is that every Python function call carries "
+        }
+        table {
+            thead {
+                th { "Payload" }
+                th {
+                    "Python "
+                    code { "zlib.crc32" }
+                    ""
+                }
+                th {
+                    "Rust "
+                    code { "crc32-v2" }
+                    ""
+                }
+                th { "Speedup" }
+            }
+            tr {
+                th { "1 B" }
+                th { "~" }
+                th { "~" }
+                th {
+                    strong { "~" }
+                    ""
+                }
+            }
+            tr {
+                th { "64 B" }
+                th { "~" }
+                th { "~" }
+                th {
+                    strong { "~" }
+                    ""
+                }
+            }
+        }
+        p {
+            "148 times faster on a single byte. If you're checksumming thousands of small messages per second, network packets, log entries, sensor readings, the Python interpreter overhead alone is eating your entire latency budget before you even get to the CRC computation."
+        }
+        p {
+            "Moving the loop into Rust and calling Python once at the end is not premature optimisation. It is the correct architectural decision.  "
+            code { "crc32-v2" }
+            " makes that decision easier to implement."
+        }
+        h2 { id: "",
+            a { href: "#", class: "header", "" }
+            code { "no_std" }
+            ": Ferris Goes Embedded"
+        }
+        p {
+            "This was the part I underestimated most. Adding  "
+            code { "no_std" }
+            " support sounds simple: slap  "
+            code { "#![cfg_attr(not(feature = \"std\"), no_std)]" }
+            " on the library, add  "
+            code { "extern crate alloc" }
+            ", and done."
+        }
+        p {
+            "And then you build the  "
+            code { "cdylib" }
+            " target without  "
+            code { "std" }
+            " features and discover that a dynamic library needs a panic handler and a global allocator, because without  "
+            code { "std" }
+            ", the linker has no idea what to do when you panic, and with no allocator it has equally no idea what to do when something tries to allocate."
+        }
+        p {
+            "The fix requires a dummy allocator implemention that satisfies the  "
+            code { "GlobalAlloc" }
+            " trait contract just enough to let the linker stop complaining:"
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Features that gate the standard library\n</span><span style=\"color:#f8f8f2;\">[features]\n</span><span style=\"color:#f8f8f2;\">default </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">[</span><span style=\"color:#ffee99;\">&quot;std&quot;</span><span style=\"color:#f8f8f2;\">]\n</span><span style=\"color:#f8f8f2;\">std </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">[]\n</span><span style=\"color:#f8f8f2;\">python </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">[</span><span style=\"color:#ffee99;\">&quot;pyo3&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;std&quot;</span><span style=\"color:#f8f8f2;\">]    </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Python bindings require std\n</span><span style=\"color:#f8f8f2;\">node </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">[</span><span style=\"color:#ffee99;\">&quot;napi&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;napi-derive&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;napi-build&quot;</span><span style=\"color:#f8f8f2;\">, </span><span style=\"color:#ffee99;\">&quot;std&quot;</span><span style=\"color:#f8f8f2;\">]  </span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> Node.js too</span></pre>\n",
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">#![cfg_attr(not(feature </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;std&quot;</span><span style=\"color:#f8f8f2;\">), no_std)]\n</span><span style=\"color:#f92672;\">extern crate</span><span style=\"color:#f8f8f2;\"> alloc;</span></pre>\n" }
+        p {
+            "And  "
+            code { "panic = \"abort\"" }
+            " in  "
+            code { "[profile.dev]" }
+            " so that the  "
+            code { "no_std" }
+            " cdylib doesn't try to set up unwinding infrastructure that doesn't exist."
+        }
+        p {
+            "Result:  "
+            code { "cargo build --no-default-features" }
+            " completes successfully. Ferris is now embeddable. The microcontroller community rejoices."
+        }
+        h2 { id: "safety",
+            a { href: "#safety", class: "header", "Safety" }
+        }
+        p {
+            code { "#![forbid(unsafe_code)]" }
+            " is enforced at the crate root. This is a compiler directive that physically prevents any  "
+            code { "unsafe" }
+            " block from being compiled into the library."
+        }
+        p {
+            "The borrow checker, like a very particular building inspector, will reject your PR on first principles if you try to introduce  "
+            code { "unsafe" }
+            " into the slicing loops, the GF(2) matrix arithmetic, the streaming  "
+            code { "Digest" }
+            ", or the codegen subcrate. You can argue with it. You can find workarounds. The borrow checker does not care. It has seen your workarounds and it finds them unconvincing."
+        }
+        p {
+            "The only  "
+            code { "unsafe" }
+            " surface is the Python FFI layer's dummy allocator stub needed for bare-metal builds, and this is isolated, cfg-gated, and documented. The rest of the crate is provably safe at compile time."
+        }
+        p {
+            "This means you can use  "
+            code { "crc32-v2" }
+            " in environments where one  "
+            code { "unsafe" }
+            " bug could corrupt a firmware image, crash a file server, or cause a network device to accept invalid data. The compiler provides the guarantee. Not the tests. Not the code review. The "
+            em { "compiler" }
+            "."
+        }
+        h2 { id: "getting-started",
+            a { href: "#getting-started", class: "header", "Getting Started" }
+        }
+        h3 { id: "rust",
+            a { href: "#rust", class: "header", "Rust" }
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">[dependencies]\n</span><span style=\"color:#f8f8f2;\">crc32</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">v2 </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;0.2.0&quot;\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> For embedded </span><span style=\"color:#f92672;\">/</span><span style=\"color:#f8f8f2;\"> no_std:\n</span><span style=\"color:#f92672;\">#</span><span style=\"color:#f8f8f2;\"> crc32</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">v2 </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">{{ version </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ffee99;\">&quot;0.2.0&quot;</span><span style=\"color:#f8f8f2;\">, default</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">features </span><span style=\"color:#f92672;\">= </span><span style=\"color:#ff80f4;\">false </span><span style=\"color:#f8f8f2;\">}}</span></pre>\n",
+        }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">use </span><span style=\"color:#f8f8f2;\">crc32_v2::{{crc32, crc32_combine, byfour::crc32_little_16, Digest}};\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#8c8c8c;\">// One-shot\n</span><span style=\"color:#f8f8f2;\">assert_eq!(</span><span style=\"color:#66d9ef;\">crc32</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\">, </span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;123456789&quot;</span><span style=\"color:#f8f8f2;\">), </span><span style=\"color:#ff80f4;\">0xCBF43926</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#8c8c8c;\">// Fastest pure-software path (~1,282 MiB/s)\n</span><span style=\"color:#f8f8f2;\">assert_eq!(</span><span style=\"color:#66d9ef;\">crc32_little_16</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\">, </span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;Hello, world!&quot;</span><span style=\"color:#f8f8f2;\">), </span><span style=\"color:#ff80f4;\">0xEBE6_C6E6</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#8c8c8c;\">// Streaming\n</span><span style=\"font-style:italic;color:#66d9ef;\">let </span><span style=\"color:#f92672;\">mut</span><span style=\"color:#f8f8f2;\"> d </span><span style=\"color:#f92672;\">= </span><span style=\"color:#f8f8f2;\">Digest::new();\n</span><span style=\"color:#f8f8f2;\">d.</span><span style=\"color:#66d9ef;\">update</span><span style=\"color:#f8f8f2;\">(</span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;Hello, &quot;</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"color:#f8f8f2;\">d.</span><span style=\"color:#66d9ef;\">update</span><span style=\"color:#f8f8f2;\">(</span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;world!&quot;</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"color:#f8f8f2;\">assert_eq!(d.</span><span style=\"color:#66d9ef;\">finalize</span><span style=\"color:#f8f8f2;\">(), </span><span style=\"color:#ff80f4;\">0xEBE6_C6E6</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#8c8c8c;\">// Combine two independently-computed CRCs (O(log n) via GF(2) matrix squaring)\n</span><span style=\"font-style:italic;color:#66d9ef;\">let</span><span style=\"color:#f8f8f2;\"> c1 </span><span style=\"color:#f92672;\">= </span><span style=\"color:#66d9ef;\">crc32</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\">, </span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;Hello, &quot;</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"font-style:italic;color:#66d9ef;\">let</span><span style=\"color:#f8f8f2;\"> c2 </span><span style=\"color:#f92672;\">= </span><span style=\"color:#66d9ef;\">crc32</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\">, </span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;world!&quot;</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"color:#f8f8f2;\">assert_eq!(</span><span style=\"color:#66d9ef;\">crc32_combine</span><span style=\"color:#f8f8f2;\">(c1, c2, </span><span style=\"color:#ff80f4;\">6</span><span style=\"color:#f8f8f2;\">), </span><span style=\"color:#66d9ef;\">crc32</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ff80f4;\">0</span><span style=\"color:#f8f8f2;\">, </span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;Hello, world!&quot;</span><span style=\"color:#f8f8f2;\">));</span></pre>\n",
+        }
+        h3 { id: "python",
+            a { href: "#python", class: "header", "Python" }
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">pip install crc32</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">rs</span></pre>\n" }
+        CodeBlock {
+            contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f92672;\">&gt;&gt;&gt;</span><span style=\"color:#f8f8f2;\"> from crc32_rs import crc32, crc32_little_16, crc32_bytes, crc32_hex, Digest\n</span><span style=\"color:#f8f8f2;\">\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt;</span><span style=\"color:#f8f8f2;\"> assert </span><span style=\"color:#66d9ef;\">hex</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">crc32</span><span style=\"color:#f8f8f2;\">(</span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;123456789&quot;</span><span style=\"color:#f8f8f2;\">)) </span><span style=\"color:#f92672;\">== </span><span style=\"color:#ffee99;\">&quot;0xcbf43926&quot;\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt; #</span><span style=\"color:#f8f8f2;\"> The correct </span><span style=\"color:#ff80f4;\">CRC</span><span style=\"color:#f92672;\">-</span><span style=\"color:#ff80f4;\">32</span><span style=\"color:#f8f8f2;\"> of </span><span style=\"color:#ffee99;\">&quot;rust_magic&quot;</span><span style=\"color:#f8f8f2;\"> is:\n</span><span style=\"color:#f92672;\">&gt;&gt;&gt; </span><span style=\"color:#66d9ef;\">print</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">hex</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">crc32</span><span style=\"color:#f8f8f2;\">(</span><span style=\"font-style:italic;color:#66d9ef;\">b</span><span style=\"color:#ffee99;\">&quot;rust_magic&quot;</span><span style=\"color:#f8f8f2;\">)))\n</span><span style=\"color:#ff80f4;\">0xa3067d13</span></pre>\n",
+        }
+        h3 { id: "nodejs",
+            a { href: "#nodejs", class: "header", "Node.js" }
+        }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"color:#f8f8f2;\">npm install crc32</span><span style=\"color:#f92672;\">-</span><span style=\"color:#f8f8f2;\">rs</span></pre>\n" }
+        CodeBlock { contents: "<pre style=\"background-color:#0d0d0d;\">\n<span style=\"font-style:italic;color:#66d9ef;\">const </span><span style=\"color:#f8f8f2;\">{{ crc32, crc32Little16 }} </span><span style=\"color:#f92672;\">= </span><span style=\"color:#66d9ef;\">require</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;crc32-rs&quot;</span><span style=\"color:#f8f8f2;\">);\n</span><span style=\"color:#f8f8f2;\">console.</span><span style=\"color:#66d9ef;\">log</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#66d9ef;\">crc32</span><span style=\"color:#f8f8f2;\">(Buffer.</span><span style=\"color:#66d9ef;\">from</span><span style=\"color:#f8f8f2;\">(</span><span style=\"color:#ffee99;\">&quot;Hello, world!&quot;</span><span style=\"color:#f8f8f2;\">)).toString(</span><span style=\"color:#ff80f4;\">16</span><span style=\"color:#f8f8f2;\">)); </span><span style=\"color:#8c8c8c;\">// ebe6c6e6</span></pre>\n" }
+        h2 { id: "whats-next",
+            a { href: "#whats-next", class: "header", "What's Next" }
+        }
+        p {
+            "The crate is at  "
+            code { "0.2.0" }
+            " and functionally complete for its initial scope. The roadmap includes:"
+        }
+        ul {
+            li {
+                strong { "Slicing-by-32" }
+                ": Because if 16 tables give us 3.7× speedup, we're obligated to find out where the speedup curve flattens."
+            }
+            li {
+                strong {
+                    code { "serde" }
+                    " support"
+                }
+                ": Serialize and deserialize "
+                code { "Digest" }
+                " state for resumable streaming checksums."
+            }
+            li {
+                strong { "WASM target" }
+                ": The "
+                code { "no_std" }
+                " foundation is already there. The WASM build should be trivial in theory. \"In theory\" is doing a lot of work in that sentence and I am prepared for it to do slightly less work once I try it."
+            }
+        }
+        h2 { id: "closing-thoughts",
+            a { href: "#closing-thoughts", class: "header", "Closing Thoughts" }
+        }
+        p {
+            code { "crc32-v2" }
+            " started as a resurrection project. Someone wrote  "
+            code { "crc32" }
+            " in 2015, abandoned it, and 9,062 people quietly became dependent on it through their transitive dependency graphs without knowing they were relying on a crate that predated Rust 1.0."
+        }
+        p {
+            "It ended up as something that resurrected the algorithm "
+            em { "and" }
+            " pushed it forward: slicing-by-16 giving 3.7× throughput improvement, build-time table codegen via proc-macro, "
+            code { "no_std" }
+            " compatibility, Python and Node.js bindings, and Ferris the Crab holding a magic wand computing "
+            code { "0xa3067d13" }
+            " in your terminal."
+        }
+        p {
+            "The original  "
+            code { "crc32" }
+            " crate was doing its best with 2015-era Rust. We can do more. We should do more. The 9,062 people who downloaded it deserve more."
+        }
+        blockquote {
+            p {
+                code { "cargo add crc32-v2" }
+                " → compute checksums → sleep well knowing Ferris has you covered 🦀⚡"
+            }
+        }
+        p {
+            "Star "
+            a { href: "https://github.com/wiseaidev/crc32-v2", "the repo" }
+            ", try the "
+            a { href: "https://pypi.org/project/crc32-rs", "Python bindings" }
+            ", install the "
+            a { href: "https://www.npmjs.com/package/crc32-rs", "npm package" }
+            ", or read the "
+            a { href: "https://docs.rs/crc32-v2", "docs" }
+            " if you still have questions."
+        }
+        p {
+            "This has been a public service announcement from someone who looked at a dead Rust crate with 9,062 downloads and thought: "
+            em { "\"Someone should fix this.\"" }
+        }
+        p { "That someone was me. And honestly? It was a great use of my 2AM." }
+        p {
+            img {
+                src: asset!("assets/images/meme-22.png", ImageAssetOptions::new().with_avif()),
+                alt: "same same",
+                title: "",
+            }
+        }
+        p {
+            "Till next time: "
+            em { "Keep the bytes honest. Keep the checksums rolling." }
+            " 🦀🔄"
+        }
+        p {
+            "P.S. The original  "
+            code { "crc32" }
+            " crate maintainer is apparently a Microsoft employee. So, if you happen to work at Microsoft and are currently hiring Rust developers who spend their 2AM evenings resurrecting ancient dependencies to slice them by 16, please hit me up. We can bond over polynomial arithmetic. Thanks for the help "
         }
     }
 }
