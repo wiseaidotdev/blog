@@ -121,8 +121,8 @@ Slicing-by-8 does the same with eight tables. Slicing-by-16 pushes it to sixteen
 
 The full breakdown:
 
-| Method                                |      1 B |      64 B |      1 KiB |        64 KiB |          1 MiB |       Throughput |
-| ------------------------------------- | -------: | --------: | ---------: | ------------: | -------------: | ---------------: |
+| Method                                |      1 B |      64 B |      1 KiB |        64 KiB |          1 MiB |        Throughput |
+| ------------------------------------- | -------: | --------: | ---------: | ------------: | -------------: | ----------------: |
 | `crc32` (byte-at-a-time)              |     2 ns |    167 ns |   2,856 ns |    188,134 ns |   2,916,562 ns |       \~343 MiB/s |
 | `crc32_little` (slicing-by-4)         |     3 ns |     73 ns |   1,086 ns |     82,129 ns |   1,199,953 ns |       \~833 MiB/s |
 | `crc32_little_8` (slicing-by-8)       |     3 ns |     61 ns |     922 ns |     56,486 ns |   1,004,746 ns |     \~1,004 MiB/s |
@@ -143,8 +143,8 @@ No. Here's why.
 
 `crc32fast` is genuinely excellent for x86-64 with `pclmulqdq`. But `crc32-v2` occupies a different niche:
 
-| Library               | Method            |   Time (1 MiB) |       Throughput | Type                      |
-| --------------------- | ----------------- | -------------: | ---------------: | ------------------------- |
+| Library               | Method            |   Time (1 MiB) |        Throughput | Type                      |
+| --------------------- | ----------------- | -------------: | ----------------: | ------------------------- |
 | `crc32fast`           | `hash`            |      89,204 ns |    \~11,300 MiB/s | SIMD (`pclmulqdq`) / Rust |
 | `zlib-rs`             | `crc32`           |      96,968 ns |    \~10,390 MiB/s | SIMD / Rust               |
 | Python (`zlib.crc32`) | C extension       |     355,270 ns |     \~2,815 MiB/s | SIMD / C                  |
@@ -212,10 +212,10 @@ Let's talk about something that the throughput benchmarks don't fully capture: w
 
 The issue with Python's [`zlib.crc32`](https://docs.python.org/3/library/zlib.html#zlib.crc32) is not that it's slow for large inputs, it delegates to SIMD C code under the hood and handles 1 MiB payloads at 2,815 MiB/s, which is genuinely fast. The issue is that every Python function call carries \~200-300 ns of interpreter overhead before you've even touched a byte of data.
 
-| Payload | Python `zlib.crc32` | Rust `crc32-v2` |   Speedup |
-| ------- | ------------------: | --------------: | --------: |
-| 1 B     |             \~297 ns |           \~2 ns | **\~148×** |
-| 64 B    |             \~301 ns |          \~39 ns | **\~7.7×** |
+| Payload | Python `zlib.crc32` | Rust `crc32-v2` |    Speedup |
+| ------- | ------------------: | --------------: | ---------: |
+| 1 B     |            \~297 ns |          \~2 ns | **\~148×** |
+| 64 B    |            \~301 ns |         \~39 ns | **\~7.7×** |
 
 148 times faster on a single byte. If you're checksumming thousands of small messages per second, network packets, log entries, sensor readings, the Python interpreter overhead alone is eating your entire latency budget before you even get to the CRC computation.
 
