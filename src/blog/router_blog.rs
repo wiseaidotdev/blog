@@ -76,6 +76,8 @@ pub enum BookRoute {
     TermsOfService {},
     #[route("/i-resurrected-a-dead-crc-crate-and-it-suddenly-went-viral")]
     IResurrectedADeadCrcCrateAndItSuddenlyWentViral {},
+    #[route("/no-neural-networks-cannot-produce-genuine-autonomous-intelligence")]
+    NoNeuralNetworksCannotProduceGenuineAutonomousIntelligence {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -168,6 +170,9 @@ impl BookRoute {
             BookRoute::TermsOfService {} => use_mdbook::mdbook_shared::PageId(29usize),
             BookRoute::IResurrectedADeadCrcCrateAndItSuddenlyWentViral {} => {
                 use_mdbook::mdbook_shared::PageId(30usize)
+            }
+            BookRoute::NoNeuralNetworksCannotProduceGenuineAutonomousIntelligence {} => {
+                use_mdbook::mdbook_shared::PageId(31usize)
             }
         }
     }
@@ -2560,6 +2565,101 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::IResurrectedADeadCrcCrateAndItSuddenlyWentViral {},
             ::use_mdbook::mdbook_shared::PageId(30usize),
         );
+        pages
+            .push((
+                31usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 32 |---| No, Seriously. Neural Networks Cannot Produce Genuine Intelligence. |---| tech |---| no-neural-networks-cannot-produce-genuine-autonomous-intelligence |---| Oct 11 2026 |---| A direct, unambiguous argument for why neural networks are architecturally incapable of genuine intelligence, regardless of scale, wrappers, or hype. |---| assets/images/banner_post_32.webp |---| https://dev.to/wiseai/no-seriously-neural-networks-cannot-produce-genuine-intelligence-4l39 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/no-neural-networks-cannot-produce-genuine-autonomous-intelligence.md"
+                            .to_string(),
+                        url: BookRoute::NoNeuralNetworksCannotProduceGenuineAutonomousIntelligence {},
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Wait, What Do You Mean By Genuine Intelligence vs Genuine Artificial Intelligence?"
+                                    .to_string(),
+                                id: "wait,-what-do-you-mean-by-genuine-intelligence-vs-genuine-artificial-intelligence?"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "But OpenAI Just Solved Mathematics, So Checkmate?"
+                                    .to_string(),
+                                id: "but-openai-just-solved-mathematics,-so-checkmate?"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "But GPT-N Omega Pro Max++ Vibe-Coded This Entire Game Fully Autonomously?"
+                                    .to_string(),
+                                id: "but-gpt-n-omega-pro-max++-vibe-coded-this-entire-game-fully-autonomously?"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What LLMs Are Actually Doing, and Why It Is Just The Tip of The Iceberg"
+                                    .to_string(),
+                                id: "what-llms-are-actually-doing,-and-why-it-is-just-the-tip-of-the-iceberg"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Autonomy Illusion: How Wrappers Become Worldviews"
+                                    .to_string(),
+                                id: "the-autonomy-illusion:-how-wrappers-become-worldviews"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Research Nobody Wants to Read But Everybody Should"
+                                    .to_string(),
+                                id: "the-research-nobody-wants-to-read-but-everybody-should"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Genuine Intelligence Requires Genuine Grounding, and That Grounding Cannot Be Simulated in Tokens"
+                                    .to_string(),
+                                id: "genuine-intelligence-requires-genuine-grounding,-and-that-grounding-cannot-be-simulated-in-tokens"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "We Do Not Even Know What We Do Not Know, and That Is the Real Problem"
+                                    .to_string(),
+                                id: "we-do-not-even-know-what-we-do-not-know,-and-that-is-the-real-problem"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Would Genuine Autonomous Intelligence Actually Require?"
+                                    .to_string(),
+                                id: "what-would-genuine-autonomous-intelligence-actually-require?"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Where Do We Go From Here, And What Honest Progress Looks Like"
+                                    .to_string(),
+                                id: "where-do-we-go-from-here,-and-what-honest-progress-looks-like"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(31usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::NoNeuralNetworksCannotProduceGenuineAutonomousIntelligence {},
+            ::use_mdbook::mdbook_shared::PageId(31usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -2850,6 +2950,15 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         location: Some(BookRoute::IResurrectedADeadCrcCrateAndItSuddenlyWentViral {}),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![31u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 32 |---| No, Seriously. Neural Networks Cannot Produce Genuine Intelligence. |---| tech |---| no-neural-networks-cannot-produce-genuine-autonomous-intelligence |---| Oct 11 2026 |---| A direct, unambiguous argument for why neural networks are architecturally incapable of genuine intelligence, regardless of scale, wrappers, or hype. |---| assets/images/banner_post_32.webp |---| https://dev.to/wiseai/no-seriously-neural-networks-cannot-produce-genuine-intelligence-4l39 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/no-neural-networks-cannot-produce-genuine-autonomous-intelligence.md"
+                            .to_string(),
+                        location: Some(BookRoute::NoNeuralNetworksCannotProduceGenuineAutonomousIntelligence {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![32u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -14714,6 +14823,580 @@ pub fn IResurrectedADeadCrcCrateAndItSuddenlyWentViral() -> dioxus::prelude::Ele
             "P.S. The original  "
             code { "crc32" }
             " crate maintainer is apparently a Microsoft employee. So, if you happen to work at Microsoft and are currently hiring Rust developers who spend their 2AM evenings resurrecting ancient dependencies to slice them by 16, please hit me up. We can bond over polynomial arithmetic. Thanks for the help "
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn NoNeuralNetworksCannotProduceGenuineAutonomousIntelligence() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "I want to start by saying something that I know is going to make a certain type of person deeply uncomfortable, and I want to say it before the disclaimers, before the caveats, before the politely worded softening that usually surrounds this kind of statement. Here it is: I am sorry, but no. Neural networks are not capable of real, genuine, fully autonomous intelligence, and I need you to sit with that sentence for a moment before you start typing your rebuttal. I said genuine intelligence. Not artificial intelligence, not useful intelligence, not impressive intelligence. Genuine. That word is doing enormous work in that sentence, and I chose it with the same care I choose every other word I write. In my previous post "
+            a { href: "/blogs/genuine-intelligence-will-never-emerge-from-neural-networks",
+                "Genuine Intelligence will never in trillion years emerge from neural networks"
+            }
+            ", I laid out the architectural argument from first principles. In "
+            a { href: "/blogs/all-you-have-access-to-is-knowledge-and-tools-never-intelligence",
+                "All You Have Access To Is Knowledge and Tools; Never Intelligence!"
+            }
+            ", I showed that the entire intelligence narrative built around current AI systems is a category error dressed up in venture capital language. In "
+            a { href: "/blogs/knowledge-and-intelligence-are-mutually-exclusive",
+                "Knowledge and Intelligence ARE Mutually Exclusive"
+            }
+            ", I pushed that argument further. In this post I am going to go one more step, because something has shifted in the public conversation recently that requires a direct and unapologetic response, and I am the person who is apparently going to give it."
+        }
+        p {
+            "The shift I am talking about is the following. A few months ago, the AI discourse was dominated by claims about language model reasoning. Before that it was claims about emergent capabilities. Before that it was claims about few-shot generalization. Each cycle, a new capability gets announced with increasing breathlessness, a new wave of LinkedIn posts declares that the singularity is here, and then 6 months later the researchers publish the papers showing what was actually happening under the hood, and it was pattern matching again. This cycle has been running for years. What is different now is that the current claims have escalated to the level of full autonomy. The claim is no longer that models can reason; the claim is that models are fully autonomous agents that can conduct scientific research, develop software, run business operations, and govern themselves without meaningful human oversight. And I need to explain, carefully and without being polite about it, why that claim is not just premature but structurally impossible given what neural networks actually are. Not impossible because the technology needs more time. Impossible because the mechanism is wrong. The same way a bicycle is structurally impossible to fly regardless of how technically refined it becomes, because the mechanism of a bicycle is not the mechanism of flight."
+        }
+        p {
+            "I also want to say something before we go further about the phrase genuine autonomy, because I am using it in a specific and demanding sense and I want to be honest about what that sense is. Genuine autonomy means the capacity to set one's own goals, to evaluate the quality of one's own reasoning, to identify when one's own knowledge is insufficient, to decide what new knowledge to seek and how to seek it, to operate across novel domains that were not anticipated during design, and to do all of this without requiring a human at the end of the decision chain to validate, redirect, or supervise the process. That is the bar. It is a high bar. It is also the bar that every serious definition of autonomous agency sets, and it is the bar that current AI systems, regardless of wrapper, do not reach and cannot reach with the current architecture. I am going to spend the rest of this post explaining why with some humor because otherwise I would lose my mind, and with the same directness that I used in every post before this one."
+        }
+        h2 { id: "wait-what-do-you-mean-by-genuine-intelligence-vs-genuine-artificial-intelligence",
+            a {
+                href: "#wait-what-do-you-mean-by-genuine-intelligence-vs-genuine-artificial-intelligence",
+                class: "header",
+                "Wait, What Do You Mean By Genuine Intelligence vs Genuine Artificial Intelligence?"
+            }
+        }
+        p {
+            "I know the first objection coming, and I want to cut it off before it finishes forming. You are about to tell me that I am splitting linguistic hairs. You are about to say that the distinction between genuine intelligence and genuine artificial intelligence is just a semantic game, a rhetorical move that lets me redefine my terms whenever the AI does something impressive. I want to tell you no, and I want to tell you why. The distinction is not about semantics. It is about mechanism, and mechanism is the thing that determines what a system can and cannot do regardless of how impressive it looks from the outside. Genuine artificial intelligence, in the sense the term has been used since the 1950s, means systems that can mimic intelligent behavior. Artificial is the key word. The intelligence is a mimicry, an artifact, something made to resemble intelligence rather than something that is intelligence. We have had genuine artificial intelligence since GPT-1. The models predict plausible, contextually appropriate text. That is a form of artificial intelligence. It is impressive, it is useful, and nobody should pretend otherwise."
+        }
+        p {
+            "Genuine intelligence, without the artificial qualifier, means something categorically different. It means the capacity to understand the world as it is rather than as it was described in the training data. It means the capacity to form new concepts from first principles rather than recombining concepts that were absorbed during training. It means the capacity to be wrong in a productive way, to notice the wrongness, to investigate it, to generate a hypothesis about why, to test that hypothesis against reality, and to update. It means the capacity to function in genuinely novel domains with no prior training context for that domain. A 12 year-old human child has genuine intelligence in this sense. The child can walk into an unfamiliar situation, form a model of what is happening, make predictions, get corrected by reality, and update their model. They do not need a training set for every new situation. They need the general capacity for model formation and causal reasoning, which develops through embodied experience in the physical world and which no transformer architecture produces through text prediction. The difference between these two kinds of intelligence is not a matter of degree. It is a matter of kind, and collapsing that distinction is how we end up with billion-dollar systems that confidently hallucinate medical diagnoses."
+        }
+        p {
+            "I also want to address the specific version of the objection that says intelligence is a spectrum and the models are somewhere on it. This objection sounds measured and scientifically responsible, but it contains a hidden assumption that I reject, which is that the mechanisms of human intelligence and the mechanisms of neural network prediction are the same mechanism operating at different intensities. They are not. They are different mechanisms. A thermometer measures temperature in a way that is mechanistically completely different from how your body feels temperature. A photograph of a landscape is mechanistically completely different from a painting of the same landscape. Both the thermometer and your skin produce a response that covaries with temperature, but one is an engineered measurement and the other is a felt experience rooted in biology, and they are not on the same spectrum. Similarly, a language model produces outputs that covary with intelligent human outputs because it was trained to do so, but the process producing those outputs is mechanistically different from the process producing human intelligence, and being on a similar output spectrum does not make them the same kind of thing "
+            a { href: "#ref-1", "(1)" }
+            ". The history of AI is full of systems that produced outputs indistinguishable from intelligent behavior on narrow tasks and then failed completely when the task changed even slightly. That failure is the signature of a mechanism mismatch, not a capability gap that will close with scale."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-23.gif"),
+                alt: "Explaining the difference between genuine and artificial intelligence to a tech bro",
+                title: "",
+            }
+        }
+        p {
+            "The practical dimension of this distinction matters enormously and is not being discussed honestly in the public conversation. When companies deploy systems as autonomous agents and claim those systems are genuinely intelligent, they are making an implicit promise about the range of conditions under which those systems will perform reliably. Genuine intelligence implies robustness across novel conditions. Artificial intelligence implies reliable performance within the training distribution. Those promises are completely different in scope, and the gap between them is where people get hurt. A system that is genuinely autonomous can be trusted to handle situations that were not anticipated during design. A system that mimics autonomy can only be trusted to handle situations that are close to what it was trained on, which is a critically different trust relationship, and conflating them is how we end up with autonomous vehicles that fail in light rain, autonomous medical advisory systems that fail with unusual patient presentations, and autonomous coding agents that confidently introduce security vulnerabilities that no human reviewer would miss. The linguistic distinction between genuine and artificial intelligence is not a game. It is the most practically important distinction in the entire field."
+        }
+        h2 { id: "but-openai-just-solved-mathematics-so-checkmate",
+            a {
+                href: "#but-openai-just-solved-mathematics-so-checkmate",
+                class: "header",
+                "But OpenAI Just Solved Mathematics, So Checkmate?"
+            }
+        }
+        p {
+            "Deep breath. Deep breath. Okay. Let me say this as kindly as I can manage, which is not very kindly. I already wrote about this general category of result in multiple previous posts and predicted it would happen, which means the result was not surprising to me, and I want to explain exactly why it should not be surprising to anyone who has been paying attention. A model trained on the entirety of human mathematical knowledge, which includes not just the correct theorems but the failed proofs, the partially solved problems, the heuristics, the analogies, the researcher notes, the textbook exercises, the competition problems, and the entire corpus of mathematical reasoning as expressed by humans over several centuries, that model generating solutions to problems that were previously unsolved is expected. I did not say it is unimpressive. I said it is expected. There is a difference, and the difference matters for what we conclude from it."
+        }
+        p {
+            "The Navier-Stokes problem is a genuinely hard mathematical problem. Let nobody suggest I am dismissing its difficulty or its importance. But the way the model approaches a hard mathematical problem is not the way a mathematician approaches a hard mathematical problem. A mathematician builds a conceptual model of the problem space, identifies the structural feature that makes the problem hard, looks for analogies in other areas of mathematics that share that structural feature, formulates a hypothesis about what kind of argument strategy might work, explores that strategy, gets stuck, backtracks, reformulates, and eventually either succeeds or concludes that the approach was wrong. That process is generative intelligence operating on a causal model of the mathematical structure. What the model does is something statistically similar to pattern completion over a learned representation of mathematical text, and the fact that this can sometimes produce correct proofs for previously unsolved problems is remarkable but it is not evidence of genuine mathematical intelligence any more than a sufficiently detailed weather simulation is evidence that the simulation understands meteorology "
+            a { href: "#ref-2", "(2)" }
+            ". The simulation produces correct predictions. It does not understand. The model produces correct proofs. It does not understand. These are not the same thing."
+        }
+        p {
+            "I also want to say something about the specific framing of \"OpenAI has solved mathematics\" that appears in every breathless tech news headline when one of these results drops. Mathematics is not a set of problems to be solved. Mathematics is a living, generative discipline that creates new problems faster than it solves old ones, because in mathematics the solution to a problem almost always reveals new structure that opens 10 harder problems. The Mossad agents who normally help me with my architectural decisions apparently also help me with my epistemology, and they would point out that the interesting question is not whether the model can solve the existing unsolved problems but whether the model can formulate new problems that reveal new mathematical structure. Chollet argued in his landmark paper on measuring intelligence that skill acquired through training is fundamentally different from the fluid intelligence required to form entirely new problems, and that metrics which reward skill without measuring generalization ability give a systematically misleading picture of what a system can do "
+            a { href: "#ref-3", "(3)" }
+            ". Ramanujan did not solve existing problems. He discovered entire new areas of mathematical structure that nobody had imagined. A language model trained on Ramanujan's work can reproduce patterns from his work. It cannot be Ramanujan."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-24.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Bro be tryna explain to the press that solving an existing problem is not the same as discovering a new field of mathematics",
+                title: "",
+            }
+        }
+        p {
+            "The pollution dimension of this situation also deserves explicit attention, because it is already happening and its consequences are already visible. As AI companies race to demonstrate mathematical or scientific capability, they are flooding academic preprint servers and research journals with AI-generated content at a rate that exceeds the human capacity for review and evaluation. The result is not an acceleration of scientific knowledge. The result is an acceleration of scientific content, which is a different and far more dangerous thing. Scientific content without the verification, the debate, the failed replication attempts, the collegial argument that slowly separates the genuine advance from the plausible-sounding error, that content is not science. It is noise that looks like science, and it degrades the ability of the research community to identify and build on genuine advances. I wrote in "
+            a { href: "/blogs/llms-destroyed-the-internet-lmms-will-make-it-alive",
+                "LLMs destroyed the Internet. LMMs will make it alive"
+            }
+            " about how automated content generation destroys the epistemic value of the information environment. The same dynamic is now operating in the scientific literature, and the long-term cost is the trustworthiness of science itself. Nobody is excited. Nobody is shocked. And nobody should be, because this was predictable."
+        }
+        p {
+            "I want to also directly address the human dimension of this, because I think it gets lost in the excitement over capability demonstrations. We human beings value effort not as a quirk of our psychology but because effort is the mechanism by which understanding is produced. The struggle to solve a hard problem, the years of failed attempts, the moments of insight that feel like gifts because they follow months of fruitless work, those are not inefficiencies to be optimized away. They are the process by which a human mind builds a deep causal model of a problem domain. When a system produces a solution without that struggle, the solution may be correct but it is also orphaned. It has no parent understanding. Nobody who holds that solution knows why it works in a deep enough sense to know where to go next. This is the reason that human mathematicians are, almost universally, not excited about AI-generated proofs. The proof is not the point. The understanding that the proof reveals is the point. A proof you did not struggle to find is a solution to a crossword puzzle completed by someone else. You have the answer. You do not have the understanding. And in mathematics, as in everything that actually matters, the understanding is the whole game."
+        }
+        h2 { id: "but-gpt-n-omega-pro-max-vibe-coded-this-entire-game-fully-autonomously",
+            a {
+                href: "#but-gpt-n-omega-pro-max-vibe-coded-this-entire-game-fully-autonomously",
+                class: "header",
+                "But GPT-N Omega Pro Max++ Vibe-Coded This Entire Game Fully Autonomously?"
+            }
+        }
+        p {
+            "Here we go. Let me compose myself. Okay. I am composed. This argument comes up constantly now, and it follows the same template every time. An AI model, usually labeled with some impressive name involving a high number or a Greek letter, produces a functional artifact, usually a game, a website, or a piece of software, without explicit human instruction at the code level, and the result is presented as evidence of autonomous creativity and genuine intelligence. I need to take this apart, carefully and without losing my temper, because the argument is seductive and the counterargument requires more than a sentence to deliver properly. So let us be thorough about it."
+        }
+        p {
+            "The first thing to understand about a model generating a functional game autonomously is what the word generating means in this context. The model does not create the game the way a human game developer creates a game. A human game developer starts with a vision, an aesthetic, a set of mechanics, a world, a set of rules that interact in interesting ways, and then implements all of that through a sequence of design and engineering decisions that each encode an aspect of the original vision. The interesting part is not the code. The interesting part is the creative vision that the code expresses. A language model generating a game produces code that is a collage of patterns from similar games in its training data, recombined in ways that happen to produce a functional result. The result may run correctly. It does not express a creative vision, because the model has no communicative intent, no aesthetic intention, no sense of what would be interesting or meaningful to a player. Bender et al. argued precisely this in their foundational critique of large language models: that these systems are stochastic parrots producing form without meaning, statistical mirrors of human text that carry none of the communicative intent that makes human language meaningful "
+            a { href: "#ref-4", "(4)" }
+            ". It has learned what game code looks like, and it produces something that fits that learned distribution."
+        }
+        p {
+            "The second thing to understand is that nobody wants to play the game. And this is not a small point. This is the entire point. A game's value to a player is not its technical correctness. A game's value is its soul, its lore, its narrative, its sense of humor, its respect for the player's time and intelligence, and above all its feeling of having been made by someone who cared about the experience of playing it. These are properties that I can detect immediately when I pick up a game, and so can you, even if you cannot articulate them precisely. When someone tells you that an LLM generated this entire game, something in you deflates, and that deflation is not irrational. It is a recognition that the thing is a hollow artifact. It runs, but nobody meant it. And meaning is not an optional luxury feature of creative work. Meaning is the entire reason creative work has value to the people who experience it. A game without meaning is just a physics engine with textures. You would get more out of asking the LLM to live-stream a playthrough of the game for you on the fly, which the LLM can do, and which would be more interesting to watch than playing a game that nobody genuinely imagined."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-25.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "My Genuine reaction after downloading a fully AI-generated indie game.",
+                title: "",
+            }
+        }
+        p {
+            "The third thing to understand is the structural incompleteness of what gets described as fully autonomous generation. What the model actually did in every documented case of this type, when you look at the methodology rather than the marketing, is generate a frontend scaffold for a simple game loop, using patterns from similar open-source games in its training data. The complete experience of a game in the real world involves enormously more infrastructure than a scaffold. It involves backend services, matchmaking systems, chat infrastructure, anti-cheat systems, persistent player state, telemetry, analytics, abuse reporting, content moderation, accessibility features, localization, monetization systems, third-party service integrations, compliance with platform policies, and decades of iterative refinement based on player feedback. None of that exists in the autonomously generated output. What exists is a proof of concept that demonstrates the model can produce code that resembles the code of games it was trained on. Calling that full autonomous game development is like calling a photograph of a house the house. The photograph is an artifact that references the structure. The model output is an artifact that references the functionality. Neither of them are the thing itself."
+        }
+        p {
+            "I also want to say something about the direction this argument is going, because I see it more and more: the claim that because the model can produce the surface form of creative work, the model is producing creative work, that because it can generate code that compiles, it is doing software engineering, that because it can write a sentence that is grammatically complex, it is engaging in literary expression. This is the philosopher's zombie problem applied to AI, and I want to name it clearly. A philosophical zombie, in thought experiment form, is an entity that behaves exactly like a conscious being in every observable respect but has no inner experience of that behavior. The behavior is there. The inner life is not. Current AI systems are philosophical zombies of intelligence. They produce the behavioral outputs associated with intelligence. The inner process producing those outputs is pattern completion over a learned statistical distribution, not reasoning, not understanding, not intention, not creativity. And a zombie playing chess is not a chess player. It is a zombie that makes moves. The distinction matters for what you trust the zombie to do next."
+        }
+        h2 { id: "what-llms-are-actually-doing-and-why-it-is-just-the-tip-of-the-iceberg",
+            a {
+                href: "#what-llms-are-actually-doing-and-why-it-is-just-the-tip-of-the-iceberg",
+                class: "header",
+                "What LLMs Are Actually Doing, and Why It Is Just The Tip of The Iceberg"
+            }
+        }
+        p {
+            "I want to be fair here, because I have been consistently fair in every post I have written, even when the thing I am being fair about is something that is actively used to argue against positions I hold. LLMs are powerful. They are more powerful than most people thought possible five years ago. They are useful, they are economically valuable, and the scale of what they can do within their training distribution is genuinely impressive. I wrote all of that in "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Usefull. LMMs will Break Reality"
+            }
+            ", and I stand by every word of it. But power within a training distribution is not the same as autonomy, and the gap between what LLMs can do and what production systems require is not a gap that can be bridged by wrapping the model in a better API."
+        }
+        p {
+            "Think of a language model as a very sophisticated for-loop with memory. At each step, the loop looks at the current context, applies a search over the learned representation space, samples from the resulting distribution using some randomness to prevent deterministic collapse, and appends the result to the context before running the next iteration. That is a real and powerful computation. It is also a computation that is entirely reactive. It does not initiate. It does not plan beyond the immediate token horizon. It does not build a model of what it is trying to accomplish and monitor the gap between that model and the current state. It responds to input with statistically appropriate output. This is enormously useful for code completion, for document summarization, for information synthesis, for translation. It is not autonomous operation. Shanahan, in his careful philosophical treatment of what it means to talk about large language models honestly, argues that the anthropomorphism enabled by LLMs' fluency in human language makes us systematically vulnerable to describing them in terms that do not match their actual mechanism, and that repeated stepping back to ask what the system actually does will almost always reveal a reactive prediction engine rather than a reasoning actor "
+            a { href: "#ref-5", "(5)" }
+            "."
+        }
+        p {
+            "The production software systems that people actually run in the real world are not merely frontend scaffolds. They are layered stacks of interacting subsystems, each with its own failure modes, its own performance characteristics, its own operational requirements, and its own behavioral contracts with the other subsystems. A game on a real production platform has a game server cluster, a matchmaking service, a leaderboard service, a player identity and authentication service, a database cluster with replicas and backup procedures, a CDN for asset delivery, a monitoring and alerting stack, a deployment pipeline, a rollback procedure, a DDoS mitigation layer, and usually somewhere between three and five third-party service integrations that each have their own documentation, API limits, and failure behaviors. The model that generated the game frontend has no knowledge of any of this beyond the surface patterns it absorbed from documentation text in its training data. Building production systems is an exercise in understanding the mechanisms of failure across a complex interacting set of subsystems, and understanding failure mechanisms requires causal models that no language model has "
+            a { href: "#ref-6", "(6)" }
+            "."
+        }
+        p {
+            "The voice chat room in an online game is not a text generation problem. The latency constraints, the packet loss handling, the codec selection, the server-side mixing, the abuse detection in audio streams, the GDPR compliance for voice data, the integration with the client application, the regional routing for low latency, none of these are problems that get solved by generating plausible-sounding text about how voice chat would look. They are engineering problems that require deep understanding of network protocols, audio signal processing, distributed systems, regulatory frameworks, and the specific constraints of the game's platform and user base. The autonomously generated game has none of that. It has a textbox. And a textbox is not a voice chat room, no matter how many parameters the model that generated it has. This is not a criticism of the model. It is a description of what the model is and is not, and what production software is and is not, and why those two things are not the same."
+        }
+        p {
+            "I want to connect this to something I said in "
+            a { href: "/blogs/all-you-have-access-to-is-knowledge-and-tools-never-intelligence",
+                "All You Have Access To Is Knowledge and Tools; Never Intelligence!"
+            }
+            " about the frame problem. The frame problem, in practical engineering terms, is the problem of knowing which things change when you take an action and which things do not. When you deploy a new version of a service, what changes is the behavior of that service. What must not change, if you want your system to continue working, is the behavioral contracts between that service and everything it interacts with. Managing those contracts, reasoning about what is downstream of what, identifying which changes are safe and which are breaking, that is the daily work of a software engineer operating in a production system. It requires a causal model of the system. It requires the capacity to simulate what will happen when a change propagates through a layered stack of interacting services. A language model can produce code that looks like service code. It cannot reason causally about what will happen when that code runs in the production system, because it does not have a causal model of the production system. It has text about systems that look similar. That is the tip of the iceberg. The iceberg is everything that the text does not capture, and in production engineering, the iceberg is where ninety percent of the work lives."
+        }
+        h2 { id: "the-autonomy-illusion-how-wrappers-become-worldviews",
+            a {
+                href: "#the-autonomy-illusion-how-wrappers-become-worldviews",
+                class: "header",
+                "The Autonomy Illusion: How Wrappers Become Worldviews"
+            }
+        }
+        p {
+            "One of the most sophisticated-sounding arguments for AI autonomy goes like this: yes, the model itself is just pattern completion, but wrap it in the right scaffolding, give it memory, give it tools, give it the ability to call itself recursively, and you get something that is functionally autonomous even if the underlying mechanism is not. I hear this argument a lot from people who are technically sophisticated, and I want to engage with it honestly because it deserves engagement rather than dismissal. The argument is not crazy. There are systems architectures where simple computational units combine into systems with properties that no individual unit has. Neurons are simple threshold devices. Brains compute extraordinarily complex things. So why can't a simple language model plus scaffolding produce genuine autonomy?"
+        }
+        p {
+            "The answer is that the brain analogy fails at the level of mechanism, and mechanism is the thing that matters. Neurons combined into brains produce intelligence because the combination instantiates specific computational structures, specifically causal inference over hierarchical generative models, that are capable of producing genuine reasoning, genuine model formation, and genuine updating in response to prediction error "
+            a { href: "#ref-7", "(7)" }
+            ". The computation is grounded in physical reality through sensorimotor experience that provides labeled prediction errors across millions of daily interactions. The structural organization of the brain, the cortical hierarchy, the basal ganglia, the hippocampal memory systems, the thalamic gating, is specifically adapted over millions of years of evolution to produce the kind of learning and inference that counts as intelligence. Wrapping a language model in scaffolding and memory does not replicate any of this. It adds a context management layer on top of a reactive prediction system. The scaffolding does not change what happens inside the prediction step, and the inside is where the intelligence would have to live."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-26.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "The AI agent architecture diagram looking incredibly impressive.",
+                title: "",
+            }
+        }
+        p {
+            "Memory does not solve the problem. Memory gives the model access to more text context. But having access to more text does not produce causal reasoning from that text. It produces pattern completion over more text. A model with a million-token context window is not more intelligent than a model with a four-thousand-token context window. It has more information available for its pattern completion. That is a real and useful improvement. It is not a mechanism for producing genuine reasoning, because the mechanism producing the output at each step is still pattern completion, regardless of how much context is available to that step "
+            a { href: "#ref-8", "(8)" }
+            ". A person who reads more books is not smarter than a person who reads fewer books in any direct proportional sense. A person who reads more books has more raw material for their intelligence to work with. The intelligence doing the working is not in the books. It is in the cognitive architecture that was shaped by evolution and development long before the first book was opened."
+        }
+        p {
+            "Tool use does not solve the problem either, and I made this argument at length in "
+            a { href: "/blogs/all-you-have-access-to-is-knowledge-and-tools-never-intelligence",
+                "All You Have Access To Is Knowledge and Tools; Never Intelligence!"
+            }
+            ". A language model that can call a calculator, a search engine, and a code interpreter is a language model plus three lookup operations. The intelligence required to know which tool to use in which situation, to interpret what the tool returns, to integrate the tool output with the rest of the reasoning context, that intelligence has to live somewhere. And in the agentic architecture, the place it is supposed to live is the language model. But the language model's behavior in that role is still pattern completion over training data about how agents use tools, not genuine reasoning about which tool is appropriate for the current problem. The result is that the tool-augmented agent fails in characteristic pattern-matching ways on novel tool usage situations, which is exactly what the research shows "
+            a { href: "#ref-9", "(9)" }
+            ". You can add recursion too. The model can call itself repeatedly, reflecting on its own output, generating a chain of self-assessments. But each step in that chain is still a pattern completion step, and a chain of pattern completion steps is not reasoning any more than a chain of coin flips is a decision. The appearance of self-reflection does not instantiate self-reflection."
+        }
+        p {
+            "Genuine autonomy requires something that none of these scaffolding additions provide, which is an internal model of the task that allows the system to distinguish between situations where the current approach is working and situations where the current approach is failing, and to adaptively switch strategies based on that distinction. That is meta-cognitive control, the ability to monitor the quality of one's own cognitive processes and to intervene when quality is insufficient. Research on human metacognition has established that this capacity develops through years of embodied feedback, through the experience of trying, failing, noticing the failure, trying differently, and building a model of one's own cognitive strengths and weaknesses in specific domains. Language models have a statistical approximation of metacognitive language, they can produce text that sounds like self-assessment. They do not have the underlying process, the monitored internal model that the self-assessment text is supposed to describe. The words are there. The referent is not. And an autonomous agent without genuine metacognitive control is not an autonomous agent. It is a system that will continue confidently in the wrong direction for as long as the statistical distribution of its training data supports doing so."
+        }
+        h2 { id: "the-research-nobody-wants-to-read-but-everybody-should",
+            a {
+                href: "#the-research-nobody-wants-to-read-but-everybody-should",
+                class: "header",
+                "The Research Nobody Wants to Read But Everybody Should"
+            }
+        }
+        p {
+            "I want to spend time in this section on the empirical evidence, because I believe strongly that the argument I am making is not just philosophically sound but empirically grounded in a body of research that is not making it into the popular conversation with the prominence it deserves. The popular conversation about AI capability is substantially driven by benchmark performance announcements, demo videos, and press releases. The empirical research literature on what AI systems cannot do is substantially less visible. That asymmetry is not neutral. It shapes what people believe about the current state and trajectory of AI, and beliefs shape decisions, and decisions about AI deployment have real consequences for real people."
+        }
+        p {
+            "The research on AI agent reliability is the most directly relevant to the autonomy question, and the results are unambiguous. Kambhampati et al. demonstrated from first principles that auto-regressive LLMs cannot, by themselves, perform sound planning or self-verification, because the next-token prediction mechanism does not implement the look-ahead and backtracking required for global goal alignment "
+            a { href: "#ref-9", "(9)" }
+            ". This theoretical argument is validated empirically in large-scale agent benchmarks: the WebArena evaluation placed state-of-the-art GPT-4-based agents on realistic long-horizon web tasks and measured a task success rate of only 14.41 percent against a human success rate of 78.24 percent, representing failure rates exceeding eighty-five percent on tasks that a capable human completes routinely "
+            a { href: "#ref-10", "(10)" }
+            ". The failure modes are consistent and predictable: agents take locally plausible actions that compound into globally incorrect outcomes, and when they encounter situations that do not match their training distribution, they either fail to recognize the mismatch or continue confidently toward the wrong outcome. These are not random failures. They are the systematic signature of a system that lacks a global model of the task and is therefore unable to detect when the local action is inconsistent with the global goal. A genuinely autonomous system would detect this inconsistency and recover. A pattern-matching system cannot, because detecting the inconsistency requires comparing the current state against a model of the intended state, and that kind of model-based comparison is not what pattern completion produces."
+        }
+        p {
+            "The research on distribution shift, which I discussed in "
+            a { href: "/blogs/genuine-intelligence-will-never-emerge-from-neural-networks",
+                "Genuine Intelligence will never in trillion years emerge from neural networks"
+            }
+            ", has continued to accumulate in the same direction. Study after study finds that AI systems perform reliably within their training distribution and unreliably outside it, and the performance degradation is dramatic rather than gradual. Taori et al. systematically evaluated 204 ImageNet classification models across 213 different test conditions and found that robustness gains from synthetic perturbation training rarely transferred to natural distribution shifts, and that virtually no existing technique fully closes the performance gap between in-distribution and naturally shifted test sets "
+            a { href: "#ref-11", "(11)" }
+            ". This is the canonical signature of a system that has learned to exploit statistical regularities in the training data rather than learning the underlying rule that generates the data, and it appears consistently across architectures, scales, and domains. It does not go away with more scale. It changes in its specific manifestations as the model becomes more capable within its distribution, but the structural incompatibility between pattern matching and genuine generalization remains. More impressive pattern matching is still pattern matching, and pattern matching does not become autonomy at any scale."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-27.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Research paper that proves LLMs are pattern matchers appearing in the preprint server.",
+                title: "",
+            }
+        }
+        p {
+            "The research on AI in high-stakes professional domains is perhaps the most concrete evidence of the autonomy gap, because these are exactly the domains where genuine autonomy would be most valuable and where its absence is most costly. Obermeyer et al. conducted a landmark analysis of a commercial health-management algorithm and found that it systematically underestimated the health needs of Black patients because it used healthcare cost as a proxy for health need, encoding the structural reality that Black patients had less access to care into a learned bias that treated them as healthier than equally sick White patients "
+            a { href: "#ref-12", "(12)" }
+            ". The algorithm was not doing medicine. It was doing pattern matching over a dataset where the patterns encoded centuries of unequal access. A genuinely autonomous medical reasoner, one operating from a causal model of pathophysiology, would not confuse spending patterns with health status. A pattern-matching system cannot distinguish between them, because in its training data, they covary, and covariation is all it can learn. The bias shows up not as a subtle statistical artefact but as a systematic, measurable failure that affects real patients in real clinical settings, and it is invisible to the system producing it because the system has no model of the mechanism generating the pattern."
+        }
+        p {
+            "The research on AI legal reasoning has found similar patterns. Dahl et al. conducted the first systematic profiling of legal hallucinations in large language models and found that legal hallucinations were alarmingly prevalent, occurring between 58 percent of the time with GPT-4 and 88 percent of the time with Llama 2 when models were asked specific, verifiable questions about federal court cases "
+            a { href: "#ref-13", "(13)" }
+            ". The model that passes the bar examination has learned the statistical distribution of bar examination questions, which is a specific and relatively well-defined distribution that diligent pattern matching can handle. But when the same model is asked to retrieve or reason about actual legal specifics, specific case names, specific holdings, specific statutes in specific jurisdictions applied to specific novel fact patterns, it confabulates with high confidence, because the specific combination has no reliable match in the training distribution and the model has no actual model of legal structure to reason from. Dahl et al. also found that LLMs often cannot correct a user's incorrect legal assumptions, and frequently do not know when they are producing a hallucination, which is the overconfidence signature in its most dangerous possible form. This is happening in systems already deployed in real legal contexts, serving real clients."
+        }
+        h2 { id: "genuine-intelligence-requires-genuine-grounding-and-that-grounding-cannot-be-simulated-in-tokens",
+            a {
+                href: "#genuine-intelligence-requires-genuine-grounding-and-that-grounding-cannot-be-simulated-in-tokens",
+                class: "header",
+                "Genuine Intelligence Requires Genuine Grounding, and That Grounding Cannot Be Simulated in Tokens"
+            }
+        }
+        p {
+            "There is a philosophical concept called grounding and it explains a great deal about why text-trained models cannot achieve genuine autonomy. Grounding refers to the connection between a symbol and the thing in the world that the symbol refers to. When I use the word hot, my use of that word is grounded in my experience of touching hot surfaces, of feeling the burns, the warmth, the danger signal, the automatic withdrawal reflex. That experience is what gives the word hot a meaning that goes beyond its statistical relationship with other words. A language model's use of the word hot is statistically associated with other words like fire, pain, temperature, summer, and coffee, and that statistical association allows it to produce contextually appropriate text involving the word hot. But the word is not grounded in any felt experience of heat. It is an ungrounded symbol, and ungrounded symbols cannot support genuine reasoning about the referents of those symbols in the way that grounded symbols can "
+            a { href: "#ref-14", "(14)" }
+            "."
+        }
+        p {
+            "The grounding problem is not merely philosophical. It has direct practical consequences that show up in specific failure modes. A model with ungrounded symbols cannot reason about physical interactions in novel situations because its knowledge of physical interactions is stored as statistical associations between words that describe physical interactions, not as a model of the physics itself. Ask the model to predict what will happen when you drop a cube of ice into a glass of warm water, and it will produce the correct answer because that scenario is well-represented in its training data. Ask it to predict what will happen when you drop a specific non-standard material with specific non-standard thermodynamic properties into a specific non-standard fluid under non-standard pressure, and it will confabulate, because the specific combination has no statistical precursor in the training data and the model has no actual physical simulation to fall back on. A genuinely intelligent system would use its physical model, its understanding of thermodynamics, to compute the answer for any combination of materials and conditions. The model uses its training data, which means it only knows what it has been told about specific scenarios. And there are infinitely many specific scenarios that nobody has written text about."
+        }
+        p {
+            "The solution to the grounding problem is not more text. More text does not ground symbols in physical reality. More text gives you more ungrounded symbols with richer statistical relationships to each other. A model trained on every physics textbook ever written has abundant statistical associations between physics words. It does not have a single simulation of a physical process grounded in the actual dynamics of the physical world. This is why I have argued across multiple posts for the importance of mathematical models and physics simulations as the alternative architecture. "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            " describes why equations are more honest representations of physical reality than text, because equations encode the mechanism rather than a description of the mechanism, and mechanisms are what ground the predictions in reality. A model built around equation discovery and physical simulation has symbols that are grounded in the dynamics of physical reality. A language model has symbols grounded only in other text. The first kind of grounding supports genuine reasoning about novel physical situations. The second kind supports sophisticated text generation about familiar textual patterns. Those are not the same capability."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-28.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "A philosophical zombie",
+                title: "",
+            }
+        }
+        p {
+            "Embodied cognition research has established over the past three decades that human intelligence is not separable from the body that hosts it and the physical world that the body interacts with "
+            a { href: "#ref-16", "(16)" }
+            ". When you understand what it means to grasp something, that understanding is rooted in the sensorimotor experience of grasping, the feel of fingers closing, the resistance of the object, the proprioceptive sense of hand position and grip strength. Your understanding of the abstract concept grasping a concept is a metaphorical extension of that embodied experience, and research shows that even processing abstract language activates sensorimotor neural systems involved in the corresponding physical actions. Intelligence is not a disembodied computation over abstract symbols. It is a computation deeply intertwined with a physical body that experiences the world and updates its models on the basis of that experience. Language models, by design, have no body, no sensorimotor experience, no felt consequences for wrong predictions, and no physical world to update against. They have text. Text is a description of embodied experience. A description of embodied experience is not the same as embodied experience, and intelligence built on descriptions cannot do what intelligence built on experience can do."
+        }
+        p {
+            "I want to close this section by saying something about what genuine grounding would require that I think is underappreciated. Genuine grounding requires not just sensory data but the feedback loop between predictions and their consequences. It requires a system that has made predictions about the physical world and had those predictions either confirmed or disconfirmed by events in that physical world, and that has updated its internal model on the basis of that feedback. This is the reinforcement learning setup in its genuine sense, not the RLHF approximation that is used to fine-tune language models, but actual reinforcement learning where the signal comes from the physical world. Reinforcement learning in that genuine sense can produce grounded representations of the world, as demonstrated by robotics systems and simulation-trained physical agents. But those systems are not language models. They are a different architecture solving a fundamentally different problem. And the intelligence produced by genuine reinforcement learning against physical reality does not transfer from the language model paradigm regardless of how large the language model becomes."
+        }
+        h2 { id: "we-do-not-even-know-what-we-do-not-know-and-that-is-the-real-problem",
+            a {
+                href: "#we-do-not-even-know-what-we-do-not-know-and-that-is-the-real-problem",
+                class: "header",
+                "We Do Not Even Know What We Do Not Know, and That Is the Real Problem"
+            }
+        }
+        p {
+            "One of the most dangerous properties of current AI systems in deployment is the combination of high capability within the training distribution and high confidence everywhere. The system does not degrade gracefully as it approaches the edge of its competence. It falls off a cliff while still sounding absolutely certain. This is the property that I find most troubling about the current deployment environment, more troubling than any specific failure mode, because it makes the failures unpredictable and therefore unmanageable. If a system degraded gracefully and signaled increasing uncertainty as it approached the edge of its competence, you could deploy it with appropriate monitoring and respond to the signals before the failures had consequences. But a system that fails while sounding confident fails silently, from the user's perspective, until the failure has already had consequences."
+        }
+        p {
+            "Calibrated uncertainty, the property of knowing what you do not know, is a defining feature of genuine intelligence and a property that neural networks systematically lack in their base form. Guo et al. demonstrated in a foundational study of neural network calibration that modern deep neural networks are poorly calibrated compared to their predecessors, that they are systematically overconfident, and that this overconfidence grows with model depth, width, and the use of batch normalization, meaning that the architectural choices that make neural networks more accurate also make them more overconfident in their wrong answers "
+            a { href: "#ref-15", "(15)" }
+            ". A model that has seen many confident-sounding statements in its training data will produce confident-sounding statements in contexts that resemble its training data, regardless of whether that confidence is warranted in the specific case. This is not a calibration bug that can be patched. It is a structural consequence of the training objective, which rewards producing confident predictions on training examples and has no direct mechanism to penalize overconfidence in the specific situations where the model's knowledge is weakest."
+        }
+        p {
+            "The absence of genuine metacognitive monitoring is the root cause. A genuinely intelligent system would monitor the quality of its own reasoning, flag when it was operating in unfamiliar territory, and scale its expressed confidence to match its actual epistemic state. This kind of metacognitive monitoring is what humans call knowing what you know and knowing what you don't know, and while humans are imperfect at it, the basic capacity exists and can be trained and improved. In neural networks, the absence is architectural. The model produces its outputs through a single forward pass, without any separate process that monitors the quality of the reasoning or evaluates the confidence of the output against the strength of the evidence. Techniques like sampling-based uncertainty estimation give a proxy for disagreement between model samples, but that proxy is not the same as genuine metacognitive monitoring, and it does not prevent the confident production of confident-sounding wrong answers. The model does not know what it does not know because it does not have a model of what it knows. It has weights. Weights do not know things. They encode statistical associations, and statistical associations do not have an epistemic status that the model can introspect and evaluate."
+        }
+        p {
+            "For a genuinely autonomous system, calibrated uncertainty is not optional. It is the mechanism by which an autonomous agent decides when to act on its own judgment and when to seek additional information, defer to a human, or flag a decision as requiring review. Without this mechanism, an autonomous agent will make high-stakes decisions in low-competence situations with the same apparent confidence as low-stakes decisions in high-competence situations, and the consequences of that cannot be managed at the deployment layer. You cannot fix a systematic overconfidence problem with monitoring alone, because the monitoring has to use the same system's outputs to assess the same system's confidence, and the system is wrong about its own confidence. This is the autonomy gap in its most concrete operational form. An autonomous vehicle that does not know where its competence ends is not safer than a human driver who does know where their competence ends. It is dramatically less safe. And scaling the model does not change the fundamental absence of the metacognitive architecture that would make it possible for the model to know what it does not know."
+        }
+        h2 { id: "what-would-genuine-autonomous-intelligence-actually-require",
+            a {
+                href: "#what-would-genuine-autonomous-intelligence-actually-require",
+                class: "header",
+                "What Would Genuine Autonomous Intelligence Actually Require?"
+            }
+        }
+        p {
+            "I want to be honest and constructive here because I have been making a primarily negative argument for most of this post and I genuinely believe in the possibility of building genuinely autonomous intelligent systems. I do not believe current neural networks can get us there. I believe the alternative direction exists and is the right one, and I want to describe it clearly. If you have read my previous posts, you have seen pieces of this argument scattered across multiple places. Here I want to assemble those pieces into a description of what the right architecture would need to look like."
+        }
+        p {
+            "First, it would need causal modeling rather than statistical association. The difference is not subtle. A causal model of a domain represents the mechanisms that generate the observations, not just the statistical relationships between observations. A causal model of a medical domain would represent the biological mechanisms by which diseases produce symptoms, not the statistical correlation between symptoms and diagnoses in a training dataset. Causal models support genuine generalization because they generalize at the level of mechanism, which is domain-invariant, rather than at the level of surface patterns, which are training-distribution-specific. Judea Pearl's work on causal inference and the do-calculus provides the mathematical foundation for this, and the field of causal machine learning, while early stage, is producing real results "
+            a { href: "#ref-17", "(17)" }
+            ". This is the right direction. It is also harder, slower, and less impressive in demos than scaling language models, which is why it is underfunded and understaffed relative to its importance."
+        }
+        p {
+            "Second, it would need symbolic reasoning over learned representations, not just learned representations by themselves. Symbolic reasoning is what provides the truth-preserving inference rules that allow a genuine reasoner to derive new knowledge from known knowledge in ways that are reliable rather than statistically likely. The neurosymbolic research program, which I described in "
+            a { href: "/blogs/genuine-intelligence-will-never-emerge-from-neural-networks",
+                "Genuine Intelligence will never in trillion years emerge from neural networks"
+            }
+            ", is the most promising approach here. It attempts to combine the representation learning strengths of neural networks with the structured inference strengths of symbolic systems. The engineering challenges are real but the theoretical case is solid. A system that can learn good representations from data and reason over those representations using principled inference rules would have systematic compositionality, would support genuine logical reasoning, and would avoid the surface-pattern dependence that characterizes pure neural approaches."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-29.gif"),
+                alt: "Me tryna to explain to the average AI journalist",
+                title: "",
+            }
+        }
+        p {
+            "Third, it would need physical grounding through interaction with the real world rather than text descriptions of the real world. This means some form of sensorimotor experience, either through robotics, through physics simulation with real physical fidelity, or through other forms of direct interaction with physical processes that produce genuine prediction errors when the system's model is wrong. The "
+            a { href: "https://github.com/wiseaidotdev/lmm", "lmm project" }
+            " I have been building is an attempt to implement a piece of this, with symbolic regression for discovering physical equations from data rather than ingesting descriptions of physical equations from text. An LMM architecture that learns physical laws from measurements of physical processes has symbols grounded in physical reality in a way that a language model trained on text descriptions of physical laws does not. The grounding is genuine because the equations have been validated against real physical data, not because someone wrote down that the equations are valid."
+        }
+        p {
+            "Fourth, it would need genuine metacognitive architecture, a separate process that monitors the quality of the primary reasoning process and has the authority to intervene, redirect, or flag uncertainty when warranted. This is not the same as adding a reflection step to the language model output. A reflection step is still a language model output, a pattern completion over descriptions of what good reflection looks like. A genuine metacognitive architecture is a separate computational process with a different objective from the primary reasoning process, specifically the objective of evaluating whether the primary reasoning is working and the objective of identifying when it is not. The computational structure for this exists in various proposals in the cognitive science and AI literature, and while no current system implements it in a satisfying way, it is a tractable engineering problem rather than an impossible one. The impossibility is not in building genuine metacognitive architecture. The impossibility is in producing genuine metacognition from a single-objective next-token prediction training process. You need to build the metacognitive capacity explicitly. It does not emerge from scale."
+        }
+        h2 { id: "where-do-we-go-from-here-and-what-honest-progress-looks-like",
+            a {
+                href: "#where-do-we-go-from-here-and-what-honest-progress-looks-like",
+                class: "header",
+                "Where Do We Go From Here, And What Honest Progress Looks Like"
+            }
+        }
+        p {
+            "I want to close this post the way I have closed every post before it, which is by saying something honest rather than something comfortable. The honest state of affairs is this: neural networks are extraordinarily powerful tools that operate within their training distributions with impressive and genuinely useful capability. They are not genuinely autonomous agents, they are not genuinely intelligent, and they will not become either of these things through further scaling of the same architecture. The gap between what they are and what genuine autonomous intelligence requires is architectural, not quantitative, and architectural gaps require different architectures, not more of the same architecture. This is not pessimism about AI. This is clarity about what the current tools are and a call for honesty about the gap between them and what we are claiming to build."
+        }
+        p {
+            "The progress that would actually matter, the progress toward systems that can reason causally, that have grounded representations, that can generalize systematically, that know what they do not know, is happening in smaller research communities with less funding and less visibility than the communities building larger and larger language models. Causal machine learning, neurosymbolic AI, physics-informed learning, symbolic regression, embodied AI, all of these research directions are producing results that are more relevant to genuine autonomous intelligence than anything coming out of the scaling race, and they are producing those results with a fraction of the compute and a fraction of the investment. The academic incentive structure, the funding structure, and the media attention structure are all pointing in the wrong direction. The right direction is harder, slower, and does not produce demos that trend on social media. But it is the direction that leads somewhere real."
+        }
+        p {
+            "For those of you who build things, which is most of the people I know and most of the people who read this blog, the honest implication of this argument is that you should use current AI tools for what they are good at, which is significant, and build your systems with appropriate understanding of where those tools fail. Do not build systems that depend on AI judgment in situations that fall outside the training distribution unless you have robust monitoring and human oversight for exactly those situations. Do not tell your users that your system is autonomous when it is a language model in a scheduling for-loop. Do not cite benchmark performance as evidence of real-world capability in novel domains. These are not technical requirements. They are honesty requirements. And honesty about what our tools can and cannot do is the minimum ethical obligation of anyone who builds and deploys systems that affect other people's lives."
+        }
+        p {
+            "The future I want to build toward, and the one I am working on in my small way with the "
+            a { href: "https://github.com/wiseaidotdev/lmm", "lmm project" }
+            ", is a future where artificial systems earn the word autonomous through demonstrated behavior in situations that were not anticipated during design. Not through impressive demo performance on curated benchmarks. Not through confident-sounding answers to questions that happen to be in-distribution. Through genuine generalization to genuine novelty, through honest uncertainty when facing unfamiliar territory, through the capacity to form new understanding rather than retrieve old patterns. That future is technically achievable. It requires different architecture, different training objectives, different evaluation criteria, and different honesty from everyone involved in building and deploying these systems. It also requires that we stop congratulating ourselves for the current tools as though they are already there, because they are not, and pretending otherwise is how we make the journey longer, not shorter."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-1\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "1." }
+            " Searle, J. R., "
+            em { "Minds, Brains, and Programs" }
+            ", "
+            a { href: "https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/minds-brains-and-programs/DC644B47A4299C637C89772FACC2706A",
+                "Behavioral and Brain Sciences, 1980"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-2\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "2." }
+            " Marcus, G. & Davis, E., "
+            em { "Rebooting AI: Building Artificial Intelligence We Can Trust" }
+            ", "
+            a { href: "https://www.penguinrandomhouse.com/books/603982/rebooting-ai-by-gary-marcus-and-ernest-davis",
+                "Pantheon Books, 2019"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-3\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "3." }
+            " Chollet, F., "
+            em { "On the Measure of Intelligence" }
+            ", "
+            a { href: "https://arxiv.org/abs/1911.01547", "arXiv:1911.01547" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-4\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "4." }
+            " Bender, E. M., Gebru, T., McMillan-Major, A. & Shmitchell, S., "
+            em { "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?" }
+            ", "
+            a { href: "https://archive.org/details/stochastic-parrots-3442188.3445922",
+                "ACM FAccT 2021"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-5\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "5." }
+            " Shanahan, M., "
+            em { "Talking About Large Language Models" }
+            ", "
+            a { href: "https://arxiv.org/abs/2212.03551", "arXiv:2212.03551" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-6\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "6." }
+            " Bommasani, R. et al., "
+            em { "On the Opportunities and Risks of Foundation Models" }
+            ", "
+            a { href: "https://arxiv.org/abs/2108.07258", "arXiv:2108.07258" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-7\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "7." }
+            " Friston, K., "
+            em { "The free-energy principle: a unified brain theory?" }
+            ", "
+            a { href: "https://www.nature.com/articles/nrn2787", "Nature Reviews Neuroscience, 2010" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-8\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "8." }
+            " Dziri, N. et al., "
+            em { "Faith and Fate: Limits of Transformers on Compositionality" }
+            ", "
+            a { href: "https://arxiv.org/abs/2305.18654", "arXiv:2305.18654" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-9\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "9." }
+            " Kambhampati, S. et al., "
+            em { "LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks" }
+            ", "
+            a { href: "https://arxiv.org/abs/2402.01817", "arXiv:2402.01817" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-10\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "10." }
+            " Zhou, S. et al., "
+            em { "WebArena: A Realistic Web Environment for Building Autonomous Agents" }
+            ", "
+            a { href: "https://arxiv.org/abs/2307.13854", "arXiv:2307.13854" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-11\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "11." }
+            " Taori, R. et al., "
+            em { "Measuring Robustness to Natural Distribution Shifts in Image Classification" }
+            ", "
+            a { href: "https://arxiv.org/abs/2007.00644", "arXiv:2007.00644" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-12\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "12." }
+            " Obermeyer, Z., Powers, B., Vogeli, C. & Mullainathan, S., "
+            em { "Dissecting racial bias in an algorithm used to manage the health of populations" }
+            ", "
+            a { href: "https://pubmed.ncbi.nlm.nih.gov/31649194/", "Science, Vol. 366, 2019" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-13\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "13." }
+            " Dahl, M. et al., "
+            em { "Large Legal Fictions: Profiling Legal Hallucinations in Large Language Models" }
+            ", "
+            a { href: "https://arxiv.org/abs/2401.01301", "arXiv:2401.01301" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-14\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "14." }
+            " Harnad, S., "
+            em { "The Symbol Grounding Problem" }
+            ", "
+            a { href: "https://arxiv.org/abs/cs/9906002", "Physica D: Nonlinear Phenomena, 1990" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-15\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "15." }
+            " Guo, C. et al., "
+            em { "On Calibration of Modern Neural Networks" }
+            ", "
+            a { href: "https://arxiv.org/abs/1706.04599", "ICML 2017" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-16\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "16." }
+            " Lakoff, G. & Johnson, M., "
+            em { "Philosophy in the Flesh: The Embodied Mind and Its Challenge to Western Thought" }
+            ", "
+            a { href: "https://openlibrary.org/works/OL1952995W/Philosophy_in_the_flesh",
+                "Basic Books, 1999"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-17\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "17." }
+            " Pearl, J., "
+            em { "Causality: Models, Reasoning, and Inference" }
+            ", "
+            a { href: "https://www.cambridge.org/core/books/causality/B0046844FAE10CBF274D4ACBDAEB5F5B",
+                "Cambridge University Press, 2009"
+            }
         }
     }
 }
