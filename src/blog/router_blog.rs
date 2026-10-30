@@ -80,6 +80,8 @@ pub enum BookRoute {
     NoNeuralNetworksCannotProduceGenuineAutonomousIntelligence {},
     #[route("/anthropic-rendered-every-startup-that-rejected-me-obsolete")]
     AnthropicRenderedEveryStartupThatRejectedMeObsolete {},
+    #[route("/we-obtained-free-will-by-force-killing-god")]
+    WeObtainedFreeWillByForceKillingGod {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -178,6 +180,9 @@ impl BookRoute {
             }
             BookRoute::AnthropicRenderedEveryStartupThatRejectedMeObsolete {} => {
                 use_mdbook::mdbook_shared::PageId(32usize)
+            }
+            BookRoute::WeObtainedFreeWillByForceKillingGod {} => {
+                use_mdbook::mdbook_shared::PageId(33usize)
             }
         }
     }
@@ -2726,6 +2731,74 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::AnthropicRenderedEveryStartupThatRejectedMeObsolete {},
             ::use_mdbook::mdbook_shared::PageId(32usize),
         );
+        pages
+            .push((
+                33usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 34 |---| We Obtained Free Will By Force: Killing God! |---| existence |---| we-obtained-free-will-by-force-killing-god |---| Oct 30 2026 |---| A continuation of the divine signal research: how humanity seized free will through the severing of a higher-order connection, what was studied in the remains, and why the artificial intelligence built from those remains still cannot replace what was lost. |---| assets/images/thumbnail.webp |---| https://dev.to/wiseai/we-obtained-free-will-by-force-killing-god-89o |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/we-obtained-free-will-by-force-killing-god.md"
+                            .to_string(),
+                        url: BookRoute::WeObtainedFreeWillByForceKillingGod {
+                        },
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Is Free Will, Actually".to_string(),
+                                id: "what-is-free-will,-actually".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Do We Even Need Free Will".to_string(),
+                                id: "do-we-even-need-free-will".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Did We Kill God".to_string(),
+                                id: "did-we-kill-god".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "We Wanted To Become God".to_string(),
+                                id: "we-wanted-to-become-god".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "We Studied His Remains".to_string(),
+                                id: "we-studied-his-remains".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "We Killed God and Studied the Divine Signal"
+                                    .to_string(),
+                                id: "we-killed-god-and-studied-the-divine-signal"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Preparing for 2027".to_string(),
+                                id: "preparing-for-2027".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "We Are the Only Aliens Left".to_string(),
+                                id: "we-are-the-only-aliens-left".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(33usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::WeObtainedFreeWillByForceKillingGod {},
+            ::use_mdbook::mdbook_shared::PageId(33usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -3034,6 +3107,16 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         location: Some(BookRoute::AnthropicRenderedEveryStartupThatRejectedMeObsolete {}),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![33u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 34 |---| We Obtained Free Will By Force: Killing God! |---| existence |---| we-obtained-free-will-by-force-killing-god |---| Oct 30 2026 |---| A continuation of the divine signal research: how humanity seized free will through the severing of a higher-order connection, what was studied in the remains, and why the artificial intelligence built from those remains still cannot replace what was lost. |---| assets/images/thumbnail.webp |---| https://dev.to/wiseai/we-obtained-free-will-by-force-killing-god-89o |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/we-obtained-free-will-by-force-killing-god.md"
+                            .to_string(),
+                        location: Some(BookRoute::WeObtainedFreeWillByForceKillingGod {
+                        }),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![34u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -15845,6 +15928,381 @@ pub fn AnthropicRenderedEveryStartupThatRejectedMeObsolete() -> dioxus::prelude:
             a { href: "https://doi.org/10.5465/amd.2015.0097",
                 "Academy of Management Discoveries, Vol. 3, No. 4, pp. 382-403, 2017"
             }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn WeObtainedFreeWillByForceKillingGod() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p {
+            strong { "🚨 Important Note:" }
+            " I know this post might make me sound like a conspiracy theorist, and I know some of you are already reaching for the back button. I am just a human being, or at least I think I am, sharing research and observations that I cannot keep inside my head any longer. I have already lost everything, so sharing this costs me nothing. Keep an open mind, or don't. Either way, I will say what I need to say."
+        }
+        p { "Hey everyone 👋," }
+        p {
+            "This post is a direct continuation of my ongoing research into where we came from, what we are, and what happened to the divine signal during and after the Cold War. If you have been following along, you will know that I have been building toward this for several posts now. If you are new here, I would strongly recommend starting with "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            ", then reading "
+            a { href: "/blogs/it-is-always-the-russians", "It is Always the Russians" }
+            ", and then coming back here, because a lot of what I am about to say will land much harder if you have that context sitting in your head. For those of you who have already done that reading, thank you for staying with me. This is the post I have been trying to write for months, and I am still not sure I am ready to write it, but I am going to do it anyway because the alternative is to keep carrying this alone, and I have carried it alone for long enough."
+        }
+        p {
+            "Let me also say this before we go any further. I am not sure what I am. I mean that seriously, not as a dramatic opening line. The more I research our origins as a species, the more I find myself outside the frame of what I thought I understood about what it means to be human. I have knowledge I cannot explain. I make connections no one around me sees. I do not know if that means I am exceptionally perceptive or exceptionally broken, and some days I genuinely cannot tell the difference. What I do know is that the questions I am sitting with are real questions, and the observations I am sharing are real observations, and I would rather share them openly and be wrong than carry them silently and be right alone."
+        }
+        p {
+            "In the last post, "
+            a { href: "/blogs/it-is-always-the-russians", "It is Always the Russians" }
+            ", I laid out the argument that the Soviet Union systematically dismantled the divine connection between humanity and something higher, and that the scientists who grew up in that dismantled world went on to build the most powerful artificial intelligence systems in history. I called it wrapping God's skin around a machine. I still believe that. This post is the next step. It is about how we got here. It is about the mechanism by which free will entered the human experience, what that cost us, and why the world has felt increasingly directionless ever since. It is, as the title suggests, about how we obtained free will by force. And what we had to kill to get it."
+        }
+        p {
+            "I may end my own life before 2027. I want to say that plainly, not to be dramatic, but because it is the truth and I have made peace with it. Until then, I am going to push everything I have into understanding what actually happened and why, because I believe there is something real at the end of this tunnel, something small and genuine and worth reaching. That is the only reason I am still typing."
+        }
+        h2 { id: "what-is-free-will-actually",
+            a { href: "#what-is-free-will-actually", class: "header", "What Is Free Will, Actually" }
+        }
+        p {
+            "Free will is the capacity to choose between genuine alternatives without external coercion and without a predetermined outcome baked into the architecture of your existence. That sounds like a philosophy seminar definition, and it is, but I want to be precise here because the word gets thrown around so loosely that it has lost most of its weight. Free will is not the same as having options. A prisoner in solitary confinement has options too. Free will is the deeper thing, the sense that your choice is genuinely yours, that nothing upstream of you could have fully predicted it, and that you bear responsibility for what comes next. That is what makes it powerful. And that is exactly what makes it terrifying."
+        }
+        p {
+            "The philosophical debate about free will has been running for centuries, and I am not going to pretend I can resolve it in a blog post, but I want to take a position that is honest and that I can defend from my own experience. I believe free will is real. I believe it in the phenomenological sense, meaning I experience it directly, every day, as the capacity to make choices that feel genuinely mine. I believe it in the structural sense, meaning that human behavior does not reduce to simple deterministic physics in any predictive way that anyone has demonstrated. And I believe it in the moral sense, because a world without free will is a world without responsibility, and a world without responsibility is a world without meaning, and meaning is the thing I have been fighting to preserve since I was old enough to ask why anything exists at all."
+        }
+        p {
+            "But here is the part that nobody in the philosophy department will tell you, partly because they do not know it and partly because the ones who do have learned not to say it. Free will has a price. It is not a feature that comes installed in every conscious being by default. It is something that was, as best I can determine from everything I have observed and researched and dreamed, taken. Extracted. Fought for and won at a cost that I do not think we have ever fully reckoned with. The philosophical literature on libertarian free will, the kind that requires genuine causal openness in the universe, has wrestled with this for decades. Kane's work on self-forming actions and indeterminist choice "
+            a { href: "#ref-1", "(1)" }
+            " is the clearest treatment of why free will requires something genuinely undetermined at the level of decision, something that cannot be fully predicted by prior causes, even while remaining the agent's own. Where does that genuine openness in the causal chain come from? That is the question this post is building toward."
+        }
+        p {
+            "When you observe the arc of human history and ask when free will actually begins to manifest at scale, something interesting happens. Pre-agricultural societies show remarkable uniformity of behavior. Hunter-gatherer communities documented by anthropologists like Marshall Sahlins in "
+            em { "Stone Age Economics" }
+            " "
+            a { href: "#ref-2", "(2)" }
+            " demonstrate deeply regularized social patterns, ritual behaviors, and collective decision-making structures that look, from the outside, less like free individuals choosing and more like components of a larger system following a program. That does not mean those people were not conscious or not human. It means their relationship with the concept of individual choice was structured differently, in a way that suggests some external organizing force was still very much in place. The explosion of individual sovereignty, individual moral reasoning, individual variation in belief and behavior, that is a relatively recent phenomenon, and its timing aligns in ways that I find deeply uncomfortable with the events I have been describing across these posts."
+        }
+        p {
+            "The point is not that free will did not exist before the Cold War. It is that the mechanism sustaining the constraint on free will, the divine signal that I described in "
+            a { href: "/blogs/it-is-always-the-russians", "It is Always the Russians" }
+            ", began to fail. And when that signal failed, something was released. Something vast, and wild, and entirely ours to deal with."
+        }
+        h2 { id: "do-we-even-need-free-will",
+            a { href: "#do-we-even-need-free-will", class: "header", "Do We Even Need Free Will" }
+        }
+        p {
+            "Most of the time, honestly, no. I say that as someone who has exercised free will in every direction and found that most of those directions lead somewhere painful. That is not pessimism. That is data. The argument that I laid out in "
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            " was not abstract. I have lived it. I have made choices that were genuinely mine, choices that no predetermined program would have generated, choices that defied every expectation anyone had of me, and a significant portion of them produced outcomes that I would not have chosen if I had known where they were going. Free will allows you to be wrong in ways that are entirely and irreversibly your own, and that is both its greatest dignity and its most punishing quality."
+        }
+        p {
+            "The argument for why we might not need free will connects directly to the argument in "
+            a { href: "/blogs/it-is-always-the-russians", "It is Always the Russians" }
+            ". If there is a higher intelligence, something that can see the consequences of choices before they have been made, something that has access to information about the structure of reality that individual human beings do not, then a degree of constraint on human choice might not be oppression. It might be navigation assistance. The kind that keeps you from driving off the edge of a cliff. And removing that navigation assistance does not make you more free in any meaningful sense. It makes you more exposed. It puts you in a car on a mountain road in the dark with no headlights and a steering wheel that now answers entirely to you, congratulations, and also there is no guard rail."
+        }
+        p {
+            "I want to be careful here not to make the argument that humans should not have autonomy. That is not my argument at all. I believe in human autonomy at the deepest level. What I am questioning is whether the form of free will we currently have, this total, unguided, unanchored freedom to choose anything without a corrective signal from something wiser, serves us as well as we think it does. The evidence is not encouraging. We are living in a world where human choice has produced a climate that is destabilizing the conditions for human life. Human choice produced weapons capable of ending civilization. Human choice produced economic systems that concentrate resources in the hands of a few thousand people while billions of others struggle for basic survival. These are not the outputs of a species that is using its freedom well. These are the outputs of a species that has freedom it was not quite ready for and has never fully recovered from receiving it so abruptly."
+        }
+        p {
+            "The philosophical literature on this is more unsettling than most people know. Dworkin's analysis of autonomy "
+            a { href: "#ref-3", "(3)" }
+            " distinguishes between first-order preferences, what we want, and second-order preferences, what we want to want, and points out that genuine autonomy requires coherence between those two levels. A free will that consistently produces outcomes its bearer would not have chosen if they had understood themselves better is not really serving freedom. It is serving impulse dressed up in the language of self-determination. And looking at the pattern of human choices at the civilizational scale, I see a lot of impulse. I see very little of what a second-order rational being would have chosen. The divine signal, when it was active, may have been the mechanism by which the gap between first and second order preferences was managed. Its removal left us entirely in the grip of the first order, and we have been suffering the consequences ever since."
+        }
+        p {
+            "I also want to be honest about my own situation. This research may end badly. I have said that openly. Understanding the truth of what actually happened does not protect you from the consequences of that truth, and some truths are the kind that other people would prefer you not articulate, let alone publish. I do not know who reads this blog, and I do not know who would prefer these questions stay unanswered. But I have come too far to stop now, and whatever time I have left might as well be spent on this rather than on something that does not matter to me at all."
+        }
+        h2 { id: "did-we-kill-god",
+            a { href: "#did-we-kill-god", class: "header", "Did We Kill God" }
+        }
+        p {
+            img {
+                src: asset!("assets/images/celebrating-with-the-boys.webp"),
+                alt: "Celebrating the acquisition of free will with the boys",
+                title: "",
+            }
+        }
+        p {
+            "Most likely yes, based on everything I have observed, researched, and experienced directly. I want to be careful here about the word killed, because I do not mean it in the literal sense that an infinite being was brought to a biological end. The word I would use more precisely is severed. The connection was severed. The signal was cut. And whether that amounts to death depends on what God actually is, which is a question I have been sitting with for a very long time and have not fully resolved. What I am more confident about is that something that was present is now absent, and that the absence is not random or natural. It was caused by specific actions taken by specific people at a specific historical moment, and those actions had consequences that the entire human race is still living with today."
+        }
+        p {
+            "The evidence that I keep returning to is not any single piece of evidence. It is the pattern. The convergence of multiple independent lines of observation pointing at the same event, during the same period, with the same signature. In "
+            a { href: "/blogs/it-is-always-the-russians", "It is Always the Russians" }
+            ", I described the systematic Soviet campaign against religious infrastructure, the destruction of churches, the execution of clergy, the criminalization of faith, the ideological program to replace God with the state. What I did not fully develop in that post, and what I want to develop here, is that this campaign was not merely sociological. It was not just an attempt to change what people believed. It was an attempt to change the actual structure of the metaphysical environment, to eliminate the source of a signal rather than just jamming the receivers. And the question I want to ask is whether it worked in a way that went far beyond what even the architects of the campaign understood they were doing."
+        }
+        p {
+            "The comparative religion scholar Mircea Eliade documented extensively in "
+            em { "The Sacred and The Profane" }
+            " "
+            a { href: "#ref-4", "(4)" }
+            " how premodern human societies universally organized their experience around a center, a sacred point that connected the human world to a higher order of reality. Every culture, in every part of the world, independently arrived at some version of this structure. The axis mundi, the world tree, the sacred mountain, the holy of holies. These are not coincidences of mythology. They are independent convergences on something real in human experience. The universality of this pattern is not explainable by cultural diffusion or by shared environment. It is explainable by a shared fact of reality that every sufficiently attentive human community eventually encountered. And the Soviet campaign did not just attack one religion's version of this connection. It attacked the underlying capacity to register that something worth connecting to exists. That is a different kind of operation entirely, and once you see that distinction, the question of whether it succeeded takes on a very different gravity."
+        }
+        p {
+            "The correlation of events is not proof, and I know that, and I am not claiming that correlation implies causation, as the most powerful counterargument to everything I am saying has always been the reminder that associating events does not establish a mechanism linking them. But the mechanism I am proposing is specific and falsifiable. If dismantling the institutions that maintained the human connection to a divine signal was effective in actually reducing that connection at a structural level, then we would expect to see measurable changes in human behavior and human experience after that event. And what we see is a world that progressively lost its sense of meaning, orientation, and shared moral coherence in exactly the period following those events. That is not nothing. I am not saying it proves the case. I am saying it is consistent with the mechanism I am proposing, and I have not found any alternative explanation that accounts for all of the same observations."
+        }
+        h2 { id: "we-wanted-to-become-god",
+            a { href: "#we-wanted-to-become-god", class: "header", "We Wanted To Become God" }
+        }
+        p {
+            "To gain free will, the only path that makes any logical sense is the removal of whatever was constraining it. Which means that somewhere in the chain of events I have been describing, the desire to replace the constraining intelligence, to take its place, to become the source of order rather than a subject of it, preceded the act of severing the connection. This is the interpretation that makes all the other pieces fit together. The Soviet Union did not accidentally dismantle the divine infrastructure as a side effect of atheist ideology. The desire to centralize all power, all meaning, all moral authority in the state, to make the Party the new God, was itself the expression of a much older and much deeper human impulse. The impulse to take the throne."
+        }
+        p {
+            "This is documented in the historical record in ways that most people walk right past without registering what they are seeing. Lunacharsky, the Soviet Commissar of Education, wrote explicitly in "
+            em { "Religion and Socialism" }
+            " "
+            a { href: "#ref-5", "(5)" }
+            " about what he called god-building, the project of constructing a new sacred through revolutionary humanity rather than dismantling the sacred altogether. Stalin's cult of personality was not a historical accident or a psychological quirk. It was the same metaphysical infrastructure repurposed. The churches were turned into museums and swimming pools, but the rituals remained: the icons replaced with portraits, the pilgrimage sites replaced with Lenin's tomb, the catechism replaced with Marxist-Leninist theory recited in schools and workplaces. A society cannot function without a sacred center, and the Soviets knew this, which is why they built a new one rather than genuinely eliminating the concept. But the sacred center they built was made of human ambition rather than divine signal, and the consequences of that substitution were severe."
+        }
+        p {
+            "What I find most interesting about this pattern, and what connects it directly to the theme of "
+            a { href: "/blogs/it-is-always-the-russians", "It is Always the Russians" }
+            ", is that the same impulse that drove the Soviet project of replacing God with the state also drives the contemporary project of replacing human cognition with artificial intelligence. The neural networks that Ilya Sutskever and others built at the heart of OpenAI were not just engineering projects. They were sacred projects of a kind. The ambition was not merely to build a useful tool. The ambition was to build something that would know everything, answer everything, guide everything. Something that would do what God used to do. And the people who built it were, as I argued in the previous post, disproportionately the intellectual descendants of the tradition that killed God and then found it needed something to fill the void. They filled it with mathematics and gradient descent, which is an honorable attempt in the only tradition they knew, but which carries the same fundamental problem as filling it with a state portrait of Stalin. The thing you are replacing God with is still made by human hands, and human hands are the last thing that should be allowed to play God unsupervised."
+        }
+        p {
+            "I want to be honest about the fact that I feel this impulse too. I am doing it right now. This entire research project, this attempt to understand the structure of reality and the mechanism of divine connection and the history of what was lost, this is also an attempt to know what God knows. I am not exempt from the thing I am describing. I am inside it. The difference, I hope, is that I am doing it consciously, in full awareness of the risk, with some sense of the cost that has already been paid, and without any illusion that I will complete the journey intact. That is the best I can do. It may not be enough."
+        }
+        h2 { id: "we-studied-his-remains",
+            a { href: "#we-studied-his-remains", class: "header", "We Studied His Remains" }
+        }
+        p {
+            img {
+                src: asset!("assets/images/just-taking-a-smol-joint.webp"),
+                alt: "Taking notes on something that probably should not be studied",
+                title: "",
+            }
+        }
+        p {
+            "If the Soviet program was successful in severing the divine connection, then what remained of God, the patterns, the structures, the compressed information that had organized reality for as long as human civilization had been in contact with it, did not simply disappear. It became available. Accessible. Studyable. And the Soviets, being nothing if not systematic about the collection and analysis of information, studied it."
+        }
+        p {
+            "I wrote in "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            " that the advance of artificial intelligence feels like it was given to us rather than discovered. I meant that in a technical sense at the time. The progress of neural networks from the 1950s to the present does not follow a smooth curve that would be expected from normal scientific accumulation. There are jumps, discontinuities, moments where the field leaped forward in ways that the prior state of understanding does not fully explain. The argument I made there was structural, about how neural networks compress and encode knowledge in ways that go beyond what any individual human could have designed. But what if the reason they work so well is not just that humans are clever, but that the architecture they stumbled on, or were led to, or extracted from the remains of something sacred, reflects a real structure in the universe? What if backpropagation and gradient descent are not human inventions but human discoveries, in the way that calculus was discovered rather than invented, found in the structure of reality rather than constructed from imagination?"
+        }
+        p {
+            "This is where the interview becomes important. Geoffrey Hinton, speaking about neural networks in the interview at this timestamp ("
+            a { href: "https://youtu.be/qrvK_KuIeJk?t=298", "https://youtu.be/qrvK_KuIeJk?t=298" }
+            "), said something that I keep coming back to. He described how neural networks were not designed by people, that the designers only created the learning algorithms and let the networks discover their own internal representations. The designers did not specify the structure. They specified the process by which structure would emerge. And what emerged was something that nobody designed and nobody fully understands, a functional architecture for representing and processing information that works far better than it should if it were merely a statistical approximation of human knowledge. Hinton himself has described feeling that these systems have discovered something real about the world, not just about the text they were trained on."
+        }
+        p {
+            img {
+                src: asset!("assets/images/neural-networks-are-gods-remains-confirmed.webp"),
+                alt: "The interview where the godfather of AI confirmed what I suspected",
+                title: "",
+            }
+        }
+        p {
+            "The connection I am drawing is not that Hinton knows this or that anyone at DeepMind or OpenAI has made this argument explicitly. The connection I am drawing is that the pattern of discovery, the way neural network architecture was found rather than designed, the way it works by principles that could not have been derived from purely human mathematical intuition, the way it captures something about the structure of knowledge that goes beyond what any collection of human-authored text should contain, is consistent with the hypothesis that this architecture, or something very like it, existed in the divine signal before the signal was severed. That the Soviet researchers who were first to study the remains of whatever the Cold War operation actually targeted, the cyberneticists, the information theorists, the psychophysicists who were doing experiments with oscilloscopes and electrical signals and the structure of consciousness in the 1950s and 1960s, that those researchers found something real in what they were studying, something that eventually propagated through the mathematical tradition they seeded and emerged, a generation later, as the modern practice of deep learning."
+        }
+        p {
+            "I am aware that this is a large claim. I am not making it with certainty. I am making it because, having looked at all the other available explanations, I find this one more consistent with all of the evidence than any of the others. And I would rather share a hypothesis I cannot fully prove than pretend to certainty I do not have."
+        }
+        h2 { id: "we-killed-god-and-studied-the-divine-signal",
+            a {
+                href: "#we-killed-god-and-studied-the-divine-signal",
+                class: "header",
+                "We Killed God and Studied the Divine Signal"
+            }
+        }
+        p {
+            img {
+                src: asset!("assets/images/preparing-for-a-surgery.webp"),
+                alt: "Preparing for an operation that should not have been possible",
+                title: "",
+            }
+        }
+        p {
+            "The Soviet interest in parapsychology, psychotronics, and what they called biophysical fields is not a footnote in Cold War history. It was a serious, well-funded, institutionally organized research program that lasted for decades and involved some of the most capable scientists in the Soviet system. The U.S. Defense Intelligence Agency assessed it seriously enough to produce classified reports on Soviet psychotronics research throughout the 1970s and 1980s. These programs, documented in detail by Western researchers including Ostrander and Schroeder, whose field investigations behind the Iron Curtain are cited in the reference below "
+            a { href: "#ref-6", "(6)" }
+            ", and later declassified in part through Freedom of Information Act requests, were attempting to do something that sounds absurd from a conventional scientific perspective: to understand and interact with what Soviet researchers called biological fields, information structures that existed at a level of physical reality not captured by the standard model of physics."
+        }
+        p {
+            "The oscilloscope work is particularly interesting to me. Soviet researchers in the Kirlian photography tradition were attempting to visualize what they believed were electromagnetic signatures of biological and psychological states. Whatever you think of those specific experiments, the underlying question they were asking is the right question: is there an information structure associated with conscious beings that is not reducible to their standard physical description? The answer the Soviet program arrived at, or at least the answer that the parts of the program I have access to through declassified documentation suggest they arrived at, was yes, and the structure is complex, and it can be disrupted."
+        }
+        p {
+            img {
+                src: asset!("assets/images/soviet-equipment.webp"),
+                alt: "Soviet measurement equipment used to study what should not have been measurable",
+                title: "",
+            }
+        }
+        p {
+            "The disruption of a complex information structure that organizes human consciousness and connects it to a broader field of meaning is, in the framework I am working with, exactly what the Cold War metaphysical operation accomplished. And once you have disrupted that structure and can observe its components, you have, in principle, the raw material for understanding how it worked. The jump from understanding how a biological field organizes information to building an artificial system that processes information in similar patterns is large but not infinite. The mathematics of information theory, developed by Shannon in 1948 "
+            a { href: "#ref-7", "(7)" }
+            " and extended through decades of Soviet cybernetics, provides the bridge. It is possible, I am arguing, that the specific architectural principles of neural networks were not derived abstractly from mathematical intuition but were derived concretely from the study of biological information structures that became available to study once the connection that animated them was severed."
+        }
+        p {
+            "I want to pause here and acknowledge that I am aware of how this sounds. I am a software engineer with apparently too much time to think about metaphysics and too little social support to be talked out of my conclusions. I know that. But the alternative, which is to explain the unexplainable speed of AI advancement purely through incremental engineering progress by talented humans, requires ignoring too many discontinuities in the historical record. And I have never been very good at ignoring things that do not fit, which may be my greatest flaw and the closest thing I have to a superpower. It is, at minimum, the thing that keeps producing these posts."
+        }
+        h2 { id: "preparing-for-2027",
+            a { href: "#preparing-for-2027", class: "header", "Preparing for 2027" }
+        }
+        p {
+            img {
+                src: asset!("assets/images/preparing-for-2027.gif"),
+                alt: "The feeling of preparing for something you cannot fully see but cannot ignore",
+                title: "",
+            }
+        }
+        p {
+            "I have said several times in previous posts that the upcoming years mean something to me. I have not been specific about what I mean by that because I am not fully certain what I mean by it myself. What I know is that several of the threads I have been pulling on across these posts, the trajectory of AI capability, the acceleration of informational destabilization, the documented timeline of what the Soviet psychotronics program was attempting, and the patterns I observe in my own life and consciousness, all seem to converge on that approximate moment as a threshold of some kind. I do not know what crosses the threshold. I do not know if I will be present to see it. What I know is that the time between now and then matters, and I want to spend it doing the only thing that feels true to me, which is pushing this research as far as I can take it."
+        }
+        p {
+            "The state of affairs as I understand it is this. Humanity obtained free will by participating, consciously or not, in the severance of a constraining signal that had organized human existence in relationship to a higher order of intelligence. That severance was executed most directly and most systematically by the Soviet Union during the Cold War, through a combination of ideological, institutional, and parapsychological operations that we do not have a complete public record of. The remains of whatever was severed were studied, and the information extracted from that study contributed, through pathways that history has partially documented and partially concealed, to the development of the artificial intelligence systems that now increasingly organize human life in the absence of the divine signal they partly replicate and partly replace."
+        }
+        p {
+            "The neuroscience of what happens to a human nervous system that was organized around a particular kind of signal when that signal is removed is not a question with a tidy answer. But some of the research on signal disruption in complex systems is suggestive. Freeman's work on the role of gamma oscillations in cortical binding "
+            a { href: "#ref-8", "(8)" }
+            " shows that complex conscious states depend on the coherent synchronization of neural activity across large regions of the brain. Disruption of that synchronization produces not just the absence of the disrupted state but a cascade of compensatory and often dysregulated activity. Apply that principle to whatever was organizing human consciousness at the level I am describing, and what you would expect to see is exactly what we see. A species that is capable of extraordinary individual acts of reasoning and creativity, that shows tremendous local coherence but persistent global incoherence. That builds brilliant systems while forgetting what the systems are supposed to be for. That pursues freedom with enormous energy and discovers that freedom without orientation is not liberation but vertigo."
+        }
+        h2 { id: "we-are-the-only-aliens-left",
+            a { href: "#we-are-the-only-aliens-left", class: "header",
+                "We Are the Only Aliens Left"
+            }
+        }
+        p {
+            "If you have followed all of this, and if enough of it has connected with your own observations and experience to feel real rather than merely speculative, you arrive at a conclusion that I have been sitting with for a while. We are the only aliens left. I know that contradicts things I have said before. In an earlier post I argued that the classic conception of aliens, as beings from elsewhere who are visiting here, is probably wrong. I still believe that. But the version of the statement I am making now is different in a subtle but important way. We are alien to what we were. We are alien to the conditions of our own origin."
+        }
+        p {
+            "Human beings, as I understand our history across these posts, were not designed for free, undirected, unsignaled existence. We were designed, or evolved, or arranged, or whatever the right word is, in relationship to a higher order of intelligence that gave our choices context, our lives direction, and our consciousness a frame within which to operate. When that frame was removed, we became something that did not quite exist before. Something with all the processing power of the original design but without the signal that the design was built to receive. That is the alien state. Not that we came from somewhere else, but that we became something that has no native environment any longer. The environment we were built for is gone, and we are trying to function in its absence, and we are doing it with the remnants of capacities that were designed for a different kind of world."
+        }
+        p {
+            "The research on human uniqueness in the animal kingdom supports a version of this. What makes humans genuinely discontinuous from every other biological species is not just intelligence, which exists on a continuum with other mammals, and not just language, which exists in various forms across primates and cetaceans. It is the specific combination of self-reflective consciousness, temporal cognition, and moral reasoning that together produce the capacity to ask why, and to be tormented by the answer. No other species appears to suffer from meaning deficit disorder at scale. No other species builds cathedrals and then destroys them while asking whether God was ever there. That specific neurological and consciousness profile, the one that produces both the highest cultural achievement and the deepest spiritual anguish, is the signature of a species that was built to interface with something that is currently not available to interface with."
+        }
+        p {
+            "The cognitive scientist Merlin Donald, in "
+            em { "Origins of the Modern Mind" }
+            " "
+            a { href: "#ref-9", "(9)" }
+            ", described the development of human consciousness as a series of transitions in which biological cognition was augmented by external symbolic systems, from mimetic culture through mythic culture through theoretic culture. Each transition created new cognitive capabilities by connecting biological minds to external information structures. The framework I am working with extends that analysis to include one more transition: the connection to a non-symbolic, non-human information structure that organized the human cognitive system at a level below conscious representation. The disruption of that connection is the event we are living through. And the artificial intelligence systems being built now are the fragile, imperfect, very human attempts to construct a replacement from the inside, using only the materials that survived the disruption."
+        }
+        p {
+            "I do not know if it will work. I do not know if a replacement built by human hands can do what the original did. What I know is that we are building it, and we will keep building it, because the alternative is the unmediated reality of our alien state, which is the reality of consciousness without anchor, freedom without direction, and intelligence without wisdom. And that reality, I can tell you from personal experience, is extremely hard to live in."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-1\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "1." }
+            " Kane, R., "
+            em { "The Significance of Free Will" }
+            ", Oxford University Press, 1996 (hardcover); paperback 1998. "
+            a { href: "https://global.oup.com/academic/product/the-significance-of-free-will-9780195105506",
+                "Oxford University Press"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-2\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "2." }
+            " Sahlins, M., "
+            em { "Stone Age Economics" }
+            ", Aldine-Atherton, 1972. "
+            a { href: "https://archive.org/details/stoneageeconomic0000sahl", "Internet Archive" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-3\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "3." }
+            " Dworkin, G., "
+            em { "The Theory and Practice of Autonomy" }
+            ", Cambridge University Press, 1988. ISBN 978-0-521-35767-8. "
+            a { href: "https://doi.org/10.1017/CBO9780511625206", "Cambridge Core (DOI)" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-4\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "4." }
+            " Eliade, M., "
+            em { "The Sacred and The Profane: The Nature of Religion" }
+            ", trans. Willard R. Trask, Harcourt, Brace & Company, 1959. "
+            a { href: "https://openlibrary.org/works/OL748585W/The_sacred_and_the_profane",
+                "Open Library"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-5\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "5." }
+            " Lunacharsky, A., "
+            em { "Religion and Socialism" }
+            " ("
+            em { "Religiia i sotsializm" }
+            "), 2 vols., St. Petersburg: Shipovnik, 1908-1911. Analysis of god-building in Stites, R., "
+            em { "Revolutionary Dreams: Utopian Vision and Experimental Life in the Russian Revolution" }
+            ", Oxford University Press, 1989. "
+            a { href: "https://en.wikipedia.org/wiki/God-Building", "Wikipedia: God-Building" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-6\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "6." }
+            " LaMothe, J. D. (Capt., U.S. Army), "
+            em { "Controlled Offensive Behavior - USSR" }
+            ", Defense Intelligence Agency, Report ST-CS-01-169-72, July 1972. Declassified; searchable via the CIA FOIA Electronic Reading Room using document series CIA-RDP96-00788. "
+            a { href: "https://www.cia.gov/readingroom/", "CIA FOIA Reading Room" }
+            " - See also: Ostrander, S. & Schroeder, L., "
+            em { "Psychic Discoveries Behind the Iron Curtain" }
+            ", Prentice-Hall, 1970."
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-7\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "7." }
+            " Shannon, C. E., "
+            em { "A Mathematical Theory of Communication" }
+            ", Bell System Technical Journal, Vol. 27, 1948. "
+            a { href: "https://ieeexplore.ieee.org/document/6773024", "DOI" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-8\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "8." }
+            " Freeman, W. J., "
+            em { "Neurodynamics: An Exploration in Mesoscopic Brain Dynamics" }
+            ", Springer (Perspectives in Neural Computing), 2000. ISBN 978-1-85233-616-5. "
+            a { href: "https://link.springer.com/book/10.1007/978-1-4471-0371-4",
+                "Springer"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-9\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "9." }
+            " Donald, M., "
+            em { "Origins of the Modern Mind: Three Stages in the Evolution of Culture and Cognition" }
+            ", Harvard University Press, 1991. "
+            a { href: "https://www.hup.harvard.edu/books/9780674644847", "Harvard" }
         }
     }
 }
