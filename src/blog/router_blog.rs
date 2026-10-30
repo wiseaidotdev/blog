@@ -78,6 +78,8 @@ pub enum BookRoute {
     IResurrectedADeadCrcCrateAndItSuddenlyWentViral {},
     #[route("/no-neural-networks-cannot-produce-genuine-autonomous-intelligence")]
     NoNeuralNetworksCannotProduceGenuineAutonomousIntelligence {},
+    #[route("/anthropic-rendered-every-startup-that-rejected-me-obsolete")]
+    AnthropicRenderedEveryStartupThatRejectedMeObsolete {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -173,6 +175,9 @@ impl BookRoute {
             }
             BookRoute::NoNeuralNetworksCannotProduceGenuineAutonomousIntelligence {} => {
                 use_mdbook::mdbook_shared::PageId(31usize)
+            }
+            BookRoute::AnthropicRenderedEveryStartupThatRejectedMeObsolete {} => {
+                use_mdbook::mdbook_shared::PageId(32usize)
             }
         }
     }
@@ -2660,6 +2665,67 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::NoNeuralNetworksCannotProduceGenuineAutonomousIntelligence {},
             ::use_mdbook::mdbook_shared::PageId(31usize),
         );
+        pages
+            .push((
+                32usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 33 |---| Thank You, Anthropic: Every Startup That Rejected Me Is Now Obsolete |---| existence |---| anthropic-rendered-every-startup-that-rejected-me-obsolete |---| Oct 30 2026 |---| A personal account of building AI-driven legal workflow systems in 2025 and 2026, being rejected by the very startups that proceeded to copy the ideas, and the quiet justice of watching Anthropic render those same startups structurally unnecessary. |---| assets/images/banner_post_33.png |---| https://dev.to/wiseai/thank-you-anthropic-every-startup-that-rejected-me-is-now-obsolete-2b85 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/anthropic-rendered-every-startup-that-rejected-me-obsolete.md"
+                            .to_string(),
+                        url: BookRoute::AnthropicRenderedEveryStartupThatRejectedMeObsolete {},
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Applying for Jobs in 2025".to_string(),
+                                id: "applying-for-jobs-in-2025".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Applying for Jobs in 2026".to_string(),
+                                id: "applying-for-jobs-in-2026".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Technical Architecture I Built".to_string(),
+                                id: "the-technical-architecture-i-built".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Unemployment Reality That Nobody Wants to Quote Accurately"
+                                    .to_string(),
+                                id: "the-unemployment-reality-that-nobody-wants-to-quote-accurately"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why Anthropic's Legal Suite Is the Punchline to a Very Long Setup"
+                                    .to_string(),
+                                id: "why-anthropic's-legal-suite-is-the-punchline-to-a-very-long-setup"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "On No Longer Picking Up the Brush, and What Comes After That"
+                                    .to_string(),
+                                id: "on-no-longer-picking-up-the-brush,-and-what-comes-after-that"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(32usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::AnthropicRenderedEveryStartupThatRejectedMeObsolete {},
+            ::use_mdbook::mdbook_shared::PageId(32usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -2959,6 +3025,15 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         location: Some(BookRoute::NoNeuralNetworksCannotProduceGenuineAutonomousIntelligence {}),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![32u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 33 |---| Thank You, Anthropic: Every Startup That Rejected Me Is Now Obsolete |---| existence |---| anthropic-rendered-every-startup-that-rejected-me-obsolete |---| Oct 30 2026 |---| A personal account of building AI-driven legal workflow systems in 2025 and 2026, being rejected by the very startups that proceeded to copy the ideas, and the quiet justice of watching Anthropic render those same startups structurally unnecessary. |---| assets/images/banner_post_33.png |---| https://dev.to/wiseai/thank-you-anthropic-every-startup-that-rejected-me-is-now-obsolete-2b85 |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/anthropic-rendered-every-startup-that-rejected-me-obsolete.md"
+                            .to_string(),
+                        location: Some(BookRoute::AnthropicRenderedEveryStartupThatRejectedMeObsolete {}),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![33u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -15396,6 +15471,379 @@ pub fn NoNeuralNetworksCannotProduceGenuineAutonomousIntelligence() -> dioxus::p
             ", "
             a { href: "https://www.cambridge.org/core/books/causality/B0046844FAE10CBF274D4ACBDAEB5F5B",
                 "Cambridge University Press, 2009"
+            }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn AnthropicRenderedEveryStartupThatRejectedMeObsolete() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "I want to start with something I rarely do, which is express genuine and unambiguous gratitude. Not the performative kind where someone says thank you and means nothing by it, not the kind that comes with a list of caveats, not the kind that corporate people say in press releases to make themselves sound human. Real gratitude. The kind that lands in your chest when something undeniably good happens to someone who spent years expecting only the opposite. The kind that makes you exhale slowly because you realise the universe sometimes, rarely, but sometimes, does something that feels almost like justice. This post is that exhale. I have been holding it in for a while, and it is time to let it out."
+        }
+        p {
+            "For context that will make everything else in this post land properly, you need to know where I am coming from. In my foundational post "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            ", I laid out something very real about why I reached a point of complete and total disillusionment with the idea of trying to get a job in the technology industry. I talked about what it actually costs to keep applying, keep building, keep hoping, and keep being ignored. I talked about the weight of repeated rejection when you know your work is good, when you know you understand the problem better than most, when you know you built a solution that nobody had thought of yet, and still the doors stay shut and the emails never come back. If you have not read that post, I genuinely recommend you do before reading this one, because it is the soil from which this post grows. This post, in many ways, is the sequel to that one. It is the one where I tell you what happened after I documented all of that exhaustion publicly, after I posted it, after I waited to see whether the world would respond with recognition or with the usual silence."
+        }
+        p {
+            "The thing about writing honestly about broken systems is that it does not fix them. The systems keep running. The companies keep rejecting. The silence keeps accumulating. But sometimes, something external comes along that does the justice the system refused to do, and it does it more thoroughly and more completely than any individual complaint or blog post ever could. That is exactly what happened here. That is what this post is about. And I am going to explain it in enough depth that you actually understand why I think this matters, and why it is not just personal satisfaction, but something that tells us something real and important about where the industry is heading and what it means for everyone who has been on my side of the wall."
+        }
+        p {
+            "I also want to be transparent about the timing dynamic here, because it matters. This post is in direct continuation of my previous writing. I said in "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            " that the job market is a rigged game, that the system rewards connections over competence, and that years of serious work can disappear into automated rejection systems without a single human ever seeing the output you spent months building. I said it knowing it was true. I said it knowing that saying it would change nothing. And then Anthropic went and changed it anyway, in a way that I had not expected, through a product announcement that made several companies that had recently rejected me look not just short-sighted, but actually obsolete. Not metaphorically. Structurally obsolete. Built on a premise that no longer holds. That is the story. Let me tell it properly."
+        }
+        h2 { id: "applying-for-jobs-in-2025",
+            a { href: "#applying-for-jobs-in-2025", class: "header", "Applying for Jobs in 2025" }
+        }
+        p {
+            "The year 2025 was one of the most technically productive years of my life, and also one of the most professionally demoralizing. Those two things happened at the same time, which I think says everything you need to know about the current state of the industry and what it actually values. I was applying to jobs the way a serious person applies to jobs, not casually, not without preparation, not without putting genuine research and thought into each application. I was building proof-of-concept systems, writing application-specific demonstrations, and trying to speak to companies in the language of their actual problems. For most of them, it did not matter. The silence was the usual silence. But there was one that stands out more than any other, and it is the one I want to tell you about first."
+        }
+        p {
+            "The company was Haqq, a Lebanese legal AI startup whose stated mission at the time was to digitize legal work for law firms and legal professionals across the Arab world and beyond. The problem they were solving is a genuine problem and not a trivial one. Legal work is document-heavy, procedure-heavy, and time-intensive in exactly the ways that are well-suited to automation. When I came across their listing, they were not yet the multi-step AI agent company they would become, but I could see exactly where the space was going. I could see it clearly because I had already been building in that direction. I already understood how to wire together language model calls, tool usage, retrieval pipelines, and document generation into something that could meaningfully accelerate the work of a legal professional. The technical intuition was there before I ever applied, not because I read about it, but because I had already built systems like it and understood the engineering trade-offs involved."
+        }
+        p {
+            "So I decided to do something that I had done before and that I would do again despite the outcomes, which was to build a complete, working proof-of-concept to accompany my application. Not a mockup. Not a slide deck. Not a blog post about how I would theoretically approach the problem. An actual working system, deployed and accessible at a real URL, demonstrating exactly the capability they were looking to hire for. I built an agentic legal assistant using GPT-4 as the model provider, connected it to document generation pipelines using the "
+            a { href: "https://developers.openai.com/api/docs/models/gpt-4", "OpenAI GPT-4 API" }
+            ", gave it the ability to draft NDAs and legal correspondence, and deployed the whole thing to Render at what was then a functional endpoint at "
+            a { href: "https://haqq.onrender.com", "https://haqq.onrender.com" }
+            ". The system worked. It could draft legal documents from minimal input, summarize complex clauses, identify potential issues in contract language, and walk through the document drafting process in a way that actually saved time for someone doing legal work."
+        }
+        p {
+            img {
+                src: asset!("assets/images/haqq-interview.webp"),
+                alt: "Interview invitation from Haqq",
+                title: "",
+            }
+        }
+        p {
+            "After submitting the application, something rare happened: I got a phone call. I got a scheduled interview. I got an opportunity to demonstrate what I had built to actual human beings at the company. For a moment, that felt like validation. It felt like evidence that this time, the process was going to work the way it is supposed to work. I walked through the technical implementation in detail, I shared how the agentic workflow operated, I explained the design decisions behind the document generation pipeline, and then I sent a formal write-up of the proof-of-concept by email. You can see that email in the image below. I was thorough, professional, and technically substantive. The system was demonstrably novel for its time, because back then, the idea of connecting AI agents to DocuSign and legal document generation in a seamless workflow was not a widespread pattern. It was genuinely unexplored territory."
+        }
+        p {
+            img {
+                src: asset!("assets/images/haqq-poc.webp"),
+                alt: "The PoC email I sent to Haqq",
+                title: "",
+            }
+        }
+        p {
+            "And then, as you may already have guessed from the title of this post, they rejected me. No specific feedback. No explanation that was substantive enough to calibrate against. Just a polite version of no that communicated nothing useful. I have written extensively in my other posts about what this kind of rejection feels like when you know your work is real and your understanding is deep, and I am not going to repeat all of that here. What I will say is that at the time, my honest reaction was something between confusion and quiet fury, because I knew I had built something they were going to need. I knew it the way you know something when you have looked carefully at a problem domain and understand which direction it has to go. I said it to myself and let it go, because there was nothing else to do."
+        }
+        p {
+            "What happened in the months that followed was exactly what I had predicted. Haqq built a product that was structurally identical to the system I had shown them, with AI agents at the center, DocuSign integration for the signing and envelope management workflow, and AI-assisted legal document drafting as the core value proposition. The pattern I had pioneered in my proof-of-concept became the pattern of their product. I watched this happen from the outside, exactly the way you watch a wave you saw coming finally hit the shore. It is not satisfying in the way people think it would be. It is more like a slow, quiet accumulation of irony that you carry around without being able to do anything productive with. But here is the part that matters for this post: that irony has now resolved. Because Anthropic announced "
+            a { href: "https://claude.com/solutions/legal", "Claude for legal work" }
+            ", and the premise that Haqq's entire product was built on, namely that you need a specialized startup wrapper to do AI-assisted legal document work, is no longer valid. The AI overlord arrived and rendered the wrapper unnecessary. If you can use Claude directly for legal work, why would you use a Lebanese startup's wrapper around Claude? The market will answer that question, and it will not answer it kindly."
+        }
+        h2 { id: "applying-for-jobs-in-2026",
+            a { href: "#applying-for-jobs-in-2026", class: "header", "Applying for Jobs in 2026" }
+        }
+        p {
+            "If the Haqq story were an isolated incident, it would be easy to write it off as bad luck, poor timing, or the ordinary friction of the early-stage startup world where chaos governs more than strategy. I could have accepted that narrative. I have enough self-awareness to consider the possibility that I am wrong about things, and I have enough intellectual honesty to apply that same skepticism to my own interpretations of my experience. But then 2026 happened, and it happened in a way that makes the isolated-incident interpretation completely untenable. Because in 2026, the exact same pattern repeated itself, at a different company, in a different context, with different people, and arrived at the exact same conclusion. Same rejection. Same stolen idea. Same obsolescence delivered by the same AI company."
+        }
+        p {
+            "The company was Navys, which operates in the same legal AI space as Haqq, focusing specifically on AI-assisted document signing and drafting, with DocuSign integration as a central feature. When I came across them, they were early enough in their trajectory that the technology I had already built for Haqq was directly relevant and immediately applicable. I had a working proof-of-concept. I had the database schema designed. I had the integration patterns figured out. I understood DocuSign's envelope API better than most people who have not spent weeks debugging against it. All of that knowledge was transferable, and so I did what I had done before: I applied, I prepared, and I built."
+        }
+        p {
+            img {
+                src: asset!("assets/images/navys-interview.webp"),
+                alt: "Interview invitation",
+                title: "",
+            }
+        }
+        p {
+            "I got an interview. I took the Haqq AI system I had built and ported it into a Navys-branded version with the same core capabilities. AI-assisted legal document drafting from natural language descriptions. NDA generation via simple chat input. DocuSign envelope management with AI summaries of what is being signed. Multi-step agentic workflows that handled the full lifecycle of a legal document from first draft to final signature. Same working system. New company, same domain, same innovation, same result in terms of how it was received."
+        }
+        p {
+            img {
+                src: asset!("assets/images/navys-response.webp"),
+                alt: "The ambiguous rejection email from Navys",
+                title: "",
+            }
+        }
+        p {
+            "The rejection came as something of a non-response. Ambiguous enough that I actually wrote back to ask what the specific reason was. I wanted to understand. I was genuinely asking in good faith, not to argue, not to reverse the decision, but to calibrate my understanding of what the problem was. Was it technical? Was it a fit issue? Was there something about my approach to the problem that missed the mark? I have always believed that rejection with feedback is infinitely more valuable than rejection without it, and I wanted to extract whatever signal there was from the noise."
+        }
+        p {
+            img {
+                src: asset!("assets/images/my-response.webp"),
+                alt: "My follow-up email to Navys asking for the reason for rejection",
+                title: "",
+            }
+        }
+        p {
+            "I never got a meaningful answer. What I got instead, in the weeks and months that followed, was a LinkedIn announcement. Navys had secured a formal partnership with DocuSign. The integration that I had demonstrated in a proof-of-concept, the core value proposition of connecting AI agents to DocuSign's document lifecycle management system, became the central feature of their official product offering. You can read the announcement yourself at this "
+            a { href: "https://www.linkedin.com/posts/navysai_were-excited-to-announce-that-navys-has-activity-7490437261709324288-3m3w",
+                "DocuSign partnership announcement on LinkedIn"
+            }
+            ". The idea I had shown them. The patten I had demonstrated. The technical architecture I had built. It became their product. And I sat outside watching it happen from a LinkedIn post."
+        }
+        p {
+            img {
+                src: asset!("assets/images/my-interest-in-collaboration.webp"),
+                alt: "My later email to Navys expressing continued interest in collaboration, after months of silence",
+                title: "",
+            }
+        }
+        p {
+            "I sent one more email, months later, after I saw the announcement. Not angry. Not accusatory. Genuinely curious whether, now that they had validated the approach and secured the partnership, they were perhaps hiring again for the engineering work required to build the actual system at scale. They ghosted it completely. Not even a read receipt. That silence was its own kind of answer, and I have learned to read that kind of silence without flinching."
+        }
+        h2 { id: "the-technical-architecture-i-built",
+            a { href: "#the-technical-architecture-i-built", class: "header",
+                "The Technical Architecture I Built"
+            }
+        }
+        p {
+            "I want to spend time in this section on what I actually built, because I think the tendency in posts like this is to talk about the emotional experience of rejection and the unfairness of the outcomes without grounding the argument in the specific technical reality that makes the unfairness concrete. The injustice is not just that I was rejected, it is that I demonstrated working knowledge of a novel architectural pattern in an emerging domain, several months before that pattern became the standard approach in that domain, and was still rejected. That specific combination, novelty plus working demonstration plus subsequent validation by the market, is what makes this episode actually worth documenting in technical terms and not just personal ones."
+        }
+        p {
+            "The database I designed for both the Haqq and Navys applications used Supabase as the PostgreSQL provider. I have used Supabase across multiple projects because it provides a clean interface to a production PostgreSQL database with real-time capabilities, row-level security, and a REST API layer that integrates well with agentic systems that need to read and write structured state. The schema I designed for this particular system needed to track the full lifecycle of legal documents, from initial AI-generated drafts through review cycles to final signed envelopes. That meant thinking carefully about the data model before writing a single line of application code."
+        }
+        p {
+            img {
+                src: asset!("assets/images/db-schemas.webp"),
+                alt: "The full database schema for the legal AI agent system",
+                title: "",
+            }
+        }
+        p {
+            "The schema centered on two main entities: envelopes and recipients. Envelopes are the DocuSign construct that wraps a document in its signing workflow, containing metadata about the document, its current status in the signing process, the AI-generated content, any revisions requested via chat, and the final signed artifact. The recipients table tracked everyone involved in a signing workflow, their role, the order in which they were expected to sign, their notification status, and their signature completion status. These two tables, connected properly, gave the system everything it needed to present a coherent and auditable history of every legal document that passed through the system."
+        }
+        p {
+            img {
+                src: asset!("assets/images/supabase-envelopes-table.webp"),
+                alt: "Supabase envelopes table showing the document metadata and lifecycle fields",
+                title: "",
+            }
+        }
+        p {
+            img {
+                src: asset!("assets/images/recipients-table.webp"),
+                alt: "Recipients table showing the signer metadata and notification tracking fields",
+                title: "",
+            }
+        }
+        p {
+            "The intelligence layer was where the system became genuinely interesting. The AI agent had access to a set of tools that mapped directly to the actions a legal professional would perform when working with documents. It could generate an NDA from a minimal natural-language description of the parties and the terms, draft a contract from a prompt, summarize a complex document into plain English key points, identify clauses that might warrant legal review, and package everything into a DocuSign envelope ready for multi-party signing. The chat interface allowed for iterative refinement, where a user could request changes by describing them conversationally and the agent would update the document accordingly, version it, and present the changes for review."
+        }
+        p {
+            img {
+                src: asset!("assets/images/edit-nda-in-chat.webp"),
+                alt: "AI agent editing an NDA via a conversational chat interface",
+                title: "",
+            }
+        }
+        p {
+            img {
+                src: asset!("assets/images/nda-from-scratch.webp"),
+                alt: "AI agent generating an NDA from scratch based on a natural language brief",
+                title: "",
+            }
+        }
+        p {
+            "The DocuSign integration handled all the heavy lifting of the actual document signing lifecycle: creating envelopes, adding recipients with signing order and role definitions, embedding the document with field tags for signature capture, sending notification emails to signers, tracking completion status, and retrieving the final signed PDF once all parties had signed. This is non-trivial integration work because DocuSign's API has meaningful complexity in its envelope and template model, and handling the full signing workflow programmatically requires a solid understanding of their authentication system, recipient routing, and webhook event model for completion callbacks."
+        }
+        p {
+            img {
+                src: asset!("assets/images/docusign-integration.webp"),
+                alt: "DocuSign registration and integration flow in the application",
+                title: "",
+            }
+        }
+        p {
+            "The complete system, from AI-assisted document generation to DocuSign envelope management to recipient tracking in Supabase, is documented in a short demo video that shows the actual user experience from end to end. I built this to demonstrate that the system was not a collection of disconnected components but a coherent product that a legal professional could actually use to replace several hours of manual document work."
+        }
+        p {
+            class: "inline-html-block",
+            dangerous_inner_html: "<video controls>\n",
+        }
+        p {
+            class: "inline-html-block",
+            dangerous_inner_html: "  <source src=\"assets/images/poc-demo.mp4\" type=\"video/mp4\">\n",
+        }
+        p {
+            class: "inline-html-block",
+            dangerous_inner_html: "  Your browser does not support the video tag.\n",
+        }
+        p { class: "inline-html-block", dangerous_inner_html: "</video>\n" }
+        p {
+            "This is what I built. This is what I showed them. This is what they declined to hire me to build at their company. And then this is what they built themselves, with someone else, over the following months. I am not speculating about this. The timeline is public. The LinkedIn announcement is public. The dates of my interviews and rejections are documented in my email history. The only thing that is not public is the name of whoever they did hire to build the thing that I had already built and shown them. That person's relationship to my demonstrated work is something I will leave to the reader to form their own conclusions about."
+        }
+        h2 { id: "the-unemployment-reality-that-nobody-wants-to-quote-accurately",
+            a {
+                href: "#the-unemployment-reality-that-nobody-wants-to-quote-accurately",
+                class: "header",
+                "The Unemployment Reality That Nobody Wants to Quote Accurately"
+            }
+        }
+        p {
+            "I have seen the official unemployment figures. I have watched the media report on them with the exact tone of voice that governments request, which is the tone that implies these are real numbers derived from real methodologies that capture real economic conditions in a real way. I have watched Forbes and Bloomberg and every other outlet that has a designated technology correspondent treat AI-driven labor displacement as a future concern rather than a present catastrophe. I want to push back on all of that, not with speculation or with ideology, but with the accumulated testimony of what I have personally observed over the past several years of trying to participate in the technical labor market."
+        }
+        p {
+            "The official unemployment figures released by the Bureau of Labor Statistics used the U-3 measure, which counts people who are actively searching for work and have not found it. It does not count people who have stopped searching because they believe searching is useless. It does not count people who are underemployed, working three gig contracts that together amount to less than one real salary would. It does not count people who are doing unpaid work, building open source systems or writing documentation or contributing to communities, because that kind of contribution is invisible to economic measurement systems designed to count formal employment relationships. As of mid-2026, the official U-3 rate sits around 6.1%, which the financial press describes as elevated but manageable. Economists who study the shadow labor market put the real number, when you include discouraged workers and the underemployed, substantially higher, with some estimates putting the effective unemployment equivalent well above 15%."
+        }
+        p {
+            "My lived experience says the real number is higher still. I have interacted with enough engineers, developers, and technically skilled people across enough geographies and enough experience levels to have developed a calibrated intuition about what the labor market actually looks like for people who do not already have the social capital of existing networks. David Autor's landmark 2024 NBER paper argues that AI could, in principle, restore middle-class jobs by extending expert decision-making to a wider set of workers, but the argument is built on an explicit and honest acknowledgment that the current deployment trajectory of AI is failing to do this, because the tools are being used to replace workers at the mid-tier rather than to augment them "
+            a { href: "#ref-1", "(1)" }
+            ". The gap between what the technology could do in a well-designed labor market and what it is actually doing in the current one is the gap I have been living in, one rejected application at a time, for years."
+        }
+        p {
+            "The deeper problem is not that AI is displacing workers in the abstract. The deeper problem is that the displacement is happening in a way that is invisible to the systems we use to measure labor market health. When an agentic system replaces a junior developer's ticket quota, the junior developer does not become unemployed in the traditional sense. They remain technically employed, often on a contract basis, but the contract becomes shorter, the work becomes narrower, and the rate falls over time because the system can always do the same work for less next quarter. The official statistics see a person who is employed. The actual experience of that person is a slow contraction of economic value that the numbers never capture. Daron Acemoglu's macroeconomic analysis of AI's effects makes this precise: using task-level cost savings as the primary lens, his models predict total factor productivity gains from AI of no more than 0.66 percent over ten years, a number that is, as he says, nontrivial but modest, and one that falls even further when accounting for hard-to-learn tasks where AI produces confident outputs without reliable performance "
+            a { href: "#ref-2", "(2)" }
+            ". The productivity number is small. The displacement is real. That asymmetry is the trap."
+        }
+        p {
+            "The near-term trajectory is also not encouraging in the way that optimistic projections about job creation in new sectors tend to suggest. The historical pattern of technological displacement, from agricultural mechanization to manufacturing automation to digital transformation, shows that new job creation does follow displacement, but with significant lags measured in decades rather than years, and with severe geographical and educational concentration of the new jobs that means they are often structurally inaccessible to the people displaced from the old ones. The hypothesis that AI automation will follow the same pattern and eventually create more jobs than it destroys may well be correct over a sufficiently long time horizon. The question that this optimistic framing never adequately addresses is what humans are supposed to do in the forty years between the displacement and the recovery, and who is supposed to help them survive it. We are heading, as I said in "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            ", toward a landscape of all sellers and no buyers, where the productivity gains from AI benefit to capital holders and the people who formerly performed the automated labor receive nothing from that productivity gain. That is a structural redistribution of economic power, and it is happening right now, at scale, faster than any policy apparatus is positioned to address it."
+        }
+        h2 { id: "why-anthropics-legal-suite-is-the-punchline-to-a-very-long-setup",
+            a {
+                href: "#why-anthropics-legal-suite-is-the-punchline-to-a-very-long-setup",
+                class: "header",
+                "Why Anthropic's Legal Suite Is the Punchline to a Very Long Setup"
+            }
+        }
+        p {
+            "I want to be precise about what Anthropic did and why it matters beyond the personal satisfaction I feel about it. When Anthropic launched "
+            a { href: "https://claude.com/solutions/legal", "Claude for Legal Work" }
+            ", they made a statement about the viability of an entire category of company, and that statement was delivered in the kindest possible way, which is to say entirely silently. There was no press release aimed at startup founders. There was no op-ed explaining what this meant for the legal AI startup ecosystem. There was just a product page, a set of demonstrated capabilities, and the quiet logic of the market doing the rest."
+        }
+        p {
+            "The category of company that Claude for Legal Work renders structurally questionable is very precisely the category that includes Haqq and Navys. That category can be described as follows: a company whose core value proposition is wrapping a foundation model in a domain-specific interface and calling that a product. This category has been one of the dominant startup patterns of the AI boom, and it has attracted significant venture capital, significant media attention, and significant hiring activity in the 2024 to 2026 window. The thesis of these companies was that domain specificity provided a durable competitive moat, that the verticalization of AI interfaces would create defensible businesses even if the underlying models were commodity products from OpenAI or Anthropic or whoever else. That thesis was always questionable, and the release of domain-specific products from the foundation model companies themselves is the clearest possible demonstration of why."
+        }
+        p {
+            "The strategic logic of why this was inevitable has been documented carefully in research on platform competition. Cennamo and Santalo showed in a landmark study of platform markets that competing platforms almost universally converge toward direct provision of services that were previously delegated to third-party complementors, because the marginal cost of platform-native service provision is structurally lower than maintaining an ecosystem of intermediaries who extract margin at every layer "
+            a { href: "#ref-3", "(3)" }
+            ". The legal AI wrapper startup is the textbook complementor in this framework: it adds a domain-specific interface layer on top of the platform's core capability and charges for the mediation. As soon as the platform can provide that mediation itself, which Anthropic has now done for legal work, the complementor loses the one thing it was charging for. Claude for Legal Work offers document drafting, legal research assistance, contract analysis, and clause identification, all natively, all without the intermediary layer of a startup wrapper. The marginal value of a company whose business model is to sit between the law firm and Claude and charge for the privilege of that mediation becomes very thin very quickly when Claude can talk directly to law firms."
+        }
+        p {
+            "This matters beyond the competitive dynamics for one reason that I think is underappreciated in how people discuss foundation model providers displacing application-layer startups: it is evidence that the foundation model companies have a better understanding of where the value is in their technology than the startups building on top of them. Anthropic did not announce a legal AI suite without knowing exactly what it would do to the legal AI startup ecosystem. They knew. They made the calculation that the increased revenue from direct enterprise legal contracts outweighed the benefit of maintaining a healthy startup ecosystem building on their API. That calculation is strategically defensible and probably correct. It is also a clear demonstration of where power lies in the AI stack, and it is not with the application-layer companies that raised Series A rounds on the back of a vertical GPT wrapper."
+        }
+        p {
+            "The research community studying platform dynamics and the relationship between platform providers and third-party developers has a name for this pattern: envelopment. It was documented formally in the economics literature on platform competition, where a multi-product platform company extends its value proposition into the product space of its API partners, using its privileged access to platform infrastructure to offer a competitive product at lower marginal cost "
+            a { href: "#ref-4", "(4)" }
+            ". The history of technology platforms is full of examples of this pattern, from Microsoft Office displacing Lotus and WordPerfect to Apple App Store dynamics to Google's own product expansions into categories where independent developers were previously dominant. Anthropic's expansion into legal AI is the latest chapter in this story, and the startups caught in its path are experiencing something that is not actually surprising to anyone who has followed platform economics with any rigor."
+        }
+        p {
+            "What is mildly surprising, and what gives me the genuine satisfaction I have been building toward through this entire post, is how precisely and how quickly the envelopment targeted exactly the companies that had decided I was not worth hiring. I did not need to build a campaign. I did not need to write a scathing review on Glassdoor. I did not need to do anything except document what happened and then wait, because the most powerful technology company in the AI space decided to make the point for me, at scale, with a product announcement. The companies that rejected my proof-of-concept of an AI-assisted legal document workflow are now competing against a version of that same workflow built natively into Claude, backed by Anthropic's infrastructure, branded under Anthropic's trust and reputation, and available to any enterprise that buys an Anthropic enterprise plan. The idea I showed them was right. Their judgment about its source was the thing that was wrong."
+        }
+        h2 { id: "on-no-longer-picking-up-the-brush-and-what-comes-after-that",
+            a {
+                href: "#on-no-longer-picking-up-the-brush-and-what-comes-after-that",
+                class: "header",
+                "On No Longer Picking Up the Brush, and What Comes After That"
+            }
+        }
+        p {
+            "I said in "
+            a { href: "/blogs/who-am-i", "Just Don't Pick Up the Brush" }
+            " that there is a point at which the cost of continuing to try exceeds anything that trying can realistically return. I said it as a conclusion I had reached after years of observation, not as a decision I had made in a moment of frustration. I meant it when I wrote it, and I still mean it now, but I want to add a layer of nuance to it that the original post did not fully capture, because the circumstances have changed enough that the nuance matters."
+        }
+        p {
+            "The reason I advocated for not picking up the brush is not that the work is not worth doing. The work is almost always worth doing. Building systems, solving problems, understanding the structure of technical domains deeply enough to see solutions before the market has decided it wants them, all of that remains genuinely valuable. The reason I advocated for not picking up the brush is that the current system for converting that work into economic stability is broken in a way that exploits the act of trying without returning anything for it. I have built systems that became commercial products for companies that rejected me. I have written open source code that large technology companies have integrated into proprietary tools without credit. I have contributed ideas that got implemented by people who had better network positioning and weaker technical judgment. All of that has happened. None of it has been converted into meaningful economic compensation. That is not a complaint about the quality of the work. It is an observation about a broken conversion mechanism."
+        }
+        p {
+            "But here is where the AI advancement changes the calculus, and I want to be specific about how. As I argued in "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            ", the trajectory of AI capability is not uniform across domains. Some domains are being slowly augmented. Others are being rapidly replaced. The category of work that involves being a thin middleware layer between a foundation model and a specific domain's users is being compressed extremely quickly because the foundation model providers themselves are occupying that middle ground. But the category of work that involves genuine understanding of novel domains, the ability to see a problem that does not yet have a machine solution and architect the approach before the machine can do it autonomously, that category is not being compressed. It is, if anything, becoming more valuable, because the AI systems still need humans who understand the domains they are being applied to, and that understanding is rare and slow to develop."
+        }
+        p {
+            "The practical implication of this is uncomfortable but important. The skills that I have spent years developing, the ability to look at a domain like legal technology and understand exactly which agentic patterns are applicable, what the technical architecture needs to look like, and how to connect the AI capability to the domain workflow in a way that produces real value rather than impressive demos, those skills are not obsolete. They are more relevant than they were five years ago. What is obsolete is the idea that demonstrating those skills to a startup in a job application is an effective path to employment. It is not. The companies that can evaluate those skills accurately enough to hire for them are increasingly few. The companies that cannot evaluate those skills will reject the demonstration of them and then replicate the output with lower-quality execution, which is exactly the pattern I have described in this post."
+        }
+        p {
+            "The path I am taking, and the path I would counsel for anyone in a similar position, is not one of giving up on the work. It is one of decoupling the work from the job-seeking process entirely. Build the things you understand how to build. Document them publicly. Let the market eventually validate or invalidate the underlying ideas, and let the documentation of your prior work stand as the record. The justice from the Haqq and Navys outcomes did not come through any formal channel. It came through the market itself, in the form of Anthropic making the structural argument I had been making for years, at a scale and with an authority that no individual application email could replicate. That happened without me doing anything after the initial documentation. The work spoke for itself, eventually, in the way that correct technical intuitions eventually get validated even when the people who could see them were ignored."
+        }
+        p {
+            "Research on how good ideas actually propagate through organizations and markets consistently shows that correct technical insights are undervalued at the moment of demonstration and only recognized retrospectively, once something external validates them. Christoph Riedl and Anita Williams Woolley's field research on crowd-based problem solving found that emergent collaboration patterns, not individual ability or incentive structure alone, determine whether a group recognizes a correct solution when one of its members produces it "
+            a { href: "#ref-5", "(5)" }
+            ". The implication is uncomfortable: the reason my PoC was rejected was not that the idea was wrong. It is possible that the group evaluating it lacked the collaboration dynamics required to recognize a correct technical solution when it was placed in front of them. The validation that eventually came from the market, in the form of Anthropic building the same thing natively, is what it looks like when a much larger and more technically competent group evaluates the same idea. Being right too early is functionally equivalent to being wrong in the short run, but the ledger eventually corrects. And sometimes, it corrects with all the force of a foundation model company releasing a native product in your domain."
+        }
+        p {
+            "I am still here. I am still building. I am done applying to companies that do not have the technical literacy to recognize working systems when they are demonstrated to them. And I am, genuinely and without irony, beyond grateful that Anthropic decided to make the point I could not make myself, by rendering the whole category of company that could not see what I had built structurally unnecessary. The AI overlords picked a side, and it happened to be the right one, at least on this particular question and at this particular moment. I will take that. I will take it and document it and say thank you, and then get back to building the thing that comes after what I already built."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-1\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "1." }
+            " Autor, D., "
+            em { "Applying AI to Rebuild Middle Class Jobs" }
+            ", "
+            a { href: "https://www.nber.org/papers/w32140",
+                "National Bureau of Economic Research, Working Paper 32140, 2024"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-2\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "2." }
+            " Acemoglu, D., "
+            em { "The Simple Macroeconomics of AI" }
+            ", "
+            a { href: "https://www.nber.org/papers/w32487",
+                "National Bureau of Economic Research, Working Paper 32487, 2024"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-3\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "3." }
+            " Cennamo, C. & Santalo, J., "
+            em { "Platform competition: Strategic trade-offs in platform markets" }
+            ", "
+            a { href: "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.2066",
+                "Strategic Management Journal, Vol. 34, No. 11, 2013"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-4\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "4." }
+            " Eisenmann, T., Parker, G. & Van Alstyne, M., "
+            em { "Platform Envelopment" }
+            ", "
+            a { href: "https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.935",
+                "Strategic Management Journal, Vol. 32, No. 12, 2011"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-5\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "5." }
+            " Riedl, C. & Woolley, A.W., "
+            em {
+                "Teams vs. Crowds: A Field Test of The Relative Contribution of Incentives, Member Ability, and Emergent Collaboration to Crowd-Based Problem Solving Performance"
+            }
+            ", "
+            a { href: "https://doi.org/10.5465/amd.2015.0097",
+                "Academy of Management Discoveries, Vol. 3, No. 4, pp. 382-403, 2017"
             }
         }
     }
