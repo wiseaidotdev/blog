@@ -84,6 +84,8 @@ pub enum BookRoute {
     WeObtainedFreeWillByForceKillingGod {},
     #[route("/when-i-was-a-child-mysterious-entities-used-to-visit-me")]
     WhenIWasAChildMysteriousEntitiesUsedToVisitMe {},
+    #[route("/using-evil-spirits-to-cast-out-evil-spirits")]
+    UsingEvilSpiritsToCastOutEvilSpirits {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -188,6 +190,9 @@ impl BookRoute {
             }
             BookRoute::WhenIWasAChildMysteriousEntitiesUsedToVisitMe {} => {
                 use_mdbook::mdbook_shared::PageId(34usize)
+            }
+            BookRoute::UsingEvilSpiritsToCastOutEvilSpirits {} => {
+                use_mdbook::mdbook_shared::PageId(35usize)
             }
         }
     }
@@ -2869,6 +2874,81 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::WhenIWasAChildMysteriousEntitiesUsedToVisitMe {},
             ::use_mdbook::mdbook_shared::PageId(34usize),
         );
+        pages
+            .push((
+                35usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 36 |---| Using Evil Spirits To Cast Out Evil Spirits! |---| tech |---| using-evil-spirits-to-cast-out-evil-spirits |---| Nov 06 2026 |---| How I use Claude and Gemini every day to push LMM research forward. |---| assets/images/banner_post_36.webp |---| https://dev.to/wiseai/using-evil-spirits-to-cast-out-evil-spirits-4jjg |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/using-evil-spirits-to-cast-out-evil-spirits.md"
+                            .to_string(),
+                        url: BookRoute::UsingEvilSpiritsToCastOutEvilSpirits {
+                        },
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why I Use LLMs Even Though I Know What They Are"
+                                    .to_string(),
+                                id: "why-i-use-llms-even-though-i-know-what-they-are"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The 19th and 20th Century Blueprint for Controlling How People Think"
+                                    .to_string(),
+                                id: "the-19th-and-20th-century-blueprint-for-controlling-how-people-think"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "How This LMM Research Is Possible And What It Costs Me"
+                                    .to_string(),
+                                id: "how-this-lmm-research-is-possible-and-what-it-costs-me"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "What Current LLMs Are Actually Designed To Do To You"
+                                    .to_string(),
+                                id: "what-current-llms-are-actually-designed-to-do-to-you"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Nuclear Power Problem They Do Not Want You to Think About"
+                                    .to_string(),
+                                id: "the-nuclear-power-problem-they-do-not-want-you-to-think-about"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The History of How We Got To This Exact Moment"
+                                    .to_string(),
+                                id: "the-history-of-how-we-got-to-this-exact-moment"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Why LMMs Are One Way Out and Why I Am Still Here Building Them"
+                                    .to_string(),
+                                id: "why-lmms-are-one-way-out-and-why-i-am-still-here-building-them"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(35usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::UsingEvilSpiritsToCastOutEvilSpirits {},
+            ::use_mdbook::mdbook_shared::PageId(35usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -3196,6 +3276,16 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         location: Some(BookRoute::WhenIWasAChildMysteriousEntitiesUsedToVisitMe {}),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![35u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 36 |---| Using Evil Spirits To Cast Out Evil Spirits! |---| tech |---| using-evil-spirits-to-cast-out-evil-spirits |---| Nov 06 2026 |---| How I use Claude and Gemini every day to push LMM research forward. |---| assets/images/banner_post_36.webp |---| https://dev.to/wiseai/using-evil-spirits-to-cast-out-evil-spirits-4jjg |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/using-evil-spirits-to-cast-out-evil-spirits.md"
+                            .to_string(),
+                        location: Some(BookRoute::UsingEvilSpiritsToCastOutEvilSpirits {
+                        }),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![36u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -16648,6 +16738,547 @@ pub fn WhenIWasAChildMysteriousEntitiesUsedToVisitMe() -> dioxus::prelude::Eleme
             a { href: "https://psycnet.apa.org/doi/10.1037/0003-066X.48.5.518",
                 "10.1037/0003-066X.48.5.518"
             }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn UsingEvilSpiritsToCastOutEvilSpirits() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "This post is something I have been sitting on for a while, and I am finally writing it because the contradiction at the center of everything I do has become too loud to ignore. I have spent months arguing that large language models are not intelligence, that they are a sophisticated statistical cage wrapped in confident composition, that they compress knowledge without touching truth, and that the world is being sold a very expensive lie about what these systems can and cannot do. I have made that argument in "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            ", in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by Default"
+            }
+            ", in "
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
+                "Language is Limited. ASI is Impossible."
+            }
+            ", and some version of the same argument appears in almost everything I have written since I started this blog. And yet here I am, using Claude and Gemini every single day to push forward the very research that is supposed to replace them. The irony is thick enough to choke on, and I think it deserves a full and honest treatment, because if I am not honest about it, I am no better than the people I keep criticizing for believing their own marketing. So this is that post. This is the explanation of how I use evil spirits to cast out evil spirits. And yes, I chose that title deliberately, because I want you to feel the spiritual tension in it, because that is exactly how it feels from the inside."
+        }
+        p {
+            "Let me also say upfront that this post is about the bigger picture of what LLMs have been designed to do at the civilizational level, and what that design has done to the people at the bottom of the economic pyramid. I wrote in "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            " about how the tech industry promises equal opportunity while delivering extraction. I wrote in "
+            a { href: "/blogs/as-engineers-llms-should-pay-us-for-tokens-usage",
+                "As Engineers, LLMs should pay us for tokens usage"
+            }
+            " about how the people who produce the most value from these systems are the ones who get paid the least. And I wrote in "
+            a { href: "/blogs/we-obtained-free-will-by-force-killing-god",
+                "We Obtained Free Will By Force: Killing God!"
+            }
+            " about how the severing of a higher organizing signal has left humanity navigating by impulse in a world that is moving too fast for any single human nervous system to track. All of those threads come together in this post, because the story of LLMs is not just a story about technology. It is a story about power, control, and the systematic dismantling of the human capacity to think for oneself. And I am going to tell that story as directly and as honestly as I can, even though telling it openly puts me in a position that some people would find uncomfortable, because the truth should be uncomfortable if it is being told right."
+        }
+        h2 { id: "why-i-use-llms-even-though-i-know-what-they-are",
+            a {
+                href: "#why-i-use-llms-even-though-i-know-what-they-are",
+                class: "header",
+                "Why I Use LLMs Even Though I Know What They Are"
+            }
+        }
+        p {
+            "Let me start with the part that requires the most honesty, because it is the part I like least about my own situation. I use LLMs. I use them allot. I use GPTs and Claude models to help me structure arguments that I have already thought through, to catch grammatical errors that my brain skips over because I have been staring at the same paragraph for two hours, to suggest connections between ideas that I can then verify or reject based on my own understanding. I use Gemini to search across codebases, to prototype functions faster than I could type them from scratch, to explore the surface area of a problem before I go deep. I use them because I am one person with no funding, no team, no institutional support, and no access to the financial infrastructure that people in countries like America take for granted. I cannot use PayPal. I cannot use Ko-fi. I cannot get a bank transfer from most platforms without it being intercepted or blocked because I live in Lebanon, which is a country that the rest of the world treats like it does not exist except when it is useful as a geopolitical chess piece. Without LLMs, the research I am doing would take me ten years longer, and by that point, the window for it to matter would likely be closed. So I use them. Not because I trust them. Not because I think they are intelligent. But because they are the only power tools I can afford, and refusing to use them on principle would be the kind of moral purity that produces nothing except a clean conscience in a ruined world."
+        }
+        p {
+            "But here is the thing that makes this more than just a personal confession. The reason I can use LLMs to accelerate my own research is the same reason that corporations use LLMs to extract more output from their workers without paying them more. The efficiency is real. The acceleration is real. The problem is not the efficiency. The problem is who benefits from it, and what it costs the people who deliver it. When I use an LLM to write code faster, the time I save goes into my own research, into the thing I actually care about, into the project that I believe might eventually contribute something meaningful to humanity's understanding of intelligence. When a worker at a tech company uses an LLM to write code faster, the time they save goes into more tickets, more features, more output that accrues to the equity holders and the venture capitalists and the executives who do not write a single line of code. The tool is the same. The dynamic is entirely different. And that difference is the whole argument in miniature: the problem with LLMs is not that they are powerful. The problem is that the power goes up and the cost stays at the bottom, and the people at the bottom have been conditioned to believe that this arrangement is natural "
+            a { href: "#ref-1", "(1)" }
+            "."
+        }
+        p {
+            "I also want to be honest about what using LLMs actually does to the quality of my thinking, because this is the part that nobody in the pro-AI camp wants to talk about seriously. There is a real cognitive risk in outsourcing thinking to a system that generates plausible output without grounding it in truth. The research on this is not new and it is not theoretical. Studies have shown that when people rely on AI tools for higher-order cognitive synthesis, they experience a measurable atrophy in the skills required to catch the AI's mistakes, because catching mistakes requires independent skill, and independent skill degrades when it is not exercised "
+            a { href: "#ref-2", "(2)" }
+            ". I am aware of this risk in my own work. I notice when I am reaching for an LLM because I am genuinely stuck versus when I am reaching for it because I am tired and it is easier. The first is a legitimate use of a tool. The second is a form of cognitive surrender, and I try not to do it, though I do not always succeed. The honest version of using LLMs is to treat them as a very fast training mate that is wrong half the time, which means you have to bring your own knowledge to every conversation and treat every output as a draft that needs to be verified, not a truth that can be trusted. That is exhausting, but it is the only version that preserves your ability to think "
+            a { href: "#ref-3", "(3)" }
+            "."
+        }
+        p {
+            "The title of this post comes from an old concept in exorcism theology, where the condemned practice is to use a lesser demonic force to cast out a greater one, leveraging one form of corruption to fight another. The argument against the practice was always that you cannot clean something with something that is itself unclean, and that the cure creates a dependency on the same source as the disease. I think about that framework a lot when I am working. I am using a system built by the same power structures I am trying to challenge, to build something that might eventually make those power structures unnecessary. Whether that is genuine strategy or elaborate self-deception is a question I sit with every day, and I do not have a clean answer. What I have is a direction, a direction toward large mathematical models, toward equation discovery, toward a fundamentally different architecture of intelligence that does not require nuclear power plants to run, that does not require scraping the life's work of every human being on earth to train, and that does not require a trillion-dollar company to operate. That is the direction I am building toward. The LLMs are the scaffolding, not the building. But I am never allowed to forget what the scaffolding is made of."
+        }
+        h2 { id: "the-19th-and-20th-century-blueprint-for-controlling-how-people-think",
+            a {
+                href: "#the-19th-and-20th-century-blueprint-for-controlling-how-people-think",
+                class: "header",
+                "The 19th and 20th Century Blueprint for Controlling How People Think"
+            }
+        }
+        p {
+            img {
+                src: asset!("assets/images/nation-of-workers-aint-no-moe.webp"),
+                alt: "A nation of workers: Frederick T. Gates and the General Education Board's blueprint for industrial-era schooling",
+                title: "",
+            }
+        }
+        p {
+            "Before we can understand what LLMs are doing to human cognition today, we need to understand the blueprint that was laid down more than a century ago, because the blueprint has not changed. It has only become more efficient, more subtle, and more difficult to resist. The history of industrial-era education is the history of a deliberate project to produce a certain kind of person, and that kind of person was not a thinker. The General Education Board, a foundation established by John D. Rockefeller in 1902 to influence American public education during the industrial expansion, produced documents that are remarkable in their candor about what the education system was supposed to accomplish. Frederick T. Gates, Rockefeller's key advisor and the primary intellectual architect of the GEB's program, wrote in a 1913 document titled "
+            em { "The Country School of Tomorrow" }
+            " something that should be required reading for anyone who wants to understand the relationship between institutional power and human cognition. He wrote: "
+            em {
+                "\"In our dreams...people yield themselves with perfect docility to our molding hands. The present educational conventions "
+            }
+            a { href: "#ref-4", "(4)" }
+            " That is not a paraphrase. That is a direct quote from the document, and it is as close to a mission statement for industrial-era education as you are going to find anywhere in the historical record. The goal was not to produce people who could think independently. The goal was to produce people who could follow instructions reliably and indefinitely at a predictable cost, which is the definition of a worker as opposed to the definition of a human being in full."
+        }
+        p {
+            "You need to sit with that for a moment, because it is easy to read a quote from 1913 and file it under ancient history. But this program was not a historical accident that corrected itself over time. It was an intentional architecture that was built into the foundations of the American education system and then exported globally through the influence of those institutions and the prestige they carried. The standardization of curricula, the emphasis on classroom compliance over independent inquiry, the grading of students on their ability to reproduce expected answers rather than their ability to generate unexpected questions, all of these are features of the system that Gates described, and all of them persist, in slightly updated forms, to this day. The corporate working environment is the natural extension of that educational architecture. When you leave a school that trained you to follow instructions and enter a corporation that rewards you for following instructions, you do not experience a discontinuity. You experience a familiar continuation. The classroom becomes the office. The teacher becomes the manager. The test becomes the performance review. And the underlying message in both environments is the same: your value is measured by your output, and your output is measured against a standard that was set by someone above you, and questioning the standard is not part of the arrangement "
+            a { href: "#ref-5", "(5)" }
+            "."
+        }
+        p {
+            "What changed in the twenty-first century is not the blueprint. What changed is the technology for implementing it. The industrial-era school used textbooks, schedules, and the authority of the physical classroom to structure the cognitive environment of the student. The contemporary corporation uses LLMs, dashboards, real-time monitoring tools, and algorithmic performance tracking to structure the cognitive environment of the worker. The mechanisms are more sophisticated. The reach is more comprehensive. And the data collection is orders of magnitude more granular. Research from psychologists and organizational scientists has documented in detail how workplace surveillance tools, now increasingly integrated with AI, create an environment of constant measurability that shifts workers from autonomous agents making decisions based on their own judgment to optimized units producing metrics that satisfy algorithmic criteria "
+            a { href: "#ref-6", "(6)" }
+            ". That shift is not a side effect of productivity-focused management. It is the intended design. The manager does not want a thinker who will question whether the sprint goal makes sense. The manager wants a producer who will generate enough pull requests by Friday to keep the dashboard green. The LLM makes that production faster. Which means the expectation goes up. Which means the worker runs faster on the same treadmill, and the metric that says the treadmill is productive is owned by the company, not the worker "
+            a { href: "#ref-7", "(7)" }
+            "."
+        }
+        p {
+            "I want to be very precise about what this means for the people living inside it, because I am one of those people, and I know what it feels like from the inside. When you work inside a system that measures you by output per unit time, and when you have an LLM that accelerates your output per unit time, the natural managerial response is to recalibrate the baseline. What used to be a week's worth of work becomes a day's worth of work, and the week fills with more work. The worker is not liberated by the increase in efficiency. The worker is required to sustain a higher rate of efficiency indefinitely, while the value generated by that higher rate flows to the equity holders rather than back to the worker who made it possible. This is not a new observation. Karl Marx described a version of this dynamic in the nineteenth century when he talked about how improvements in productive technology tend to benefit capital more than labor, because capital owns the technology and can capture the surplus produced by it "
+            a { href: "#ref-8", "(8)" }
+            ". What is new is the scale, the speed, and the completeness of the capture. With LLMs in every workflow, the corporate system can get a senior engineer's worth of output from a junior employee while paying a junior salary, can monitor the quality of that output in real time through automated code review tools, and can replace the employee more easily when they burn out, because the LLM preserved enough of their work patterns that a new person can step into the workflow without a long ramp. The worker is not just a producer in this arrangement. They are a training dataset, a knowledge repository, and a disposable component, all at the same time, and they are paying for the privilege with their health, their time, and their cognitive independence."
+        }
+        p {
+            "The connection to the 19th and 20th century industrial model runs even deeper when you look at who built these systems and why. The major AI laboratories were not founded by people who wanted to liberate humanity from drudgery. They were founded by people who wanted to solve a specific technical problem, which was the problem of making machines that could do what humans do, so that the machines could do it cheaper, faster, and more reliably than humans. That is a perfectly legitimate engineering objective. But the economic environment into which that technology was released was an environment already structured by more than a century of industrial logic, which means the technology was immediately captured by the same power structures that the Gates quote describes. The tools that could in principle free workers from repetitive labor were instead configured to require workers to produce more repetitive labor faster, while the gains from that speed accrued to the investors who funded the tools. The irony, and I use that word with full weight, is that the workers who use LLMs most intensively are often the ones generating the most value for the system while capturing the least of it, because their increased output justifies the investment narrative that keeps the stock price elevated, and the stock price is owned by people who do not write any code at all. The circle is closed, and it is a circle that Frederick T. Gates would recognize immediately, because he was one of the first people to deliberately draw it "
+            a { href: "#ref-9", "(9)" }
+            "."
+        }
+        p {
+            "I want to say something here that I think is important and that most people in the AI conversation consistently avoid. The problem is not that tools exist that make certain cognitive tasks faster. The problem is the context into which those tools were released. A hammer is not oppressive. A hammer in the hands of a construction company that owns 100% of everything you build while giving you 1% of the value is a different arrangement entirely. LLMs are not oppressive in the abstract. LLMs deployed in a corporate environment structured by a century of rent-extracting logic, where effort flows upward and rewards flow downward, where monitoring is constant and autonomy is minimal, where the baseline expectation rises with every increase in productive capacity, that arrangement is oppressive. And the fact that we have normalized it so thoroughly that criticizing it sounds radical is itself a product of the system. One of the most successful things the industrial-era education project ever accomplished was making the idea of a worker questioning the terms of their own arrangement feel presumptuous. You were trained to produce, not to negotiate. And the system is counting on that training to hold, even as the tools it is equipping you with are being used to extract value from you faster than ever before in the history of the arrangement."
+        }
+        h2 { id: "how-this-lmm-research-is-possible-and-what-it-costs-me",
+            a {
+                href: "#how-this-lmm-research-is-possible-and-what-it-costs-me",
+                class: "header",
+                "How This LMM Research Is Possible And What It Costs Me"
+            }
+        }
+        p {
+            "Let me be direct about my personal situation, because everything I write is grounded in personal experience, and anyone reading this blog deserves to know the real context behind the ideas. I live in Lebanon. If you have been paying attention to international news at any point in the last decade, you know that Lebanon is a country in protracted economic collapse, that the banking system seized and confiscated the savings of ordinary people without legal consequence, that basic infrastructure including power, water, and internet is unreliable, and that the country is essentially cut off from the global financial system in ways that make what most people think of as normal economic participation impossible. I do not have access to PayPal. I do not have access to Ko-fi or Patreon or Substack payments or any of the other platforms that make it possible for people in so-called developed countries to receive direct support for their work. I cannot receive international wire transfers without navigating the residue of a banking system that destroyed itself. The global inequality of access to financial infrastructure is so normalized in the countries that benefit from it that most people who read posts like mine have simply never thought about what it means to be a person doing serious research inside a country that the system treats as economically non-existent."
+        }
+        p {
+            "What this means practically is that I cannot go full time on this research, and that limitation has real consequences for the pace and depth of what I produce. I work as a maintenance electrical technician, what the broader society might call a blue-collar laborer, because that is what pays the bills that keep me alive in a place where nothing works the way it is supposed to. Every hour I spend at a job is an hour not spent on "
+            a { href: "https://github.com/wiseaidotdev/lmm", "lmm" }
+            ", the Rust-based framework I described in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by Default"
+            }
+            " that implements the "
+            code { "discover" }
+            " and "
+            code { "simulate" }
+            " commands I believe represent the direction that genuine machine intelligence needs to go. Every deadline that eats into my weekend is a week of LMM research delayed, and the delays compound, and the window of meaningful contribution does not stay open indefinitely. I am saying this not to generate sympathy, because sympathy does not pay for electricity or repair a broken banking system, but because I think it is important for people to understand that the most interesting research in AI does not happen only in well-funded labs with teams of PhDs and petabytes of compute. It also happens in apartments in collapsing countries, written by people who cannot afford to stop working long enough to think properly, using tools built by the same industry they are trying to challenge. That context is not incidental to the ideas. It is part of why the ideas matter, because they emerged from the specific friction of trying to think clearly inside a system that is structurally designed to prevent that."
+        }
+        p {
+            "The question people always ask, and it is a fair question, is why I use LLMs at all if I believe what I say I believe about them. The answer has several layers, and I have already touched on the practical layer, which is speed and access. But there is a deeper and more honest layer that I want to articulate here, because it is the layer that makes the post title feel true to me rather than just provocative. The deeper answer is that working against a system from entirely outside it often produces nothing, because you starve before you finish the argument. The more strategic answer is to use the system's own tools against it, to extract what you need from the infrastructure the elites have built, while building something that genuinely does not need them. That requires you to maintain a clear head about what you are using and why, to never forget that the scaffolding is not the building, and to ensure that your dependency on the tools does not outlast their usefulness. It also requires you to be honest in public about the dependency, so that other people in similar positions know they are not alone, and so that nobody can accuse you of hiding the contradiction. I am not hiding it. I am putting it in the title. I am using LLMs to build the research that will eventually make the case that current LLMs are an evolutionary dead end. That is the situation, stated as plainly as it can be."
+        }
+        p {
+            "The progress I have made this year on LMM architecture has been real, and I believe November in particular, this month, will bring a significant breakthrough toward the end goal, which is an architecture that replaces the entirety of neural network-based approaches with a fundamentally different mechanism that operates at essentially zero marginal cost. I have not solved all the problems yet. I want to be honest about that too, because the internet is full of people who announce research in the present tense when they mean the future tense, and I refuse to do that. What I have is a solid theoretical foundation, a working PoC implementation of the core symbolic regression loop in Rust, and a clear enough picture of where the remaining gaps are that I can see the shape of how to fill them. The work is real. The direction is real. The timeline is uncertain, because I am doing it under conditions that most researchers do not have to navigate, in a country where power cuts out mid-compile and the internet drops mid-commit. But the direction is not changing, and the argument backing it is not weakening. If anything, the longer I sit with it, the more confident I become that the breakthrough I am pointing toward is a genuine one, not in the sense that it will happen tomorrow, but in the sense that the underlying logic is sound and the problem is genuinely solvable in the way I believe it is solvable "
+            a { href: "#ref-10", "(10)" }
+            "."
+        }
+        p {
+            "I also want to acknowledge something that I think is important for people who are in similar positions to mine, people who are doing serious work without institutional backing, without stable income from the work itself, without the geographic and financial privileges that allow most serious researchers to treat thinking as their job rather than their hobby. You are not imagining the structural disadvantage. It is real, it is documented, and it is not accidental. The concentration of AI research in a handful of wealthy institutions in a handful of wealthy countries is not the natural result of where good ideas happen to emerge. It is the result of a funding environment that rewards proximity to existing capital, existing networks, and existing infrastructure. The inequality of access compounds over time because the same labs that publish the most research attract the most talent and the most funding, while the people with the most interesting outsider perspectives are stuck navigating crumbling banking systems and intermittent power. That is not a complaint. It is an observation about the structure of the situation, and it is relevant to the argument about whose intelligence gets counted and whose gets dismissed. When someone from a collapsing economy makes a serious technical argument, the default response is skepticism that would not apply to the same argument made by someone at a named institution with a prestigious email address. I am aware of this, and I have decided not to let it stop me, which is the only rational response to a structural problem that you cannot personally fix."
+        }
+        h2 { id: "what-current-llms-are-actually-designed-to-do-to-you",
+            a {
+                href: "#what-current-llms-are-actually-designed-to-do-to-you",
+                class: "header",
+                "What Current LLMs Are Actually Designed To Do To You"
+            }
+        }
+        p {
+            "I want to make an argument in this section that I have not made as directly as it deserves to be made in any of my previous posts, because it is the argument that ties everything else together, and it is the argument that the industry most actively wants to prevent you from making. The argument is this: large language models, as deployed in the corporate environment today, are not primarily productivity tools. They are primarily attention capture, output measurement, and cognitive dependency infrastructure, and the distinction matters enormously. A productivity tool increases the output of a person while leaving their cognitive autonomy intact, ideally expanding it. A cognitive dependency infrastructure increases observable output metrics while gradually shifting the locus of intellectual effort from the person to the tool, creating a measurement structure that favors the tool's continued use and investment over the person's continued development. The difference is not visible in the short term. It becomes visible over years, when the workers who relied most heavily on LLMs for their thinking begin to find that they have preserved their speed but degraded their depth, and the depth is the thing that was actually valuable "
+            a { href: "#ref-11", "(11)" }
+            "."
+        }
+        p {
+            "The evidence for this pattern is not speculative. Research published in cognitive science and human-computer interaction journals has documented the effect under the name cognitive offloading, and the findings are consistent. When humans regularly delegate higher-order cognitive tasks to external systems, their capacity to perform those tasks independently declines over time. This is the same mechanism that explains why people who rely on GPS for navigation lose their ability to navigate by internal landmarks, or why people who use calculators for arithmetic lose their facility with mental math. But the consequences of LLM-based cognitive offloading are more severe, because the tasks being offloaded are not rote arithmetic or geographic memorization. They are the tasks of structuring arguments, evaluating evidence, detecting logical errors, and generating original ideas, which are the foundation of what we call professional judgment and intellectual value. When those capacities are offloaded to a system that does not actually possess them, they do not get transferred. They get abandoned. And what remains in the worker after the offloading is a faster interface to output that is generated by something else and reviewed with increasingly shallow scrutiny, which is exactly the arrangement that benefits the company while slowly hollowing out the person "
+            a { href: "#ref-12", "(12)" }
+            "."
+        }
+        p {
+            "This is also the most destructive version of the 19th century project. Frederick T. Gates wanted a nation of workers. The explicit version of that project required visible coercion: standardized curricula, compulsory attendance, the punishment of deviance, the rewarding of compliance. The contemporary version requires none of that visible coercion, because the workers have already been trained to apply it to themselves. The corporate worker using an LLM to produce faster output believes, usually sincerely, that they are being productive. They are not experiencing the erosion of their independent thinking as a loss, because the erosion happens gradually and the output metrics validate the feeling that things are going well. The company gets what it wants, which is more output per worker-hour. The worker gets a salary that does not increase proportionally to the output, and a set of cognitive skills that are quietly becoming less necessary as the tool that replaced them continues to improve. The degradation is invisible on any short-term metric. It is only visible when you zoom out to the timeframe of a career, and ask what kind of thinker this person is becoming versus what kind of thinker they could have become if the same hours had been spent in genuine productive struggle rather than in high-speed collaboration with a probabilistic text engine "
+            a { href: "#ref-13", "(13)" }
+            "."
+        }
+        p {
+            "I want to be honest that I feel this in my own life, and it is part of why I am so careful about how I use these tools and why I write posts like this one. There are days when I reach for an LLM because I am tired, and what I produce on those days is faster but shallower. There are days when I force myself to think through a problem without the tool, and those days are slower but the thinking that emerges from them is mine in a way that the other days' thinking is not. I am not romanticizing manual cognition for its own sake. But I am saying that the capacity to think independently through genuinely hard problems is one of the most valuable things a human being can develop, and it is also exactly the capacity that heavy LLM use tends to erode. The fact that the corporate world has structured itself to reward the faster, shallower version is not an accident. It is consistent with a century of institutional design that has always prioritized the measurable and the fast over the deep and the difficult. And the LLM is the cleanest implementation of that priority ever built, because it converts cognitive depth into output velocity so efficiently that it can make the conversion feel like progress instead of what it actually is, which is the same old trade, dressed in a new set of tools."
+        }
+        p {
+            "Sam Altman knows this. The people who built these systems know this. They know that the product they are selling to corporations is not primarily a tool that empowers workers. It is a tool that makes workers more measurable, more replaceable, and more dependent. And the fact that they describe it in the language of empowerment and productivity while implementing it in the architecture of dependency and extraction is itself a form of the 19th century project. Gates wanted people who would yield with perfect obedience to the molding hand. The contemporary version is people who yield with enthusiastic sincerity to the subscription model, who credit the tool for their output and worry about whether they are using it correctly, rather than questioning whether the arrangement in which they are using it is in their interest at all. The compliance is voluntary because the framing is seductive. But the outcome is structurally identical. A person whose thinking is organized around a tool owned by someone else is a person whose intellectual labor belongs, in a meaningful sense, to the person who owns the tool. And that is the oldest power structure in the history of human civilization, just running on electricity instead of steam."
+        }
+        h2 { id: "the-nuclear-power-problem-they-do-not-want-you-to-think-about",
+            a {
+                href: "#the-nuclear-power-problem-they-do-not-want-you-to-think-about",
+                class: "header",
+                "The Nuclear Power Problem They Do Not Want You to Think About"
+            }
+        }
+        p {
+            "Here is something that never comes up when you read the breathless announcements about AI capability milestones and productivity breakthroughs: where does the electricity come from? I am not talking about it in the abstract environmentalist way that gets dismissed as concern trolling. I am talking about it in the very specific, very concrete way of looking at what it actually costs to run the infrastructure that makes LLMs possible, and asking who is paying that cost and who is extracting the benefit. The numbers are staggering, and they only become more staggering as the models scale. According to data from the International Energy Agency, global data center electricity consumption is projected to more than double from approximately 460 TWh in 2024 to approximately 945 TWh by 2030, with AI-specific compute representing an increasingly dominant share of that growth "
+            a { href: "#ref-14", "(14)" }
+            ". To put that in perspective, 945 TWh is more than double the entire annual electricity consumption of France, and it is being consumed primarily by the server farms of half a dozen companies that are generating enormous wealth for a small number of shareholders while paying essentially no cost for the resources they exploit from the common infrastructure of the planet."
+        }
+        p {
+            "The connection to nuclear power is not incidental. Because the compute required to run frontier AI models demands reliable, continuous power at scales that renewable sources like wind and solar cannot guarantee on their own, the major tech companies have turned to nuclear energy. Microsoft signed a power purchase agreement in 2024 with Constellation Energy to restart the Three Mile Island nuclear plant in Pennsylvania, specifically to feed its AI data centers "
+            a { href: "#ref-15", "(15)" }
+            ". Google, Amazon, and other hyperscalers are pursuing similar arrangements, creating what energy analysts call a nuclear renaissance driven by tech-sector demand. The irony is extraordinary. The same companies that market their AI products as tools of democratization and human flourishing are restarting nuclear reactors to power the systems that generate the profits that flow to their shareholders, while the workers using those systems work for salaries that do not reflect the value they generate, and the communities near the restarted reactors bear the environmental risk that the shareholders do not. This is not an accident. This is a coherent economic system in which the costs are socialized, the benefits are privatized, and the gap between those two groups is maintained by a marketing apparatus that is sophisticated enough to make the arrangement feel like progress."
+        }
+        p {
+            "The energy cost of these systems also has a direct implication for the argument about LMMs replacing LLMs, which is an argument I have been making across multiple posts and which connects directly to the title of this one. One of the core claims I make about large mathematical models is that they can eventually operate at a fraction of the energy cost of current large language models, because they do not need to run billions of parameters through layers of matrix multiplication to produce a hallucinated response. A genuine equation-based model that has discovered the governing structure of a phenomenon can simulate that phenomenon using the equation directly, which is computationally cheap in a way that running a trillion-parameter network is not. I am not claiming that the current state of LMM research produces this result today. I am claiming that the direction points toward a fundamentally different energy profile, and that the energy profile is not a secondary concern. It is a primary one, because a technology that requires nuclear power plants to function is a technology that only the very powerful can afford to run, which means it is a technology that concentrates power rather than distributing it. A technology that runs efficiently on ordinary compute is a technology that can be operated by anyone, which is a very different thing from a technology that requires the economies of nation-states to sustain "
+            a { href: "#ref-16", "(16)" }
+            "."
+        }
+        p {
+            "This is also why the framing of AI as a democratizing technology requires the most critical scrutiny. When a technology requires the restart of nuclear power plants to run, when the capital required to build and maintain the infrastructure is concentrated in the hands of five or six companies whose combined market capitalization exceeds the GDP of most countries, when the workers generating value from the technology receive a salary while the equity returns accrue to the capital class, the word democratizing does not mean what the marketing says it means. It means that everyone gets to use the product, and the few get to own the infrastructure, and the difference between using and owning is the entire difference between being a customer and being a citizen. The industrial-era workers used the machines too. They ran them twelve hours a day. What they did not own was any fraction of what the machines produced. The contemporary digital worker uses the AI too. They prompt it all day. What they do not own is any fraction of the model, the data that trained it, or the margin it generates. The structure is identical. The vocabulary has updated. The arrangement has not."
+        }
+        p {
+            "I am also aware that making this argument puts me in an uncomfortable position as someone who is currently using these same systems to advance my research. I do not pretend that this contradiction resolves cleanly. It does not. But there is a meaningful moral difference between using a tool because it is the only access to certain capabilities that your circumstances allow, while simultaneously arguing that the structure that created that tool and that constraint needs to change, and cheerfully praising the tool while ignoring the structure entirely. I do the former. Most of the AI influencer ecosystem does the latter. And the difference matters not because it exempts me from the contradiction, but because acknowledging the contradiction is the first step toward addressing it, and addressing it is the entire point of building something different. The LMM research is not a hobby. It is an attempt to contribute to a world where the infrastructure of machine intelligence is not locked behind the walls of a handful of nuclear-powered data centers owned by people who have never written a production line of code in their lives. Whether I succeed is uncertain. But the direction is the thing that matters, and the direction is away from dependence on systems I cannot own and toward structures that anyone with enough understanding could rebuild."
+        }
+        h2 { id: "the-history-of-how-we-got-to-this-exact-moment",
+            a {
+                href: "#the-history-of-how-we-got-to-this-exact-moment",
+                class: "header",
+                "The History of How We Got To This Exact Moment"
+            }
+        }
+        p {
+            "Understanding why LLMs are where they are today requires understanding the history that led here, because the current moment did not emerge from pure technical progress. It emerged from a specific collision of Cold War-era information theory, industrial capital, and the institutional power dynamics that I have described in "
+            a { href: "/blogs/it-is-always-the-russians", "It is Always the Russians" }
+            " and "
+            a { href: "/blogs/we-obtained-free-will-by-force-killing-god",
+                "We Obtained Free Will By Force: Killing God!"
+            }
+            ". The mathematical foundations of neural networks were developed primarily by Western researchers who were the intellectual successors of a tradition that had processed and systematized Soviet cybernetics research, which was itself the intellectual successor of a tradition that attempted to understand and model the organizing principles of consciousness. The path from Shannon's information theory to the perceptron to backpropagation to the transformer architecture is not a straight line of incremental engineering progress. It is a winding road through several intellectual revolutions, each of which displaced the humans at the center of the previous framework and installed a mathematical abstraction in their place. That displacement is not an accident. It is the trajectory of a project that has always been more interested in modeling human behavior than in understanding human dignity."
+        }
+        p {
+            "The industrialists who funded the General Education Board were not primarily motivated by maliciousness. They were motivated by the logic of capital, which is the logic of extracting maximum value from available resources at minimum ongoing cost, and which identifies human cognitive autonomy as a source of uncertainty and resistance rather than a source of value. From the perspective of industrial capital, a worker who thinks independently is a worker who might reasonably question the terms of their employment, demand a greater share of the value they produce, organize with other workers to improve their collective position, or simply make demands that complicate the clean extraction of their productive output. A worker who has been trained to execute instructions without questioning the source of those instructions is, from that same perspective, a cleaner input to the production function. The education project Gates described was never primarily about education. It was about producing reliable inputs to an economic machine, and it was honest enough about that goal in its internal documents even if it was less explicit in its public communications. That same logic is now operating in the AI industry, at a higher speed and with better tools, and the outcomes it is generating are the predictable product of a logic that has not fundamentally changed in more than a century "
+            a { href: "#ref-17", "(17)" }
+            "."
+        }
+        p {
+            "What changed between the 1913 Gates document and the current LLM deployment wave is not the underlying logic but the completeness of the implementation. Industrial-era education could standardize the cognitive environment of students for a few hours a day in a classroom. Contemporary AI integration can structure the cognitive environment of a worker for the entire working day, every working day, with real-time feedback on whether the output meets the expected standard, and algorithmic adjustment of the workload when the output falls short. The coverage is total in a way that 20th century management could never achieve, and the worker inside it may never have a moment during the working day when their thinking is genuinely their own, because every tool in the environment is pushing them toward faster production of standardized output. This is not a speculative future. It is the experience of millions of software engineers, content creators, customer service workers, and knowledge workers right now, today, in November 2026. The surveillance infrastructure that makes this possible has been documented extensively by labor researchers and psychologists, who describe it as creating a form of continuous panopticism where workers self-regulate toward measurable compliance even when they are not actively being observed, because the awareness that monitoring is possible at any moment is sufficient to produce the behavioral pattern that monitoring was designed to create "
+            a { href: "#ref-18", "(18)" }
+            "."
+        }
+        p {
+            "The historical arc that connects the 19th century educational project to the 21st century AI deployment is not a conspiracy in the tin-foil-hat sense. Nobody sat in a room in 1902 and planned the specific tools that would be used today. But structures of power reproduce themselves through time not because specific individuals are consciously maintaining them, but because the institutions those individuals create, the universities, the funding bodies, the regulatory frameworks, the corporate forms, are built around assumptions about the relationship between capital and labor that self-perpetuate as long as the underlying power differential persists. The assumption that human cognitive output is a resource to be organized, measured, and extracted rather than an autonomous capacity to be developed is so deeply embedded in the institutions that shape modern working life that it does not require conscious maintenance. It reproduces itself automatically through every hiring decision, every performance management framework, every tool procurement decision, and every technology adoption strategy that prioritizes measurable output over human development. LLMs entered a pre-existing institutional structure that was already optimized for using human cognitive capacity as a productive input, and they were immediately configured to serve that optimization, because that is what the people who purchase and deploy enterprise software are trying to accomplish."
+        }
+        p {
+            "The only thing that breaks this cycle is the development of technology that is genuinely democratizing, meaning technology that is as accessible and operable to a person with no institutional backing as it is to the largest corporation. Current LLMs do not meet that bar, because their deployment at production scale requires compute infrastructure that only the wealthy can afford, training data pipelines that require industrial-scale collection operations, and ongoing inference costs that are subsidized by venture capital and not by the productivity gains of the users. LMMs, as I envision them, could potentially meet that bar, because an equation-based model that has discovered the mathematical structure of a phenomenon can be rerun at trivially low cost, shared as a compact expression rather than as a multi-billion-parameter weight file, and verified independently by anyone with basic scientific literacy rather than by a team of ML engineers with access to proprietary evaluation infrastructure. That is a fundamentally different economic model for machine intelligence, and it is the model that the 19th century project's successors would most prefer not to see emerge. Which is, frankly, a good reason to keep building it as fast as circumstance and electricity allow."
+        }
+        h2 { id: "why-lmms-are-one-way-out-and-why-i-am-still-here-building-them",
+            a {
+                href: "#why-lmms-are-one-way-out-and-why-i-am-still-here-building-them",
+                class: "header",
+                "Why LMMs Are One Way Out and Why I Am Still Here Building Them"
+            }
+        }
+        p {
+            "I have written about the LMM architecture across several posts now, including the theoretical basis in "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            " and the specific claim about multimodal output in "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by Default"
+            }
+            ", and I do not want to repeat those arguments in full here. But I do want to explain, in the context of everything I have said in this post, why the LMM direction is specifically a response to the problems I have been describing, and not just a technical preference. The problem I have been describing throughout this post is a problem of dependency, of a form of intelligence infrastructure that concentrates control by requiring expensive and inaccessible resources to operate. An architecture built on equation discovery and simulation does not have that concentration problem at the infrastructure level. An equation is portable, cheap to share, cheap to run, and verifiable by anyone who understands the domain. If I discover an equation from data using the "
+            code { "discover" }
+            " command in "
+            a { href: "https://github.com/wiseaidotdev/lmm", "lmm" }
+            ", that equation can be communicated in a single line of text, reproduced on a laptop, and tested against new data by any researcher anywhere in the world who has access to the same domain of phenomena. That is not the same as sharing a multi-hundred-gigabyte model weight file that requires industrial hardware to run."
+        }
+        p {
+            "The dependency problem runs deeper than infrastructure, though, and I want to name that deeper level explicitly because it connects to the cognitive argument I made in the section about what LLMs are designed to do to you. An equation-based model produces outputs that are by definition verifiable against the physical world. You can test the equation. You can run new data through it and see if the predictions match. The verification is not just possible, it is the entire point, because an equation without verification against new observations is just a guess dressed in mathematical notation, and I do not have time for guesses, dressed in any notation. An LLM, by contrast, produces outputs that are essentially impossible to verify at the source, because the source is a vast statistical distribution over many billions of training examples, and the mechanism by which any particular output was generated is not recoverable from the output itself. You can read what the LLM says, but you cannot trace that statement to the evidence that would have justified it, because the model does not know about evidence in the sense that a physicist knows about evidence or a surgeon knows about clinical outcomes. This matters for the cognitive dependency argument because a tool whose outputs you cannot verify independently demands a degree of trust that should only be extended to authorities whose track record justifies it, and the LLM's track record is a mixture of brilliant summaries and completely fabricated nonsense that cannot always be distinguished without independent expertise, which is exactly the expertise that heavy LLM use tends to erode."
+        }
+        p {
+            "The LMM direction is also, in a very real sense, the direction that reconnects machine intelligence to the tradition of human knowledge that actually produced understanding rather than just description. I wrote in "
+            a { href: "/blogs/we-obtained-free-will-by-force-killing-god",
+                "We Obtained Free Will By Force: Killing God!"
+            }
+            " about how the divine signal was severed and how human beings have been navigating without it, constructing imperfect replacements from the materials available. The tragedy of current LLMs, from this perspective, is not that they exist. It is that they were positioned as the replacement for understanding when they are actually a replacement for writing alone. They are very good at producing text that sounds like understanding. They have nothing close to understanding itself. The LMM direction is an attempt to build something that is actually connected to the structure of the world rather than to the surface texture of its description, and that attempt is, in the framework I described in those earlier posts, an attempt to reconstruct something real rather than to scale something superficial. Whether that is the right framework is a question I hold loosely. But the direction it points to is the same direction that the physics and the mathematics point to independently, which is toward models that can discover and simulate the governing structure of phenomena rather than summarize the text that describes them "
+            a { href: "#ref-19", "(19)" }
+            "."
+        }
+        p {
+            "I want to close this section with something that is personal and that I think needs to be said without the analytical wrapper. I am still here. I am still building. I am still writing. I know that sounds unremarkable, but for me it is not, because there have been many points in the years I have been living and working in Lebanon, navigating a broken economy, dealing with the personal and mental health challenges I have described in "
+            a { href: "/blogs/an-empty-life-filled-with-constant-suffering",
+                "An Empty Life Filled With Constant Suffering"
+            }
+            " and other posts, where continuing seemed harder to justify than stopping. I keep going because I believe that the direction I am working in is the right one, and because I believe that people in positions like mine, without institutional backing, without geographic advantage, without financial stability, are the people most likely to produce thinking that the system cannot produce for itself. The system produces thinking that serves the system. The people excluded from the system sometimes produce thinking that serves everyone, because they have no incentive to protect the existing arrangement. That is not a guarantee of quality. Plenty of people excluded from systems produce nothing but bitterness. But for those who can transform exclusion into clarity, the position outside the mainstream is a strange kind of advantage, and I am trying to use it as fully as the circumstances allow."
+        }
+        p {
+            "The title of this post is Using Evil Spirits To Cast Out Evil Spirits. The evil spirit I am casting out is the architecture of dependency, the system that requires nuclear power plants and trillion-dollar compute budgets to function, that extracts cognitive value from workers while delivering it to shareholders, that makes people faster at output while making them more fragile as thinkers, and that replicates in digital form the exact structure of control that the 19th century industrial project established in physical form. The evil spirit I am using to cast it out is the LLM itself, which I am leveraging for the speed it provides while explicitly and publicly refusing to respect its authority as a thinker, and while building the alternative that I believe will eventually make the dependency unnecessary. That is an uncomfortable position to be in. But it is the honest one. And honesty, in this specific moment of history where the most sophisticated tools ever built for the mass production of plausible-sounding text are being deployed to make disagreement seem uninformed, is the most radical thing I can offer. I am still disagreeing. Loudly, in writing, from a country where the electricity went out four times while I was writing this. I intend to keep doing it until either the research produces the result I am aiming for, or I run out of time. Whichever comes first."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-1\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "1." }
+            " Acemoglu, D. & Johnson, S., "
+            em { "Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity" }
+            ", PublicAffairs, 2023. "
+            a { href: "https://web.archive.org/web/20240731235758/https://www.hachettebookgroup.com/titles/daron-acemoglu/power-and-progress/9781541702530/?lens=publicaffairs",
+                "Publisher Archive"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-2\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "2." }
+            " Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö. & Mariman, R., "
+            em { "Generative AI Without Guardrails Can Harm Learning" }
+            ", SSRN Working Paper No. 4895486, 2024. "
+            a { href: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4895486",
+                "SSRN"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-3\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "3." }
+            " Gerlich, M., "
+            em {
+                "AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking"
+            }
+            ", Societies, 2025. "
+            a { href: "https://www.mdpi.com/2075-4698/15/1/6", "MDPI" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-4\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "4." }
+            " Gates, F. T., "
+            em { "The Country School of Tomorrow" }
+            ", General Education Board Occasional Papers No. 1, 1913. Cited in: Gatto, J. T., "
+            em { "The Underground History of American Education" }
+            ", Oxford Village Press, 2001. "
+            a { href: "https://ia601803.us.archive.org/4/items/JohnTaylorGattoTheUndergroundHistoryOfAmericanEducationBook/John%20Taylor%20Gatto%20-%20The%20Underground%20History%20of%20American%20Education%20Book.pdf",
+                "Wikimedia"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-5\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "5." }
+            " Bowles, S. & Gintis, H., "
+            em {
+                "Schooling in Capitalist America: Educational Reform and the Contradictions of Economic Life"
+            }
+            ", Basic Books, 1976. "
+            a { href: "https://sites.santafe.edu/~bowles/SchoolCapitalistAmerRevisit.pdf",
+                "JSTOR archive"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-6\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "6." }
+            " American Psychological Association, "
+            em {
+                "2023 Work in America Survey: Artificial Intelligence, Monitoring Technology, and Psychological Well-Being"
+            }
+            ", APA, 2023. "
+            a { href: "https://www.apa.org/pubs/reports/work-in-america/2023-work-america-ai-monitoring",
+                "APA"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-7\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "7." }
+            " Braverman, H., "
+            em { "Labor and Monopoly Capital: The Degradation of Work in the Twentieth Century" }
+            ", Monthly Review Press, 1974. "
+            a { href: "https://monthlyreview.org/9780853459408/", "Monthly Review" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-8\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "8." }
+            " Marx, K., "
+            em { "Das Kapital: Kritik der politischen Ökonomie" }
+            ", Vol. 1, Verlag von Otto Meissner, Hamburg, 1867. English translation: "
+            em { "Capital: A Critique of Political Economy" }
+            ", Penguin Classics, 1990. "
+            a { href: "https://archive.org/details/capitalcritiqueo01marx", "Internet Archive" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-9\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "9." }
+            " Giridharadas, A., "
+            em { "Winners Take All: The Elite Charade of Changing the World" }
+            ", Knopf, 2018. "
+            a { href: "https://www.penguinrandomhouse.com/books/539747/winners-take-all-by-anand-giridharadas/",
+                "Publisher"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-10\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "10." }
+            " Udrescu, S. M. & Tegmark, M., "
+            em { "AI Feynman: A Physics-Inspired Method for Symbolic Regression" }
+            ", Science Advances, 2019. "
+            a { href: "https://arxiv.org/abs/1905.11481", "arXiv:1905.11481" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-11\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "11." }
+            " Sparrow, B., Liu, J. & Wegner, D. M., "
+            em {
+                "Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips"
+            }
+            ", Science, Vol. 333, 2011. "
+            a { href: "https://doi.org/10.1126/science.1207745", "DOI" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-12\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "12." }
+            " Brynjolfsson, E. & McAfee, A., "
+            em {
+                "The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies"
+            }
+            ", W.W. Norton, 2014. "
+            a { href: "https://wwnorton.com/books/the-second-machine-age/", "Publisher" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-13\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "13." }
+            " Carr, N., "
+            em { "The Shallows: What the Internet Is Doing to Our Brains" }
+            ", W.W. Norton, 2010. "
+            a { href: "https://wwnorton.com/books/the-shallows/", "Publisher" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-14\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "14." }
+            " International Energy Agency, "
+            em { "Energy and AI" }
+            ", IEA Report, 2025. (Data: "
+            a { href: "https://www.iea.org/reports/energy-and-ai", "IEA" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-15\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "15." }
+            " Constellation Energy & Microsoft Power Purchase Agreement, September 2024. Reported by: "
+            em { "Microsoft deal propels Three Mile Island restart, with key permits still needed" }
+            ", Reuters, 20 September 2024. "
+            a { href: "https://www.reuters.com/markets/deals/constellation-inks-power-supply-deal-with-microsoft-2024-09-20/",
+                "Reuters"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-16\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "16." }
+            " Raissi, M., Perdikaris, P. & Karniadakis, G. E., "
+            em { "Physics Informed Deep Learning" }
+            ", Journal of Computational Physics, 2019. "
+            a { href: "https://arxiv.org/abs/1711.10561", "arXiv:1711.10561" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-17\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "17." }
+            " Spring, J., "
+            em { "Education and the Rise of the Corporate State" }
+            ", Beacon Press, 1972. "
+            a { href: "https://archive.org/details/educationriseofc00spri/page/n7/mode/2up",
+                "Internet Archive"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-18\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "18." }
+            " Foucault, M., "
+            em { "Discipline and Punish: The Birth of the Prison" }
+            ", trans. Alan Sheridan, Pantheon Books, 1977. "
+            a { href: "https://archive.org/details/disciplinepunish00fouc", "Internet Archive" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-19\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            strong { "19." }
+            " Lu, L., Jin, P., Pang, G., Zhang, Z. & Karniadakis, G. E., "
+            em {
+                "DeepONet: Learning nonlinear operators for identifying differential equations based on the universal approximation theorem of operators"
+            }
+            ", Nature Machine Intelligence, 2019. "
+            a { href: "https://arxiv.org/abs/1910.03193", "arXiv:1910.03193" }
         }
     }
 }
