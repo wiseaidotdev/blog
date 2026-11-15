@@ -86,6 +86,8 @@ pub enum BookRoute {
     WhenIWasAChildMysteriousEntitiesUsedToVisitMe {},
     #[route("/using-evil-spirits-to-cast-out-evil-spirits")]
     UsingEvilSpiritsToCastOutEvilSpirits {},
+    #[route("/llm-weights-are-hardcoded-intelligence")]
+    LlmWeightsAreHardcodedIntelligence {},
 }
 impl BookRoute {
     pub fn sections(&self) -> &'static [use_mdbook::mdbook_shared::Section] {
@@ -193,6 +195,9 @@ impl BookRoute {
             }
             BookRoute::UsingEvilSpiritsToCastOutEvilSpirits {} => {
                 use_mdbook::mdbook_shared::PageId(35usize)
+            }
+            BookRoute::LlmWeightsAreHardcodedIntelligence {} => {
+                use_mdbook::mdbook_shared::PageId(36usize)
             }
         }
     }
@@ -2949,6 +2954,66 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
             BookRoute::UsingEvilSpiritsToCastOutEvilSpirits {},
             ::use_mdbook::mdbook_shared::PageId(35usize),
         );
+        pages
+            .push((
+                36usize,
+                {
+                    ::use_mdbook::mdbook_shared::Page {
+                        title: " 37 |---| LLM Weights are Hardcoded Intelligence |---| tech |---| llm-weights-are-hardcoded-intelligence |---| Nov 15 2026 |---| A deep critique of the LLM training paradigm. |---| assets/images/banner_post_37.webp |---| https://dev.to/wiseai/llm-weights-are-hardcoded-intelligence-9mk |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/llm-weights-are-hardcoded-intelligence.md"
+                            .to_string(),
+                        url: BookRoute::LlmWeightsAreHardcodedIntelligence {
+                        },
+                        segments: vec![],
+                        sections: vec![
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "The Weight Is All There Is".to_string(),
+                                id: "the-weight-is-all-there-is".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Fine-Tuning Is Just More Hardcoding".to_string(),
+                                id: "fine-tuning-is-just-more-hardcoding".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "LLMs Are Very Sophisticated Compilers".to_string(),
+                                id: "llms-are-very-sophisticated-compilers".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "Training Is Irrelevant and Obscenely Expensive"
+                                    .to_string(),
+                                id: "training-is-irrelevant-and-obscenely-expensive"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "LMM: Learning on the Fly With Deterministic Math"
+                                    .to_string(),
+                                id: "lmm:-learning-on-the-fly-with-deterministic-math"
+                                    .to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "LMM and the Path Ahead".to_string(),
+                                id: "lmm-and-the-path-ahead".to_string(),
+                                level: 2usize,
+                            },
+                            ::use_mdbook::mdbook_shared::Section {
+                                title: "References".to_string(),
+                                id: "references".to_string(),
+                                level: 2usize,
+                            },
+                        ],
+                        raw: String::new(),
+                        id: ::use_mdbook::mdbook_shared::PageId(36usize),
+                    }
+                },
+            ));
+        page_id_mapping.insert(
+            BookRoute::LlmWeightsAreHardcodedIntelligence {},
+            ::use_mdbook::mdbook_shared::PageId(36usize),
+        );
         ::use_mdbook::mdbook_shared::MdBook {
             summary: ::use_mdbook::mdbook_shared::Summary {
                 title: Some("Summary".to_string()),
@@ -3286,6 +3351,16 @@ pub static LAZY_BOOK: use_mdbook::Lazy<use_mdbook::mdbook_shared::MdBook<BookRou
                         }),
                         number: Some(
                             ::use_mdbook::mdbook_shared::SectionNumber(vec![36u32]),
+                        ),
+                        nested_items: vec![],
+                    }),
+                    ::use_mdbook::mdbook_shared::SummaryItem::Link(::use_mdbook::mdbook_shared::Link {
+                        name: " 37 |---| LLM Weights are Hardcoded Intelligence |---| tech |---| llm-weights-are-hardcoded-intelligence |---| Nov 15 2026 |---| A deep critique of the LLM training paradigm. |---| assets/images/banner_post_37.webp |---| https://dev.to/wiseai/llm-weights-are-hardcoded-intelligence-9mk |---| https://github.com/wiseaidotdev/blog/blob/main/docs/blog/src/llm-weights-are-hardcoded-intelligence.md"
+                            .to_string(),
+                        location: Some(BookRoute::LlmWeightsAreHardcodedIntelligence {
+                        }),
+                        number: Some(
+                            ::use_mdbook::mdbook_shared::SectionNumber(vec![37u32]),
                         ),
                         nested_items: vec![],
                     }),
@@ -17279,6 +17354,412 @@ pub fn UsingEvilSpiritsToCastOutEvilSpirits() -> dioxus::prelude::Element {
             }
             ", Nature Machine Intelligence, 2019. "
             a { href: "https://arxiv.org/abs/1910.03193", "arXiv:1910.03193" }
+        }
+    }
+}
+#[component(no_case_check)]
+pub fn LlmWeightsAreHardcodedIntelligence() -> dioxus::prelude::Element {
+    use dioxus::prelude::*;
+    rsx! {
+        p { "Hey everyone 👋," }
+        p {
+            "I need to say something upfront that I know some people are going to push back on, and I want to get the disclaimer out of the way before the argument starts. This post is a critique. Not a hate piece, not a dismissal, and not the kind of hot take that evaporates the moment someone asks a follow-up question. I have been building toward this argument across nearly every AI-related post I have written, from "
+            a { href: "/blogs/llms-are-usefull-lmms-will-break-reality",
+                "LLMs are Useful. LMMs will Break Reality"
+            }
+            ", where I tried to be fair about what LLMs genuinely accomplish, to "
+            a { href: "/blogs/training-is-an-evil-concept-lmms-eliminates-it-altogether",
+                "Training Is an Evil Concept. LMMs Eliminates it Altogether."
+            }
+            ", where I argued that the entire training paradigm carries moral weight that the industry refuses to examine, to "
+            a { href: "/blogs/intelligence-at-rest", "Intelligence at Rest" }
+            ", where I unpacked what it actually means for a system to store something worth calling intelligence. Each of those posts was pointing at the same underlying problem from a slightly different angle, and in this post I want to point directly at the center of that problem and name it plainly. The problem is this: LLM weights are hardcoded intelligence. And hardcoded intelligence, no matter how impressively hardcoded it is, is not the same thing as intelligence. It is a fossil of intelligence, a snapshot, a frozen record of what the world looked like at training time, compressed into billions of floating-point numbers that will never change again on their own. I am not saying that is worthless. I am saying that is a fundamentally different thing from what people are claiming it is, and the gap between the claim and the reality is exactly where the most dangerous illusions live."
+        }
+        p {
+            "I want to be honest about my own position before anything else, because I think honesty is the only thing that makes a critique worth reading. I am not an established academic with ten published papers on neural network theory. I am a software engineer who has spent years watching the AI industry make increasingly extravagant promises, using language that is increasingly disconnected from the actual mechanics of what these systems do, and I have watched people bet careers and livelihoods and policy decisions on those promises. I wrote in "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            " about how the technology industry dismantled things that mattered to people while calling it progress, and the AI industry is doing something very similar right now with the concept of intelligence itself. It is taking a specific, limited, technically impressive capability, compressing it into a word, and selling the word to the world at a markup that the word cannot support. I am writing this post because I think the gap between the word and the reality deserves to be named clearly, and because the alternative I believe in, which is what we have been building with the "
+            a { href: "https://github.com/wiseaidotdev/lmm", "LMM project" }
+            ", is real enough and grounded enough to present as an honest alternative. That is what I am going to do in the sections below, and I am going to try to do it without being unfair to the technology I am critiquing."
+        }
+        h2 { id: "the-weight-is-all-there-is",
+            a { href: "#the-weight-is-all-there-is", class: "header", "The Weight Is All There Is" }
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-30.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "It's not a brain. It's a very large zip file.",
+                title: "",
+            }
+        }
+        p {
+            "Let me start at the most basic technical level, because the argument I am making is ultimately a technical one, and I do not want to dress it in philosophy when the engineering is enough. A large language model, in its final deployed form, is a file. It is a collection of tensors, arrays of floating-point numbers, organized according to a specific architecture. For something like GPT-3, that file contains approximately 175 billion individual float values. For GPT-6, the number is estimated to be in the trillions. Each one of those numbers is the result of an optimization process called gradient descent, which ran over hundreds of billions of tokens of text, adjusting each number very slightly with each pass, until the collective behavior of all the numbers together minimized a loss function called cross-entropy, which measures how well the model predicts the next token in a sequence. When that process ends, the numbers are saved. They are written to disk. They become static. They do not change anymore unless someone runs another round of training or fine-tuning on them. The model is frozen. The numbers are fixed. And that frozen, fixed collection of floats is the entire thing we call the model. There is nothing else. No separate reasoning engine running behind the scenes. No dynamic knowledge base being updated in real time. No living mind deciding what to do next. Just the weights, running forward through the architecture, computing the next token from the previous context, one step at a time."
+        }
+        p {
+            "What those weights actually encode is a compressed statistical representation of the text they were trained on. During training, the model processes sentences, paragraphs, books, web pages, code repositories, academic papers, forum posts, and every other form of human textual expression that the data collectors could scrape together. For every sequence of tokens, the model is asked to predict what comes next, and when it gets it wrong, the error is propagated backward through the architecture, controlling the weights toward configurations that would have done better. That controlling happens billions of times, and over billions of repetitions, the weights gradually stop being random noise and start being something that reflects the statistical structure of human language and the world knowledge compressed into it. By the end of training, the weights encode things like grammar, syntax, semantics, common reasoning patterns, factual associations, stylistic tendencies, and the statistical relationships between concepts that appear together frequently in text. All of that is real, all of it is genuinely impressive, and I am not going to pretend it is not. But what it is is a statistical model. It is a compression of what has already been said, organized in a way that makes it easy to predict what should come next in a given context. It is not a living engagement with the world. It is a very detailed echo of everything that has been written about the world, frozen at a moment in time, responding to new inputs by pattern-matching them against the patterns it absorbed during training."
+        }
+        p {
+            "The scale of the resources required to produce this frozen snapshot is staggering, and I think people need to sit with that for a moment before accepting it as a reasonable price to pay. Research on scaling laws, most famously the work by Kaplan and colleagues at OpenAI in 2020, established that the performance of these models follows a power law relationship with model size, training data size, and compute budget "
+            a { href: "#ref-1", "(1)" }
+            ". The practical implication of that finding was that in order to get better models, you need to train bigger models on more data with more compute, and you need to do it in a way that is roughly compute-optimal, meaning you are not wasting resources by training a large model on too little data or a small model on too much. The subsequent Chinchilla work from DeepMind in 2022 refined these prescriptions further, showing that earlier large models like GPT-3 were actually under-trained relative to their size, and that a smaller model trained on more tokens could outperform a larger model trained on fewer "
+            a { href: "#ref-2", "(2)" }
+            ". These findings are scientifically interesting and practically important, but they all point in the same direction: more resources, more compute, more energy, more money, and at the end of all of it, you still get a frozen tensor of floating-point numbers. The scale changes. The nature does not."
+        }
+        p {
+            "The word intelligence, when applied to this frozen tensor, is doing a kind of linguistic heavy lifting that it cannot physically support. Intelligence in humans and animals is not a snapshot. It is a process, a continuous, ongoing interaction between a nervous system and an environment, where the system updates its representations in real time based on new information, corrects errors when they are discovered, forms new hypotheses about the world, and operates with a flexibility that does not depend on having been exposed to every possible situation during some prior training phase. I argued in "
+            a { href: "/blogs/knowledge-and-intelligence-are-mutually-exclusive",
+                "Knowledge and Intelligence ARE Mutually Exclusive"
+            }
+            " that knowledge and intelligence are distinct things, and the weight tensor is knowledge in the compressed statistical sense, it is not intelligence in the dynamic operational sense. When people say an LLM is intelligent, what they usually mean is that its outputs look like what an intelligent person would produce in similar circumstances. That is a property of the outputs, not a property of the system that produced them. And the system that produced them is a function, a very large and very complex function, but a function nonetheless, that maps input token sequences to output probability distributions over the vocabulary. That mapping is static. It was fixed when training ended. It is not intelligence. It is the residue of intelligence, left behind by the humans whose writing was absorbed, compressed, and baked into the weights."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-31.gif"),
+                alt: "And it will never change again. Ever. Until the next $100M retraining run.",
+                title: "",
+            }
+        }
+        p {
+            "I also want to be specific about what this means for the concept of super intelligence, because the original brief for this post asks me to address that, and I think addressing it honestly requires being direct. Super intelligence, in the sense of a system that dramatically exceeds human cognitive capability across all domains, cannot emerge from a frozen weight tensor, regardless of how large that tensor is. The reason is not that the tensor is too small or that the architecture is wrong in some fixable way. The reason is structural. A frozen snapshot of statistical patterns in human text, however comprehensive and however well-compressed, is bounded by what has been written. It can combine and remix what has been written in novel ways, and those combinations can sometimes look like genuine insight, but they cannot exceed the informational ceiling of their training data in any fundamental sense. Super intelligence would require the ability to discover genuinely new things about the world, things that have not been written about, through direct engagement with reality. A frozen weight tensor cannot do that. It can only do what the patterns it absorbed allow it to do, and those patterns, however rich, are always downstream from prior human thought. That is the whole limitation."
+        }
+        h2 { id: "fine-tuning-is-just-more-hardcoding",
+            a { href: "#fine-tuning-is-just-more-hardcoding", class: "header",
+                "Fine-Tuning Is Just More Hardcoding"
+            }
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-32.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Pre-training vs fine-tuning, they are literally the same process",
+                title: "",
+            }
+        }
+        p {
+            "If the pre-training phase is where the weights first crystallize from random noise into something resembling structured knowledge, the fine-tuning phase is where that crystallized structure is polished, redirected, and further locked down. I want to go through the major fine-tuning paradigms carefully, because I think the technical details matter here, and because the way people talk about fine-tuning often obscures what it is actually doing. The first and simplest form is Supervised Fine-Tuning, usually abbreviated SFT. In SFT, the pre-trained model is exposed to a dataset of input-output pairs, usually conversations, instructions and responses, or question-answer pairs, and the weights are adjusted to maximize the likelihood of the correct output given the input. Depending on the approach, either all weights are updated or only a subset, but the result is the same either way: the weights move from their pre-trained configuration to a new configuration that reflects both the pre-training distribution and the fine-tuning distribution, and then they stop. The model is frozen again. What was flexible becomes fixed again, in a slightly different shape. The fine-tuning has hardcoded a new layer of behavior on top of the hardcoded base knowledge, and nothing about that is different in kind from the original training. It is the same process, applied again, at a smaller scale."
+        }
+        p {
+            "The more sophisticated approach is Parameter-Efficient Fine-Tuning, with LoRA being the most widely deployed example. LoRA, introduced by Hu and colleagues at Microsoft in 2022 and published at ICLR, works by inserting small trainable rank-decomposition matrices into the transformer layers while keeping the original pre-trained weights frozen "
+            a { href: "#ref-3", "(3)" }
+            ". The motivation is partly computational efficiency, since modifying billions of parameters requires billions of gradient steps and enormous amounts of GPU memory, and partly stability, since modifying the full base model risks catastrophic forgetting. The mathematical formulation is elegant: for each weight matrix W in the original model, LoRA adds a low-rank perturbation Delta W = BA where B and A are small matrices, so the modified forward pass becomes h = Wx + BAx, with only A and B being updated during training while W remains frozen. The result is a model whose base character remains locked in the pre-trained weights, with a thin layer of new behavior overlaid on top through the learned adapters. It is a clever engineering solution to a real resource constraint, and I am not dismissing its technical ingenuity. But I want to be very clear about what it means for the nature of the system. The original hardcoded knowledge base is locked. The fine-tuning layer is a small additional layer of hardcoding placed on top. The system ends up with two layers of frozen numbers, not a dynamic system that learns. The layering is more sophisticated. The fundamental nature is the same."
+        }
+        p {
+            "Reinforcement Learning from Human Feedback, RLHF, is where the fine-tuning process starts to feel most different from raw training, because it introduces human judgment explicitly into the loop. In RLHF as originally applied to language models, a reward model is first trained to predict which of two model outputs a human would prefer, and then the main model is updated using proximal policy optimization, PPO, to generate outputs that score higher under the reward model. This process is designed to suppress toxic outputs, reduce hallucinations, encourage helpful tone, and generally align the model's behavior with what annotators consider good responses. The updates are small and carefully controlled, using KL-divergence penalties to prevent the policy from drifting too far from the reference model, because drifting too far destroys the linguistic coherence that the original training built up. The key insight for my argument is what the reward model and the PPO updates actually do to the weight tensor. They warp the probability space of the weights, making certain output patterns more likely and others less likely, suppressing the probability mass on responses that the reward model scores low, and reinforcing it on responses that score high. When the RLHF process ends, the weights are frozen again. The warping is permanent until the next fine-tuning run. The model has been further hardcoded, this time in the direction of human preference, but hardcoded nonetheless."
+        }
+        p {
+            "Direct Preference Optimization, DPO, introduced by Rafailov and colleagues at Stanford and published at NeurIPS 2023, is a mathematically cleaner alternative to the RLHF-PPO pipeline that eliminates the need for a separate reward model and replaces the reinforcement learning loop with a simple classification objective over preference pairs "
+            a { href: "#ref-4", "(4)" }
+            ". The insight behind DPO is that the optimal policy under RLHF can be expressed analytically in terms of the base model and the reference model, which means you can optimize directly for that policy without needing to train and query a separate reward model. This simplifies the pipeline considerably and makes it much more stable. But from the perspective of my argument, DPO does exactly the same thing as RLHF-PPO in terms of what it does to the weights. It updates the weights in the direction of preferred outputs and away from dispreferred ones, using the reference model as an anchor to prevent catastrophic drift, and when the process ends, the weights are frozen. The mathematical path is different. The destination is identical: a tensor of floats, now encoded with human preference in addition to language statistics and instruction following, frozen and deployed as a static function."
+        }
+        p {
+            "The most recent addition to this family of hardcoding techniques is Reinforcement Learning with Verifiable Rewards, RLVR, which is used to produce the chain-of-thought reasoning models that have attracted enormous attention over the last year. As described in the DeepSeek-R1 paper, RLVR replaces the human-preference reward signal with a programmatic verifier that checks whether the model's output is correct on tasks with objective ground truth, most commonly mathematics and code "
+            a { href: "#ref-5", "(5)" }
+            ". Instead of asking humans which of two responses is better, you ask a program whether the model's answer is right. For math, the verifier parses the final numerical result. For code, the verifier runs the code against test cases. The model is trained to maximize the probability of verified-correct outputs, using Group Relative Policy Optimization, GRPO, which compares outputs within a group to estimate relative advantage without needing a separate critic. The remarkable finding from DeepSeek and similar work is that models trained with RLVR spontaneously develop behaviors like extended internal reasoning, self-correction, and backtracking, because those behaviors happen to increase the probability of getting verifiable rewards. This is genuinely impressive. But the mechanism is the same: gradient descent adjusting floating-point weights toward configurations that maximize a loss function, followed by a freeze. The resulting weights encode the tendency to produce extended reasoning chains, in exactly the same way that earlier fine-tuning weights encoded the tendency to avoid toxic outputs. It is a different hardcoded behavior. It is not a qualitatively different kind of system."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-33.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Layer after layer of fine-tuning. Still a frozen tensor at the end.",
+                title: "",
+            }
+        }
+        p {
+            "The cumulative picture from all of these fine-tuning stages is a system whose weights have been adjusted by multiple overlapping optimization processes, each running for a time and then stopping, leaving behind a frozen artifact that reflects all of the influences applied to it. Pre-training deposits the foundational layer of language and world knowledge. SFT deposits a layer of instruction-following behavior. RLHF or DPO deposits a layer of human preference alignment. RLVR deposits a layer of structured reasoning behavior. Each layer is real, each is technically sophisticated, and each is hardcoded, frozen, unable to update itself in response to new information unless a new training run is explicitly launched. The resulting system is not a mind that grows and changes with its experience. It is a stack of frozen optimization artifacts, layered on top of each other, each one a snapshot of what gradient descent produced given a particular dataset, objective, and compute budget. I do not say this to be reductive. I say it because the distinction between a stack of frozen snapshots and a mind that actually learns from experience is the most important distinction in this entire conversation, and collapsing it is how you end up with AI products that fail in unpredictable ways when reality does not match the training distribution."
+        }
+        h2 { id: "llms-are-very-sophisticated-compilers",
+            a {
+                href: "#llms-are-very-sophisticated-compilers",
+                class: "header",
+                "LLMs Are Very Sophisticated Compilers"
+            }
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-34.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "LLM is basically GCC but for English",
+                title: "",
+            }
+        }
+        p {
+            "I want to offer an analogy here, and I want to be careful about it, because analogies are always imperfect and I do not want to overextend this one. But I think the compiler analogy captures something real about what LLMs actually do, and it is worth spelling out carefully. A compiler takes source code written in a high-level language and transforms it into a lower-level representation, machine code or bytecode, that can be executed efficiently. It is a deterministic transformation, mostly, that maps one form of text to another. The compiler does not understand the program in any meaningful sense. It applies a set of rules, transformations, optimizations, and validations to the input text and produces an output according to those rules. The same input, run through the same compiler with the same flags, produces the same output every time. If the input is malformed, the compiler produces an error or a garbage output, because it has no way to understand intent, only to apply its rules. The rules are good and the transformations are sophisticated, but the process is fundamentally mechanical. No understanding lives anywhere in the compilation pipeline."
+        }
+        p {
+            "LLMs are doing something that is structurally analogous, except the mapping is from human-language text to human-language text instead of from source code to machine code, and the transformation is probabilistic instead of deterministic. When you give an LLM a prompt, the model converts the prompt tokens into a high-dimensional embedding, processes that embedding through hundreds of layers of attention and feed-forward operations, and produces a probability distribution over the vocabulary at each step, from which the next token is sampled. The token is appended to the context, and the process repeats until a stopping condition is met. At no point in this pipeline does any part of the system access the external world. At no point does it consult a physical ground truth. At no point does it check whether its output is true. It maps the input tokens to output tokens according to the statistical patterns encoded in its weights, in the same way that a compiler maps input tokens to output tokens according to the grammatical and semantic rules encoded in its transformation tables. The analogy is imperfect because the LLM's mapping is learned rather than hand-coded, and because it is probabilistic rather than deterministic. But the fundamental structure is the same: a transformation applied to text, producing text, with no grounding in anything beyond the patterns absorbed during the system's construction."
+        }
+        p {
+            "This analogy helps explain something that I think a lot of people find genuinely puzzling about LLMs, which is why they hallucinate so confidently and so fluently. When a compiler encounters ambiguous input, it usually fails loudly, producing a compilation error that tells you something went wrong and where. It does not silently emit code that looks right but does the wrong thing, at least not usually. An LLM has no such failure mode. When the model encounters a prompt for which the correct answer lies outside or at the edges of its training distribution, it does not say \"I don't know\" unless it was specifically trained to do so in similar situations. Instead, it does what it always does: it samples from the probability distribution its weights assign to the next token given the context, and that sampling produces something fluent, something that looks grammatically correct and topically relevant, because fluency and topical relevance are properties the model was trained to maximize. The hallucination is not a bug in the sense of an unexpected deviation from intended behavior. It is the intended behavior applied to a situation where the intended behavior produces a wrong answer. The model is doing what it was designed to do, mapping input to statistically plausible output, and the mapping happens to be wrong because the right answer was not statistically dense enough in the training data to dominate the output distribution. This is what a compiler would do if you asked it to compile a legal-looking but semantically empty program: it would produce output faithfully, applying its rules correctly, and the output would be meaningless, because the input was meaningless, and the compiler has no way to know the difference."
+        }
+        p {
+            "The compiler analogy also illuminates something important about the nature of novelty in LLM outputs. Compilers can produce machine code that the compiler authors never explicitly wrote, because the compiler generates code according to rules that apply across all possible valid inputs. In the same way, LLMs can produce text that was never written by any human in that form, because the model generates tokens according to statistical patterns that apply across all possible prompt contexts. This can look like creativity, and sometimes it is creativity in a meaningful sense, the same way a jazz musician improvising is creative even though they are drawing on learned patterns, scales, and harmonic structures. But there is a limit to how far the analogy goes. The jazz musician has access to the external world. They can hear the audience, respond to the room, play something they have never played before because they were moved by something genuinely new that happened in that moment. The LLM cannot do this. Its weights were fixed before the conversation started. The statistical patterns it draws on are entirely contained within the training distribution. What looks like responding to novelty is actually pattern-matching the novel input to the nearest familiar pattern and generating the statistically expected continuation of that pattern. That is a form of creative output, but it is not the same kind of creativity as engaging with genuine novelty in the world, and the difference is not academic. It is the difference between a system that can be surprised and a system that cannot. And a system that cannot be surprised cannot learn, because learning is fundamentally about being surprised and updating in response to surprise."
+        }
+        p {
+            "I also want to address the argument that chain-of-thought reasoning somehow breaks the compiler analogy, because I know that is coming. Chain-of-thought reasoning is the technique, now standard in modern reasoning models, of prompting the model to generate intermediate reasoning steps before producing a final answer. The intuition behind it is that by externalizing the reasoning process into the context window, the model gets to build on its own intermediate outputs, which allows it to tackle multi-step problems that it could not handle in a single forward pass. This is real and it works, and I am not dismissing it. But the chain-of-thought tokens are still tokens. They are still generated by the same process, applying the same frozen weights to the same probability distribution. The intermediate steps are part of the input context, and the model processes them in the same way it processes any other input context. There is no separate reasoning engine that becomes active during chain-of-thought. There is no executive function that evaluates whether the reasoning is actually valid before continuing. There is just the weight tensor, mapping longer and longer contexts to next-token probability distributions. The reasoning can be wrong. It can go in circles. It can reach a confident but incorrect conclusion after a flawless-looking chain of steps, because at no point does any part of the pipeline check the reasoning against reality. The chain-of-thought makes the hallucination longer and more elaborate. It does not make it less possible."
+        }
+        p {
+            "I also need to say something about retrieval-augmented generation, RAG, because it is the most common objection to the claim that LLMs are purely closed functions over their training data. RAG systems augment the model's input context with retrieved documents from an external database, which means the model can access information that was not present in its training data. This is real and it mitigates some of the limitations I have been describing. But it does not fundamentally change the character of what the model is doing. The retrieved documents become part of the input context, and the model processes them using the same frozen weights, applying the same statistical patterns, to produce the next token. The model is now a text-to-text function that has been given a larger input, not a system that has fundamentally changed its relationship with the external world. The weights are still frozen. The function is still the same function. The input is richer, and the output is therefore better-grounded in some cases, but the mechanism is unchanged. RAG makes the compiler smarter by giving it better documentation to work with. It does not turn the compiler into a programmer who actually understands the code. And the distinction between working with better documentation and actually understanding something is the distinction that my entire argument rests on."
+        }
+        h2 { id: "training-is-irrelevant-and-obscenely-expensive",
+            a {
+                href: "#training-is-irrelevant-and-obscenely-expensive",
+                class: "header",
+                "Training Is Irrelevant and Obscenely Expensive"
+            }
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-36.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Spending $1T to produce a file that knows nothing about last Monday",
+                title: "",
+            }
+        }
+        p {
+            "I said in "
+            a { href: "/blogs/training-is-an-evil-concept-lmms-eliminates-it-altogether",
+                "Training Is an Evil Concept. LMMs Eliminates it Altogether."
+            }
+            " that training is evil in a specific and carefully defined sense, meaning that it is a systemic practice that externalizes enormous costs onto people who did not choose to bear them, while concentrating the benefits in the hands of a small number of powerful institutions. I stand by everything I said in that post, and I am not going to repeat all of those arguments here. But I want to add something new in this post, something that connects the moral case to the technical case I have been building in the previous sections. The connection is this: not only is training morally costly in the ways I described before, it is also technically useless in a specific and important sense. It is useless because the thing it produces, a frozen weight tensor, is not durable. It decays. It goes stale. It gradually stops being accurate as the world changes, because the world continues to change and the weights do not. And the response to this decay is to train again, consuming the same enormous resources, producing another frozen tensor, which will also decay, requiring another training run, and so on, in a treadmill that never terminates because the world never stops changing. The training paradigm does not solve the problem of machine knowledge. It defers it. It produces a temporary approximation that must be replaced regularly, at enormous cost, without ever achieving the kind of continuous, grounded, self-updating knowledge that actually knowing something requires."
+        }
+        p {
+            "The financial and environmental cost of this treadmill is real and documented, and I think people need to understand the numbers concretely before they accept \"more training\" as the default answer to every AI limitation. Training GPT-3 required approximately 1,287 megawatt-hours of electricity, generating an estimated 552 metric tons of carbon dioxide equivalent, the lifetime emissions of roughly 120 passenger cars "
+            a { href: "#ref-6", "(6)" }
+            ". Independent research into AI's water footprint found that the same training run consumed an estimated 700,000 liters of freshwater for data-center cooling, a figure that Patterson's paper does not report but that subsequent environmental audits of the same infrastructure have documented. GPT-4 required substantially more resources; according to industry analysis by SemiAnalysis and confirmed by Sam Altman himself, the compute cost of training GPT-4 alone was somewhere between $70 million and $100 million, running roughly 25,000 NVIDIA A100 GPUs continuously for approximately three months. The carbon footprint of GPT-4's training run is independently estimated at somewhere between 12,000 and 15,000 metric tons of CO₂ equivalent, roughly three to four times the annual emissions of a mid-sized coal power plant, and that figure covers only the final training run, not the failed experiments, iterative ablations, and alignment fine-tuning that surrounded it. These are not costs that are borne equally. They are costs that are borne primarily by the planet and by the communities that live near data centers and power plants, while the benefits flow primarily to the technology companies that can afford the compute. I argued in "
+            a { href: "/blogs/technology-has-destroyed-my-livelihood",
+                "Technology Has Destroyed My Livelihood"
+            }
+            " that the tech industry has a habit of externalizing cost while internalizing benefit, and the training paradigm is one of the clearest examples of that dynamic at scale."
+        }
+        p {
+            "Beyond the environmental cost, there is the cost of the data itself. The data used to train these models was collected from the internet, from books, from code repositories, from academic papers, from every form of human intellectual and creative work that could be scraped and processed. As I argued in my previous post on training, this collection process happened largely without the consent of the people who produced the original work, and it has been the subject of significant legal challenges in multiple jurisdictions. Writers, visual artists, software engineers, and academic researchers have all filed cases arguing that using their work to train AI systems without permission or compensation is a violation of their rights, including the Authors Guild class action against OpenAI filed in September 2023, joined by John Grisham, George R.R. Martin, and Jonathan Franzen, and the New York Times lawsuit against OpenAI and Microsoft filed in December 2023 "
+            a { href: "#ref-7", "(7)" }
+            ". These cases are ongoing and unresolved, but their existence alone should tell us something: the training paradigm depends on a supply of human creative and intellectual labor that it did not pay for and did not ask for, and the people who produced that labor are increasingly aware of this and increasingly angry about it. The model weights encode this labor. Every parameter that encodes something about how to write an essay or how to solve a coding problem reflects the absorbed output of a human who spent time and effort producing that essay or solving that problem, and none of those humans were compensated or even acknowledged. That is a structural description of how the value in these systems was produced."
+        }
+        p {
+            "The obsolescence problem is the one that I think gets the least attention in the mainstream AI conversation, and it is arguably the most practically significant. A model trained with a knowledge cutoff in one year is already partially wrong about the world by the time it is deployed six months later, and it becomes increasingly wrong with every passing month as the world continues to change while the weights do not. Scientific papers are published. Laws are enacted. Companies rise and fall. People die and are born. Discoveries are made. World records are broken. All of this happens outside the model's awareness, because the model has no awareness, only frozen weights that reflect the state of the world as described in the text available before the training cutoff. The standard solution is to retrain periodically, but periodic retraining is expensive, it does not solve the problem continuously, and it creates a knowledge discontinuity at every retraining boundary where the model's understanding of events before and after the cutoff has different quality and reliability. The alternative currently being explored is retrieval augmentation, as I discussed earlier, which helps at the margins but does not change the fundamental character of the system. Neither approach gives you a system that actually knows what is happening in the world right now, because knowing what is happening right now requires continuous engagement with the world, not periodic snapshots of text descriptions of the world."
+        }
+        p {
+            "There is also a finer form of obsolescence that I think is underappreciated, which is the obsolescence of the patterns themselves, not just the facts. The world is not just a collection of facts that change over time. It is a collection of relationships, norms, practices, technologies, and social structures that evolve, and the patterns of human writing about the world evolve with them. A model trained on 2024 text has absorbed the statistical patterns of 2024 writing, which reflects 2024 assumptions, 2024 terminology, 2024 consensus beliefs, and 2024 rhetorical conventions. By 2026, some of those assumptions are outdated, some of that terminology has shifted in meaning, some of those consensus beliefs have been overturned, and some of those rhetorical conventions have changed. The model's weights encode all of this as if it is current, because the weights do not know that time has passed. This is a matter of the entire frame of reference being outdated, and that kind of outdatedness is harder to fix with retrieval augmentation because it is not a matter of lacking specific facts. It is a matter of having the wrong background against which to interpret new facts. And the only way to fix it is to train again, absorbing new patterns, at enormous cost, producing a new frozen tensor that will also eventually go stale."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-37.gif"),
+                alt: "More compute. Same frozen limitation. Train again. Repeat.",
+                title: "",
+            }
+        }
+        p {
+            "I want to be clear that I am not making an argument that progress is impossible or that AI development should stop. I am making an argument that the specific approach of encoding intelligence by training on massive text corpora and freezing the result is a fundamentally limited approach that becomes more expensive and less maintainable over time, not less. The cost per unit of capability improvement has not decreased as models have gotten larger. It has increased. The Kaplan scaling laws show diminishing returns in the sense that you need exponentially more compute to get linear improvements in model performance "
+            a { href: "#ref-1", "(1)" }
+            ". That means the training treadmill gets faster and more expensive with every iteration, while the fundamental limitation, the frozen weight tensor that cannot engage with the world in real time, remains unchanged. At some point, the question has to be asked: is this the right approach, or is it the most visible approach, the most fundable approach, the approach that happens to match the incentive structures of venture-backed technology companies, and therefore the approach that gets all the resources and attention regardless of whether it is the best path forward? I think the evidence is increasingly pointing toward the latter, and I think the alternative I am about to describe points toward something genuinely different."
+        }
+        h2 { id: "lmm-learning-on-the-fly-with-deterministic-math",
+            a {
+                href: "#lmm-learning-on-the-fly-with-deterministic-math",
+                class: "header",
+                "LMM: Learning on the Fly With Deterministic Math"
+            }
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-38.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "What if instead of training we just... did math?",
+                title: "",
+            }
+        }
+        p {
+            "Let me tell you about something I have been building, carefully and quietly, alongside all of these blog posts. It is called LMM, Large Mathematical Model, and it is available as an open-source Rust crate at "
+            a { href: "https://github.com/wiseaidotdev/lmm", "https://github.com/wiseaidotdev/lmm" }
+            ". I want to be as honest about it as I have been about everything else in this post, which means I am going to tell you what it is and what it is not, without the marketing language that I have been complaining about throughout this series. LMM is not a production replacement for GPT-5. It is not going to write your novel or pass your bar exam or run your company's customer support queue. What it is is a proof of concept, and the concept it proves is specific and important: that a system can perceive inputs, discover mathematical structure within them, reason causally about that structure, and generate language output, all without training on a single human-authored document, without a gradient descent step across a corpus of scraped creative work, and without any GPU at all. That last point matters more than it might seem, because running on consumer CPUs is a democratic statement. It means anyone can run this, not just the institutions that can afford datacenters."
+        }
+        p {
+            "The architecture of LMM is organized around a fundamentally different relationship between the system and knowledge. Where an LLM bakes knowledge into weights during a training run and then freezes it, LMM discovers knowledge on the fly from the specific inputs it receives at runtime, using deterministic mathematical methods that are transparent, verifiable, and inherently grounded in the structure of the data. The entry point for most interactions is the TRAM pipeline, which stands for Text Reasoning and Applied Mathematics. When a user submits a query, TRAM begins by launching a web prefetch process, using DuckDuckGo's Instant Answer API and Wikipedia to retrieve current, real-world information relevant to the query. That information is passed through a  "
+            code { "SentenceFilter" }
+            " that discards low-information-density content, metadata fragments, and disambiguation artifacts before anything enters the knowledge store. What survives is ingested into a  "
+            code { "KnowledgeIndex" }
+            " using IDF-weighted term frequency scoring. The knowledge index is not a frozen artifact. It is built fresh for each session from whatever the web returns today. That is a fundamentally different relationship with currency and accuracy than a frozen weight tensor has, because the information the system works with reflects the current state of the web at query time, not the state of a text scrape from two years ago."
+        }
+        p {
+            "The  "
+            code { "Adaptive Thought Engine" }
+            ", ATE, is one of the most distinctive parts of the TRAM pipeline. When invoked with the  "
+            code { "--think" }
+            " flag, the ATE classifies the user's prompt into one of eight reasoning modes: factual, causal, procedural, analogical, definitional, exploratory, evaluative, or task. This classification is deterministic, based on syntactic and semantic features of the prompt text, and it determines how the subsequent reasoning proceeds. For a factual prompt, the ATE fires targeted queries to retrieve relevant verifiable information. For a causal prompt, it generates hypotheses about causal structure and constructs evidence chains. For an evaluative prompt, it identifies the dimensions of evaluation and retrieves comparative information. The key point is that the reasoning structure is determined by the prompt at runtime, not baked into weights during training. The system does not have a frozen prior about how to answer causal questions. It has a principled procedure for how to approach them, implemented in deterministic code, and that procedure runs fresh every time against freshly retrieved information. The ThinkLoop then implements a PID-style closed-loop reasoning process, where a  "
+            code { "Reflector" }
+            " formulates queries, a  "
+            code { "SearchOracle" }
+            " fetches results, and a  "
+            code { "CognitionSignal" }
+            " measures the Jaccard distance between successive iterations to determine whether the system is converging on a satisfactory answer. It keeps iterating until convergence or until it detects a stall, at which point it reports what it found."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-39.gif"),
+                alt: "No GPU was harmed in the generation of this output",
+                title: "",
+            }
+        }
+        h2 { id: "lmm-and-the-path-ahead",
+            a { href: "#lmm-and-the-path-ahead", class: "header", "LMM and the Path Ahead" }
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-40.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "A proof of concept, not a finished system, but that's the whole point",
+                title: "",
+            }
+        }
+        p {
+            "I want to be careful here, because the conclusion of this post could very easily slide into the kind of overclaiming that I have been critiquing throughout. LMM is currently a proof of concept and a work in progress project. It is not a finished system yet. It does not outperform GPT-6 on most benchmarks. It is not ready to replace a trained language model for the production applications where those models are currently used. I want to say all of that clearly and without dodging, because I have argued throughout this series that intellectual honesty is the minimum standard, and I am not going to lower that standard for my own project. What LMM is, specifically and verifiably, is a demonstration that the core capabilities associated with language AI, text encoding, text generation, question answering, causal reasoning, and mathematical equations applied to data, can all be implemented without training on human-authored text, without gradient descent, without GPUs, and without any of the ethical costs that the training paradigm makes unavoidable. That demonstration is real. The code runs. The outputs are reproducible. The ARC-AGI-3 score of 14.55% is documented and publicly verifiable at the ARC Prize leaderboard. That is a result achieved without any training whatsoever, by a system running on a laptop CPU, and that is the point."
+        }
+        p {
+            "The architectural direction that LMM represents is, I believe, more honest than the direction the mainstream AI industry is pursuing, and I want to explain what I mean by honest in this context. When an LLM produces an output, the output emerged from a process that is essentially opaque: trillions of parameters computed an enormous number of matrix multiplications and produced a probability distribution, from which a token was sampled. You cannot trace the output back to any interpretable intermediate step. You cannot verify the reasoning by examining the internal representations. You cannot ask the system why it said what it said in a way that produces a verifiable answer, because the system does not have a why that exists in any interpretable form. The output either corresponds to what is in the world or it does not, and you need external validation to know which. When LMM produces an output, the output is the result of a chain of deterministic computations that are exposed: a retrieved set of documents, an IDF-weighted knowledge index, an inference chain through IF-THEN rules, a symbolic expression discovered by GP regression, a causal propagation through an explicit graph. Every step is inspectable. Every step can be validated. The system shows the work, and showing the work is what makes the answer auditable. Auditable AI is scientifically preferable, because science requires that claims be verifiable, and a claim produced by a process that cannot be examined is a claim that cannot be verified."
+        }
+        p {
+            "The comparison between LMMs and LLMs is not, at this stage, a comparison between equals. I need to be honest about that because pretending otherwise would be exactly the kind of marketing I have been criticizing. The comparison is between a mature, heavily resourced paradigm with years of engineering investment and billions of dollars of compute, and an early-stage, resource-constrained alternative being developed by a small team as an open-source project. That is not a fair fight on benchmarks, and I am not asking you to judge it on benchmarks. I am asking you to judge it on principles. The LLM paradigm is mature and capable at the cost of opacity, ethical problems, environmental impact, data obsolescence, and the fundamental limitation that the weights are frozen at training time and cannot genuinely engage with the world in real time. The LMM paradigm is early and limited at the cost of less fluency and narrower coverage, in exchange for transparency, auditability, training-free operation, CPU-only accessibility, continuous learning from live data at runtime, and grounding in mathematical structure that is verifiable. I believe the second set of trade-offs is better for the long-term development of AI that is genuinely trustworthy and genuinely useful, and I believe that because I have spent years watching the first set of trade-offs produce systems that people trust more than they should and that fail in ways that could have been anticipated by anyone who understood the architecture."
+        }
+        p {
+            "The connection to previous threads in this blog is something I want to draw out explicitly, because I have been building toward this conclusion for a long time and I want people who have been following along to see how the pieces fit together. In "
+            a { href: "/blogs/language-is-limited-asi-is-impossible",
+                "Language is Limited. ASI is Impossible."
+            }
+            ", I argued that language is a compression of thought, not thought itself, and that any system built purely on language inherits the gap between the symbol and the reality it represents. LMM's approach to reducing that gap is not to use more language but to go below language, to mathematical structure that encodes mechanism rather than surface description. In "
+            a { href: "/blogs/mathematical-equations-are-multimodal-by-default",
+                "Mathematical Equations are Multimodal by default"
+            }
+            ", I argued that a single equation encodes multiple modalities simultaneously because it encodes the mechanism that generates all of them. LMM's symbolic regression engine is precisely the tool that discovers those equations from data, closing the loop between the theoretical argument and the practical implementation. In "
+            a { href: "/blogs/intelligence-at-rest", "Intelligence at Rest" }
+            ", I argued that the quality of a system's resting intelligence is determined by how efficiently its structure encodes the domain, and that compression is the true measure of intelligence. LMM's symbolic regression produces the most compressed possible representation of the patterns in its data, an equation, while LLM training produces a statistical compression that is both larger and less interpretable. In "
+            a { href: "/blogs/no-neural-networks-cannot-produce-genuine-autonomous-intelligence",
+                "No, Seriously. Neural Networks Cannot Produce Genuine Intelligence."
+            }
+            ", I argued that genuine autonomy requires the ability to discover new structure in novel domains without prior training for that specific domain. LMM's GP-based equation discovery does exactly this: it encounters new data and finds the mathematical structure in it, without having been trained on examples from that domain. Each of those arguments was pointing here."
+        }
+        p {
+            "I also want to say something about what bias-free by design actually means in the context of LMM, because it is a phrase that gets used loosely in the AI discourse and I want to be specific about it. When I say LMM is bias-free by design, I do not mean that the system is neutral in some impossible, view-from-nowhere sense. I mean that the system does not absorb and reproduce the statistical biases of its training data because it has no training data. The knowledge it works with at runtime is retrieved live from the web, which is itself biased in many ways, and those biases can influence the outputs. The expert system's IF-THEN rules are derived from retrieved knowledge, which carries the biases of its sources. These are real limitations and I am not pretending otherwise. What LMM eliminates is a specific, documented, structural form of bias: the bias that is baked into static weights during training on a fixed, historically produced dataset, the bias that cannot be updated without retraining, the bias that affects every output of the system regardless of what the user provides as input. Research has consistently shown that this form of structural bias in trained language models is real, persistent, and difficult to mitigate without fundamentally changing the training process "
+            a { href: "#ref-8", "(8)" }
+            ". Blodgett and colleagues, in their 2020 ACL survey of 146 papers on bias in NLP systems, found that the statistical patterns embedded in model weights during training systematically encode the language ideologies and social hierarchies present in the training data, penalizing speakers of non-dominant language varieties and reproducing historical inequalities in every inference pass, not as an edge case, but as a structural feature. LMM does not solve the problem of bias in AI. It eliminates one of its most rooted sources."
+        }
+        p {
+            img {
+                src: asset!("assets/images/meme-41.jpeg", ImageAssetOptions::new().with_avif()),
+                alt: "Hardcoded intelligence is a fossil. We're building something alive.",
+                title: "",
+            }
+        }
+        p {
+            "If I am being fully honest, and I have promised to be, the path ahead for LMM involves months of research and development before it can compete with trained language models on the full range of tasks that users expect AI systems to handle. The language generation pipeline needs to produce more fluent and contextually appropriate text as a function of the mathematical structures it discovers. These are substantial research challenges, and I am not going to pretend they will be solved quickly or easily. But I want to put on record that they are solvable in principle, that they do not require the ethical compromises that training requires, and that solving them would produce a system that is more transparent, more trustworthy, more auditable, and more grounded in physical reality than any system produced by the training paradigm. That is the promise I believe in, and it is a promise I am working to keep. The weights of an LLM are hardcoded intelligence, and hardcoded intelligence, however impressive, is a limitation masquerading as a capability. The alternative is intelligence that is alive, that updates from the world in real time, that shows its work, and that can be verified. That is what we are building. And that is worth building."
+        }
+        p { "Till next time 👋!" }
+        h2 { id: "references",
+            a { href: "#references", class: "header", "References" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-1\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            " "
+            strong { "(1)" }
+            " Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., Gray, S., Radford, A., Wu, J., & Amodei, D. (2020). Scaling Laws for Neural Language Models. "
+            em { "arXiv preprint arXiv:2001.08361" }
+            ". "
+            a { href: "https://arxiv.org/abs/2001.08361", "https://arxiv.org/abs/2001.08361" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-2\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            " "
+            strong { "(2)" }
+            " Hoffmann, J., Borgeaud, S., Mensch, A., Buchatskaya, E., Cai, T., Rutherford, E., Casas, D. d. L., Hendricks, L. A., Welbl, J., Clark, A., Hennigan, T., Noland, E., Millican, K., van den Driessche, G., Damoc, B., Guy, A., Osindero, S., Simonyan, K., Elsen, E., ... Sifre, L. (2022). Training Compute-Optimal Large Language Models. "
+            em { "arXiv preprint arXiv:2203.15556" }
+            ". "
+            a { href: "https://arxiv.org/abs/2203.15556", "https://arxiv.org/abs/2203.15556" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-3\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            " "
+            strong { "(3)" }
+            " Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., Wang, L., & Chen, W. (2021). LoRA: Low-Rank Adaptation of Large Language Models. "
+            em { "International Conference on Learning Representations (ICLR 2021)" }
+            ". "
+            a { href: "https://arxiv.org/abs/2106.09685", "https://arxiv.org/abs/2106.09685" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-4\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            " "
+            strong { "(4)" }
+            " Rafailov, R., Sharma, A., Mitchell, E., Ermon, S., Manning, C. D., & Finn, C. (2023). Direct Preference Optimization: Your Language Model is Secretly a Reward Model. "
+            em { "Advances in Neural Information Processing Systems (NeurIPS 2023)" }
+            ". "
+            a { href: "https://arxiv.org/abs/2305.18290", "https://arxiv.org/abs/2305.18290" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-5\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            " "
+            strong { "(5)" }
+            " DeepSeek-AI. (2025). DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning. "
+            em { "arXiv preprint arXiv:2501.12948" }
+            ". "
+            a { href: "https://arxiv.org/abs/2501.12948", "https://arxiv.org/abs/2501.12948" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-6\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            " "
+            strong { "(6)" }
+            " Patterson, D., Gonzalez, J., Le, Q. V., Liang, C., Munguia, L.-M., Rothchild, D., So, D. R., Texier, M., & Dean, J. (2022). The Carbon Footprint of Machine Learning Training Will Plateau, Then Shrink. "
+            em { "IEEE Micro, 42" }
+            "(4), 18-28. "
+            a { href: "https://arxiv.org/abs/2204.05149", "https://arxiv.org/abs/2204.05149" }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-7\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            " "
+            strong { "(7)" }
+            " \"Authors Guild V. OpenAI Inc., 1:23-cv-08292 - CourtListener.com.\" n.d. CourtListener. "
+            a { href: "https://www.courtlistener.com/docket/67810584/authors-guild-v-openai-inc",
+                "https://www.courtlistener.com/docket/67810584/authors-guild-v-openai-inc"
+            }
+        }
+        p {
+            p {
+                class: "inline-html-block",
+                dangerous_inner_html: "<span id=\"ref-8\">",
+            }
+            p { class: "inline-html-block", dangerous_inner_html: "</span>" }
+            " "
+            strong { "(8)" }
+            " Blodgett, S. L., Barocas, S., Daumé III, H., & Wallach, H. (2020). Language (Technology) is Power: A Critical Survey of \"Bias\" in NLP. "
+            em {
+                "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020)"
+            }
+            ", pp. 5454-5476. "
+            a { href: "https://aclanthology.org/2020.acl-main.485",
+                "https://aclanthology.org/2020.acl-main.485"
+            }
         }
     }
 }
